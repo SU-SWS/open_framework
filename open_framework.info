@@ -13,11 +13,9 @@ scripts[] = js/open_framework.js
 scripts[] = js/prettify.js
 scripts[] = js/bootstrap.min.js
 
-regions[header] = Site: Header
 regions[nav] = Site: Navigation
 regions[left] = Site: First sidebar
 regions[right] = Site: Second sidebar
-regions[footer] = Site: Footer
 
 regions[top] = Page: Top section
 regions[upper] = Page: Upper section
