@@ -306,6 +306,7 @@ body.searchbox #header #site {float: left; max-width: 49%;}
 }
 
 @media (max-width: 768px) {
+body.searchbox #navigation-secondary {margin: 1em 0 3em 0;}
 body.searchbox #header #site {float: left; max-width: 75%;}
 #header #search {position: absolute; left: 0; bottom: 0; float:none; clear: both; margin: 20px;}
 #header #search .form-text {width: 180px;}
