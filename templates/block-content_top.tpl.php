@@ -1,5 +1,5 @@
 <?php
-$edit_links = l(t('edit block'), 'admin/build/block/configure/'. $block->module .'/'. $block->delta, array('title' => t('edit the content of this block'), 'class' => 'block-edit'), drupal_get_destination(), NULL, FALSE, TRUE);
+$edit_links = l(t('edit block'), 'admin/build/block/configure/'. $block->module .'/'. $block->delta, array('title' => t('edit the content of this block'), 'class' => 'block-edit', 'query' => drupal_get_destination()));
 ?>
 
 <div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="<?php
