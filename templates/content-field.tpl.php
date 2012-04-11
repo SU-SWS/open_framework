@@ -23,7 +23,7 @@
 		elseif (count($items) == 4) : print 'span3 clear-block';
 		elseif (count($items) == 3) : print 'span4 clear-block';
 		elseif (count($items) == 2) : print 'span6 clear-block';
-		else: print 'span12 clear-block'; 
+		else: print ''; 
 		endif; 
 		?> field-item <?php print ($count % 2 ? 'odd' : 'even') ?>">
         <?php if ($label_display == 'inline') { ?>
