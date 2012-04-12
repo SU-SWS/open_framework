@@ -292,25 +292,23 @@ img {max-width: 100%;}
 #footer {margin: 40px 0px;}
 
 /* Mobile Styles */
-body.searchbox #header #site {float: left; max-width: 55%;}
+body.searchbox #header #site {float: left; max-width: 65%;}
 #header #search .form-text {width: 180px;}
 
-@media (max-width: 1210px) {
-body.searchbox #header #site {float: left; max-width: 52%;}
+@media (max-width: 1200px) {
+body.searchbox #header #site {float: left; max-width: 60%;}
 #header #search .form-text {width: 150px;}
 }
 
 @media (max-width: 980px) {
-body.searchbox #header #site {float: left; max-width: 49%;}
+body.searchbox #header #site {float: left; max-width: 53%;}
 #header #search .form-text {width: 120px;}
 }
 
 @media (max-width: 768px) {
-body.searchbox #navigation-secondary {margin: 1em 0 3em 0;}
-body.searchbox #header #site {float: left; max-width: 75%;}
-#header #search {position: absolute; left: 0; bottom: 0; float:none; clear: both; margin: 20px;}
-#header #search .form-text {width: 180px;}
-#header #logo {margin: 1em 1em 0 0;}
+/* body.searchbox #navigation-secondary {margin: 1em 0 3em 0;} */
+body.searchbox #header #site {float: left; max-width: 50%;}
+#header #search .form-text {width: 93px;}
 }
 
 @media (max-width: 640px) {
@@ -321,7 +319,9 @@ body.searchbox #header #site {float: left; max-width: 75%;}
 #header {padding: 0px;}
 #header #logo {display: none;}
 #header #site h1 {font-size: 2em;}
+#header #search {position: absolute; left: 0; bottom: 0; float:none; clear: both; margin: 20px;}
 body.searchbox #header #site {float: left; max-width: 100%;}
+#header #search .form-text {width: 180px;}
 
 /* Secondary Navigation */
 #navigation-secondary ul li {clear: both; padding-bottom: 0.25em;}
