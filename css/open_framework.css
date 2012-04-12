@@ -233,10 +233,10 @@ img {max-width: 100%;}
 
 #header {margin: 15px 0px;}
 #header #logo {float: left; max-width: 20%; margin: 0 1em 0 0;}
-#header #site h1 {margin: 0.25em 0;}
+#header #site #name {margin: 0.25em 0; font-size: 3em;}
 #header #site a {color: #3f3c30; text-decoration: none;}
 #header #site a:hover {text-decoration: none;}
-#header #slogan {margin: 0.25em 0; font-size: 1.5em;}
+#header #site #slogan {margin: 0.25em 0; font-size: 1.5em;}
 #header #search {float: right; margin: 1em 0 0 0;}
 #header #search .form-text {height: 1em; margin: 0; padding: 5px;}
 #header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
@@ -318,7 +318,7 @@ body.searchbox #header #site {float: left; max-width: 50%;}
 /* Header */
 #header {padding: 0px;}
 #header #logo {display: none;}
-#header #site h1 {font-size: 2em;}
+#header #site #name {font-size: 2em;}
 #header #search {position: absolute; left: 0; bottom: 0; float:none; clear: both; margin: 20px;}
 body.searchbox #header #site {float: left; max-width: 100%;}
 #header #search .form-text {width: 180px;}

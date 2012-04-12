@@ -30,9 +30,7 @@
         <?php endif; ?>
         <div id="site">
           <?php if ($site_name): ?>
-          <div id="name">
-            <h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><?php print $site_name; ?></a></h1>
-          </div>
+          <div id="name"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><?php print $site_name; ?></a></div>
           <?php endif; ?>
           <?php if ($site_slogan): ?>
           <div id="slogan"><?php print $site_slogan; ?></div>
