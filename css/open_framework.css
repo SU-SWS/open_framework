@@ -161,10 +161,10 @@ table td.alternate {background: #eee;}
 
 /* Images--------------------------------- */
 img {border: 0px;}
-.right-noborder {float: right; margin: 0px 0px 5px 10px;}
-.right-border {float: right; margin: 0px 0px 5px 10px; border: 1px solid #bbb;}
-.left-noborder {float: left; margin: 0px 10px 5px 0px;}
-.left-border {float: left; margin: 0px 10px 5px 0px; border: 1px solid #bbb;}
+.right-noborder {float: right; margin: 0px 0px 10px 10px;}
+.right-border {float: right; margin: 0px 0px 10px 10px; border: 1px solid #bbb;}
+.left-noborder {float: left; margin: 0px 10px 10px 0px;}
+.left-border {float: left; margin: 0px 10px 10px 0px; border: 1px solid #bbb;}
 
 /* Text--------------------------------- */
 .last {margin: 0px; padding: 0px;}
