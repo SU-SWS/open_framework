@@ -8,18 +8,18 @@
     foreach ($items as $delta => $item) :
       if (!$item['empty']) : ?>
       <div class="<?php
-		if (((region_has_block('left')) && (region_has_block('right'))) && ((count($items) == 4) && ($block_id == 1))): print 'span2 clear-block';
-		elseif (((region_has_block('left')) && (region_has_block('right'))) && ((count($items) == 4) && ($block_id == 2))): print 'span2 clear-block';
-		elseif (((region_has_block('left')) && (region_has_block('right'))) && (count($items) == 4)) : print 'span1 clear-block'; 
-		elseif (((region_has_block('left')) && (region_has_block('right'))) && (count($items) == 3)) : print 'span2 clear-block'; 
-		elseif (((region_has_block('left')) && (region_has_block('right'))) && (count($items) == 2)) : print 'span3 clear-block';
-		elseif (((region_has_block('left')) && (region_has_block('right'))) && (count($items) == 1)) : print 'span6 clear-block'; 
-		elseif (((region_has_block('left')) || (region_has_block('right'))) && ((count($items) == 4) && ($count == 1))): print 'span3 clear-block';
-		elseif (((region_has_block('left')) || (region_has_block('right'))) && (count($items) == 4)) : print 'span2 clear-block'; 
-		elseif (((region_has_block('left')) || (region_has_block('right'))) && (count($items) == 3)) : print 'span3 clear-block'; 
-		elseif (((region_has_block('left')) || (region_has_block('right'))) && ((count($items) == 2) && ($count == 1))): print 'span3 clear-block';
-		elseif (((region_has_block('left')) || (region_has_block('right'))) && ((count($items) == 2) && ($count == 2))): print 'span6 clear-block'; 
-		elseif (((region_has_block('left')) || (region_has_block('right'))) && (count($items) == 1)) : print 'span9 clear-block'; 
+		if (((open_framework_region_has_block('left')) && (open_framework_region_has_block('right'))) && ((count($items) == 4) && ($block_id == 1))): print 'span2 clear-block';
+		elseif (((open_framework_region_has_block('left')) && (open_framework_region_has_block('right'))) && ((count($items) == 4) && ($block_id == 2))): print 'span2 clear-block';
+		elseif (((open_framework_region_has_block('left')) && (open_framework_region_has_block('right'))) && (count($items) == 4)) : print 'span1 clear-block'; 
+		elseif (((open_framework_region_has_block('left')) && (open_framework_region_has_block('right'))) && (count($items) == 3)) : print 'span2 clear-block'; 
+		elseif (((open_framework_region_has_block('left')) && (open_framework_region_has_block('right'))) && (count($items) == 2)) : print 'span3 clear-block';
+		elseif (((open_framework_region_has_block('left')) && (open_framework_region_has_block('right'))) && (count($items) == 1)) : print 'span6 clear-block'; 
+		elseif (((open_framework_region_has_block('left')) || (open_framework_region_has_block('right'))) && ((count($items) == 4) && ($count == 1))): print 'span3 clear-block';
+		elseif (((open_framework_region_has_block('left')) || (open_framework_region_has_block('right'))) && (count($items) == 4)) : print 'span2 clear-block'; 
+		elseif (((open_framework_region_has_block('left')) || (open_framework_region_has_block('right'))) && (count($items) == 3)) : print 'span3 clear-block'; 
+		elseif (((open_framework_region_has_block('left')) || (open_framework_region_has_block('right'))) && ((count($items) == 2) && ($count == 1))): print 'span3 clear-block';
+		elseif (((open_framework_region_has_block('left')) || (open_framework_region_has_block('right'))) && ((count($items) == 2) && ($count == 2))): print 'span6 clear-block'; 
+		elseif (((open_framework_region_has_block('left')) || (open_framework_region_has_block('right'))) && (count($items) == 1)) : print 'span9 clear-block'; 
 		elseif (count($items) == 4) : print 'span3 clear-block';
 		elseif (count($items) == 3) : print 'span4 clear-block';
 		elseif (count($items) == 2) : print 'span6 clear-block';
