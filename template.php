@@ -20,30 +20,110 @@ function open_framework_preprocess_block(&$vars) {
 	$vars['block_count'] = count(block_list($vars['block']->region));
 }
 
-function region_has_block($test_region) {
-  // Check to see if a region is occupied and returns 1 if it's full
-  $test_empty = 0;
-  $result = db_query_range('SELECT n.pages, n.visibility FROM {blocks} n WHERE n.region="%s" AND n.theme="%s"', $test_region, $GLOBALS['theme'], 0, 10);
-  if (count($result) > 0) {
-    while ($node = db_fetch_object($result))
-    {
-      if ($node->visibility < 2) {
-        $path = drupal_get_path_alias($_GET['q']);
-        // Compare with the internal and path alias (if any).
-        $page_match = drupal_match_path($path, $node->pages);
-        if ($path != $_GET['q']) {
-          $page_match = $page_match || drupal_match_path($_GET['q'], $node->pages);
-        }
-        // When $block->visibility has a value of 0, the block is displayed on all pages except those listed in $block->pages. When set to 1, it is displayed only on those pages listed in $block->pages.
-        $page_match = !($node->visibility xor $page_match);
-      } else {
-        $page_match = drupal_eval($block->pages);
-      }
-      if ($page_match)
-        $test_empty = 1;
+/**
+ * Determines if the region has at least one block for this user
+ *
+ * @param $region
+ *   A string containing the region name
+ *
+ * @return
+ *   TRUE if the region has at least one block. FALSE if it doesn't.
+ */
+
+function open_framework_region_has_block($region) {
+  $number_of_blocks = count(block_list($region));
+  if ($number_of_blocks > 0) {
+    return TRUE;
+  }
+  else {
+    return FALSE;
+  }
+}
+
+/**
+ * Determine the span for a blocka
+ *
+ * @param $block_count
+ *  The number of blocks in the region
+ *
+ * @param $block_id
+ *  The position of the block (starts at 1)
+ *
+ * @param $count_sidebars
+ *  A boolean indicating whether sidebars should be counted
+ * 
+ * @return
+ *   The span value for the block at this location and region
+ */
+
+function open_framework_get_span($block_count, $block_id, $count_sidebars) {
+  // default span if calculations fail
+  $span = 12;
+
+  // there are 12 columsn in bootstrap
+  $available_width = 12;
+
+  if ($count_sidebars) {
+    // we assume that the left and right regions have a span of 3
+    // if present, we remove that much from the available width
+    if (open_framework_region_has_block('left')) {
+      $available_width = $available_width - 3;
+    }
+
+    if (open_framework_region_has_block('right')) {
+      $available_width = $available_width - 3;
     }
   }
-  return $test_empty;
+
+  // if the number of blocks divides evenly into the available width, that's our span width
+  if (($available_width % $block_count) == 0) {
+    $span = $available_width / $block_count;
+  }
+  // if the number of blocks does not divide evenly, we look up the span widths in an array
+  // where then indexes are available width, number of blocks, and block position
+  // e.g. [9][2][1] is the span of the first block, out of two when the available width is 9.
+  else {
+    $exceptions[6][4][1] = 2;
+    $exceptions[6][4][2] = 2;
+    $exceptions[6][4][3] = 1;
+    $exceptions[6][4][4] = 1;
+
+    $exceptions[6][5][1] = 1;
+    $exceptions[6][5][2] = 1;
+    $exceptions[6][5][3] = 1;
+    $exceptions[6][5][4] = 1;
+    $exceptions[6][5][5] = 1;
+
+    $exceptions[9][2][1] = 6;
+    $exceptions[9][2][2] = 3;
+
+    $exceptions[9][4][1] = 3;
+    $exceptions[9][4][2] = 2;
+    $exceptions[9][4][3] = 2;
+    $exceptions[9][4][4] = 2;
+
+    $exceptions[9][5][1] = 3;
+    $exceptions[9][5][2] = 1;
+    $exceptions[9][5][3] = 1;
+    $exceptions[9][5][4] = 1;
+    $exceptions[9][5][5] = 3;
+
+    $exceptions[9][6][1] = 2;
+    $exceptions[9][6][2] = 2;
+    $exceptions[9][6][3] = 2;
+    $exceptions[9][6][4] = 1;
+    $exceptions[9][6][5] = 1;
+    $exceptions[9][6][6] = 1;
+
+    $exceptions[12][5][1] = 3;
+    $exceptions[12][5][2] = 2;
+    $exceptions[12][5][3] = 2;
+    $exceptions[12][5][4] = 2;
+    $exceptions[12][5][5] = 3;
+
+    $span = $exceptions[$available_width][$block_count][$block_id];
+  }
+  return $span;
 }
 
 /* Status Messages (Error, Status, Alert) */
