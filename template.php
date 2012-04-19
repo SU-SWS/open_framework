@@ -94,8 +94,8 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
     $exceptions[6][5][4] = 1;
     $exceptions[6][5][5] = 1;
 
-    $exceptions[9][2][1] = 6;
-    $exceptions[9][2][2] = 3;
+    $exceptions[9][2][1] = 3;
+    $exceptions[9][2][2] = 6;
 
     $exceptions[9][4][1] = 3;
     $exceptions[9][4][2] = 2;
