@@ -8,7 +8,6 @@ stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/bootstrap-responsive.min.css
 stylesheets[all][] = css/open_framework.css
 
-scripts[] = js/css3-mediaqueries.js
 scripts[] = js/open_framework.js
 
 regions[nav] = Site: Navigation
