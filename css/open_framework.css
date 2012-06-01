@@ -234,6 +234,7 @@ img {max-width: 100%;}
 .last-modified {clear: both; font-size: 0.9em; padding-top: 2em;}
 
 #site-content {position: relative;}
+#page-content {margin-bottom: 40px;}
 #page-content .block {margin-bottom: 1em;}
 
 #header {margin: 15px 0px;}
