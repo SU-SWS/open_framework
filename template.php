@@ -66,11 +66,11 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
   if ($count_sidebars) {
     // we assume that the left and right regions have a span of 3
     // if present, we remove that much from the available width
-    if (open_framework_region_has_block('left')) {
+    if (open_framework_region_has_block('sidebar_first')) {
       $available_width = $available_width - 3;
     }
 
-    if (open_framework_region_has_block('right')) {
+    if (open_framework_region_has_block('sidebar_second')) {
       $available_width = $available_width - 3;
     }
   }
@@ -245,58 +245,4 @@ function open_framework_pager($tags = array(), $limit = 10, $element = 0, $param
     }
     return '<div class="pagination pagination-centered">' . theme('item_list', $items, NULL, 'ul', array('class' => '')) . '</div>';
   }
-}
-
-function open_framework_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
-  if (isset($title)) {
-    $output .= '<h3>' . $title . '</h3>';
-  }
-  if (!empty($items)) {
-    $output .= "<$type" . drupal_attributes($attributes) . '>';
-    $num_items = count($items);
-    foreach ($items as $i => $item) {
-      $attributes = array();
-      $children = array();
-      if (is_array($item)) {
-        foreach ($item as $key => $value) {
-          if ($key == 'data') {
-            $data = $value;
-          }
-          elseif ($key == 'children') {
-            $children = $value;
-          }
-          else {
-            $attributes[$key] = $value;
-          }
-        }
-      }
-      else {
-        $data = $item;
-      }
-      if (count($children) > 0) {
-        $data .= theme_item_list($children, NULL, $type, $attributes); // Render nested list
-      }
-      if ($i == 0) {
-        $attributes['class'] = empty($attributes['class']) ? 'first' : ($attributes['class'] . ' first');
-      }
-      if ($i == $num_items - 1) {
-        $attributes['class'] = empty($attributes['class']) ? 'last' : ($attributes['class'] . ' last');
-      }
-      $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
-    }
-    $output .= "</$type>";
-  }
-  return $output;
-}
-
-/* Primary and Secondary Tabs */
-function open_framework_menu_local_tasks() {
-  $output = '';
-  if ($primary = menu_primary_local_tasks()) {
-    $output .= "<ul class=\"tabs primary nav-tabs\">\n". $primary ."</ul>\n";
-  }
-  if ($secondary = menu_secondary_local_tasks()) {
-    $output .= "<ul class=\"tabs secondary\">\n". $secondary ."</ul>\n";
-  }
-  return $output;
 }

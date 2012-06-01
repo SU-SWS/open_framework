@@ -1,8 +1,7 @@
 name = Open Framework
 description = Base theme made with Twitter Bootstrap
-core = 6.x
-version = 6.x-1.0
-engine = phptemplate
+core = 7.x
+version = 1.0
 
 stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/bootstrap-responsive.min.css
@@ -10,9 +9,13 @@ stylesheets[all][] = css/open_framework.css
 
 scripts[] = js/open_framework.js
 
+regions[header] = Site: Header
+regions[help] = Site: Help
 regions[nav] = Site: Navigation
-regions[left] = Site: First sidebar
-regions[right] = Site: Second sidebar
+regions[highlighted] = Site: Highlighted
+regions[sidebar_first] = Site: First sidebar
+regions[sidebar_second] = Site: Second sidebar
+regions[footer] = Site: Footer
 
 regions[top] = Page: Top section
 regions[upper] = Page: Upper section
@@ -25,13 +28,3 @@ regions[content_upper] = Content: Upper section
 regions[content] = Content: Body
 regions[content_lower] = Content: Lower section
 regions[content_bottom] = Content: Bottom section
-
-features[] = logo
-features[] = name
-features[] = slogan
-features[] = node_user_picture
-features[] = comment_user_picture
-features[] = search
-features[] = favicon
-features[] = primary_links
-features[] = secondary_links
