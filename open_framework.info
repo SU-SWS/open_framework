@@ -4,8 +4,8 @@ core = 6.x
 version = 6.x-1.0
 engine = phptemplate
 
-stylesheets[all][] = css/bootstrap.min.css
-stylesheets[all][] = css/bootstrap-responsive.min.css
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
 stylesheets[all][] = css/open_framework.css
 
 scripts[] = js/open_framework.js
