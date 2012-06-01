@@ -3,8 +3,8 @@ description = Base theme made with Twitter Bootstrap
 core = 7.x
 version = 1.0
 
-stylesheets[all][] = css/bootstrap.min.css
-stylesheets[all][] = css/bootstrap-responsive.min.css
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
 stylesheets[all][] = css/open_framework.css
 
 scripts[] = js/open_framework.js
