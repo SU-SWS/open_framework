@@ -318,9 +318,10 @@ body.searchbox #header #site {float: left; max-width: 53%;}
 }
 
 @media (max-width: 768px) {
-/* body.searchbox #navigation-secondary {margin: 1em 0 3em 0;} */
 body.searchbox #header #site {float: left; max-width: 50%;}
 #header #search .form-text {width: 93px;}
+#navigation-secondary.across-7 ul li,
+#navigation-secondary.across-8 ul li {clear: both; padding-bottom: 0.25em; width:100%; margin: 0px;}
 }
 
 @media (max-width: 640px) {
@@ -342,7 +343,5 @@ body.searchbox #header #site {float: left; max-width: 100%;}
 #navigation-secondary.across-3 ul li,
 #navigation-secondary.across-4 ul li,
 #navigation-secondary.across-5 ul li,
-#navigation-secondary.across-6 ul li,
-#navigation-secondary.across-7 ul li,
-#navigation-secondary.across-8 ul li {width:100%; margin: 0px;}
+#navigation-secondary.across-6 ul li {width:100%; margin: 0px;}
 }
