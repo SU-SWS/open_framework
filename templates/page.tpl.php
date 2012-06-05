@@ -84,9 +84,6 @@
       </div>
       <!-- /#content-header -->
       <div id="content" class="row">
-        <?php if ($page['top']): ?>
-        <div id="top" class="row"><?php print render($page['top']); ?></div>
-        <?php endif; ?>
         <?php if ($page['sidebar_first']): ?>
         <div id="sidebar-first" class="sidebar span3"><?php print render($page['sidebar_first']); ?></div>
         <?php endif; ?>
