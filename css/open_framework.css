@@ -203,12 +203,15 @@ a:hover {color: #565347;}
 .nav-list .active > a {background-color: #ddd; color: #565347;}
 .nav-list .active > a:hover {color: #565347;}
 .label a {color: #fff;}
+.row-fluid [class*="span"] {margin: 0 10px 0 0px;}
+.row-fluid [class*="span"].last {margin: 0;}
 
 /* Drupal Customizations */
 .block ul, .block ol {margin: 0; padding: 0 0 1em 1em;}
 .field-items.row {margin-left: 0px;}
 .field-items.row:before, .field-items.row:after {content: none; display: block;}
 .form-checkboxes .form-item input, .form-radios .form-item input {display: inline-block;}
+img.imagecache {height: auto; width: auto;}
 
 #user-login-form ul {padding: 0;}
 #user-login-form li {list-style: none;}
@@ -320,6 +323,8 @@ body.searchbox #header #site {float: left; max-width: 53%;}
 @media (max-width: 768px) {
 body.searchbox #header #site {float: left; max-width: 50%;}
 #header #search .form-text {width: 93px;}
+
+/* Secondary Navigation */
 #navigation-secondary.across-7 ul li,
 #navigation-secondary.across-8 ul li {clear: both; padding-bottom: 0.25em; width:100%; margin: 0px;}
 }
