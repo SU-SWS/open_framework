@@ -203,7 +203,7 @@ a:hover {color: #565347;}
 .nav-list .active > a {background-color: #ddd; color: #565347;}
 .nav-list .active > a:hover {color: #565347;}
 .label a {color: #fff;}
-.row-fluid [class*="span"] {margin: 0 10px 0 0px;}
+.row-fluid [class*="span"] {margin: 0 1% 0 0;}
 .row-fluid [class*="span"].last {margin: 0;}
 
 /* Drupal Customizations */
