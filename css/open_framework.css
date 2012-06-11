@@ -162,9 +162,14 @@ table td.alternate {background: #eee;}
 /* Images--------------------------------- */
 img {border: 0px;}
 .right-noborder {float: right; margin: 0px 0px 10px 10px;}
+.right-noborder.last {margin: 0px 0px 10px 10px;}
 .right-border {float: right; margin: 0px 0px 10px 10px; border: 1px solid #bbb;}
+.right-border.last {margin: 0px 0px 10px 10px;}
+
 .left-noborder {float: left; margin: 0px 10px 10px 0px;}
+.left-noborder.last {margin: 0px 10px 10px 0px;}
 .left-border {float: left; margin: 0px 10px 10px 0px; border: 1px solid #bbb;}
+.left-border.last {margin: 0px 10px 10px 0px;}
 
 /* Text--------------------------------- */
 .last {margin: 0px; padding: 0px;}
