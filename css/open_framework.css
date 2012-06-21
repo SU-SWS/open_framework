@@ -162,9 +162,14 @@ table td.alternate {background: #eee;}
 /* Images--------------------------------- */
 img {border: 0px;}
 .right-noborder {float: right; margin: 0px 0px 10px 10px;}
+.right-noborder.last {margin: 0px 0px 10px 10px;}
 .right-border {float: right; margin: 0px 0px 10px 10px; border: 1px solid #bbb;}
+.right-border.last {margin: 0px 0px 10px 10px;}
+
 .left-noborder {float: left; margin: 0px 10px 10px 0px;}
+.left-noborder.last {margin: 0px 10px 10px 0px;}
 .left-border {float: left; margin: 0px 10px 10px 0px; border: 1px solid #bbb;}
+.left-border.last {margin: 0px 10px 10px 0px;}
 
 /* Text--------------------------------- */
 .last {margin: 0px; padding: 0px;}
@@ -203,12 +208,15 @@ a:hover {color: #565347;}
 .nav-list .active > a {background-color: #ddd; color: #565347;}
 .nav-list .active > a:hover {color: #565347;}
 .label a {color: #fff;}
+.row-fluid [class*="span"] {margin: 0 1% 0 0;}
+.row-fluid [class*="span"].last {margin: 0;}
 
 /* Drupal Customizations */
 .block ul, .block ol {margin: 0; padding: 0 0 1em 1em;}
 .field-items.row {margin-left: 0px;}
 .field-items.row:before, .field-items.row:after {content: none; display: block;}
 .form-checkboxes .form-item input, .form-radios .form-item input {display: inline-block;}
+img.imagecache {height: auto; width: auto;}
 
 #user-login-form ul {padding: 0;}
 #user-login-form li {list-style: none;}
@@ -226,6 +234,17 @@ li.expanded, li.collapsed, li.leaf {list-style-position: inside;}
 input[type="button"], input[type="reset"], input[type="submit"] {-moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #F5F5F5; background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6); background-repeat: repeat-x; border-color: #CCCCCC #CCCCCC #BBBBBB; border-radius: 4px 4px 4px 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #333333; cursor: pointer; display: inline-block; font-size: 13px; line-height: 18px; margin-bottom: 0; padding: 4px 10px; text-align: center; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle;}
 input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear;}
 input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {background-image: none; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e6e6e6; background-color: #d9d9d9 \9; outline: 0;}
+
+/* Grid View */
+.views-view-grid th, .views-view-grid td {clear: both; vertical-align: top; padding: 0 20px 0 0;}
+.views-view-grid.col-1 th, .views-view-grid.col-1 td {width: 100%;}
+.views-view-grid.col-2 th, .views-view-grid.col-2 td {width: 50%;}
+.views-view-grid.col-3 th, .views-view-grid.col-3 td {width: 33%;}
+.views-view-grid.col-4 th, .views-view-grid.col-4 td {width: 25%;}
+.views-view-grid.col-5 th, .views-view-grid.col-5 td {width: 20%;}
+.views-view-grid.col-6 th, .views-view-grid.col-6 td {width: 16.66%;}
+.views-view-grid.col-7 th, .views-view-grid.col-7 td {width: 14.28%;}
+.views-view-grid.col-8 th, .views-view-grid.col-8 td {width: 12.5%;}
 
 /* Stanford Specific */
 #skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
@@ -346,4 +365,14 @@ body.searchbox #header #site {float: left; max-width: 100%;}
 #navigation-secondary.across-4 ul li,
 #navigation-secondary.across-5 ul li,
 #navigation-secondary.across-6 ul li {width:100%; margin: 0px;}
+
+/* Grid View */
+.views-view-grid.col-1 th, .views-view-grid.col-1 td {display: block; width: 100%;}
+.views-view-grid.col-2 th, .views-view-grid.col-2 td {display: block; width: 100%;}
+.views-view-grid.col-3 th, .views-view-grid.col-3 td {display: block; width: 100%;}
+.views-view-grid.col-4 th, .views-view-grid.col-4 td {display: block; width: 100%;}
+.views-view-grid.col-5 th, .views-view-grid.col-5 td {display: block; width: 100%;}
+.views-view-grid.col-6 th, .views-view-grid.col-6 td {display: block; width: 100%;}
+.views-view-grid.col-7 th, .views-view-grid.col-7 td {display: block; width: 100%;}
+.views-view-grid.col-8 th, .views-view-grid.col-8 td {display: block; width: 100%;}
 }
