@@ -120,7 +120,6 @@
         <?php endif; ?>
       </div>
       <!--/#main-content--> 
-      
     </div>
   </div>
   <!--/#page-content-->
@@ -129,16 +128,16 @@
     <?php print $footer_message; ?>
     <?php endif; ?>
     <?php if ($secondary_menu): ?>
-    <div id="navigation-secondary" role="navigation" class="clearfix">
+    <div id="navigation-secondary" role="navigation" class="clearfix across-<?php print count($secondary_menu); ?>">
       <div id="secondary-menu">
         <?php $linknum_secondary = count($secondary_menu); print theme('links__system_main_menu', array(
-          'links' => $main_menu,
+          'links' => $secondary_menu,
           'attributes' => array(
-            'id' => 'main-menu-links',
+            'id' => 'secondary-menu-links',
             'class' => array('links', 'clearfix'),
           ),
           'heading' => array(
-            'text' => t('Main menu'),
+            'text' => t('Secondary menu'),
             'level' => 'h2',
             'class' => array('element-invisible'),
           ),
