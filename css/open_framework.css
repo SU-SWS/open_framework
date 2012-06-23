@@ -255,6 +255,7 @@ img {max-width: 100%;}
 
 #site-content {position: relative;}
 #page-content {margin-bottom: 40px;}
+#page-content .container {padding: 0 2%;}
 #page-content .block {margin-bottom: 1em;}
 
 #header {margin: 15px 0px;}
@@ -270,7 +271,7 @@ img {max-width: 100%;}
 
 #mission {margin: 0 0 1em 0;}
 #tabs-wrapper {margin: 1em 0;}
-#footer {margin: 40px auto;}
+#footer {margin: 40px auto; padding: 0 2%;}
 
 /* Primary Navigation */
 #navigation-primary {clear: both; margin: 1em 0; padding: 0; position: relative; font-size: 1.1em;}
