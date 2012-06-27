@@ -229,6 +229,7 @@ ul.primary li a {padding: 5px 1em;}
 ul.secondary {margin: 0;}
 .item-list ul {margin-top: 0px;}
 .item-list ul li {list-style: square outside none; margin: 0 0 0 15px;}
+.item-list ul li.views-row {margin: 0 0 0 6px;}
 li.expanded, li.collapsed, li.leaf {list-style-position: inside;}
 
 input[type="button"], input[type="reset"], input[type="submit"] {-moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #F5F5F5; background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6); background-repeat: repeat-x; border-color: #CCCCCC #CCCCCC #BBBBBB; border-radius: 4px 4px 4px 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #333333; cursor: pointer; display: inline-block; font-size: 13px; line-height: 18px; margin-bottom: 0; padding: 4px 10px; text-align: center; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle;}
