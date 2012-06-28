@@ -57,8 +57,13 @@ function open_framework_region_has_block($region) {
  */
 
 function open_framework_get_span($block_count, $block_id, $count_sidebars) {
+  // @petechen (6.27.12) This method of applying a value to span assumes that there
+  // is at least 1 block. If there are no blocks, you end up with a calculation
+  // dividing by 0 generating a php error.  Suggest the following change:
+  
   // default span if calculations fail
-  $span = 12;
+  // Use this default value instead as an "else" condition below:
+  // $span = 12;
 
   // there are 12 columsn in bootstrap
   $available_width = 12;
@@ -74,6 +79,10 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
       $available_width = $available_width - 3;
     }
   }
+
+  // @petechen - surroung this condition with another if else to account for $block_count = 0
+  
+  if ($block_count != 0) {
 
   // if the number of blocks divides evenly into the available width, that's our span width
   if (($available_width % $block_count) == 0) {
@@ -124,6 +133,9 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
     $span = $exceptions[$available_width][$block_count][$block_id];
   }
   return $span;
+}
+// @petechen: so if $block_count = 0, use this as the default
+  else $span = 12;
 }
 
 /* Status Messages (Error, Status, Alert) */
