@@ -238,7 +238,8 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 
 /* Grid View */
 .views-view-grid th, .views-view-grid td {clear: both; vertical-align: top; padding: 0 20px 0 0;}
-.views-view-grid.col-1 th, .views-view-grid.col-1 td {width: 100%;}
+.views-view-grid th:last-child, .views-view-grid td:last-child {padding: 0;}
+.views-view-grid.col-1 th, .views-view-grid.col-1 td  {width: 100%;}
 .views-view-grid.col-2 th, .views-view-grid.col-2 td {width: 50%;}
 .views-view-grid.col-3 th, .views-view-grid.col-3 td {width: 33%;}
 .views-view-grid.col-4 th, .views-view-grid.col-4 td {width: 25%;}
