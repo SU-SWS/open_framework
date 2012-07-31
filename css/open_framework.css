@@ -3,7 +3,7 @@ p {font-size: 1em; line-height: 1.5em; margin: 0 0 1em 0;}
 blockquote {margin: 1.25em; padding: 1.25em 1.25em 0 1.25em;}
 em {padding: 0 3px 0 0;}
 hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
-img, a img {border: none; outline: none;}
+img, a img {border: none; outline: none; height: auto;}
 dl { margin: .5em 0 1em; padding: 0; line-height: 1.5em;}
 dl dt {margin: 0 0 .5em 0;}
 dl dd { margin: 0 0 .5em 1.5em;}
