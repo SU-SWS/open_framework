@@ -202,7 +202,7 @@ img {border: 0px;}
 /* Bootstrap Customizations */
 body {color: #2e2d29; font: 0.78em Arial, Helvetica, sans-serif; margin: 0px; padding: 0px;}
 a {color: #565347;}
-a:hover {color: #565347;}
+a:hover, a:focus {color: #565347;}
 .nav-pills .active > a {color: #565347;}
 .nav-pills .active > a:hover {color: #565347;}
 .nav-list .active > a {background-color: #ddd; color: #565347;}

@@ -2,11 +2,7 @@
   <?php if ($page == 0): ?>
   <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
   <?php endif; ?>
-  <div class="content"> <?php print $content ?>
-    <?php if ($submitted): ?>
-    <p class="last-modified">Last modified <?php print format_date($node->changed, 'custom', 'D, j M, Y \a\\t G:i') ?> </p>
-    <?php endif; ?>
-  </div>
+  <div class="content"> <?php print $content ?> </div>
   <?php if ($links||$taxonomy){ ?>
   <div class="meta">
     <?php if ($links): ?>
