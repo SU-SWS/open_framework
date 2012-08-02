@@ -261,7 +261,7 @@ img {max-width: 100%;}
 
 #header {margin: 15px 0px;}
 #header #logo {float: left; max-width: 20%; margin: 0 1em 0 0;}
-#header #site {float: left; max-width: 75%;}
+#header #site {float: left; max-width: 100%;}
 #header #site #name {margin: 0.25em 0; font-size: 3em;}
 #header #site a {color: #3f3c30; text-decoration: none;}
 #header #site a:hover {text-decoration: none;}
@@ -355,6 +355,7 @@ body.searchbox #header #site {float: left; max-width: 50%;}
 /* Header */
 #header {padding: 0px;}
 #header #logo {display: none;}
+#header #site {max-width: 100%;}
 #header #site #name {font-size: 2em;}
 #header #search {position: absolute; left: 0; bottom: 0; float:none; clear: both; margin: 20px;}
 body.searchbox #header #site {float: left; max-width: 100%;}
