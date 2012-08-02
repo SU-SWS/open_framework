@@ -123,14 +123,16 @@
     </div>
   </div>
   <!--/#page-content-->
-  <div id="footer" role="contentinfo" class="clearfix">
-    <?php if (!empty($footer_message)): ?>
-    <?php print $footer_message; ?>
-    <?php endif; ?>
-    <?php if ($secondary_menu): ?>
-    <div id="navigation-secondary" role="navigation" class="clearfix across-<?php print count($secondary_menu); ?>">
-      <div id="secondary-menu">
-        <?php $linknum_secondary = count($secondary_menu); print theme('links__system_main_menu', array(
+  <div id="footer" class="clearfix">
+    <div class="container">
+      <div id="footer-content" role="contentinfo">
+        <?php if (!empty($footer_message)): ?>
+        <?php print $footer_message; ?>
+        <?php endif; ?>
+        <?php if ($secondary_menu): ?>
+        <div id="navigation-secondary" role="navigation" class="clearfix across-<?php print count($secondary_menu); ?>">
+          <div id="secondary-menu">
+            <?php $linknum_secondary = count($secondary_menu); print theme('links__system_main_menu', array(
           'links' => $secondary_menu,
           'attributes' => array(
             'id' => 'secondary-menu-links',
@@ -142,15 +144,17 @@
             'class' => array('element-invisible'),
           ),
         )); ?>
+          </div>
+          <!-- /#secondary-menu --> 
+        </div>
+        <?php endif; ?>
+        <!-- /#navigation-secondary -->
+        <?php if ($page['bottom']): ?>
+        <div id="bottom" class="row"><?php print render($page['bottom']); ?></div>
+        <?php endif; ?>
+        <!-- /#bottom --> 
       </div>
-      <!-- /#secondary-menu --> 
     </div>
-    <?php endif; ?>
-    <!-- /#navigation-secondary -->
-    <?php if ($page['bottom']): ?>
-    <div id="bottom" class="row"><?php print render($page['bottom']); ?></div>
-    <?php endif; ?>
-    <!-- /#bottom --> 
   </div>
   <!--/#footer--> 
 </div>
