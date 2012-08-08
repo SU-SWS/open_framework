@@ -369,14 +369,4 @@ body.searchbox #header #site {float: left; max-width: 100%;}
 #navigation-secondary.across-4 ul li,
 #navigation-secondary.across-5 ul li,
 #navigation-secondary.across-6 ul li {width:100%; margin: 0px;}
-
-/* Grid View */
-.views-view-grid.col-1 th, .views-view-grid.col-1 td {display: block; width: 100%;}
-.views-view-grid.col-2 th, .views-view-grid.col-2 td {display: block; width: 100%;}
-.views-view-grid.col-3 th, .views-view-grid.col-3 td {display: block; width: 100%;}
-.views-view-grid.col-4 th, .views-view-grid.col-4 td {display: block; width: 100%;}
-.views-view-grid.col-5 th, .views-view-grid.col-5 td {display: block; width: 100%;}
-.views-view-grid.col-6 th, .views-view-grid.col-6 td {display: block; width: 100%;}
-.views-view-grid.col-7 th, .views-view-grid.col-7 td {display: block; width: 100%;}
-.views-view-grid.col-8 th, .views-view-grid.col-8 td {display: block; width: 100%;}
 }
