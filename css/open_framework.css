@@ -236,16 +236,17 @@ input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hove
 input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {background-image: none; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e6e6e6; background-color: #d9d9d9 \9; outline: 0;}
 
 /* Grid View */
-.views-view-grid th, .views-view-grid td {clear: both; vertical-align: top; padding: 0 5% 0 0;}
-.views-view-grid img {max-width: 100%; height: auto;}
-.views-view-grid.col-1 th, .views-view-grid.col-1 td  {width: 100%;}
-.views-view-grid.col-2 th, .views-view-grid.col-2 td {width: 50%;}
-.views-view-grid.col-3 th, .views-view-grid.col-3 td {width: 33%;}
-.views-view-grid.col-4 th, .views-view-grid.col-4 td {width: 25%;}
-.views-view-grid.col-5 th, .views-view-grid.col-5 td {width: 20%;}
-.views-view-grid.col-6 th, .views-view-grid.col-6 td {width: 16.66%;}
-.views-view-grid.col-7 th, .views-view-grid.col-7 td {width: 14.28%;}
-.views-view-grid.col-8 th, .views-view-grid.col-8 td {width: 12.5%;}
+.views-view-grid th, .views-view-grid td {display: inline-block; vertical-align: top; padding: 0 4% 0 0;}
+.views-view-grid th:last-child, .views-view-grid td:last-child {padding: 0;}
+.views-view-grid img {max-width: 100%; height: auto; width: auto;}
+.views-view-grid.col-1 th, .views-view-grid.col-1 td  {width: 98%;}
+.views-view-grid.col-2 th, .views-view-grid.col-2 td {width: 47%;}
+.views-view-grid.col-3 th, .views-view-grid.col-3 td {width: 30%;}
+.views-view-grid.col-4 th, .views-view-grid.col-4 td {width: 21.5%;}
+.views-view-grid.col-5 th, .views-view-grid.col-5 td {width: 16.4%;}
+.views-view-grid.col-6 th, .views-view-grid.col-6 td {width: 13%;}
+.views-view-grid.col-7 th, .views-view-grid.col-7 td {width: 10.5%;}
+.views-view-grid.col-8 th, .views-view-grid.col-8 td {width: 8.75%;}
 
 /* Stanford Specific */
 #skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
