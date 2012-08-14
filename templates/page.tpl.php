@@ -129,6 +129,8 @@
         <?php if (!empty($footer_message)): ?>
         <?php print $footer_message; ?>
         <?php endif; ?>
+        <?php print render($page['footer']) ?>
+	    <?php print $feed_icons ?>
         <?php if ($secondary_menu): ?>
         <div id="navigation-secondary" role="navigation" class="clearfix across-<?php print count($secondary_menu); ?>">
           <div id="secondary-menu">
@@ -148,7 +150,7 @@
           <!-- /#secondary-menu --> 
         </div>
         <?php endif; ?>
-        <!-- /#navigation-secondary -->
+        <!-- /#navigation-secondary -->        
         <?php if ($page['bottom']): ?>
         <div id="bottom" class="row"><?php print render($page['bottom']); ?></div>
         <?php endif; ?>
