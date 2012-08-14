@@ -69,10 +69,10 @@
             <?php endif; ?>
             <?php print render($title_suffix); ?>
             <?php endif; ?>
-            <?php if ($tabs): ?>
+            <?php if (!empty($tabs['#primary'])): ?>
             <div id="tabs-wrapper" class="clearfix"><?php print render($tabs); ?></div>
             <?php endif; ?>
-            <?php print render($tabs2); ?> <?php print render($page['help']); ?>
+            <?php print render($page['help']); ?>
             <?php if ($action_links): ?>
             <ul class="action-links">
               <?php print render($action_links); ?>
