@@ -96,7 +96,6 @@
             <?php if ($page['content_upper']): ?>
             <div id="content-upper" class="row"><?php print render($page['content_upper']); ?></div>
             <?php endif; ?>
-            <?php if ($breadcrumb): print $breadcrumb; endif;?>
             <?php if ($page['highlighted']): ?>
             <div id="highlighted" class="row"><?php print render($page['highlighted']); ?></div>
             <?php endif; ?>
