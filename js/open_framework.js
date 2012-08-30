@@ -1,5 +1,18 @@
-// Add text to search box
 $(document).ready(function(){
+	// Bootstrap Dropdown Menu
+	$('#main-menu > .container > ul.menu').wrapAll('<div class="navbar"><div class="navbar-inner"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <div class="nav-collapse">');
+	$('#main-menu ul').addClass('nav');
+	$('#main-menu ul').removeClass('menu')
+	$('#main-menu ul ul').removeClass('nav')
+	$('#main-menu ul li.expanded').addClass('dropdown');
+	$('#main-menu ul li.expanded a').addClass('dropdown-toggle');
+	$('#main-menu ul li.expanded a').attr('data-toggle', 'dropdown');
+	$('#main-menu ul li.expanded ul').addClass('dropdown-menu');
+	$('#main-menu ul.dropdown-menu li').removeClass('active');
+	$('#main-menu ul li').removeClass('expanded collapsed leaf')
+	$('#main-menu ul li:has(.active)').addClass('active');
+	$('#main-menu ul.nav > li > a.dropdown-toggle').append(' <b class="caret"></b>');
+	
 	// Header Drupal Search Box
 	$('#header [name=search_theme_form]').val('Search this site...');
 	$('#header [name=search_theme_form]').focus(function () {

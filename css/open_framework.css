@@ -1,381 +1,76 @@
-/* Content Specific Formatting --------------------------------- */
-p {font-size: 1em; line-height: 1.5em; margin: 0 0 1em 0;}
-blockquote {margin: 1.25em; padding: 1.25em 1.25em 0 1.25em;}
-em {padding: 0 3px 0 0;}
-hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
-img, a img {border: none; outline: none; height: auto;}
-dl { margin: .5em 0 1em; padding: 0; line-height: 1.5em;}
-dl dt {margin: 0 0 .5em 0;}
-dl dd { margin: 0 0 .5em 1.5em;}
-ol { margin: .5em 0 1em 1.5em; padding: 0; line-height: 1.5em;}
-ol li {margin: 0px 0px 0.5em 0.5em; padding: 0px;}
-ul { margin: .5em 0 1em 1.5em; padding: 0; line-height: 1.5em;}
-ul li {margin: 0px 0px 0.5em 0.5em; padding: 0px;}
-table { margin: 1em 0; width: 100%; border: 0px;}
-thead th { color: #494949; font-weight: 700; border: 0px;}
-tbody { border: 0px;}
-th a:link, th a:visited { color: #7f7f7f; }
-td, th { padding: .3em .5em;}
-quote, code { margin: .5em 0;}
-input { color: #494949;}
-textarea, select { color: #494949;}
-fieldset { background: #fff; border: 1px solid #eee3c1; margin: 1em 0; padding: 0 1em;}
-fieldset legend a {border: 0px;}
-fieldset legend {color: #333;}
-iframe {border: 0px;}
+/* Expanded Nav
+#main-menu ul li {float: left; list-style-type: none;}
+#main-menu ul a {display: block; border: 0px; outline: none;}
+#main-menu ul li {position: relative;}
+#main-menu ul li ul li {float: none; list-style-type: none;}
+#main-menu ul li ul {display: none; float: none;}
+#main-menu ul li:hover ul {display: block; position: absolute; z-index: 9999; margin: 0px; padding: 5px 0px; background: #fff; white-space: nowrap;} */
 
-/* Base Formatting --------------------------------- */
-form {margin: 0px;}
-map {margin: 0px;}
-.inline {display: inline;}
-.inline-end {margin-top: 15px;}
-
-/* Horizontal Rule --------------------------------- */
-hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
-hr.brown {background: #D0A760; color: #D0A760; border: none; height: 1px; margin: 0; padding: 0;}
-hr.gold {background: #E7D19A; color: #E7D19A; border: none; height: 1px; margin: 0; padding: 0;}
-hr.red {background: #820000; color: #820000; border: none; height: 1px; margin: 0; padding: 0;}
-
-/* Default Link --------------------------------- */
-sup a {text-decoration: none;}
-sub a {text-decoration: none;}
-
-/* Unordered List --------------------------------- */
-ul {list-style: square; margin-top: 0px;}
-ul li {margin-bottom: 0px;}
-ul.linebreak {list-style: square;}
-ul.linebreak li {margin-bottom: 0.5em;}
-ul.linebreak ol li {margin-bottom: 0px;}
-ul.square {list-style: square;}
-ul.square li {margin-bottom: 0px;}
-ul.square-linebreak {list-style: square;}
-ul.square-linebreak li {margin-bottom: 0.5em;}
-ul.square-linebreak ol li {margin-bottom: 0px;}
-ul.disc {list-style: disc;}
-ul.disc li {margin-bottom: 0px;}
-ul.disc-linebreak {list-style: disc;}
-ul.disc-linebreak li {margin-bottom: 0.5em;}
-ul.disc-linebreak ol li {margin-bottom: 0px;}
-ul.circle {list-style: circle;}
-ul.circle li {margin-bottom: 0px;}
-ul.circle-linebreak {list-style: circle;}
-ul.circle-linebreak li {margin-bottom: 0.5em;}
-ul.circle-linebreak ol li {margin-bottom: 0px;}
-ul.uncheck, ul li.uncheck {list-style-image: url("../images/unchecked-box-bullet.gif");}
-ul.uncheck li {margin-bottom: 0px;}
-ul.uncheck-linebreak {list-style-image: url("../images/unchecked-box-bullet.gif");}
-ul.uncheck-linebreak li {margin-bottom: 0.5em;}
-ul.uncheck-linebreak ol li {margin-bottom: 0px;}
-ul.check, ul li.check {list-style-image: url("../images/checked-box-bullet.gif");}
-ul.check li {margin-bottom: 0px;}
-ul.check-linebreak {list-style-image: url("../images/checked-box-bullet.gif");}
-ul.check-linebreak li {margin-bottom: 0.5em;}
-ul.check-linebreak ol li {margin-bottom: 0px;}
-ul.none {list-style: none;}
-ul.none li {margin-bottom: 0px;}
-ul.none-linebreak {list-style: none;}
-ul.none-linebreak li {margin-bottom: 0.5em;}
-ul.none-linebreak ol li {margin-bottom: 0px;}
-
-/* Ordered List --------------------------------- */
-ol {list-style: decimal; margin-top: 0px;}
-ol li {margin-bottom: 0px;}
-ol.linebreak {list-style: decimal;}
-ol.linebreak li {margin-bottom: 0.5em;}
-ol.linebreak ul li {margin-bottom: 0px;}
-ol.decimal {list-style: decimal;}
-ol.decimal li {margin-bottom: 0px;}
-ol.decimal-linebreak {list-style: decimal;}
-ol.decimal-linebreak li {margin-bottom: 0.5em;}
-ol.decimal-linebreak ul li {margin-bottom: 0px;}
-ol.lroman {list-style: lower-roman;}
-ol.lroman li {margin-bottom: 0px;}
-ol.lroman-linebreak {list-style: lower-roman;}
-ol.lroman-linebreak li {margin-bottom: 0.5em;}
-ol.lroman-linebreak ul li {margin-bottom: 0px;}
-ol.uroman {list-style: upper-roman;}
-ol.uroman li {margin-bottom: 0px;}
-ol.uroman-linebreak {list-style: upper-roman;}
-ol.uroman-linebreak li {margin-bottom: 0.5em;}
-ol.uroman-linebreak ul li {margin-bottom: 0px;}
-ol.lalpha {list-style: lower-alpha;}
-ol.lalpha li {margin-bottom: 0px;}
-ol.lalpha-linebreak {list-style: lower-alpha;}
-ol.lalpha-linebreak li {margin-bottom: 0.5em;}
-ol.lalpha-linebreak ul li {margin-bottom: 0px;}
-ol.ualpha {list-style: upper-alpha;}
-ol.ualpha li {margin-bottom: 0px;}
-ol.ualpha-linebreak {list-style: upper-alpha;}
-ol.ualpha-linebreak li {margin-bottom: 0.5em;}
-ol.ualpha-linebreak ul li {margin-bottom: 0px;}
-
-/* Definition Lists --------------------------------- */
-dl dt {margin-top: 0px; margin-bottom: 0px;}
-dl dd {margin-top: 0px; margin-bottom: 0.5em;}
-dl.linebreak dd {margin-top: 0px; margin-bottom: 1em;}
-dl.nobreak dd {margin-top: 0px; margin-bottom: 0px;}
-
-/* Table --------------------------------- */
-table.sitemap {background: transparent; width: 100%; border: none; padding: 3px; line-height: 1.5em; margin-top: 0px;}
-table.sitemap th {text-align: left; padding-bottom: 0.3em; padding-top: 1em; color: #820000;}
-table.sitemap td {padding-left: 1em; vertical-align: top;}
-table.noborder {background: transparent; margin: 0px 0px 15px 0px; border: none;}
-table.noborder th {text-align: center; background: transparent; color: #333; padding: 0px 10px 0px 0px; border: none;}
-table.noborder td {background: transparent; color: #333; padding: 0px 10px 0px 0px; vertical-align: top; border: none;}
-table.noborder td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
-table.noborder td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
-table.red-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px; border: 1px solid #bbb; border-collapse:collapse;}
-table.red-header th {text-align: center; background: #820000; color: #fff; padding: 2px; border: 1px solid #bbb;}
-table.red-header th a {color: #fff; text-decoration:underline;}
-table.red-header th a:link {color: #fff;}
-table.red-header th a:visited {color: #fff;}
-table.red-header th a:hover {color: #fff;}
-table.red-header th a:active {color: #fff;}
-table.red-header td {background: #fff; color: #333; padding: 2px; vertical-align: top; border: 1px solid #bbb;}
-table.red-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
-table.red-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
-table.gray-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px; border: 1px solid #bbb; border-collapse:collapse;}
-table.gray-header th {text-align: center; background: #ccc; color: #666; padding: 2px; border: 1px solid #bbb;}
-table.gray-header th a {color: #666; text-decoration:underline;}
-table.gray-header th a:link {color: #666;}
-table.gray-header th a:visited {color: #666;}
-table.gray-header th a:hover {color: #666;}
-table.gray-header th a:active {color: #666;}
-table.gray-header td {background: #fff; color: #333; padding: 2px; vertical-align: top; border: 1px solid #bbb;}
-table.gray-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
-table.gray-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
-table.gold-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px; border: 1px solid #bbb; border-collapse:collapse;}
-table.gold-header th {text-align: center; background: #eee3c1; color: #666; padding: 2px; border: 1px solid #bbb;}
-table.gold-header th a {color: #666; text-decoration:underline;}
-table.gold-header th a:link {color: #666;}
-table.gold-header th a:visited {color: #666;}
-table.gold-header th a:hover {color: #666;}
-table.gold-header th a:active {color: #666;}
-table.gold-header td {background: #fff; color: #333; padding: 2px; vertical-align: top; border: 1px solid #bbb;}
-table.gold-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
-table.gold-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
-table th.side-header, table th.side-header-vertical {background: #F7F6EC; color: #5a5a5a;}
-table th.alternate {background: #eee;}
-table tr.alternate td {background: #eee;}
-table td.alternate {background: #eee;}
-
-/* Images--------------------------------- */
-img {border: 0px;}
-.right-noborder {float: right; margin: 0px 0px 10px 10px;}
-.right-noborder.last {margin: 0px 0px 10px 10px;}
-.right-border {float: right; margin: 0px 0px 10px 10px; border: 1px solid #bbb;}
-.right-border.last {margin: 0px 0px 10px 10px;}
-
-.left-noborder {float: left; margin: 0px 10px 10px 0px;}
-.left-noborder.last {margin: 0px 10px 10px 0px;}
-.left-border {float: left; margin: 0px 10px 10px 0px; border: 1px solid #bbb;}
-.left-border.last {margin: 0px 10px 10px 0px;}
-
-/* Text--------------------------------- */
-.last {margin: 0px; padding: 0px;}
-.box h1, .box h2, .box h3, .box h4, .box h5 {margin-top: 0px;}
-.color-box h1, .color-box h2, .color-box h3, .color-box h4, .color-box h5 {margin-top: 0px;}
-.center-box h1, .center-box h2, .center-box h3, .center-box h4, .center-box h5 {margin-top: 0px;}
-.left-box h1, .left-box h2, .left-box h3, .left-box h4, .left-box h5 {margin-top: 0px;}
-.right-box h1, .right-box h2, .right-box h3, .right-box h4, .right-box h5 {margin-top: 0px;}
-
-/* Font Settings--------------------------------- */
-.largest {font-size: 1.3em;}
-.larger {font-size: 1.2em;}
-.large {font-size: 1.1em;}
-.medium {font-size: 1em;}
-.small {font-size: 0.9em;}
-.smaller {font-size: 0.8em;}
-.smallest {font-size: 0.7em;}
-.important {color: #820000; font-weight: bold;}
-.highlight {background: #ffc; padding: 0px 2px 0px 2px;}
-.select {color: #820000;}
-.downloadable {font-size: 0.85em; font-weight: bold; text-transform: capitalize;}
-
-/* Box--------------------------------- */
-.box {border:1px solid #eee3c1; padding: 5px; width: auto; margin: 0px 0px 15px 0px; background: #fff;}
-.color-box {border:1px solid #eee3c1; padding: 5px; width: auto; margin: 0px 0px 15px 0px; background: #f6f3e5;}
-.center-box {border:1px solid #eee3c1; padding: 5px; width: 80%; margin: 0px auto 15px auto; background: #fff;}
-.left-box {border:1px solid #eee3c1; padding: 5px; width: 200px; float: left; margin: 0px 10px 15px 0px; background: #fff;}
-.right-box {border:1px solid #eee3c1; padding: 5px; width: 200px; float: right; margin: 0px 0px 15px 10px; background: #fff;}
-
-/* Bootstrap Customizations */
-body {color: #2e2d29; font: 0.78em Arial, Helvetica, sans-serif; margin: 0px; padding: 0px;}
-a {color: #565347;}
-a:hover, a:focus {color: #565347;}
-.nav-pills .active > a {color: #565347;}
-.nav-pills .active > a:hover {color: #565347;}
-.nav-list .active > a {background-color: #ddd; color: #565347;}
-.nav-list .active > a:hover {color: #565347;}
-.label a {color: #fff;}
-.row-fluid [class*="span"] {margin: 0 1% 0 0;}
-.row-fluid [class*="span"].last {margin: 0;}
-
-/* Drupal Customizations */
-.block ul, .block ol {margin: 0; padding: 0 0 1em 1em;}
-.field-items.row {margin-left: 0px;}
-.field-items.row:before, .field-items.row:after {content: none; display: block;}
-.form-checkboxes .form-item input, .form-radios .form-item input {display: inline-block;}
-img.imagecache {height: auto; width: auto;}
-
-#user-login-form ul {padding: 0;}
-#user-login-form li {list-style: none;}
-#sidebar-first .form-text, #sidebar-second .form-text {width: auto;}
-#sidebar-first .form-submit, #sidebar-second .form-submit {margin: 0 0 1em 0;}
-
-ul.primary {margin: 0;}
-ul.primary li {padding: 5px 0px;}
-ul.primary li a {padding: 5px 1em;}
-ul.secondary {margin: 0;}
-.item-list ul {margin-top: 0px;}
-.item-list ul li {list-style: square outside none; margin: 0 0 0 6px;}
-li.expanded, li.collapsed, li.leaf {list-style-position: inside;}
-
-input[type="button"], input[type="reset"], input[type="submit"] {-moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #F5F5F5; background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6); background-repeat: repeat-x; border-color: #CCCCCC #CCCCCC #BBBBBB; border-radius: 4px 4px 4px 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #333333; cursor: pointer; display: inline-block; font-size: 13px; line-height: 18px; margin-bottom: 0; padding: 4px 10px; text-align: center; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle;}
-input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear;}
-input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {background-image: none; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e6e6e6; background-color: #d9d9d9 \9; outline: 0;}
-
-/* Grid View */
-.views-view-grid th, .views-view-grid td {clear: both; vertical-align: top; padding: 0 20px 0 0;}
-.views-view-grid.col-1 th, .views-view-grid.col-1 td {width: 100%;}
-.views-view-grid.col-2 th, .views-view-grid.col-2 td {width: 50%;}
-.views-view-grid.col-3 th, .views-view-grid.col-3 td {width: 33%;}
-.views-view-grid.col-4 th, .views-view-grid.col-4 td {width: 25%;}
-.views-view-grid.col-5 th, .views-view-grid.col-5 td {width: 20%;}
-.views-view-grid.col-6 th, .views-view-grid.col-6 td {width: 16.66%;}
-.views-view-grid.col-7 th, .views-view-grid.col-7 td {width: 14.28%;}
-.views-view-grid.col-8 th, .views-view-grid.col-8 td {width: 12.5%;}
-
-/* Stanford Specific */
-#skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
-img {max-width: 100%;}
-
-/* Last Modified */
-.last-modified {clear: both; font-size: 0.9em; padding-top: 2em;}
-
-#site-content {position: relative;}
-#page-content {margin-bottom: 40px;}
-#page-content .container {padding: 0 2%;}
-#page-content .block {margin-bottom: 1em;}
-
-#header {margin: 15px 0px;}
-#header #logo {float: left; max-width: 20%; margin: 0 1em 0 0;}
-#header #site {float: left; max-width: 75%;}
-#header #site #name {margin: 0.25em 0; font-size: 3em;}
-#header #site a {color: #3f3c30; text-decoration: none;}
-#header #site a:hover {text-decoration: none;}
-#header #site #slogan {margin: 0.25em 0; font-size: 1.5em;}
-#header #search {float: right; margin: 1em 0 0 0;}
-#header #search .form-text {height: 1em; margin: 0; padding: 5px;}
-#header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
-#header #search .form-item, #header #search .form-submit {display: inline-block; margin: 0px;}
-
-#mission {margin: 0 0 1em 0;}
-#tabs-wrapper {margin: 1em 0;}
-#footer {margin: 40px auto; padding: 0 2%;}
-
-/* Primary Navigation */
-#navigation-primary {clear: both; margin: 1em 0; padding: 0; position: relative; font-size: 1.1em;}
-#navigation-primary ul {margin: 0px; padding: 0px; list-style: none;}
-#navigation-primary ul li {float: left; background: none; list-style: none; margin: 0 2px 0 0 ; padding: 0;}
-#navigation-primary ul li a {display: block; border: 0; outline: none; margin: 2px 0px; padding: 5px 10px; border-radius: 5px;}
-#navigation-primary ul li a.active {background-color: #ddd;}
-#navigation-primary ul li a:hover {text-decoration: none; background-color: #eee;}
-#navigation-primary ul li ul {margin: 0px; padding: 0px;}
-#navigation-primary ul li ul li {float: none; list-style-type: none; margin: 0px; padding: 0px;}
-#navigation-primary h2 {display: none;}
-#navigation-primary ul li ul .leaf {display: none; float: none;}
-#navigation-primary ul li:hover ul {display: block; position: absolute; z-index: 9999; margin: 0; padding: 4px 0; background-clip: padding-box; background-color: #FFF; border-color: rgba(0, 0, 0, 0.2); border-radius: 0 0 5px 5px; border-style: solid; border-width: 1px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); list-style: none outside none; min-width: 160px;}
-#navigation-primary ul li:hover .leaf {display: block;}
-#navigation-primary ul li:hover .leaf a {display: block; font-size: 0.9em; border: none; padding: 2px 10px; border-radius: 0;}
-
-/* Secondary Navigation */
-#navigation-secondary {margin: 0;}
-#navigation-secondary ul {margin: 0; list-style: none;}
-#navigation-secondary ul li {border-top: 1px solid #bbb; float: left; margin: 0; list-style: none; padding-top: 3px;}
-#navigation-secondary ul li.last {margin: 0;} 
-#navigation-secondary ul li.expanded {padding-right: 0;}
-#navigation-secondary ul li.leaf {padding-right: 0;}
-#navigation-secondary ul li a {font-size: 1em; font-weight: bold; line-height: 2em; text-transform: uppercase;}
-#navigation-secondary ul li ul li {border: none; clear: both;}
-#navigation-secondary ul li ul li.leaf {padding-top: 0;}
-#navigation-secondary ul li ul li a {font-size: 0.9em; font-weight: normal; line-height: 1em; text-transform: none;}
-#navigation-secondary.across-1 ul li {width: 100%; margin: 0;}
-#navigation-secondary.across-1 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-2 ul li {width: 49%; margin: 0 2% 0 0;}
-#navigation-secondary.across-2 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-2 ul li:last-child {margin: 0;}
-#navigation-secondary.across-3 ul li {width: 32%; margin: 0 2% 0 0;}
-#navigation-secondary.across-3 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-3 ul li:last-child {margin: 0;}
-#navigation-secondary.across-4 ul li {width: 23.5%; margin: 0 2% 0 0;}
-#navigation-secondary.across-4 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-4 ul li:last-child {margin: 0;}
-#navigation-secondary.across-5 ul li {width: 18.4%; margin: 0 2% 0 0;}
-#navigation-secondary.across-5 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-5 ul li:last-child {margin: 0;}
-#navigation-secondary.across-6 ul li {width: 15%; margin: 0 2% 0 0;}
-#navigation-secondary.across-6 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-6 ul li:last-child {margin: 0;}
-#navigation-secondary.across-7 ul li {width: 12.55%; margin: 0 2% 0 0;}
-#navigation-secondary.across-7 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-7 ul li:last-child {margin: 0;}
-#navigation-secondary.across-8 ul li {width: 10.75%; margin: 0 2% 0 0;}
-#navigation-secondary.across-8 ul li ul li {width: auto; margin: 0;}
-#navigation-secondary.across-8 ul li:last-child {margin: 0;}
-
-/* Mobile Styles */
-body.searchbox #header #site {float: left; max-width: 65%;}
-#header #search .form-text {width: 180px;}
-
-@media (max-width: 1200px) {
-body.searchbox #header #site {float: left; max-width: 60%;}
-#header #search .form-text {width: 150px;}
+#main-menu ul.nav li.dropdown:hover ul.dropdown-menu{
+    display: block;    
 }
 
-@media (max-width: 980px) {
-body.searchbox #header #site {float: left; max-width: 53%;}
-#header #search .form-text {width: 120px;}
+#main-menu .dropdown-menu {
+    margin: 0;
 }
 
-@media (max-width: 768px) {
-body.searchbox #header #site {float: left; max-width: 50%;}
-#header #search .form-text {width: 93px;}
 
-/* Secondary Navigation */
-#navigation-secondary.across-7 ul li,
-#navigation-secondary.across-8 ul li {clear: both; padding-bottom: 0.25em; width:100%; margin: 0px;}
+#main-menu ul li.leaf {list-style-image: none;}
+#main-menu ul li.expanded {list-style-image: none;}
+#main-menu ul li.collapsed {list-style-image: none;}
+
+.sidebar ul.nav {margin-left: 20px;}
+
+
+.footer {padding: 70px 0; margin-top: 70px; border-top: 1px solid #e5e5e5; background-color: #f5f5f5;}
+.footer p {margin-bottom: 0; color: #777;}
+.footer-links {margin: 10px 0;}
+.footer-links li {display: inline; margin-right: 10px;}
+
+/* Bootstrap Override */
+[class*="span"].block.clear-row {clear: both; margin-left: 0px;}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+.col2 > [class*="span"] {width: 100%; margin-left: 0;}
+}
+     
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+.col2 > [class*="span"] {width: 100%; margin-left: 0;}
+}
+     
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.col2 > [class*="span"] {width: 100%; margin-left: 0;}
+.col3 > [class*="span"] {width: 100%; margin-left: 0;}
+.col4 > [class*="span"] {width: 100%; margin-left: 0;}
+.row2 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+.row3 > [class*="span"] {width: 48.6188%;}
+.row3 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+.row4 > [class*="span"] {width: 48.6188%;}
+.row4 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
 }
 
-@media (max-width: 640px) {
-/* Admin Menu */
-#admin-menu ul a {border: none !important;}
-
-/* Header */
-#header {padding: 0px;}
-#header #logo {display: none;}
-#header #site {max-width: 100%;}
-#header #site #name {font-size: 2em;}
-#header #search {position: absolute; left: 0; bottom: 0; float:none; clear: both; margin: 20px;}
-body.searchbox #header #site {float: left; max-width: 100%;}
-#header #search .form-text {width: 180px;}
-
-/* Secondary Navigation */
-#navigation-secondary ul li {clear: both; padding-bottom: 0.25em;}
-#navigation-secondary.across-1 ul li,
-#navigation-secondary.across-2 ul li,
-#navigation-secondary.across-3 ul li,
-#navigation-secondary.across-4 ul li,
-#navigation-secondary.across-5 ul li,
-#navigation-secondary.across-6 ul li {width:100%; margin: 0px;}
-
-/* Grid View */
-.views-view-grid.col-1 th, .views-view-grid.col-1 td {display: block; width: 100%;}
-.views-view-grid.col-2 th, .views-view-grid.col-2 td {display: block; width: 100%;}
-.views-view-grid.col-3 th, .views-view-grid.col-3 td {display: block; width: 100%;}
-.views-view-grid.col-4 th, .views-view-grid.col-4 td {display: block; width: 100%;}
-.views-view-grid.col-5 th, .views-view-grid.col-5 td {display: block; width: 100%;}
-.views-view-grid.col-6 th, .views-view-grid.col-6 td {display: block; width: 100%;}
-.views-view-grid.col-7 th, .views-view-grid.col-7 td {display: block; width: 100%;}
-.views-view-grid.col-8 th, .views-view-grid.col-8 td {display: block; width: 100%;}
+/* desktop and large desktop */
+@media (min-width: 980px) and (max-width: 1199px) {
+.col4 > [class*="span"] {width: 48.9362%;}
+.col4 > [class*="span"].col4-3 {margin-left: 0;}
+.row2 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+.row3 > [class*="span"]:nth-child(3n+1) {margin-left: 0;}
+.row4 > [class*="span"]:nth-child(4n+1) {margin-left: 0;}
+.one-sidebar .row3 > [class*="span"] {width: 48.9362%;}
+.one-sidebar .row3 > [class*="span"]:nth-child(3n+1) {margin-left: 2.12766%;}
+.one-sidebar .row3 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+.one-sidebar .row4 > [class*="span"] {width: 48.9362%;}
+.one-sidebar .row4 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+.two-sidebars .row4 > [class*="span"] {width: 48.9362%;}
+.two-sidebars .row4 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+}
+     
+/* Large desktop */
+@media (min-width: 1200px) {
+.row2 > [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+.row3 > [class*="span"]:nth-child(3n+1) {margin-left: 0;}
+.row4 > [class*="span"]:nth-child(4n+1) {margin-left: 0;}
 }

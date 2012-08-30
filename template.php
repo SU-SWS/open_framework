@@ -13,7 +13,14 @@ function open_framework_preprocess_page(&$vars) {
       }
     }
   }
+  // Get the entire main menu tree
+  $main_menu_tree = menu_tree_all_data('main-menu');
+
+  // Add the rendered output to the $main_menu_expanded variables
+  $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
 }
+
+
 
 function open_framework_preprocess_block(&$vars) {
   // Count number of blocks in a given theme region
@@ -72,11 +79,11 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
     // we assume that the left and right regions have a span of 3
     // if present, we remove that much from the available width
     if (open_framework_region_has_block('sidebar_first')) {
-      $available_width = $available_width - 3;
+      $available_width = $available_width - 0;
     }
 
     if (open_framework_region_has_block('sidebar_second')) {
-      $available_width = $available_width - 3;
+      $available_width = $available_width - 0;
     }
   }
 
@@ -157,6 +164,27 @@ if ($type == "error") {$alert = 'alert alert-error';}
       $output .= $messages[0];
     }
     $output .= "</div>\n";
+  }
+  return $output;
+}
+
+/**
+ * Duplicate of theme_menu_local_tasks() but adds "nav" and "nav-tabs" to tabs.
+ */
+function open_framework_menu_local_tasks(&$variables) {
+  $output = '';
+
+  if (!empty($variables['primary'])) {
+    $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
+    $variables['primary']['#prefix'] .= '<ul class="tabs nav nav-tabs primary">';
+    $variables['primary']['#suffix'] = '</ul>';
+    $output .= drupal_render($variables['primary']);
+  }
+  if (!empty($variables['secondary'])) {
+    $variables['secondary']['#prefix'] = '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
+    $variables['secondary']['#prefix'] .= '<ul class="tabs nav nav-tabs secondary">';
+    $variables['secondary']['#suffix'] = '</ul>';
+    $output .= drupal_render($variables['secondary']);
   }
   return $output;
 }
