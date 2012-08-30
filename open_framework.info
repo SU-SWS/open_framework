@@ -19,11 +19,10 @@ regions[sidebar_first] = Site: First sidebar
 regions[sidebar_second] = Site: Second sidebar
 regions[footer] = Site: Footer
 
-regions[top] = Page: Top section
-regions[upper] = Page: Upper section
-regions[feature] = Page: Feature section
-regions[lower] = Page: Lower section
-regions[bottom] = Page: Bottom section
+regions[page_top] = Page: Top section
+regions[page_upper] = Page: Upper section
+regions[page_lower] = Page: Lower section
+regions[page_bottom] = Page: Bottom section
 
 regions[content_top] = Content: Top section
 regions[content_upper] = Content: Upper section
