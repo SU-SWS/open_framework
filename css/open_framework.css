@@ -8,8 +8,8 @@
 #site-name, #site-slogan {margin: 10px 0; font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
 #site-name {font-size: 36px; line-height: 40px;}
 #site-slogan {font-size: 30px; line-height: 40px;}
-#site-name a {color:#8c1515; text-decoration:none;}
-#site-name a:hover {color:#820000; text-decoration:none;}
+#site-name a {text-decoration:none;}
+#site-name a:hover {text-decoration:none;}
 #name-and-slogan {float:left; max-width: 75%;}
 
 /* Expanded Nav */
