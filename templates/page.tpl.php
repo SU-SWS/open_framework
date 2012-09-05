@@ -18,14 +18,10 @@
     <?php if ($site_name || $site_slogan): ?>
     <div id="name-and-slogan">
       <?php if ($site_name): ?>
-      <div id="site-name">
-        <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></h1>
-      </div>
+      <div id="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></div>
       <?php endif; ?>
       <?php if ($site_slogan): ?>
-      <div id="site-slogan">
-        <h2><?php print $site_slogan; ?></h2>
-      </div>
+      <div id="site-slogan"><?php print $site_slogan; ?></div>
       <?php endif; ?>
     </div>
     <!-- /#name-and-slogan -->

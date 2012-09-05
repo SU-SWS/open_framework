@@ -1,3 +1,8 @@
+/* Site Name */
+#site-name, #site-slogan {margin: 10px 0; font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
+#site-name {font-size: 36px; line-height: 40px;}
+#site-slogan {font-size: 30px; line-height: 40px;}
+
 /* Expanded Nav */
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
 #main-menu .dropdown-menu {margin: 0;}
