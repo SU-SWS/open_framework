@@ -58,21 +58,15 @@
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     <?php if ($page['main_top']): ?>
-    <div id="main-top" class="row">
-      <div id="main-top-wrapper"><?php print render($page['main_top']); ?></div>
-    </div>
+    <div id="main-top" class="row"> <?php print render($page['main_top']); ?> </div>
     <?php endif; ?>
     <?php if ($page['main_upper']): ?>
-    <div id="main-upper" class="row">
-      <div id="main-upper-wrapper"><?php print render($page['main_upper']); ?></div>
-    </div>
+    <div id="main-upper" class="row"> <?php print render($page['main_upper']); ?> </div>
     <?php endif; ?>
     <div id="main-content" class="row">
       <?php if ($page['sidebar_first']): ?>
       <div id="sidebar-first" class="sidebar span3">
-        <div id="sidebar-first-wrapper">
-          <div class="row-fluid"><?php print render($page['sidebar_first']); ?></div>
-        </div>
+        <div class="row-fluid"><?php print render($page['sidebar_first']); ?></div>
       </div>
       <!-- /#sidebar-first -->
       <?php endif; ?>
@@ -94,107 +88,83 @@
             <?php endif; ?>
           </div>
           <?php if ($page['content_top']): ?>
-          <div id="content-top" class="row-fluid">
-            <div id="content-top-wrapper"><?php print render($page['content_top']); ?></div>
-          </div>
+          <div id="content-top" class="row-fluid"> <?php print render($page['content_top']); ?> </div>
           <?php endif; ?>
           <?php if ($page['content_upper']): ?>
-          <div id="content-upper" class="row-fluid">
-            <div id="content-upper-wrapper"><?php print render($page['content_upper']); ?></div>
-          </div>
+          <div id="content-upper" class="row-fluid"> <?php print render($page['content_upper']); ?> </div>
           <?php endif; ?>
-          <?php if ($page['content']): ?>
-          <div id="content-body" class="row-fluid">
-            <div id="content-body-wrapper"><?php print render($page['content']); ?> <?php print $feed_icons; ?></div>
-          </div>
-          <?php endif; ?>
+          <div id="content-body" class="row-fluid"> <?php print render($page['content']); ?> <?php print $feed_icons; ?> </div>
           <?php if ($page['content_row2']): ?>
-          <div id="content-row2" class="row-fluid">
-            <div id="content-row2-wrapper"><?php print render($page['content_row2']); ?> </div>
-          </div>
+          <div id="content-row2" class="row-fluid"> <?php print render($page['content_row2']); ?> </div>
           <?php endif; ?>
           <?php if (($page['content_col2-1']) || ($page['content_col2-2'])): ?>
           <div id="content-col2" class="row-fluid">
-            <div id="content-col2-wrapper">
-              <?php if ($page['content_col2-1']): ?>
-              <div class="span6">
-                <div id="content-col2-1" class="span12 clearfix clear-row"> <?php print render($page['content_col2-1']); ?> </div>
-              </div>
-              <?php endif; ?>
-              <?php if ($page['content_col2-2']): ?>
-              <div class="span6">
-                <div id="content-col2-2" class="span12 clearfix clear-row"> <?php print render($page['content_col2-2']); ?> </div>
-              </div>
-              <?php endif; ?>
+            <?php if ($page['content_col2-1']): ?>
+            <div class="span6">
+              <div id="content-col2-1" class="span12 clearfix clear-row"> <?php print render($page['content_col2-1']); ?> </div>
             </div>
+            <?php endif; ?>
+            <?php if ($page['content_col2-2']): ?>
+            <div class="span6">
+              <div id="content-col2-2" class="span12 clearfix clear-row"> <?php print render($page['content_col2-2']); ?> </div>
+            </div>
+            <?php endif; ?>
           </div>
           <?php endif; ?>
           <?php if ($page['content_row3']): ?>
-          <div id="content-row3" class="row-fluid">
-            <div id="content-row3-wrapper"><?php print render($page['content_row3']); ?></div>
-          </div>
+          <div id="content-row3" class="row-fluid"> <?php print render($page['content_row3']); ?> </div>
           <?php endif; ?>
           <?php if (($page['content_col3-1']) || ($page['content_col3-2']) || ($page['content_col3-3'])): ?>
           <div id="content-col3" class="row-fluid">
-            <div id="content-col3-wrapper">
-              <?php if ($page['content_col3-1']): ?>
-              <div class="span4">
-                <div id="content-col3-1" class="span12 clearfix clear-row"> <?php print render($page['content_col3-1']); ?> </div>
-              </div>
-              <?php endif; ?>
-              <?php if ($page['content_col3-2']): ?>
-              <div class="span4">
-                <div id="content-col3-2" class="span12 clearfix clear-row"> <?php print render($page['content_col3-2']); ?> </div>
-              </div>
-              <?php endif; ?>
-              <?php if ($page['content_col3-3']): ?>
-              <div class="span4">
-                <div id="content-col3-3" class="span12 clearfix clear-row"> <?php print render($page['content_col3-3']); ?> </div>
-              </div>
-              <?php endif; ?>
+            <?php if ($page['content_col3-1']): ?>
+            <div class="span4">
+              <div id="content-col3-1" class="span12 clearfix clear-row"> <?php print render($page['content_col3-1']); ?> </div>
             </div>
+            <?php endif; ?>
+            <?php if ($page['content_col3-2']): ?>
+            <div class="span4">
+              <div id="content-col3-2" class="span12 clearfix clear-row"> <?php print render($page['content_col3-2']); ?> </div>
+            </div>
+            <?php endif; ?>
+            <?php if ($page['content_col3-3']): ?>
+            <div class="span4">
+              <div id="content-col3-3" class="span12 clearfix clear-row"> <?php print render($page['content_col3-3']); ?> </div>
+            </div>
+            <?php endif; ?>
           </div>
           <?php endif; ?>
           <?php if ($page['content_row4']): ?>
-          <div id="content-row4" class="row-fluid">
-            <div id="content-row4-wrapper"><?php print render($page['content_row4']); ?></div>
-          </div>
+          <div id="content-row4" class="row-fluid"> <?php print render($page['content_row4']); ?> </div>
           <?php endif; ?>
           <?php if (($page['content_col4-1']) || ($page['content_col4-2']) || ($page['content_col4-3']) || ($page['content_col4-4'])): ?>
           <div id="content-col4" class="row-fluid">
-            <div id="content-col4-wrapper">
-              <?php if ($page['content_col4-1']): ?>
-              <div class="span3">
-                <div id="content-col4-1" class="span12 clearfix clear-row"> <?php print render($page['content_col4-1']); ?> </div>
-              </div>
-              <?php endif; ?>
-              <?php if ($page['content_col4-2']): ?>
-              <div class="span3">
-                <div id="content-col4-2" class="span12 clearfix clear-row"> <?php print render($page['content_col4-2']); ?> </div>
-              </div>
-              <?php endif; ?>
-              <?php if ($page['content_col4-3']): ?>
-              <div class="span3">
-                <div id="content-col4-3" class="span12 clearfix clear-row"> <?php print render($page['content_col4-3']); ?> </div>
-              </div>
-              <?php endif; ?>
-              <?php if ($page['content_col4-4']): ?>
-              <div class="span3">
-                <div id="content-col4-4" class="span12 clearfix clear-row"> <?php print render($page['content_col4-4']); ?> </div>
-              </div>
-              <?php endif; ?>
+            <?php if ($page['content_col4-1']): ?>
+            <div class="span3">
+              <div id="content-col4-1" class="span12 clearfix clear-row"> <?php print render($page['content_col4-1']); ?> </div>
             </div>
+            <?php endif; ?>
+            <?php if ($page['content_col4-2']): ?>
+            <div class="span3">
+              <div id="content-col4-2" class="span12 clearfix clear-row"> <?php print render($page['content_col4-2']); ?> </div>
+            </div>
+            <?php endif; ?>
+            <?php if ($page['content_col4-3']): ?>
+            <div class="span3">
+              <div id="content-col4-3" class="span12 clearfix clear-row"> <?php print render($page['content_col4-3']); ?> </div>
+            </div>
+            <?php endif; ?>
+            <?php if ($page['content_col4-4']): ?>
+            <div class="span3">
+              <div id="content-col4-4" class="span12 clearfix clear-row"> <?php print render($page['content_col4-4']); ?> </div>
+            </div>
+            <?php endif; ?>
           </div>
           <?php endif; ?>
           <?php if ($page['content_lower']): ?>
-          <div id="content-lower" class="row-fluid">
-            <div id="content-lower-wrapper"><?php print render($page['content_lower']); ?></div>
-          </div>
+          <div id="content-lower" class="row-fluid"> <?php print render($page['content_lower']); ?> </div>
           <?php endif; ?>
           <?php if ($page['content_bottom']): ?>
-          <div id="content-bottom" class="row-fluid">
-            <div id="content-bottom-wrapper"><?php print render($page['content_bottom']); ?></div>
-          </div>
+          <div id="content-bottom" class="row-fluid"> <?php print render($page['content_bottom']); ?> </div>
           <?php endif; ?>
         </div>
         <!-- /#content-wrap --> 
@@ -202,22 +172,16 @@
       <!-- /#content -->
       <?php if ($page['sidebar_second']): ?>
       <div id="sidebar-second" class="sidebar span3">
-        <div id="sidebar-second-wrapper">
-          <div class="row-fluid"><?php print render($page['sidebar_second']); ?></div>
-        </div>
+        <div class="row-fluid"><?php print render($page['sidebar_second']); ?></div>
       </div>
       <!-- /#sidebar-second -->
       <?php endif; ?>
     </div>
     <?php if ($page['main_lower']): ?>
-    <div id="main-lower" class="row">
-      <div id="main-lower-wrapper"><?php print render($page['main_lower']); ?></div>
-    </div>
+    <div id="main-lower" class="row"> <?php print render($page['main_lower']); ?> </div>
     <?php endif; ?>
     <?php if ($page['main_bottom']): ?>
-    <div id="main-bottom" class="row">
-      <div id="main-bottom-wrapper"><?php print render($page['main_bottom']); ?></div>
-    </div>
+    <div id="main-bottom" class="row"> <?php print render($page['main_bottom']); ?> </div>
     <?php endif; ?>
   </div>
 </div>
