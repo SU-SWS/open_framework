@@ -63,7 +63,7 @@
     <?php if ($page['main_upper']): ?>
     <div id="main-upper" class="row"> <?php print render($page['main_upper']); ?> </div>
     <?php endif; ?>
-    <div class="row">
+    <div id="main-content" class="row">
       <?php if ($page['sidebar_first']): ?>
       <div id="sidebar-first" class="sidebar span3">
         <div id="sidebar-first-wrapper">
