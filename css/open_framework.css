@@ -30,11 +30,11 @@
 #content-col2 [class*="span"] {width: 100%; margin-left: 0;}
 #content-col3 [class*="span"] {width: 100%; margin-left: 0;}
 #content-col4 [class*="span"] {width: 100%; margin-left: 0;}
-#content-row2 [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+#content-row2 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 #content-row3 [class*="span"] {width: 48.6188%;}
-#content-row3 [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+#content-row3 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 #content-row4 [class*="span"] {width: 48.6188%;}
-#content-row4 [class*="span"]:nth-child(2n+1) {margin-left: 0;}
+#content-row4 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 }
 
 /* desktop and large desktop */
