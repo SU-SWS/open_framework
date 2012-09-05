@@ -13,6 +13,7 @@
 .footer-links li {display: inline; margin-right: 10px;}
 
 /* Bootstrap Override */
+.row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 
 /* Landscape phones and down */
