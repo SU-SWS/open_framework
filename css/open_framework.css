@@ -2,15 +2,15 @@
 #header {margin: 15px 0px;}
 
 /* Logo */
-#header #logo {float: left; max-width: 20%; margin: 0 30px 0 0;}
+#header #logo {float: left; max-width: 20%; margin: 0 15px 0 0;}
 
 /* Site Name */
 #site-name, #site-slogan {margin: 10px 0; font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
-#site-name {font-size: 46px; line-height: 1.05em;}
+#site-name {font-size: 46px;}
 #site-slogan {font-size: 26px;}
 #site-name a {text-decoration:none;}
 #site-name a:hover {text-decoration:none;}
-#name-and-slogan {float:left; max-width: 75%;}
+#name-and-slogan {max-width: 75%; height:97px; display:table-cell; vertical-align:middle;}
 
 /* Expanded Nav */
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
