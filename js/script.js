@@ -13,11 +13,5 @@ $(document).ready(function(){
 	$('#main-menu ul li:has(.active)').addClass('active');
 	$('#main-menu ul.nav > li > a.dropdown-toggle').append(' <b class="caret"></b>');
 	
-	// Header Drupal Search Box
-	$('#header [name=search_theme_form]').val('Search this site...');
-	$('#header [name=search_theme_form]').focus(function () {
-	$('#header [name=search_theme_form]').val('');
-	});
-	
 });
 
