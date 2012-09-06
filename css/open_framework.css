@@ -37,8 +37,8 @@
 .footer-links li {display: inline; margin-right: 10px;}
 
 /* Block Styles */
-.block {margin-bottom:30px;}
-.block-system {margin-bottom:0;}
+#main .block {margin-bottom:30px;}
+#main #block-system-main {margin-bottom:0;}
 
 /* Bootstrap Override */
 .row-fluid [class*="span"] {min-height: 0;}
