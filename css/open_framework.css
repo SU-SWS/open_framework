@@ -10,7 +10,7 @@
 #site-slogan {font-size: 26px;}
 #site-name a {text-decoration:none;}
 #site-name a:hover {text-decoration:none;}
-#name-and-slogan {float:left; max-width: 75%;}
+#name-and-slogan {max-width: 75%; height:97px; display:table-cell; vertical-align:middle;}
 
 /* Expanded Nav */
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
