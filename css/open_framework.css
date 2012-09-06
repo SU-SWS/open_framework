@@ -21,11 +21,12 @@
 #main-menu ul li.expanded {list-style-image: none;}
 #main-menu ul li.collapsed {list-style-image: none;}
 
-/* Sidebar */
+/* Sidebars */
+#sidebar-second {margin-top:20px; margin-bottom:50px;}
 .sidebar ul.nav {margin-left: 20px;}
 
 /* Main Content */
-#main {margin-bottom: 80px;}
+#main {margin-bottom: 50px;}
 
 /* Content Head */
 #content-head {margin-bottom:40px;}
