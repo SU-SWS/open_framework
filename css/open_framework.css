@@ -13,14 +13,21 @@
 #name-and-slogan {max-width: 75%; height:97px; display:table-cell; vertical-align:middle;}
 
 /* Expanded Nav */
+#main-menu {margin-bottom:20px;}
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
 #main-menu .dropdown-menu {margin: 0;}
+#main-menu ul.nav {margin-bottom:35px;}
 #main-menu ul li.leaf {list-style-image: none;}
 #main-menu ul li.expanded {list-style-image: none;}
 #main-menu ul li.collapsed {list-style-image: none;}
 
+/* Sidebar */
 .sidebar ul.nav {margin-left: 20px;}
 
+/* Main Content */
+#main {margin-bottom: 80px;}
+
+/* Footer */
 .footer {padding: 70px 0; margin-top: 70px; border-top: 1px solid #e5e5e5; background-color: #f5f5f5;}
 .footer p {margin-bottom: 0; color: #777;}
 .footer-links {margin: 10px 0;}
