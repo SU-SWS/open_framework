@@ -36,6 +36,9 @@
 .footer-links {margin: 10px 0;}
 .footer-links li {display: inline; margin-right: 10px;}
 
+/* Block Styles */
+.block {margin-bottom:30px;}
+
 /* Bootstrap Override */
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
