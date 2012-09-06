@@ -38,6 +38,7 @@
 
 /* Block Styles */
 .block {margin-bottom:30px;}
+.block-system {margin-bottom:0;}
 
 /* Bootstrap Override */
 .row-fluid [class*="span"] {min-height: 0;}
