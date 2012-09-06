@@ -41,6 +41,9 @@
 #main .block {margin-bottom:30px;}
 #main #block-system-main {margin-bottom:0;}
 
+/* Field Collection Overrides */
+.field-collection-container {margin-bottom:0; border-bottom:0;}
+
 /* Bootstrap Override */
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
