@@ -22,14 +22,14 @@
 #main-menu ul li.collapsed {list-style-image: none;}
 
 /* Sidebars */
-#sidebar-second {margin-top:12px; margin-bottom:50px;}
+#sidebar-second {margin-bottom:50px;}
 .sidebar ul.nav {margin-left: 20px;}
 
 /* Main Content */
 #main {margin-bottom: 50px;}
 
 /* Content Head */
-#content-head {margin-bottom:40px;}
+#content-head {margin-bottom:15px;}
 
 /* Footer */
 .footer {padding: 70px 0; margin-top: 70px; border-top: 1px solid #e5e5e5; background-color: #f5f5f5;}
