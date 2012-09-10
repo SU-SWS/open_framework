@@ -125,7 +125,7 @@
   <!--/#page-content-->
   <div id="footer" class="clearfix">
     <div class="container">
-      <div id="footer-content" role="contentinfo">
+      <div id="footer-content" role="contentinfo" class="row-fluid">
         <?php if (!empty($footer_message)): ?>
         <?php print $footer_message; ?>
         <?php endif; ?>
