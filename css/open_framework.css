@@ -32,10 +32,7 @@
 #content-head {margin-bottom:40px;}
 
 /* Footer */
-.footer {padding: 70px 0; margin-top: 70px; border-top: 1px solid #e5e5e5; background-color: #f5f5f5;}
-.footer p {margin-bottom: 0; color: #777;}
-.footer-links {margin: 10px 0;}
-.footer-links li {display: inline; margin-right: 10px;}
+#footer {margin-top: 50px;}
 
 /* Block Styles */
 #main .block {margin-bottom:30px;}

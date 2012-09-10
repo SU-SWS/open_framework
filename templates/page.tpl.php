@@ -199,12 +199,11 @@
 </div>
 <!-- /#secondary-menu -->
 <?php endif; ?>
-<div id="footer-wrapper">
+<?php if ($page['footer']): ?>
+<div id="footer" class="clearfix">
   <div class="container">
-    <?php if ($page['footer']): ?>
-    <div id="footer" class="clearfix"> <?php print render($page['footer']); ?> </div>
-    <!-- /#footer -->
-    <?php endif; ?>
+    <div id="footer-content" class="row"> <?php print render($page['footer']); ?> </div>
   </div>
 </div>
-<!-- /.section, /#footer-wrapper --> 
+<!-- /#footer -->
+<?php endif; ?>
