@@ -1,9 +1,9 @@
 $(document).ready(function(){
 		
 	// Header Drupal Search Box
-	$('#header [name=search_theme_form]').val('Search this site...');
-	$('#header [name=search_theme_form]').focus(function () {
-	$('#header [name=search_theme_form]').val('');
+	$('#header [name=search_block_form]').val('Search this site...');
+	$('#header [name=search_block_form]').focus(function () {
+	$('#header [name=search_block_form]').val('');
 	});
 	
 	// Hide border for image links

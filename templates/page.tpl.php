@@ -12,21 +12,25 @@
 <!-- /#skipnav -->
 <div id="header" class="clearfix">
   <div class="container">
-    <?php if ($logo): ?>
-    <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /> </a></div>
-    <?php endif; ?>
-    <?php if ($site_name || $site_slogan): ?>
-    <div id="name-and-slogan">
-      <?php if ($site_name): ?>
-      <div id="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></div>
+    <div class="row">
+      <div class="<?php if ($page['header']): print 'span8'; else: print 'span12';	endif; ?>">
+        <?php if ($logo): ?>
+        <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /> </a></div>
+        <?php endif; ?>
+        <?php if ($site_name || $site_slogan): ?>
+        <div id="name-and-slogan">
+          <?php if ($site_name): ?>
+          <div id="site-name"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a></div>
+          <?php endif; ?>
+          <?php if ($site_slogan): ?>
+          <div id="site-slogan"><?php print $site_slogan; ?></div>
+          <?php endif; ?>
+        </div>
+        <!-- /#name-and-slogan --> 
+      </div>
       <?php endif; ?>
-      <?php if ($site_slogan): ?>
-      <div id="site-slogan"><?php print $site_slogan; ?></div>
-      <?php endif; ?>
+      <?php if ($page['header']): ?><div id="header-content" class="span4"><?php print render($page['header']); ?> </div><?php endif; ?>
     </div>
-    <!-- /#name-and-slogan -->
-    <?php endif; ?>
-    <div id="header-content"><?php print render($page['header']); ?> </div>
   </div>
 </div>
 <!-- /#header -->

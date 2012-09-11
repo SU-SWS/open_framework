@@ -20,8 +20,6 @@ function open_framework_preprocess_page(&$vars) {
   $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
 }
 
-
-
 function open_framework_preprocess_block(&$vars) {
   // Count number of blocks in a given theme region
 $vars['block_count'] = count(block_list($vars['block']->region));

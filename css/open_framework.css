@@ -12,6 +12,9 @@
 #site-name a:hover {text-decoration:none;}
 #name-and-slogan {max-width: 75%; height:97px; display:table-cell; vertical-align:middle;}
 
+/* Header Search Block */
+#header #block-search-form {margin-top: 30px;}
+
 /* Expanded Nav */
 #main-menu {margin-bottom:20px;}
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
@@ -45,6 +48,7 @@
 /* Bootstrap Override */
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
+.form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
