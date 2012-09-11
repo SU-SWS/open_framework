@@ -5,7 +5,7 @@
 #header #logo {float: left; max-width: 20%; margin: 0 15px 0 0;}
 
 /* Site Name */
-#site-name, #site-slogan {margin: 10px 0; font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
+#site-name, #site-slogan {font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
 #site-name {font-size: 46px;}
 #site-slogan {font-size: 26px;}
 #site-name a {text-decoration:none;}
@@ -25,14 +25,14 @@
 #main-menu ul li.collapsed {list-style-image: none;}
 
 /* Sidebars */
-#sidebar-second {margin-top:12px; margin-bottom:50px;}
+#sidebar-second {margin-bottom:50px;}
 .sidebar ul.nav {margin-left: 20px;}
 
 /* Main Content */
 #main {margin-bottom: 50px;}
 
 /* Content Head */
-#content-head {margin-bottom:40px;}
+#content-head {margin-bottom:15px;}
 
 /* Footer */
 #footer {margin-top: 50px;}
