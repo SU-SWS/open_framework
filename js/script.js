@@ -14,7 +14,7 @@ $(document).ready(function(){
 	$('#main-menu ul.nav > li > a.dropdown-toggle').append(' <b class="caret"></b>');
 	
 	// Bootstrap Search Form
-	$('#search-block-form').addClass('form-search pull-right');
+	$('#search-block-form').addClass('form-search');
 	$('#search-block-form .container-inline').addClass('input-append');
     $('#search-block-form .form-text').addClass('input-medium search-query');
     $('#search-block-form .form-submit').addClass('btn');
@@ -22,5 +22,6 @@ $(document).ready(function(){
     $('#search-block-form .form-actions').addClass('pull-left');
 	$('#search-block-form .form-actions').append('<button type="submit" class="btn"><i class="icon-search"></i></button>');
 	$('#search-block-form .form-actions input').remove();
+	$('#header-search #search-block-form').addClass('pull-right');
 });
 

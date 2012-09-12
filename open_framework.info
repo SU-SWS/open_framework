@@ -12,6 +12,7 @@ scripts[] = js/open_framework.js
 scripts[] = js/script.js
 regions[page_top] = Page: Top
 regions[header] = Header
+regions[header_search] = Header: Search
 regions[help] = Help
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted

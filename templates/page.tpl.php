@@ -13,10 +13,11 @@
 <div id="header" class="clearfix">
   <div class="container">
     <div class="row">
-      <div class="<?php if ($page['header']): print 'span8'; else: print 'span12';	endif; ?>">
+      <div class="<?php if ($page['header_search']): print 'span8'; else: print 'span12';	endif; ?>">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /> </a></div>
         <?php endif; ?>
+        <!-- /#logo -->
         <?php if ($site_name || $site_slogan): ?>
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
@@ -26,10 +27,16 @@
           <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div>
-        <!-- /#name-and-slogan --> 
+        <?php endif; ?>
+        <!-- /#name-and-slogan -->
+        <?php if ($page['header']): ?>
+        <div id="header-content" class="row-fluid"><?php print render($page['header']); ?></div>
+        <?php endif; ?>
+        <!-- /#header-content --> 
       </div>
+      <?php if ($page['header_search']): ?>
+      <div id="header-search" class="span4"><?php print render($page['header_search']); ?> </div>
       <?php endif; ?>
-      <?php if ($page['header']): ?><div id="header-content" class="span4"><?php print render($page['header']); ?> </div><?php endif; ?>
     </div>
   </div>
 </div>

@@ -13,7 +13,7 @@
 #name-and-slogan {max-width: 75%; height:97px; display:table-cell; vertical-align:middle;}
 
 /* Header Search Block */
-#header #block-search-form {margin-top: 30px;}
+#header-search {padding-top: 30px;}
 
 /* Expanded Nav */
 #main-menu {margin-bottom:20px;}
