@@ -15,7 +15,7 @@
     <div class="row">
       <div class="<?php if ($page['header_search']): print 'span8'; else: print 'span12';	endif; ?>">
         <?php if ($logo): ?>
-        <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /> </a></div>
+        <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" role="presentation" /> </a></div>
         <?php endif; ?>
         <!-- /#logo -->
         <?php if ($site_name || $site_slogan): ?>
