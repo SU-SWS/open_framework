@@ -53,12 +53,6 @@
 </div>
 <!-- /#main-menu -->
 <?php endif; ?>
-<?php if ($messages): ?>
-<div id="messages" class="clearfix">
-  <div class="container"> <?php print $messages; ?> </div>
-</div>
-<!-- /#messages -->
-<?php endif; ?>
 <div id="main" class="clearfix">
   <div class="container">
     <?php if ($breadcrumb): ?>
@@ -87,7 +81,12 @@
             <?php if ($tabs): ?>
             <div class="tabs"> <?php print render($tabs); ?> </div>
             <?php endif; ?>
-            <?php print render($page['help']); ?>
+            <?php if ($messages): ?>
+            <div id="console" class="clearfix"><?php print $messages; ?></div>
+            <?php endif; ?>
+            <?php if ($page['help']): ?>
+            <div id="help" class="clearfix"> <?php print render($page['help']); ?> </div>
+            <?php endif; ?>
             <?php if ($action_links): ?>
             <ul class="action-links">
               <?php print render($action_links); ?>
