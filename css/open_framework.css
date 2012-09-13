@@ -19,7 +19,6 @@
 #main-menu {margin-bottom:20px;}
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
 #main-menu .dropdown-menu {margin: 0;}
-#main-menu ul.nav {margin-bottom:35px;}
 #main-menu ul li.leaf {list-style-image: none;}
 #main-menu ul li.expanded {list-style-image: none;}
 #main-menu ul li.collapsed {list-style-image: none;}
