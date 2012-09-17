@@ -56,8 +56,8 @@
      
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-#header-search {position: absolute; right: 40px; margin: -5px 0 0 0; width: auto;}
-.btn.btn-navbar {float: left;}
+#header-search {position: absolute; right: 30px; margin: -5px 0 0 0; width: auto;}
+.btn.btn-navbar {float: left; margin-left: -10px;}
 #content-col2 [class*="span"] {width: 100%; margin-left: 0;}
 }
      
@@ -71,7 +71,7 @@
 #content-row3 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 #content-row4 [class*="span"] {width: 48.6188%;}
 #content-row4 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
-.btn.btn-navbar {float: left;}
+.btn.btn-navbar {float: left; margin-left: -10px;}
 }
 
 /* desktop and large desktop */
