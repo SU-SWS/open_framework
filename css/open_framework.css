@@ -45,6 +45,13 @@
 .field-collection-container {margin-bottom:0; border-bottom:0;}
 .field-collection-view {margin:0; padding:0;}
 
+/* Views Slideshow */
+.views_slideshow_cycle_main {width: 100%; float: left; position: relative;}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {width: 100% !important; height: auto;}
+.views_slideshow_cycle_main .field-content {max-width: 100%; width: 100%;}
+.views_slideshow_cycle_main .field-content img {max-width: 100%; width: 100%; height: auto; margin: 0; padding: 0;}
+
 /* Bootstrap Override */
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
