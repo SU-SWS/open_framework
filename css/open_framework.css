@@ -1,3 +1,29 @@
+/* Theme Option: Front Page Title */
+body.front .title {display: none;}
+body.front.show-title .title {display: block;}
+
+/* Theme Option: Breadcrumb */
+#breadcrumb {display: none;}
+body.show-breadcrumb #breadcrumb {display: block;}
+
+/* Theme Option: Body Background Type */
+body.photobg {background-attachment: fixed !important; background-size: cover !important;}
+
+/* Theme Option: Background Color */
+body.bodybg .sidebar .region {background-color: rgba(255,255,255,0.9); padding: 10px;}
+body.bodybg #secondary-menu .container {background-color: rgba(255,255,255,0.9); padding: 0 10px 10px 10px;}
+body.bodybg #content-wrapper {background: #fff; padding: 10px;}
+
+/* Theme Option: Borders */
+body.borders .sidebar .region {border: 1px solid #d4d4d4; padding: 10px;}
+body.borders #secondary-menu .container {border: 1px solid #d4d4d4; padding: 10px;}
+body.borders #content-wrapper {border: 1px solid #d4d4d4; padding: 10px;}
+
+/* Theme Option: Rounded Corners */
+body.roundedcorners .sidebar .region {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
+body.roundedcorners #secondary-menu .container {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
+body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
+
 /* Header */
 #header {margin: 15px 0 20px 0px;}
 
@@ -15,21 +41,21 @@
 /* Header Search Block */
 #header-search {padding-top: 30px;}
 
-/* Expanded Nav */
-#main-menu {margin-bottom:20px;}
+/* Main Menu */
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
 #main-menu .dropdown-menu {margin: 0;}
-#main-menu ul {margin:-1px 0 20px 0;}
+#main-menu ul {margin:-1px 0 0 0;}
 #main-menu ul li.leaf {list-style-image: none; height: 35px;}
 #main-menu ul li.expanded {list-style-image: none;}
 #main-menu ul li.collapsed {list-style-image: none;}
 
 /* Sidebars */
-#sidebar-second {margin-bottom:50px;}
+#sidebar-first {margin-bottom: 20px;}
+#sidebar-second {margin-bottom: 20px;}
 .sidebar ul.nav {margin-left: 20px;}
 
 /* Main Content */
-#main {margin-bottom: 50px;}
+#main {margin-bottom: 20px;}
 
 /* Content Head */
 #content-head {margin-bottom:15px;}
@@ -56,6 +82,7 @@
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
+.navbar-inner {min-height: 0px;}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
