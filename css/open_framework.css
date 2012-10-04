@@ -78,7 +78,7 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 .callout {border:1px solid #eeeeee; padding:15px; width:27%;}
 
 /* Pullquote Text Styles */
-.pullquote, .pullquote-large {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
+.pullquote, .pullquote-large, blockquote > p:first-child {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
 .pullquote {font-size: 14px; letter-spacing: 0.02em;}
 .pullquote-large {font-size:20px;}
 .credits {font-size: 12px; letter-spacing: 0.05em; line-height: 2em;}
@@ -90,6 +90,12 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 
 /* Sizing Styles */
 .span-full {width:100%;}
+
+/* Postcard Layout Styles */
+.postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap {clear:both; margin-bottom:15px;}
+.postcard-left > div, .postcard-right > div {display:table-cell;}
+.postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
+.postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
 
 /* Field Collection Overrides */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
