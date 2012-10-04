@@ -26,6 +26,7 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 
 /* Text and Links Styles */
 a:focus {outline:none; border:0;}
+.summary {font-size:22px;line-height:1.4em;font-weight:300; margin-bottom:15px;}
 
 /* Header */
 #header {margin: 15px 0 20px 0px;}
