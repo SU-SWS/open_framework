@@ -68,6 +68,10 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 #main .block {margin-bottom:30px;}
 #main #block-system-main {margin-bottom:0;}
 
+/* Positioning Styles */
+.float-left {float:left; margin-right:15px; margin-bottom:10px;}
+.float-right {float:right; margin-right:15px; margin-bottom:10px;}
+
 /* Field Collection Overrides */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
 .field-collection-view {margin:0; padding:0;}
