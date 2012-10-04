@@ -64,13 +64,25 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 #footer {margin-top: 50px;}
 #footer h2 {font-size:20px; line-height:1.5em;}
 
-/* Block Styles */
+/* Block and Container Styles */
 #main .block {margin-bottom:30px;}
 #main #block-system-main {margin-bottom:0;}
+.sub-block {}
+.well {}
+.footer-well {}
+
+/* Callout Styles */
+.callout {}
+.bracket {}
+.topline {}
 
 /* Positioning Styles */
 .float-left {float:left; margin-right:15px; margin-bottom:10px;}
 .float-right {float:right; margin-right:15px; margin-bottom:10px;}
+.float-none {float:none;}
+
+/* Sizing Styles */
+.span-full {width:100%;}
 
 /* Field Collection Overrides */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
