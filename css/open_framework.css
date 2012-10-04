@@ -24,6 +24,9 @@ body.roundedcorners .sidebar .region {-moz-border-radius: 5px; border-radius: 5p
 body.roundedcorners #secondary-menu .container {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 
+/* Text and Links Styles */
+a:focus {outline:none; border:0;}
+
 /* Header */
 #header {margin: 15px 0 20px 0px;}
 
