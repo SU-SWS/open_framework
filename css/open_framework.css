@@ -32,8 +32,8 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 
 /* Site Name */
 #site-name, #site-slogan {font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
-#site-name {font-size: 46px;}
-#site-slogan {font-size: 26px;}
+#site-name {font-size: 44px; font-weight:bold;}
+#site-slogan {font-size: 24px; line-height: 1.5em;}
 #site-name a {text-decoration:none;}
 #site-name a:hover {text-decoration:none;}
 #name-and-slogan {max-width: 75%; height:97px; display:table-cell; vertical-align:middle;}
@@ -62,6 +62,7 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 
 /* Footer */
 #footer {margin-top: 50px;}
+#footer h2 {font-size:20px; line-height:1.5em;}
 
 /* Block Styles */
 #main .block {margin-bottom:30px;}
