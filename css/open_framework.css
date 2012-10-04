@@ -77,6 +77,12 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 .bracket {border-bottom: 1px solid #EEEEEE;}
 .callout {border:1px solid #eeeeee; padding:15px; width:27%;}
 
+/* Pullquote Text Styles */
+.pullquote, .pullquote-large {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
+.pullquote {font-size: 14px; letter-spacing: 0.02em;}
+.pullquote-large {font-size:20px;}
+.credits {font-size: 12px; letter-spacing: 0.05em; line-height: 2em;}
+
 /* Positioning Styles */
 .float-left {float:left; margin-right:15px; margin-bottom:15px;}
 .float-right {float:right; margin-left:15px; margin-bottom:15px;}
