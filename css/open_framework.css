@@ -101,6 +101,22 @@ a:focus {outline:none; border:0;}
 .postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
 
+/* Image Styles */
+#main-content .border-hairline img {border:1px solid #dad5cb;}
+#main-content .border-shadow img {-webkit-box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08); -moz-box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08); box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08);}
+#main-content .border-underline img {background-color:transparent; border-bottom:4px solid #E3DFD5; padding:0 0 2px 0;}
+#main-content .border-none img {border:0px;}
+#main-content .border-bottom img {border-bottom:1px solid #c7c2b1;}
+#main-content .border-simple img {background-color: #E3DFD5; padding:6px; width: 97%; 
+/* Firefox */
+width: -moz-calc(100% - 12px);
+/* WebKit */
+width: -webkit-calc(100% - 12px);
+/* Opera */
+width: -o-calc(100% - 12px);
+/* Standard */
+width: calc(100% - 12px);}
+
 /* Field Collection Overrides */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
 .field-collection-view {margin:0; padding:0;}
