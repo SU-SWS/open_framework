@@ -116,6 +116,10 @@ width: -webkit-calc(100% - 12px);
 width: -o-calc(100% - 12px);
 /* Standard */
 width: calc(100% - 12px);}
+#main-content .border-simple a img {}
+#main-content .border-simple a:hover img {background-color: #bbbbbb;}
+#main-content .border-hairline a img {}
+#main-content .border-hairline a:hover img {border:1px solid #373737;}
 
 /* Field Collection Overrides */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
