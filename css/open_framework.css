@@ -79,7 +79,7 @@ a:focus {outline:none; border:0;}
 .callout, .bracket, .topline {width:30%; margin-top:15px; padding: 15px 0; border-left: 0 none; clear: both;}
 .topline, .bracket {border-top: 1px solid #EEEEEE;}
 .bracket {border-bottom: 1px solid #EEEEEE;}
-.callout {border:1px solid #eeeeee; padding:15px; width:27%;}
+.callout {border:1px solid #eeeeee; padding:15px; width:27.25%;}
 
 /* Pullquote Text Styles */
 .pullquote, .pullquote-large, blockquote > p:first-child {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
