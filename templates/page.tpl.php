@@ -13,7 +13,7 @@
 <div id="header" class="clearfix">
   <div class="container">
     <div class="row">
-      <div class="<?php if ($page['header_search']): print 'span8'; else: print 'span12';	endif; ?>">
+      <div class="<?php if ($search): print 'span8'; else: print 'span12';	endif; ?>">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" role="presentation" /> </a></div>
         <?php endif; ?>
@@ -34,8 +34,10 @@
         <?php endif; ?>
         <!-- /#header-content --> 
       </div>
-      <?php if ($page['header_search']): ?>
-      <div id="header-search" class="span4"><?php print render($page['header_search']); ?> </div>
+      <?php if ($search): ?>
+      <div id="header-search" class="span4">
+        <?php if ($search): print render($search); endif; ?>
+      </div>
       <?php endif; ?>
     </div>
   </div>
