@@ -135,6 +135,7 @@ width: calc(100% - 12px);}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
 .navbar-inner {min-height: 0px;}
+form input {max-width: 90%;}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
