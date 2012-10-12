@@ -45,25 +45,26 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 
 /* Header */
 #header {margin: 15px 0 20px 0px;}
+#header-content {clear: both;}
+#header-search {padding-top: 30px;}
 
 /* Logo */
-#header #logo {float: left; max-width: 20%; margin: 0 15px 0 0;}
+#header #logo {float: left; margin: 0 15px 0 0;}
+#header #logo img {max-height: 100px;}
 
 /* Site Name */
 #site-name, #site-slogan {font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
 #site-name {font-size: 44px; font-weight:bold;}
 #site-slogan {font-size: 24px; line-height: 1.1em; margin-top: 0.3em;}
-#site-name a {text-decoration:none;}
-#site-name a:hover {text-decoration:none;}
-#name-and-slogan {max-width: 75%; height:97px; display:table-cell; vertical-align:middle;}
-
-/* Header Search Block */
-#header-search {padding-top: 30px;}
+#site-name a {text-decoration: none;}
+#site-name a:hover {text-decoration: none;}
+#name-and-slogan {max-width: 75%; height: 97px; display: table-cell; vertical-align: middle;}
 
 /* Main Menu */
-#main-menu ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
+#main-menu {clear: both;}
+#main-menu ul.nav li.dropdown:hover ul.dropdown-menu {display: block;}
 #main-menu .dropdown-menu {margin: 0;}
-#main-menu ul {margin:-1px 0 0 0;}
+#main-menu ul {margin: -1px 0 0 0;}
 #main-menu ul li.leaf {list-style-image: none; height: 35px;}
 #main-menu ul li.expanded {list-style-image: none;}
 #main-menu ul li.collapsed {list-style-image: none;}
