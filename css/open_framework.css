@@ -29,7 +29,7 @@ p {margin: 0 0 1em 0;}
 em {padding: 0 3px 0 0;}
 quote, code {margin: .5em 0;}
 .summary {font-size:22px;line-height:1.4em;font-weight:300; margin-bottom:15px;}
-.descriptor {font-size:11px; text-transform:uppercase; letter-spacing:0.05em; line-height:1.5em;}
+.descriptor {font-size:12px; text-transform:uppercase; letter-spacing:0.04em; line-height:1.5em; margin-bottom:0.04em;}
 .caption {color: #848484; font-size: 13px; font-style: italic; letter-spacing: 0.01em; margin-bottom: 2em; margin-top: 5px;}
 
 /* Link Styles */
