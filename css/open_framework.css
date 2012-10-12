@@ -45,9 +45,11 @@ h2 a, h3 a {}
 h2 a:hover, h3 a:hover {text-decoration:none;}
 
 /* Header */
-#header {margin: 15px 0 20px 0px;}
+#header {margin: 25px 0 30px 0px;}
 #header-content {clear: both;}
-#header-search {padding-top: 30px;}
+#header-search {}
+#header-search .search-form {margin:0; padding:0;}
+#header-search .form-item {margin:0;}
 
 /* Logo */
 #header #logo {float: left; margin: 0 15px 0 0;}
