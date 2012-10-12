@@ -107,7 +107,8 @@ a:focus {outline:none; border:0;}
 #main-content .border-underline img {background-color:transparent; border-bottom:4px solid #e2e2e2; padding:0 0 2px 0;}
 #main-content .border-none img {border:0px;}
 #main-content .border-bottom img {border-bottom:1px solid #d3d3d3;}
-#main-content .border-simple img {background-color: #e2e2e2; padding:6px; width: 97%; 
+#main-content .border-simple-nowidth img, #main-content .border-simple img {background-color: #e2e2e2; padding:6px;}
+#main-content .border-simple img {width: 97%; 
 /* Firefox */
 width: -moz-calc(100% - 12px);
 /* WebKit */
