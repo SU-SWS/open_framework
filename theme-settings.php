@@ -9,7 +9,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
   );
-  
+    
   $form['layout_container']['front_heading_classes'] = array(
     '#type'          => 'radios',
     '#title'         => t('Page heading'),
@@ -18,6 +18,12 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
       '' => t('Hide heading on front page - <strong><em>Default</em></strong>'),
 	  'show-title ' => t('Show heading on front page'),
     ),
+  );
+  
+  $form['layout_container']['toggle_search'] = array(
+    '#type'          => 'checkbox', 
+    '#title'         => t('Display search box in header region'), 
+    '#default_value' => theme_get_setting('toggle_search'),
   );
   
   $form['layout_container']['breadcrumb_classes'] = array(

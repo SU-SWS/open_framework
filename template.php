@@ -18,6 +18,11 @@ function open_framework_preprocess_page(&$vars) {
 
   // Add the rendered output to the $main_menu_expanded variables
   $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
+  
+  // Search Toggle
+  $vars['search'] = FALSE;
+  if(theme_get_setting('toggle_search') && module_exists('search'))
+  $vars['search'] = drupal_get_form('open_framework_search_form');
 }
 
 function open_framework_preprocess_block(&$vars) {
@@ -166,9 +171,7 @@ if ($type == "error") {$alert = 'alert alert-error';}
   return $output;
 }
 
-/**
- * Duplicate of theme_menu_local_tasks() but adds "nav" and "nav-tabs" to tabs.
- */
+/* Duplicate of theme_menu_local_tasks() but adds "nav" and "nav-tabs" to tabs. */
 function open_framework_menu_local_tasks(&$variables) {
   $output = '';
 
@@ -185,4 +188,23 @@ function open_framework_menu_local_tasks(&$variables) {
     $output .= drupal_render($variables['secondary']);
   }
   return $output;
+}
+
+/* Search Form */
+function open_framework_search_form($form, &$form_state) {
+  // Get custom search form
+  $form = search_form($form, $form_state);
+
+  // Cleanup
+  $form['#attributes']['class'][] = 'pull-right';
+  $form['basic']['keys']['#title'] = '';
+  $form['basic']['keys']['#attributes']['class'][] = 'input-medium search-query';
+  $form['basic']['keys']['#attributes']['placeholder'] = t('Search this site...');
+  unset($form['basic']['submit']);
+  unset($form['basic']['#type']);
+  unset($form['basic']['#attributes']);
+  $form += $form['basic'];
+  unset($form['basic']);
+
+  return $form;
 }
