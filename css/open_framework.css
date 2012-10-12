@@ -25,7 +25,11 @@ body.roundedcorners #secondary-menu .container {-moz-border-radius: 5px; border-
 body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 
 /* TextStyles */
+p {margin: 0 0 1em 0;}
+em {padding: 0 3px 0 0;}
+quote, code {margin: .5em 0;}
 .summary {font-size:22px;line-height:1.4em;font-weight:300; margin-bottom:15px;}
+.descriptor {font-size:11px; text-transform:uppercase; letter-spacing:0.05em; line-height:1em;}
 
 /* Link Styles */
 a:focus {outline:none; border:0;}
@@ -114,6 +118,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
 
 /* Image Styles */
+img, a img {border: none; outline: none;}
 #main-content .border-hairline img {border:1px solid #d8d8d8;}
 #main-content .border-shadow img {-webkit-box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08); -moz-box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08); box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08);}
 #main-content .border-underline img {background-color:transparent; border-bottom:4px solid #e2e2e2; padding:0 0 2px 0;}
