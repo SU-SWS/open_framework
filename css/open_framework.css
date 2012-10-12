@@ -102,6 +102,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .float-left {float:left; margin-right:15px; margin-bottom:15px;}
 .float-right {float:right; margin-left:15px; margin-bottom:15px;}
 .float-none {float:none;}
+.clear-none {clear:none;}
 
 /* Sizing Styles */
 .span-full {width:100%;}
