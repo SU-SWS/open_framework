@@ -120,6 +120,8 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .postcard-left > div, .postcard-right > div {display:table-cell;}
 .postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
+.postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img {margin-right:15px; margin-bottom: 15px;}
+.postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img {margin-left:15px; margin-bottom:15px;}
 
 /* Image Styles */
 img, a img {border: none; outline: none;}
