@@ -24,7 +24,7 @@ body.roundedcorners .sidebar .region {-moz-border-radius: 5px; border-radius: 5p
 body.roundedcorners #secondary-menu .container {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 
-/* TextStyles */
+/* Text Styles */
 p {margin: 0 0 1em 0;}
 em {padding: 0 3px 0 0;}
 quote, code {margin: .5em 0;}
@@ -103,9 +103,9 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .credits {font-size: 12px; letter-spacing: 0.05em; line-height: 2em;}
 
 /* Positioning Styles */
-.float-left {float:left; margin-right:15px; margin-bottom:15px;}
-.float-right {float:right; margin-left:15px; margin-bottom:15px;}
-.float-none {float:none;}
+.float-left {float:left !important; margin-right:15px; margin-bottom:15px;}
+.float-right {float:right !important; margin-left:15px; margin-bottom:15px;}
+.float-none {float:none !important;}
 .clear-none {clear:none !important;}
 
 /* Sizing Styles */
@@ -184,6 +184,7 @@ form input {max-width: 90%;}
 #content-row4 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 .btn.btn-navbar {float: left; margin-bottom: 8px;}
 .navbar-inner {padding: 5px 5px 0px 5px;}
+.content .callout, .content .bracket, .content .topline {width: 40%}
 }
 
 /* desktop and large desktop */
@@ -200,6 +201,7 @@ form input {max-width: 90%;}
 .one-sidebar #content-row4 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 .two-sidebars #content-row4 [class*="span"] {width: 48.9362%;}
 .two-sidebars #content-row4 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
+.two-sidebars .content .callout, .two-sidebars  .content .bracket, .two-sidebars  .content .topline {width: 40%}
 }
      
 /* Large desktop */
