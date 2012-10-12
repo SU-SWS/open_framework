@@ -29,7 +29,7 @@ p {margin: 0 0 1em 0;}
 em {padding: 0 3px 0 0;}
 quote, code {margin: .5em 0;}
 .summary {font-size:22px;line-height:1.4em;font-weight:300; margin-bottom:15px;}
-.descriptor {font-size:11px; text-transform:uppercase; letter-spacing:0.05em; line-height:1em;}
+.descriptor {font-size:11px; text-transform:uppercase; letter-spacing:0.05em; line-height:1.5em;}
 .caption {color: #848484; font-size: 13px; font-style: italic; letter-spacing: 0.01em; margin-bottom: 2em; margin-top: 5px;}
 
 /* Link Styles */
@@ -38,7 +38,7 @@ a {text-decoration: none;}
 a:hover {text-decoration: none;}
 p a {border-bottom:dotted 1px #0088CC;}
 p a:hover {border-bottom:dotted 1px #005580;}
-.more-link, a.more-link {text-align:left; clear:both;}
+.more-link, a.more-link {text-align:left; clear:both; margin-top:1em;}
 .more-link a, a.more-link {color: #006395; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; background-image: url("../images/ofw-more-link-arrows.png"); background-position: right 55%; background-repeat: no-repeat; padding-right: 10px; display:inline; border-bottom:none;}
 .more-link a:hover, a.more-link:hover {text-decoration:none; color:#000000; background-image: url("../images/ofw-more-link-arrows2.png"); border-bottom:none;}
 h2 a, h3 a {}
