@@ -24,9 +24,20 @@ body.roundedcorners .sidebar .region {-moz-border-radius: 5px; border-radius: 5p
 body.roundedcorners #secondary-menu .container {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 
-/* Text and Links Styles */
-a:focus {outline:none; border:0;}
+/* TextStyles */
 .summary {font-size:22px;line-height:1.4em;font-weight:300; margin-bottom:15px;}
+
+/* Link Styles */
+a:focus {outline:none; border:0;}
+a {text-decoration: none;}
+a:hover {text-decoration: none;}
+p a {border-bottom:dotted 1px #0088CC;}
+p a:hover {border-bottom:dotted 1px #005580;}
+.more-link, a.more-link {text-align:left; clear:both;}
+.more-link a, a.more-link {color: #006395; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; background-image: url("../images/ofw-more-link-arrows.png"); background-position: right 60%; background-repeat: no-repeat; padding-right: 13px; display:inline;}
+.more-link a:hover, a.more-link:hover {text-decoration:none; color:#000000; background-image: url("../images/ofw-more-link-arrows2.png");}
+h2 a, h3 a {}
+h2 a:hover, h3 a:hover {text-decoration:none;}
 
 /* Header */
 #header {margin: 15px 0 20px 0px;}
