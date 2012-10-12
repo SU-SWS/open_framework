@@ -35,7 +35,7 @@ p a {border-bottom:dotted 1px #0088CC;}
 p a:hover {border-bottom:dotted 1px #005580;}
 .more-link, a.more-link {text-align:left; clear:both;}
 .more-link a, a.more-link {color: #006395; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; background-image: url("../images/ofw-more-link-arrows.png"); background-position: right 60%; background-repeat: no-repeat; padding-right: 10px; display:inline; border-bottom:none;}
-.more-link a:hover, a.more-link:hover {text-decoration:none; color:#000000; background-image: url("../images/ofw-more-link-arrows2.png");}
+.more-link a:hover, a.more-link:hover {text-decoration:none; color:#000000; background-image: url("../images/ofw-more-link-arrows2.png"); border-bottom:none;}
 h2 a, h3 a {}
 h2 a:hover, h3 a:hover {text-decoration:none;}
 
