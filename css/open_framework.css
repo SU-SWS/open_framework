@@ -102,7 +102,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .pullquote, .pullquote-large, blockquote > p:first-child {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
 .pullquote {font-size: 14px; letter-spacing: 0.02em;}
 .pullquote-large {font-size:20px;}
-.credits {font-size: 12px; letter-spacing: 0.05em; line-height: 2em;}
+.credits {font-size: 12px; letter-spacing: 0.05em;}
 
 /* Positioning Styles */
 .float-left {float:left !important; margin-right:15px; margin-bottom:15px;}
