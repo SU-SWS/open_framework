@@ -118,7 +118,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 /* Postcard Layout Styles */
 .postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap {clear:both; margin-bottom:15px;}
 .postcard-left > div, .postcard-right > div {display:table-cell;}
-.postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
+.postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left; max-width: 50%;}
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
 .postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img {margin-right:15px; margin-bottom: 15px;}
 .postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img {margin-left:15px; margin-bottom:15px;}
@@ -131,6 +131,7 @@ img, a img {border: none; outline: none;}
 #main-content .border-none img {border:0px;}
 #main-content .border-bottom img {border-bottom:1px solid #d3d3d3;}
 #main-content .border-simple-nowidth img, #main-content .border-simple img {background-color: #e2e2e2; padding:6px;}
+#main-content .border-simple-nowidth img {width:80%; width: -moz-calc(90% - 12px);}
 #main-content .border-simple img {width: 97%; 
 /* Firefox */
 width: -moz-calc(100% - 12px);
