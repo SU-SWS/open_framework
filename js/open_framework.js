@@ -27,8 +27,9 @@ $(document).ready(function(){
 		$('.sidebar-first #content').addClass('span8');
 		$('.sidebar-second #sidebar-second').removeClass('span3');
 		$('.sidebar-second #sidebar-second').addClass('span12');
-		$('.sidebar-first #content').removeClass('span9');
-		$('.sidebar-first #content').addClass('span12');
+		$('.sidebar-second #content').removeClass('span9');
+		$('.sidebar-second #content').addClass('span12');
+		$('.sidebar-second .region-sidebar-second .block').addClass('span4');
 		}
 
 		else {
@@ -45,8 +46,9 @@ $(document).ready(function(){
 		$('.sidebar-first #content').addClass('span9');
 		$('.sidebar-second #sidebar-second').removeClass('span12');
 		$('.sidebar-second #sidebar-second').addClass('span3');
-		$('.sidebar-first #content').removeClass('span12');
-		$('.sidebar-first #content').addClass('span9');
+		$('.sidebar-second #content').removeClass('span12');
+		$('.sidebar-second #content').addClass('span9');
+		$('.sidebar-second .region-sidebar-second .block').removeClass('span4');
 		}
 	});
 	
@@ -68,8 +70,9 @@ $(document).ready(function(){
 		$('.sidebar-first #content').addClass('span8');
 		$('.sidebar-second #sidebar-second').removeClass('span3');
 		$('.sidebar-second #sidebar-second').addClass('span12');
-		$('.sidebar-first #content').removeClass('span9');
-		$('.sidebar-first #content').addClass('span12');
+		$('.sidebar-second #content').removeClass('span9');
+		$('.sidebar-second #content').addClass('span12');
+		$('.sidebar-second .region-sidebar-second .block').addClass('span4');
 		}
 
 		else {
@@ -86,8 +89,9 @@ $(document).ready(function(){
 		$('.sidebar-first #content').addClass('span9');
 		$('.sidebar-second #sidebar-second').removeClass('span12');
 		$('.sidebar-second #sidebar-second').addClass('span3');
-		$('.sidebar-first #content').removeClass('span12');
-		$('.sidebar-first #content').addClass('span9');
+		$('.sidebar-second #content').removeClass('span12');
+		$('.sidebar-second #content').addClass('span9');
+		$('.sidebar-second .region-sidebar-second .block').removeClass('span4');
 		}
 	});
 });
