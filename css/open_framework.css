@@ -77,8 +77,9 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 /* Main Content */
 #main {margin-bottom: 20px;}
 
-/* Content Head */
+/* Content */
 #content-head {margin-bottom:15px;}
+#content {margin-bottom: 20px;}
 
 /* Footer */
 #footer {margin-top: 50px;}
