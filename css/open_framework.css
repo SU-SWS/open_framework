@@ -187,10 +187,8 @@ form input {max-width: 90%;}
 #content-col3 [class*="span"] {width: 100%; margin-left: 0;}
 #content-col4 [class*="span"] {width: 100%; margin-left: 0;}
 #content-row2 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
-#content-row3 [class*="span"] {width: 48.6188%;}
-#content-row3 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
-#content-row4 [class*="span"] {width: 48.6188%;}
-#content-row4 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
+#content-row3 [class*="span"]:nth-child(3n+1) {clear: both; margin-left: 0;}
+#content-row4 [class*="span"]:nth-child(4n+1) {clear: both; margin-left: 0;}
 .btn.btn-navbar {float: left; margin-bottom: 8px;}
 .navbar-inner {padding: 5px 5px 0px 5px;}
 .content .callout, .content .bracket, .content .topline {width: 40%}
