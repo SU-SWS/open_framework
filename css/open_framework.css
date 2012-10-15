@@ -179,6 +179,10 @@ form input {max-width: 90%;}
 .navbar-inner {padding: 5px 5px 0px 5px;}
 #content-col2 [class*="span"] {width: 100%; margin-left: 0;}
 .callout, .bracket, .topline {width: 50%}
+
+#footer-content .block {float: left; margin-right: 4%; width: 48%;}
+#footer-content .block:nth-child(2n+1) {clear: both;}
+#footer-content .block:nth-child(2n) {margin-right: 0px;}
 }
      
 /* Portrait tablet to landscape and desktop */
