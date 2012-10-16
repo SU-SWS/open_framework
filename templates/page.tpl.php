@@ -10,14 +10,15 @@
   </div>
 </div>
 <!-- /#skipnav -->
+<?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['navigation']) || ($search)): ?>
 <div id="header" class="clearfix">
   <div class="container">
     <div class="row">
-      <div class="<?php if ($search): print 'span8'; else: print 'span12';	endif; ?>">
+      <div class="<?php if (($page['navigation']) || ($search)): print 'span8'; else: print 'span12'; endif; ?>">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" role="presentation" /> </a></div>
-        <?php endif; ?>
         <!-- /#logo -->
+        <?php endif; ?>
         <?php if ($site_name || $site_slogan): ?>
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
@@ -27,27 +28,32 @@
           <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div>
-        <?php endif; ?>
         <!-- /#name-and-slogan -->
+        <?php endif; ?>
         <?php if ($page['header']): ?>
         <div id="header-content" class="row-fluid"><?php print render($page['header']); ?></div>
+        <!-- /#header-content -->
         <?php endif; ?>
-        <!-- /#header-content --> 
       </div>
-      <?php if ($search): ?>
-      <div id="header-search" class="span4">
-        <?php if ($search): print render($search); endif; ?>
-      </div>
+      <?php if ($page['navigation']): ?>
+      <div id="navigation" class="span4"> <?php print render($page['navigation']); ?> </div>
       <?php endif; ?>
     </div>
   </div>
 </div>
 <!-- /#header -->
+<?php endif; ?>
 <?php if ($main_menu): ?>
 <div id="main-menu" class="clearfix">
   <div class="container">
     <div class="navbar">
-      <div class="navbar-inner"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+      <div class="navbar-inner">
+        <?php if ($search): ?>
+        <div id="nav-search">
+          <?php if ($search): print render($search); endif; ?>
+        </div>
+        <?php endif; ?>
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
         <div class="nav-collapse"><?php print render($main_menu_expanded); ?></div>
       </div>
     </div>

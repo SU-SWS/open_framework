@@ -47,6 +47,17 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 /* Header */
 #header {margin: 25px 0 30px 0px;}
 #header-content {clear: both;}
+
+/* Navigation */
+#navigation h2 {display: none;}
+#navigation .content ul {float: right; margin: 0; padding: 0;}
+#navigation .content ul li {display: inline-block;}
+#navigation .content ul ul {display: none;}
+
+/* Search */
+#nav-search {margin: -60px -20px 0 0; float: right; padding: 0px;}
+#nav-search .search-form {margin:0; padding:0;}
+#nav-search .form-item {margin:0;}
 #header-search {}
 #header-search .search-form {margin:0; padding:0;}
 #header-search .form-item {margin:0;}
@@ -61,7 +72,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 #site-slogan {font-size: 24px; line-height: 1.1em; margin-top: 0.3em;}
 #site-name a {text-decoration: none;}
 #site-name a:hover {text-decoration: none;}
-#name-and-slogan {max-width: 75%; height: 97px; display: table-cell; vertical-align: middle;}
+#name-and-slogan {display: table-cell; vertical-align: middle; padding: 10px 0px;}
 
 /* Main Menu */
 #main-menu {clear: both;}
@@ -174,6 +185,7 @@ form input {max-width: 90%;}
      
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+#nav-search {margin: 0; float: right; padding: 3px 0px;}
 #header-search {position: absolute; right: 30px; margin: -15px 0 0 0; width: auto;}
 .btn.btn-navbar {float: left; margin-bottom: 8px;}
 .navbar-inner {padding: 5px 5px 0px 5px;}
