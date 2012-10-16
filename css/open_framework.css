@@ -63,7 +63,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 #header-search .form-item {margin:0;}
 
 /* Logo */
-#header #logo {float: left; margin: 0 15px 0 0;}
+#header #logo {display:table-cell; margin: 0 15px 0 0; vertical-align:middle;}
 #header #logo img {max-height: 100px;}
 
 /* Site Name */
@@ -72,7 +72,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 #site-slogan {font-size: 24px; line-height: 1.1em; margin-top: 0.3em;}
 #site-name a {text-decoration: none; color:#333333;}
 #site-name a:hover {text-decoration: none; color:#000000;}
-#name-and-slogan {display: table-cell; vertical-align: middle; padding: 10px 0px;}
+#name-and-slogan {display: table-cell; vertical-align: middle; padding: 20px 0 20px 10px;}
 
 /* Main Menu */
 #main-menu {clear: both;}
@@ -143,7 +143,7 @@ img, a img {border: none; outline: none;}
 #main-content .border-none img {border:0px;}
 #main-content .border-bottom img {border-bottom:1px solid #d3d3d3;}
 #main-content .border-simple-nowidth img, #main-content .border-simple img {background-color: #e2e2e2; padding:6px; margin-bottom:10px;}
-#main-content .border-simple-nowidth img {width:80%; width: -moz-calc(90% - 12px);}
+#main-content .border-simple-nowidth img {width:80%; width: -moz-calc(90% - 12px); width: -webkit-calc(90% - 12px); width: -o-calc(90% - 12px); width: calc(90% - 12px);}
 #main-content .border-simple img {width: 97%; 
 /* Firefox */
 width: -moz-calc(100% - 12px);
