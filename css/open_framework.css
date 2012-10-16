@@ -143,7 +143,7 @@ img, a img {border: none; outline: none;}
 #main-content .border-none img {border:0px;}
 #main-content .border-bottom img {border-bottom:1px solid #d3d3d3;}
 #main-content .border-simple-nowidth img, #main-content .border-simple img {background-color: #e2e2e2; padding:6px; margin-bottom:10px;}
-#main-content .border-simple-nowidth img {width:90%; width: -moz-calc(90% - 12px); width: -webkit-calc(90% - 12px); width: -o-calc(90% - 12px); width: calc(90% - 12px);}
+#main-content .border-simple-nowidth img {width: -moz-calc(90% - 12px); width: -webkit-calc(90% - 12px); width: -o-calc(90% - 12px); width: calc(90% - 12px);}
 #main-content .border-simple img {width: 97%; 
 /* Firefox */
 width: -moz-calc(100% - 12px);
