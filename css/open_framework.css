@@ -155,6 +155,7 @@ width: -o-calc(100% - 12px);
 width: calc(100% - 12px);}
 #main-content .border-simple a:hover img {background-color: #bbbbbb;}
 #main-content .border-hairline a:hover img {border:1px solid #373737;}
+#main-content .border-simple-nowidth2 img {background-color: #e2e2e2; padding:6px; margin-bottom:10px;}
 
 /* Field Collection Overrides */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
