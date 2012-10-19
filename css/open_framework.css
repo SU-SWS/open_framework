@@ -123,6 +123,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .float-right {float:right !important; margin-left:15px; margin-bottom:15px;}
 .float-none {float:none !important;}
 .clear-none {clear:none !important;}
+.clear-left-margin {margin-left: 0 !important; padding-right:20px;}
 
 /* Sizing Styles */
 .span-full {width:100%;}
