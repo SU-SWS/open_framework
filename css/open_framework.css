@@ -39,8 +39,8 @@ a:hover {text-decoration: none;}
 p a {border-bottom:dotted 1px #0088CC;}
 p a:hover {border-bottom:dotted 1px #005580;}
 .more-link, a.more-link {text-align:left; clear:both; display: inline-block; margin-top: 0.5em;}
-.more-link a, a.more-link {color: #006395; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; background-image: url("../images/ofw-more-link-arrows.png"); background-position: right 55%; background-repeat: no-repeat; padding-right: 10px; display:inline; border-bottom:none;}
-.more-link a:hover, a.more-link:hover {text-decoration:none; color:#000000; background-image: url("../images/ofw-more-link-arrows2.png"); border-bottom:none;}
+.more-link a, a.more-link, .page-search .node-readmore a {color: #006395; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; background-image: url("../images/ofw-more-link-arrows.png"); background-position: right 55%; background-repeat: no-repeat; padding-right: 10px; display:inline; border-bottom:none;}
+.more-link a:hover, a.more-link:hover, .page-search .node-readmore a:hover {text-decoration:none; color:#000000; background-image: url("../images/ofw-more-link-arrows2.png"); border-bottom:none;}
 h2 a, h3 a {}
 h2 a:hover, h3 a:hover {text-decoration:none;}
 
@@ -63,16 +63,16 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 #header-search .form-item {margin:0;}
 
 /* Logo */
-#header #logo {float: left; margin: 0 15px 0 0;}
+#header #logo {display:table-cell; margin: 0 15px 0 0; vertical-align:middle;}
 #header #logo img {max-height: 100px;}
 
 /* Site Name */
 #site-name, #site-slogan {font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
 #site-name {font-size: 44px; font-weight:bold;}
 #site-slogan {font-size: 24px; line-height: 1.1em; margin-top: 0.3em;}
-#site-name a {text-decoration: none;}
-#site-name a:hover {text-decoration: none;}
-#name-and-slogan {display: table-cell; vertical-align: middle; padding: 10px 0px;}
+#site-name a {text-decoration: none; color:#333333;}
+#site-name a:hover {text-decoration: none; color:#000000;}
+#name-and-slogan {display: table-cell; vertical-align: middle; padding: 20px 0 20px 10px;}
 
 /* Main Menu */
 #main-menu {clear: both;}
@@ -123,6 +123,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .float-right {float:right !important; margin-left:15px; margin-bottom:15px;}
 .float-none {float:none !important;}
 .clear-none {clear:none !important;}
+.clear-left-margin {margin-left: 0 !important; padding-right:20px;}
 
 /* Sizing Styles */
 .span-full {width:100%;}
@@ -130,7 +131,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 /* Postcard Layout Styles */
 .postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap {clear:both; margin-bottom:15px;}
 .postcard-left > div, .postcard-right > div {display:table-cell;}
-.postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left; max-width: 50%;}
+.postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
 .postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img {margin-right:15px; margin-bottom: 15px;}
 .postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img {margin-left:15px; margin-bottom:15px;}
@@ -143,7 +144,6 @@ img, a img {border: none; outline: none;}
 #main-content .border-none img {border:0px;}
 #main-content .border-bottom img {border-bottom:1px solid #d3d3d3;}
 #main-content .border-simple-nowidth img, #main-content .border-simple img {background-color: #e2e2e2; padding:6px; margin-bottom:10px;}
-#main-content .border-simple-nowidth img {width:80%; width: -moz-calc(90% - 12px);}
 #main-content .border-simple img {width: 97%; 
 /* Firefox */
 width: -moz-calc(100% - 12px);
@@ -155,6 +155,9 @@ width: -o-calc(100% - 12px);
 width: calc(100% - 12px);}
 #main-content .border-simple a:hover img {background-color: #bbbbbb;}
 #main-content .border-hairline a:hover img {border:1px solid #373737;}
+
+/* Default Node Styles */
+.page-node #content-body .field {margin-bottom:20px;}
 
 /* Field Collection Overrides */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
@@ -168,12 +171,16 @@ width: calc(100% - 12px);}
 .views_slideshow_cycle_main .field-content {max-width: 100%; width: 100%;}
 .views_slideshow_cycle_main .field-content img {max-width: 100%; width: 100%; height: auto; margin: 0; padding: 0;}
 
+/* Form Styles */
+.form-item label {display:block; font-weight:bold;}
+
 /* Bootstrap Override */
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
 .navbar-inner {min-height: 0px;}
 form input {max-width: 90%;}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {margin-bottom:0;}
 
 @media (min-width: 767px) {
 .navbar-inner {padding: 0 20px;}
