@@ -220,7 +220,7 @@
 <?php if ($page['footer']): ?>
 <div id="footer" class="clearfix">
   <div class="container">
-    <div id="footer-content" class="row"> <?php print render($page['footer']); ?> </div>
+    <div id="footer-content" class="row-fluid"> <?php print render($page['footer']); ?> </div>
   </div>
 </div>
 <!-- /#footer -->
