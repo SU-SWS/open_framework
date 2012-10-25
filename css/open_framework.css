@@ -227,6 +227,14 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 #content-col4.row-fluid .span3 {display: block; float: left; width: 23.5%; margin-right: 2%;}
 #content-col4.row-fluid [class*="span"]:nth-child(4n) {margin-right: 0;}
 #content-col4.row-fluid [class*="span"]:nth-child(4n+1) {clear: both; margin-left: 0;}
+
+#sidebar-first .row-fluid .block {display: block; float: left; width: 49%; margin-right: 2%;}
+#sidebar-first .row-fluid .block:nth-child(2n) {margin-right: 0;}
+#sidebar-first .row-fluid .block:nth-child(2n+1) {clear: both; margin-left: 0;}
+
+#sidebar-second .row-fluid .block {display: block; float: left; width: 49%; margin-right: 2%;}
+#sidebar-second .row-fluid .block:nth-child(2n) {margin-right: 0;}
+#sidebar-second .row-fluid .block:nth-child(2n+1) {clear: both; margin-left: 0;}
 }
      
 /* Portrait tablet to landscape and desktop */
