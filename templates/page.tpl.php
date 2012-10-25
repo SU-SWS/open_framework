@@ -81,7 +81,9 @@
       <?php endif; ?>
       <div id="content" class="<?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span6'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span9'; else: print 'span12'; endif; ?>">
         <div id="content-wrapper">
-          <div id="content-head" class="row-fluid"> <?php print render($page['highlighted']); ?><?php print render($title_prefix); ?>
+          <div id="content-head" class="row-fluid">
+            <div id="highlighted" class="clearfix"><?php print render($page['highlighted']); ?></div>
+            <?php print render($title_prefix); ?>
             <?php if ($title): ?>
             <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
             <?php endif; ?>
