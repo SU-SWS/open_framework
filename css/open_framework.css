@@ -260,7 +260,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 #content-row3 [class*="span"]:nth-child(3n+1) {clear: both; margin-left: 0;}
 #content-row4 [class*="span"]:nth-child(4n+1) {clear: both; margin-left: 0;}
 .btn.btn-navbar {float: left; margin-bottom: 8px;}
-.navbar-inner {padding: 5px 5px 0px 5px;}
+.navbar-inner {padding: 0px 5px;}
 #nav-search {margin-right: 0px;}
 .content .callout, .content .bracket, .content .topline {width: 40%}
 }
