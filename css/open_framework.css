@@ -207,9 +207,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
      
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-#content-col2 [class*="span"] {width: 100%; margin-left: 0;}
-#content-col3 [class*="span"] {width: 100%; margin-left: 0;}
-#content-col4 [class*="span"] {width: 100%; margin-left: 0;}
 #content-row2 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 #content-row3 [class*="span"]:nth-child(3n+1) {clear: both; margin-left: 0;}
 #content-row4 [class*="span"]:nth-child(4n+1) {clear: both; margin-left: 0;}
@@ -220,8 +217,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 /* desktop and large desktop */
 @media (min-width: 980px) and (max-width: 1199px) {
-#content-col4 [class*="span"] {width: 48.9362%;}
-#content-col4 [class*="span"].col4-3 {margin-left: 0;}
 #content-row2 [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 #content-row3 [class*="span"]:nth-child(3n+1) {clear: both; margin-left: 0;}
 #content-row4 [class*="span"]:nth-child(4n+1) {clear: both; margin-left: 0;}
