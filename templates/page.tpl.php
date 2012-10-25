@@ -67,10 +67,10 @@
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     <?php if ($page['main_top']): ?>
-    <div id="main-top" class="row"> <?php print render($page['main_top']); ?> </div>
+    <div id="main-top" class="row-fluid"> <?php print render($page['main_top']); ?> </div>
     <?php endif; ?>
     <?php if ($page['main_upper']): ?>
-    <div id="main-upper" class="row"> <?php print render($page['main_upper']); ?> </div>
+    <div id="main-upper" class="row-fluid"> <?php print render($page['main_upper']); ?> </div>
     <?php endif; ?>
     <div id="main-content" class="row">
       <?php if ($page['sidebar_first']): ?>
@@ -192,10 +192,10 @@
       <?php endif; ?>
     </div>
     <?php if ($page['main_lower']): ?>
-    <div id="main-lower" class="row"> <?php print render($page['main_lower']); ?> </div>
+    <div id="main-lower" class="row-fluid"> <?php print render($page['main_lower']); ?> </div>
     <?php endif; ?>
     <?php if ($page['main_bottom']): ?>
-    <div id="main-bottom" class="row"> <?php print render($page['main_bottom']); ?> </div>
+    <div id="main-bottom" class="row-fluid"> <?php print render($page['main_bottom']); ?> </div>
     <?php endif; ?>
   </div>
 </div>
