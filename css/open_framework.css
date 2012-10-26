@@ -193,22 +193,22 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 /* Landscape phones to Tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-body.two-sidebars #main-top .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-body.two-sidebars #main-top .block[class*="span"]:first-child {margin-right: 2%;}	
-body.two-sidebars #main-top .block[class*="span"].clear-row {margin-right: 2%;}
-body.two-sidebars #main-top .block.span12.clear-row {width: 100%; margin-right: 0;}
-body.two-sidebars #main-upper .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-body.two-sidebars #main-upper .block[class*="span"]:first-child {margin-right: 2%;}	
-body.two-sidebars #main-upper .block[class*="span"].clear-row {margin-right: 2%;}
-body.two-sidebars #main-upper .block.span12.clear-row {width: 100%; margin-right: 0;}
-body.two-sidebars #main-lower .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-body.two-sidebars #main-lower .block[class*="span"]:first-child {margin-right: 2%;}	
-body.two-sidebars #main-lower .block[class*="span"].clear-row {margin-right: 2%;}
-body.two-sidebars #main-lower .block.span12.clear-row {width: 100%; margin-right: 0;}
-body.two-sidebars #main-bottom .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-body.two-sidebars #main-bottom .block[class*="span"]:first-child {margin-right: 2%;}	
-body.two-sidebars #main-bottom .block[class*="span"].clear-row {margin-right: 2%;}	
-body.two-sidebars #main-bottom .block.span12.clear-row {width: 100%; margin-right: 0;}
+#main-top .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
+#main-top .block[class*="span"]:first-child {margin-right: 2%;}	
+#main-top .block[class*="span"].clear-row {margin-right: 2%;}
+#main-top .block.span12.clear-row {width: 100%; margin-right: 0;}
+#main-upper .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
+#main-upper .block[class*="span"]:first-child {margin-right: 2%;}	
+#main-upper .block[class*="span"].clear-row {margin-right: 2%;}
+#main-upper .block.span12.clear-row {width: 100%; margin-right: 0;}
+#main-lower .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
+#main-lower .block[class*="span"]:first-child {margin-right: 2%;}	
+#main-lower .block[class*="span"].clear-row {margin-right: 2%;}
+#main-lower .block.span12.clear-row {width: 100%; margin-right: 0;}
+#main-bottom .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
+#main-bottom .block[class*="span"]:first-child {margin-right: 2%;}	
+#main-bottom .block[class*="span"].clear-row {margin-right: 2%;}	
+#main-bottom .block.span12.clear-row {width: 100%; margin-right: 0;}
 
 body.two-sidebars #content-top .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
 body.two-sidebars #content-top .block[class*="span"]:first-child {margin-right: 2%;}
@@ -248,12 +248,12 @@ body.two-sidebars #content-col4.row-fluid .span3 {display: block; float: left; w
 body.two-sidebars #content-col4.row-fluid [class*="span"]:nth-child(2n) {margin-right: 0;}
 body.two-sidebars #content-col4.row-fluid [class*="span"]:nth-child(2n+1) {clear: both; margin-left: 0;}
 
-body.two-sidebars #sidebar-first .row-fluid .block {display: block; float: left; width: 49%; margin-right: 2%;}
-body.two-sidebars #sidebar-first .row-fluid .block:nth-child(2n) {margin-right: 0;}
-body.two-sidebars #sidebar-first .row-fluid .block:nth-child(2n+1) {clear: both; margin-left: 0;}
-body.two-sidebars #sidebar-second .row-fluid .block {display: block; float: left; width: 49%; margin-right: 2%;}
-body.two-sidebars #sidebar-second .row-fluid .block:nth-child(2n) {margin-right: 0;}
-body.two-sidebars #sidebar-second .row-fluid .block:nth-child(2n+1) {clear: both; margin-left: 0;}
+#sidebar-first .row-fluid .block {display: block; float: left; width: 49%; margin-right: 2%;}
+#sidebar-first .row-fluid .block:nth-child(2n) {margin-right: 0;}
+#sidebar-first .row-fluid .block:nth-child(2n+1) {clear: both; margin-left: 0;}
+#sidebar-second .row-fluid .block {display: block; float: left; width: 49%; margin-right: 2%;}
+#sidebar-second .row-fluid .block:nth-child(2n) {margin-right: 0;}
+#sidebar-second .row-fluid .block:nth-child(2n+1) {clear: both; margin-left: 0;}
 
 #footer-content .block {float: left; margin-right: 4%; width: 48%;}
 #footer-content .block:nth-child(2n+1) {clear: both;}
