@@ -194,37 +194,29 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 /* Landscape phones to Tablet */
 @media (min-width: 481px) and (max-width: 767px) {
 #main-top .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#main-top .block[class*="span"]:first-child {margin-right: 2%;}	
-#main-top .block[class*="span"].clear-row {margin-right: 2%;}
+#main-top .block[class*="span"]:nth-child(odd) {margin-right: 2%;}
 #main-top .block.span12.clear-row {width: 100%; margin-right: 0;}
 #main-upper .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#main-upper .block[class*="span"]:first-child {margin-right: 2%;}	
-#main-upper .block[class*="span"].clear-row {margin-right: 2%;}
+#main-upper .block[class*="span"]:nth-child(odd) {margin-right: 2%;}
 #main-upper .block.span12.clear-row {width: 100%; margin-right: 0;}
 #main-lower .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#main-lower .block[class*="span"]:first-child {margin-right: 2%;}	
-#main-lower .block[class*="span"].clear-row {margin-right: 2%;}
+#main-lower .block[class*="span"]:nth-child(odd) {margin-right: 2%;}
 #main-lower .block.span12.clear-row {width: 100%; margin-right: 0;}
 #main-bottom .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#main-bottom .block[class*="span"]:first-child {margin-right: 2%;}	
-#main-bottom .block[class*="span"].clear-row {margin-right: 2%;}	
+#main-bottom .block[class*="span"]:nth-child(odd) {margin-right: 2%;}	
 #main-bottom .block.span12.clear-row {width: 100%; margin-right: 0;}
 
 #content-top .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#content-top .block[class*="span"]:first-child {margin-right: 2%;}
-#content-top .block[class*="span"].clear-row {margin-right: 2%;}
+#content-top .block[class*="span"]:nth-child(odd) {margin-right: 2%;}
 #content-top .block.span12.clear-row {width: 100%; margin-right: 0;}
 #content-upper .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#content-upper .block[class*="span"]:first-child {margin-right: 2%;}
-#content-upper .block[class*="span"].clear-row {margin-right: 2%;}
+#content-upper .block[class*="span"]:nth-child(odd) {margin-right: 2%;}
 #content-upper .block.span12.clear-row {width: 100%; margin-right: 0;}
 #content-lower .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#content-lower .block[class*="span"]:first-child {margin-right: 2%;}
-#content-lower .block[class*="span"].clear-row {margin-right: 2%;}
+#content-lower .block[class*="span"]:nth-child(odd) { margin-right: 2%; }
 #content-lower .block.span12.clear-row {width: 100%; margin-right: 0;}
 #content-bottom .block[class*="span"] {display: block; float: left; width: 49%; margin-right: 0;}
-#content-bottom .block[class*="span"]:first-child {margin-right: 2%;}
-#content-bottom .block[class*="span"].clear-row {margin-right: 2%;}
+#content-bottom .block[class*="span"]:nth-child(odd) {margin-right: 2%;}
 #content-bottom .block.span12.clear-row {width: 100%; margin-right: 0;}
 
 #content-row2 .span6 {display: block; float: left; width: 49%; margin-right: 2%;}
