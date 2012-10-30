@@ -189,6 +189,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 /* Landscape phones and down */
 @media (max-width: 480px) {
 #content-col2 [class*="span"] {width: 100%; margin-left: 0;}
+#header #logo {display:block; text-align:center;}
 }
      
 /* Landscape phone to portrait tablet */
