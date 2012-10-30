@@ -67,10 +67,10 @@
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     <?php if ($page['main_top']): ?>
-    <div id="main-top" class="row"> <?php print render($page['main_top']); ?> </div>
+    <div id="main-top" class="row-fluid"> <?php print render($page['main_top']); ?> </div>
     <?php endif; ?>
     <?php if ($page['main_upper']): ?>
-    <div id="main-upper" class="row"> <?php print render($page['main_upper']); ?> </div>
+    <div id="main-upper" class="row-fluid"> <?php print render($page['main_upper']); ?> </div>
     <?php endif; ?>
     <div id="main-content" class="row">
       <?php if ($page['sidebar_first']): ?>
@@ -81,7 +81,9 @@
       <?php endif; ?>
       <div id="content" class="<?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span6'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span9'; else: print 'span12'; endif; ?>">
         <div id="content-wrapper">
-          <div id="content-head" class="row-fluid"> <?php print render($page['highlighted']); ?><?php print render($title_prefix); ?>
+          <div id="content-head" class="row-fluid">
+            <div id="highlighted" class="clearfix"><?php print render($page['highlighted']); ?></div>
+            <?php print render($title_prefix); ?>
             <?php if ($title): ?>
             <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
             <?php endif; ?>
@@ -192,10 +194,10 @@
       <?php endif; ?>
     </div>
     <?php if ($page['main_lower']): ?>
-    <div id="main-lower" class="row"> <?php print render($page['main_lower']); ?> </div>
+    <div id="main-lower" class="row-fluid"> <?php print render($page['main_lower']); ?> </div>
     <?php endif; ?>
     <?php if ($page['main_bottom']): ?>
-    <div id="main-bottom" class="row"> <?php print render($page['main_bottom']); ?> </div>
+    <div id="main-bottom" class="row-fluid"> <?php print render($page['main_bottom']); ?> </div>
     <?php endif; ?>
   </div>
 </div>
@@ -220,7 +222,7 @@
 <?php if ($page['footer']): ?>
 <div id="footer" class="clearfix">
   <div class="container">
-    <div id="footer-content" class="row"> <?php print render($page['footer']); ?> </div>
+    <div id="footer-content" class="row-fluid"> <?php print render($page['footer']); ?> </div>
   </div>
 </div>
 <!-- /#footer -->
