@@ -195,11 +195,16 @@ width: calc(100% - 12px);}
 /* HELPER CLASSES ************************ */
 
 /* ----- Positioning ----------------- */
+.spacer {margin-top: 30px;}
 .float-left {float:left !important; margin-right:15px; margin-bottom:15px;}
 .float-right {float:right !important; margin-left:15px; margin-bottom:15px;}
 .float-none {float:none !important;}
 .clear-none {clear:none !important;}
 .clear-left-margin {margin-left: 0 !important; padding-right:20px;}
+.clear-right {clear: right !important;}
+.clear-left {clear: left !important;}
+.clear-both {clear: both !important;}
+.clear-block {} /* Already defined by drupal */
 
 /* ----- Sizing ---------------------- */
 .span-full {width:100%;}
