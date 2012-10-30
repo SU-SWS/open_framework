@@ -175,6 +175,7 @@ width: calc(100% - 12px);}
 .form-item label {display:block; font-weight:bold;}
 
 /* Bootstrap Override */
+.sidebar .sidebar-content[class*="span"] {width: auto;}
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
