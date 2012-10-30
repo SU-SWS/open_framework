@@ -60,6 +60,8 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 /* ----- Forms ----------------------- */
 .form-item label {display:block; font-weight:bold;}
 
+/* ----- Other ----------------------- */
+
 
 /* HEADER ********************************* */
 
@@ -109,7 +111,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 
 /* ----- Admin Menu ------------------ */
 
-/* Navigation */
+/* Navigation -- this is used as an alternative to main menu without the default Bootstrap menu styles */
 #navigation h2 {display: none;}
 #navigation .content ul {float: right; margin: 0; padding: 0;}
 #navigation .content ul li {display: inline-block;}
