@@ -1,30 +1,39 @@
-/* Theme Option: Front Page Title */
+/* THEME OPTIONS ************************** */
+
+/* ----- Front Page Title ------------ */
 body.front .title {display: none;}
 body.front.show-title .title {display: block;}
 
-/* Theme Option: Breadcrumb */
+/* ----- Breadcrumb ------------------ */
 #breadcrumb {display: none;}
 body.show-breadcrumb #breadcrumb {display: block;}
 
-/* Theme Option: Body Background Type */
+/* ----- Body Background Type -------- */
 body.photobg {background-attachment: fixed !important; background-size: cover !important;}
 
-/* Theme Option: Background Color */
+/* ----- Background Color ------------ */
 body.bodybg .sidebar .region {background-color: rgba(255,255,255,0.9); padding: 10px;}
 body.bodybg #secondary-menu .container {background-color: rgba(255,255,255,0.9); padding: 0 10px 10px 10px;}
 body.bodybg #content-wrapper {background: #fff; padding: 10px;}
 
-/* Theme Option: Borders */
+/* ----- Borders -------------------- */
 body.borders .sidebar .region {border: 1px solid #d4d4d4; padding: 10px;}
 body.borders #secondary-menu .container {border: 1px solid #d4d4d4; padding: 10px;}
 body.borders #content-wrapper {border: 1px solid #d4d4d4; padding: 10px;}
 
-/* Theme Option: Rounded Corners */
+/* ------ Rounded Corners ----------- */
 body.roundedcorners .sidebar .region {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 body.roundedcorners #secondary-menu .container {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 
-/* Text Styles */
+
+/* GLOBAL ********************************* */
+
+/* ----- Body ------------------------ */
+
+/* ----- Custom Fonts ---------------- */
+
+/* ----- Text ------------------------ */
 p {margin: 0 0 1em 0;}
 em {padding: 0 3px 0 0;}
 quote, code {margin: .5em 0;}
@@ -32,7 +41,7 @@ quote, code {margin: .5em 0;}
 .descriptor {font-size:12px; text-transform:uppercase; letter-spacing:0.04em; line-height:1.5em; margin-bottom:4px;}
 .caption {color: #848484; font-size: 13px; font-style: italic; letter-spacing: 0.01em; margin-bottom: 2em; margin-top: 5px;}
 
-/* Link Styles */
+/* ----- Links ----------------------- */
 a:focus {outline:none; border:0;}
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
@@ -44,17 +53,21 @@ p a:hover {border-bottom:dotted 1px #005580;}
 h2 a, h3 a {}
 h2 a:hover, h3 a:hover {text-decoration:none;}
 
-/* Header */
+/* ----- Lists ----------------------- */
+
+/* ----- Tables ---------------------- */
+
+/* ----- Forms ----------------------- */
+.form-item label {display:block; font-weight:bold;}
+
+
+/* HEADER ********************************* */
+
+/* ----- Header Region --------------- */
 #header {margin: 25px 0 30px 0px;}
 #header-content {clear: both;}
 
-/* Navigation */
-#navigation h2 {display: none;}
-#navigation .content ul {float: right; margin: 0; padding: 0;}
-#navigation .content ul li {display: inline-block;}
-#navigation .content ul ul {display: none;}
-
-/* Search */
+/* ----- Search Box ------------------ */
 #nav-search {margin: -60px -20px 0 0; float: right; padding: 0px;}
 #nav-search .search-form {margin:0; padding:0;}
 #nav-search .form-item {margin:0;}
@@ -62,11 +75,11 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 #header-search .search-form {margin:0; padding:0;}
 #header-search .form-item {margin:0;}
 
-/* Logo */
+/* ----- Logo ------------------------ */
 #header #logo {display:table-cell; margin: 0 15px 0 0; vertical-align:middle;}
 #header #logo img {max-height: 100px;}
 
-/* Site Name */
+/* ----- Site Title and Slogan ------- */
 #site-name, #site-slogan {font-family: inherit; line-height: 1; color: inherit; text-rendering: optimizelegibility;}
 #site-name {font-size: 44px; font-weight:bold;}
 #site-slogan {font-size: 24px; line-height: 1.1em; margin-top: 0.3em;}
@@ -74,7 +87,10 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 #site-name a:hover {text-decoration: none; color:#000000;}
 #name-and-slogan {display: table-cell; vertical-align: middle; padding: 20px 0 20px 10px;}
 
-/* Main Menu */
+
+/* NAVIGATION ***************************** */
+
+/* ----- Main Navigation ------------- */
 #main-menu {clear: both;}
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu {display: block;}
 #main-menu .dropdown-menu {margin: 0;}
@@ -83,52 +99,67 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 #main-menu ul li.expanded {list-style-image: none;}
 #main-menu ul li.collapsed {list-style-image: none;}
 
-/* Sidebars */
+/* ----- Secondary Navigation -------- */
+
+/* ----- Breadcrumbs ----------------- */
+
+/* ----- First Sidebar Menu Blocks --- */
+
+/* ----- Second Sidebar Menu Blocks -- */
+
+/* ----- Admin Menu ------------------ */
+
+/* Navigation */
+#navigation h2 {display: none;}
+#navigation .content ul {float: right; margin: 0; padding: 0;}
+#navigation .content ul li {display: inline-block;}
+#navigation .content ul ul {display: none;}
+
+
+/* SIDEBARS ******************************* */
 #sidebar-first {margin-bottom: 20px;}
 #sidebar-second {margin-bottom: 20px;}
 .sidebar ul.nav {margin-left: 20px;}
 
-/* Main Content */
-#main {margin-bottom: 20px;}
-
-/* Content */
-#content-head {margin-bottom:15px;}
-#content {margin-bottom: 20px;}
-
-/* Footer */
+/* FOOTER ********************************* */
 #footer {margin-top: 50px;}
 #footer h2 {font-size:20px; line-height:1.5em;}
 
-/* Block and Container Styles */
+/* ----- Fat Footer ------------------ */
+
+/* CONTENT ******************************** */
+#main {margin-bottom: 20px;}
+#content-head {margin-bottom:15px;}
+#content {margin-bottom: 20px;}
+
+/* VIEWS ********************************** */
+/* ----- Search Results -------------- */
+
+/* CONTAINERS ***************************** */
+
+/* ----- Blocks ---------------------- */
 #main .block {margin-bottom:30px;}
 #main #block-system-main {margin-bottom:0;}
 .sub-block {}
+
+/* ----- Well ------------------------ */
 .well {}
 .footer-well {}
 
-/* Callout Styles */
+/* ----- Callouts and Blockquotes ---- */
 .callout, .bracket, .topline {width:30%; margin-top:15px; padding: 15px 0; border-left: 0 none; clear: both;}
 .topline, .bracket {border-top: 1px solid #EEEEEE;}
 .bracket {border-bottom: 1px solid #EEEEEE;}
 .callout {border:1px solid #eeeeee; padding:15px; width:27.25%;}
 
-/* Pullquote Text Styles */
+/* ----- Pullquote Text -------------- */
 .pullquote, .pullquote-large, blockquote > p:first-child {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
 .pullquote {font-size: 14px; letter-spacing: 0.02em;}
 .pullquote-large {font-size:20px;}
 .credits {font-size: 12px; letter-spacing: 0.05em;}
 
-/* Positioning Styles */
-.float-left {float:left !important; margin-right:15px; margin-bottom:15px;}
-.float-right {float:right !important; margin-left:15px; margin-bottom:15px;}
-.float-none {float:none !important;}
-.clear-none {clear:none !important;}
-.clear-left-margin {margin-left: 0 !important; padding-right:20px;}
 
-/* Sizing Styles */
-.span-full {width:100%;}
-
-/* Postcard Layout Styles */
+/* POSTCARD LAYOUTS ********************** */
 .postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap {clear:both; margin-bottom:15px;}
 .postcard-left > div, .postcard-right > div {display:table-cell;}
 .postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
@@ -136,7 +167,7 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 .postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img {margin-right:15px; margin-bottom: 15px;}
 .postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img {margin-left:15px; margin-bottom:15px;}
 
-/* Image Styles */
+/* IMAGES ******************************** */
 img, a img {border: none; outline: none;}
 #main-content .border-hairline img {border:1px solid #d8d8d8;}
 #main-content .border-shadow img {-webkit-box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08); -moz-box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08); box-shadow: 0 4px 3px 0px rgba(0, 0, 0, 0.08);}
@@ -156,25 +187,25 @@ width: calc(100% - 12px);}
 #main-content .border-simple a:hover img {background-color: #bbbbbb;}
 #main-content .border-hairline a:hover img {border:1px solid #373737;}
 
-/* Default Node Styles */
-.page-node #content-body .field {margin-bottom:20px;}
+/* ICONS ********************************* */
 
-/* Field Collection Overrides */
-.field-collection-container {margin-bottom:0; border-bottom:0;}
-.field-collection-view {margin:0; padding:0;}
-.field-collection-container .field-items .field-item {margin:0;}
 
-/* Views Slideshow */
-.views_slideshow_cycle_main {width: 100%; float: left; position: relative; z-index:-50;}
-.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}
-.views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {width: 100% !important; height: auto;}
-.views_slideshow_cycle_main .field-content {max-width: 100%; width: 100%;}
-.views_slideshow_cycle_main .field-content img {max-width: 100%; width: 100%; height: auto; margin: 0; padding: 0;}
+/* HELPER CLASSES ************************ */
 
-/* Form Styles */
-.form-item label {display:block; font-weight:bold;}
+/* ----- Positioning ----------------- */
+.float-left {float:left !important; margin-right:15px; margin-bottom:15px;}
+.float-right {float:right !important; margin-left:15px; margin-bottom:15px;}
+.float-none {float:none !important;}
+.clear-none {clear:none !important;}
+.clear-left-margin {margin-left: 0 !important; padding-right:20px;}
 
-/* Bootstrap Override */
+/* ----- Sizing ---------------------- */
+.span-full {width:100%;}
+
+
+/* GENERAL OVERRIDES ********************* */
+
+/* ----- Bootstrap Overrides --------- */
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
@@ -182,6 +213,43 @@ width: calc(100% - 12px);}
 form input {max-width: 90%;}
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {margin-bottom:0;}
 
+/* ----- Field Collection Overrides -- */
+.field-collection-container {margin-bottom:0; border-bottom:0;}
+.field-collection-view {margin:0; padding:0;}
+.field-collection-container .field-items .field-item {margin:0;}
+
+/* ----- Field Label Overrides ------- */
+.page-node #content-body .field {margin-bottom:20px;}
+
+
+/* STANFORD FEATURES OVERRIDES *********** */
+
+/* ----- Views Slideshow ------------- */
+.views_slideshow_cycle_main {width: 100%; float: left; position: relative; z-index:-50;}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {width: 100% !important; height: auto;}
+.views_slideshow_cycle_main .field-content {max-width: 100%; width: 100%;}
+.views_slideshow_cycle_main .field-content img {max-width: 100%; width: 100%; height: auto; margin: 0; padding: 0;}
+
+/* ----- Banner Image Slideshow ------ */
+
+/* ----- Stanford Events Importer ---- */
+
+/* ----- Stanford Events Views ------- */
+
+/* ----- Stanford Courses ------------ */
+
+
+/* ADMINISTRATION ************************ */
+
+/* ----- Admin ----------------------- */
+
+/* ----- User Block ------------------ */
+
+
+/* MEDIA QUERIES ************************* */
+
+/* ----- Responsive ------------------ */
 @media (min-width: 768px) {
 .navbar-inner {padding: 0 20px;}
 }
@@ -305,3 +373,5 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 #content-row3 [class*="span"]:nth-child(3n+1) {clear: both; margin-left: 0;}
 #content-row4 [class*="span"]:nth-child(4n+1) {clear: both; margin-left: 0;}
 }
+
+/* ----- Print ----------------------- */
