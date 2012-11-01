@@ -214,7 +214,16 @@ width: calc(100% - 12px);}
 /* GENERAL OVERRIDES ********************* */
 
 /* ----- Bootstrap Overrides --------- */
-.sidebar .sidebar-content[class*="span"] {width: auto;}
+@media (min-width: 768px) {
+#sidebar-first .sidebar-content[class*="span"] {float: none; width: 100%;}
+#sidebar-first .sidebar-content {float: none; width: 100%;}
+}
+
+@media (min-width: 980px) {
+#sidebar-second .sidebar-content[class*="span"] {float: none; width: 100%;}
+#sidebar-second .sidebar-content {float: none; width: 100%;}
+}
+
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
