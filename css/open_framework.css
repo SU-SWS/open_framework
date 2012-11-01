@@ -59,7 +59,8 @@ h2 a:hover, h3 a:hover {text-decoration:none;}
 /* ----- Tables ---------------------- */
 tr.even, tr.odd {background-color:transparent; border-bottom: 1px solid #DDDDDD;}
 th, td {padding: 0.5em; border: 1px solid #DDDDDD;}
-th {background-color:#F5F5F5; vertical-align: bottom;}
+th, td.active {background-color:#F5F5F5;}
+th {vertical-align: bottom;}
 td {vertical-align: top;}
 
 /* ----- Forms ----------------------- */
