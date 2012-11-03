@@ -230,12 +230,11 @@ width: calc(100% - 12px);}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-#sidebar-second .sidebar-content[class*="span"] {width: 31.4917%;]
+#sidebar-second .sidebar-content[class*="span"] {width: 31.4917%;}
 }
 
 .row-fluid [class*="span"] {min-height: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
-.row-fluid [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
 .navbar-inner {min-height: 0px;}
 form input {max-width: 90%;}
