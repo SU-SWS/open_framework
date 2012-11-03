@@ -229,7 +229,7 @@ width: calc(100% - 12px);}
 #sidebar-first .sidebar-content {float: none; width: 100%;}
 }
 
-@media (min-width: 768px) and (min-width: 979px) {
+@media (min-width: 768px) and (max-width: 979px) {
 #sidebar-second .sidebar-content[class*="span"] {width: 31.4917%;]
 }
 
