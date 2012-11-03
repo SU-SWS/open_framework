@@ -219,14 +219,18 @@ width: calc(100% - 12px);}
 /* GENERAL OVERRIDES ********************* */
 
 /* ----- Bootstrap Overrides --------- */
+@media (min-width: 980px) {
+#sidebar-second .sidebar-content[class*="span"] {float: none; width: 100%;}
+#sidebar-second .sidebar-content {float: none; width: 100%;}
+}
+
 @media (min-width: 768px) {
 #sidebar-first .sidebar-content[class*="span"] {float: none; width: 100%;}
 #sidebar-first .sidebar-content {float: none; width: 100%;}
 }
 
-@media (min-width: 980px) {
-#sidebar-second .sidebar-content[class*="span"] {float: none; width: 100%;}
-#sidebar-second .sidebar-content {float: none; width: 100%;}
+@media (min-width: 768px) and (min-width: 979px) {
+#sidebar-second .sidebar-content[class*="span"] {width: 31.4917%;]
 }
 
 .row-fluid [class*="span"] {min-height: 0;}
