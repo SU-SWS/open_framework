@@ -168,7 +168,7 @@ td {vertical-align: top;}
 
 
 /* POSTCARD LAYOUTS ********************** */
-.postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap {clear:both; margin-bottom:15px;}
+.postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap {clear:both; margin-bottom:15px; display:table;}
 .postcard-left > div, .postcard-right > div {display:table-cell;}
 .postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
