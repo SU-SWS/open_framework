@@ -237,6 +237,7 @@ width: calc(100% - 12px);}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
 .navbar-inner {min-height: 0px;}
+.dropdown-menu .active > a, .dropdown-menu .active > a:hover {color: #FFF;}
 form input {max-width: 90%;}
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {margin-bottom:0;}
 
