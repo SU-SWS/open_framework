@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#site-logo {
+	display: table-cell;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+#site-title-container {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.header-container {margin-bottom:20px;}
