@@ -10,14 +10,15 @@ scripts[] = js/jquery-1.8.1.min.js
 scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/open_framework.js
 scripts[] = js/script.js
-regions[page_top] = Page: Top
+
 regions[header] = Header
-regions[help] = Help
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted
+regions[help] = Help
 regions[sidebar_first] = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[footer] = Footer
+
 regions[main_top] = Main: Top
 regions[main_upper] = Main: Upper
 regions[content_top] = Content: Top
@@ -39,4 +40,3 @@ regions[content_lower] = Content: Lower
 regions[content_bottom] = Content: Bottom
 regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
-regions[page_bottom] = Page: Bottom
