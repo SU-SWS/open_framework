@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	
-	// Reset iPhone zoom on orientation change to landscape
+	// Reset iPhone, iPad, and iPod zoom on orientation change to landscape
 	var mobile_timer = false;
-	if(navigator.userAgent.match(/iPhone/i)) {
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i))) {
 		$('#viewport').attr('content','width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0');
 		$(window).bind('gesturestart',function () {
 			clearTimeout(mobile_timer);
