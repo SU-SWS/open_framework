@@ -30,6 +30,7 @@ body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5p
 /* GLOBAL ********************************* */
 
 /* ----- Body ------------------------ */
+body {-webkit-text-size-adjust: 100%;}
 
 /* ----- Custom Fonts ---------------- */
 

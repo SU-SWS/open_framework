@@ -15,7 +15,7 @@ $body_bg_path = theme_get_setting('body_bg_path');
 <head>
   <?php print $head; ?>
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
