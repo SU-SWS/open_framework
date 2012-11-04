@@ -108,6 +108,7 @@ td {vertical-align: top;}
 #main-menu ul li.collapsed {list-style-image: none;}
 
 /* ----- Secondary Navigation -------- */
+#secondary-menu ul {margin: 0; float: right;}
 
 /* ----- Breadcrumbs ----------------- */
 

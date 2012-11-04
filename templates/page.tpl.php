@@ -35,8 +35,26 @@
         <!-- /#header-content -->
         <?php endif; ?>
       </div>
-      <?php if ($page['navigation']): ?>
-      <div id="navigation" class="span4"> <?php print render($page['navigation']); ?> </div>
+      <?php if (($secondary_menu) || ($page['navigation'])): ?>
+      <div id="navigation" class="span4">
+        <?php if ($secondary_menu): ?>
+        <div id="secondary-menu" class="navigation">
+          <?php print theme('links__system_secondary_menu', array(
+          'links' => $secondary_menu,
+          'attributes' => array(
+            'id' => 'secondary-menu-links',
+            'class' => array('links', 'inline', 'clearfix'),
+          ),
+          'heading' => array(
+            'text' => t('Secondary menu'),
+            'level' => 'h2',
+            'class' => array('element-invisible'),
+          ),
+        )); ?>
+        </div>
+        <!-- /#secondary-menu -->
+        <?php endif; ?>
+        <?php print render($page['navigation']); ?> </div>
       <?php endif; ?>
     </div>
   </div>
@@ -185,7 +203,7 @@
           <div id="content-bottom" class="row-fluid"> <?php print render($page['content_bottom']); ?> </div>
           <?php endif; ?>
         </div>
-        <!-- /#content-wrap --> 
+        <!-- /#content-wrap -->
       </div>
       <!-- /#content -->
       <?php if ($page['sidebar_second']): ?>
@@ -204,23 +222,6 @@
   </div>
 </div>
 <!-- /#main, /#main-wrapper -->
-<?php if ($secondary_menu): ?>
-<div id="secondary-menu" class="navigation">
-  <div class="container"> <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'id' => 'secondary-menu-links',
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Secondary menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?> </div>
-</div>
-<!-- /#secondary-menu -->
-<?php endif; ?>
 <?php if ($page['footer']): ?>
 <div id="footer" class="clearfix">
   <div class="container">
