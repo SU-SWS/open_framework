@@ -273,6 +273,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 /* ADMINISTRATION ************************ */
 
 /* ----- Admin ----------------------- */
+ul.primary {margin: 1.5em 0 0.2em 0;}
 
 /* ----- User Block ------------------ */
 
