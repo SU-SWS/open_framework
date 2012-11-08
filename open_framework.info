@@ -6,6 +6,7 @@ version = 2.0
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
 stylesheets[all][] = css/open_framework.css
+scripts[] = js/jquery-1.8.2.min.js
 scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/open_framework.js
 scripts[] = js/script.js
