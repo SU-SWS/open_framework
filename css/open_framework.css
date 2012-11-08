@@ -126,9 +126,9 @@ td {vertical-align: top;}
 
 
 /* SIDEBARS ******************************* */
-#sidebar-first {margin-bottom: 20px;}
-#sidebar-second {margin-bottom: 20px;}
-.sidebar ul.nav {margin-left: 20px;}
+#sidebar-first {margin-bottom: 1.2em;}
+#sidebar-second {margin-bottom: 1.2em;}
+.sidebar ul.nav {margin-left: 1.2em;}
 
 /* FOOTER ********************************* */
 #footer {margin-top: 50px;}
@@ -137,9 +137,9 @@ td {vertical-align: top;}
 /* ----- Fat Footer ------------------ */
 
 /* CONTENT ******************************** */
-#main {margin-bottom: 20px;}
-#content-head {margin-bottom:15px;}
-#content {margin-bottom: 20px;}
+#main {margin-bottom: 1.2em;}
+#content-head {margin-bottom:1.2em;}
+#content {margin-bottom: 1.2em;}
 
 /* VIEWS ********************************** */
 /* ----- Search Results -------------- */
