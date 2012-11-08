@@ -249,6 +249,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 /* ----- Field Label Overrides ------- */
 .page-node #content-body .field {margin-bottom:20px;}
+.page-node #content-body .field-type-field-collection {margin-bottom:0px;}
 
 
 /* STANFORD FEATURES OVERRIDES *********** */
