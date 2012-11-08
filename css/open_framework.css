@@ -102,8 +102,8 @@ td {vertical-align: top;}
 /* ----- Main Navigation ------------- */
 #main-menu {clear: both;}
 #main-menu ul.nav li.dropdown:hover ul.dropdown-menu {display: block;}
-#main-menu ul {margin-top: -1px;}
-#main-menu ul li.leaf {list-style-image: none; height: 35px;}
+#main-menu ul {margin:0px;}
+#main-menu ul li.leaf {list-style-image: none;}
 #main-menu ul li.expanded {list-style-image: none;}
 #main-menu ul li.collapsed {list-style-image: none;}
 
