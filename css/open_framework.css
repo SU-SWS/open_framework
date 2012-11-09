@@ -175,6 +175,7 @@ td {vertical-align: top;}
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
 .postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img {margin-right:15px; margin-bottom: 15px;}
 .postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img {margin-left:15px; margin-bottom:15px;}
+.postcard-left h2, .postcard-left-wrap h2, .postcard-right h2, .postcard-right-wrap h2 {margin-top:0px;}
 
 /* IMAGES ******************************** */
 img, a img {border: none; outline: none;}
