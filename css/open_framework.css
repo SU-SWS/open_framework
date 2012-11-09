@@ -141,7 +141,10 @@ td {vertical-align: top;}
 #content-head {margin-bottom:1.2em;}
 #content {margin-bottom: 1.2em;}
 
+
 /* VIEWS ********************************** */
+.views-row h2 {margin-top:0px;}
+
 /* ----- Search Results -------------- */
 
 /* CONTAINERS ***************************** */
@@ -253,7 +256,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .page-node #content-body .field-type-field-collection {margin-bottom:0px;}
 
 
-/* STANFORD FEATURES OVERRIDES *********** */
+/* FEATURES OVERRIDES *********** */
 
 /* ----- Views Slideshow ------------- */
 .views_slideshow_cycle_main {width: 100%; float: left; position: relative; z-index:-50;}
@@ -262,13 +265,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .views_slideshow_cycle_main .field-content {max-width: 100%; width: 100%;}
 .views_slideshow_cycle_main .field-content img {max-width: 100%; width: 100%; height: auto; margin: 0; padding: 0;}
 
-/* ----- Banner Image Slideshow ------ */
-
-/* ----- Stanford Events Importer ---- */
-
-/* ----- Stanford Events Views ------- */
-
-/* ----- Stanford Courses ------------ */
 
 
 /* ADMINISTRATION ************************ */
