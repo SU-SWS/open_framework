@@ -143,6 +143,7 @@ td {vertical-align: top;}
 
 
 /* VIEWS ********************************** */
+.views-row {clear:both; margin-bottom:1em;}
 .views-row h2 {margin-top:0px;}
 
 /* ----- Search Results -------------- */
