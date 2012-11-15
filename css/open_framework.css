@@ -263,7 +263,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 /* FEATURES OVERRIDES *********** */
 
 /* ----- Views Slideshow ------------- */
-.views_slideshow_cycle_main {width: 100%; float: left; position: relative; z-index:-50;}
+.views_slideshow_cycle_main {width: 100%; float: left; position: relative;}
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {width: 100% !important; height: auto;}
 .views_slideshow_cycle_main .field-content {max-width: 100%; width: 100%;}
