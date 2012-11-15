@@ -118,6 +118,8 @@ td {vertical-align: top;}
 
 /* ----- Admin Menu ------------------ */
 
+/* ----- Pager Nav ------------------- */
+
 /* Navigation -- this is used as an alternative to main menu without the default Bootstrap menu styles */
 #navigation h2 {display: none;}
 #navigation .content ul {float: right; margin: 0; padding: 0;}
