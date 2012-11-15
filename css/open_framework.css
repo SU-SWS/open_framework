@@ -142,6 +142,7 @@ td {vertical-align: top;}
 #main {margin-bottom: 1.2em;}
 #content-head {margin-bottom:1.2em;}
 #content {margin-bottom: 1.2em;}
+.node .submitted {margin-bottom:1em;}
 
 
 /* VIEWS ********************************** */
@@ -150,6 +151,7 @@ td {vertical-align: top;}
 .views-row h2 {margin-top:0px;}
 
 /* ----- Search Results -------------- */
+
 
 /* CONTAINERS ***************************** */
 
