@@ -230,6 +230,9 @@ width: calc(100% - 12px);}
 /* GENERAL OVERRIDES ********************* */
 
 /* ----- Bootstrap Overrides --------- */
+html.js input.form-autocomplete {background-position: 100% 8px;}
+html.js input.throbbing {background-position: 100% -12px;}
+
 @media (min-width: 980px) {
 #sidebar-second .sidebar-content[class*="span"] {float: none; width: 100%;}
 #sidebar-second .sidebar-content {float: none; width: 100%;}
