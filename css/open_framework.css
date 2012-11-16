@@ -66,6 +66,7 @@ td {vertical-align: top;}
 
 /* ----- Forms ----------------------- */
 .form-item label {display:block; font-weight:bold;}
+.views-exposed-form .views-exposed-widget .form-submit {margin-top:27px;} /* override for views exposed forms submit */
 
 /* ----- Other ----------------------- */
 
