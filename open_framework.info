@@ -1,7 +1,7 @@
 name = Open Framework
 description = Base theme made with Twitter Bootstrap
 core = 7.x
-version = 2.0
+version = 2.01
 
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css

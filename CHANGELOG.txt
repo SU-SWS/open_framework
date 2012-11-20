@@ -1,3 +1,10 @@
+Version 7.x-2.01
+------------------------------
+by hyperboy: Added theme status messages
+by hyperboy: Updated Twitter Bootstrap to version 2.2.1
+by meganem: Updated margins for views and content elements
+by hyperboy: Added CSS layout classes
+
 Version 7.x-2.0
 ------------------------------
 by hyperboy: Initial Release
