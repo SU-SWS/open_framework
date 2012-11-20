@@ -249,7 +249,9 @@ html.js input.throbbing {background-position: 100% -12px;}
 }
 
 .row-fluid [class*="span"] {min-height: 0;}
+.row-fluid .float-right {float: right !important;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
+[class*="span"].next-row {margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
 .navbar-inner {min-height: 0px;}
 .dropdown-menu .active > a, .dropdown-menu .active > a:hover {color: #FFF;}
