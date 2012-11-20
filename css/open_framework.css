@@ -249,7 +249,7 @@ html.js input.throbbing {background-position: 100% -12px;}
 }
 
 .row-fluid [class*="span"] {min-height: 0;}
-.row-fluid .float-right {float: right !important; margin-left: 0;}
+.row-fluid .float-right {float: right; margin-left: 0;}
 [class*="span"].clear-row {clear: both; margin-left: 0px;}
 [class*="span"].next-row {margin-left: 0px;}
 .form-actions {background-color: transparent; border-top: none; margin-bottom: 0; margin-top: 0; padding: 0;}
@@ -385,6 +385,7 @@ ul.primary {margin: 1.5em 0 0.2em 0;}
 .navbar-inner {padding: 5px 5px 0px 5px;}
 #content-col2 [class*="span"] {width: 100%; margin-left: 0;}
 .callout, .bracket, .topline {width: 50%}
+.row-fluid .float-right {float: none !important;}
 }
      
 /* Portrait tablet to landscape and desktop */
