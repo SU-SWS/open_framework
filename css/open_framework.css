@@ -35,6 +35,7 @@ body {-webkit-text-size-adjust: 100%;}
 /* ----- Custom Fonts ---------------- */
 
 /* ----- Text ------------------------ */
+h1, h2, h3, h4, h5, h6 {clear:both;}
 h2, h3, h4, h5, h6 {line-height:1.3em;}
 p {margin: 0 0 1em 0;}
 em {padding: 0 3px 0 0;}
