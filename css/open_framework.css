@@ -258,6 +258,10 @@ html.js input.throbbing {background-position: 100% -12px;}
 .dropdown-menu .active > a, .dropdown-menu .active > a:hover {color: #FFF;}
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {margin-bottom:0;}
 
+/* ----- Block Alert Overrides -- */
+.block.alert {padding-left: 0px; padding-right: 0px; margin-right: -2px;}
+.block.alert > * {padding-left: 10px; padding-right: 10px;}
+
 /* ----- Field Collection Overrides -- */
 .field-collection-container {margin-bottom:0; border-bottom:0;}
 .field-collection-view {margin:0; padding:0;}
