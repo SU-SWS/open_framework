@@ -215,11 +215,3 @@ function open_framework_search_form($form, &$form_state) {
 
   return $form;
 }
-
-/* Add btn class to all form submit buttons */
-function open_framework_form_alter(&$form, &$form_state, $form_id) {
-  if ($form_id || $form_id == '^views-exposed-form') {
-    $form['basic']['submit']['#attributes']['class'][] = 'btn';
-	$form['actions']['#attributes']['class'][] = 'btn';
-  }
-}
