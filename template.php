@@ -207,7 +207,7 @@ function open_framework_search_form($form, &$form_state) {
   $form['basic']['keys']['#title'] = '';
   $form['basic']['keys']['#attributes']['class'][] = 'input-medium search-query';
   $form['basic']['keys']['#attributes']['placeholder'] = t('Search this site...');
-  unset($form['basic']['submit']);
+  $form['basic']['submit']['#attributes']['class'][] = 'btn btn-search';
   unset($form['basic']['#type']);
   unset($form['basic']['#attributes']);
   $form += $form['basic'];

@@ -85,6 +85,24 @@ td {vertical-align: top;}
 #header-search {}
 #header-search .search-form {margin:0; padding:0;}
 #header-search .form-item {margin:0;}
+.navbar input.btn-search {
+	background-color: transparent;
+    background-image: url("../images/searchbutton.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: medium none;
+    box-shadow: none;
+    color: transparent;
+    float: right;
+    height: 26px;
+    position: relative;
+    right: 10px;
+    text-shadow: none;
+    top: -33px;
+    width: 26px;
+}
+.navbar input.btn-search:hover {background-image: url("../images/searchbutton2.png");}
+input.search-query {padding-right:38px; width: 120px;}
 
 /* ----- Logo ------------------------ */
 #header #logo {display:table-cell; margin: 0 15px 0 0; vertical-align:middle;}
