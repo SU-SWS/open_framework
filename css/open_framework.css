@@ -48,8 +48,6 @@ quote, code {margin: .5em 0;}
 a:focus {outline:none; border:0;}
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
-p a {border-bottom:dotted 1px #0088CC;}
-p a:hover {border-bottom:dotted 1px #005580;}
 .more-link, a.more-link {text-align:left; clear:both; display: inline-block; margin-top: 0.5em;}
 .more-link a, a.more-link, .page-search .node-readmore a {color: #006395; font-size: 12px; font-weight: 500; letter-spacing: 0.02em; text-transform: uppercase; background-image: url("../images/ofw-more-link-arrows.png"); background-position: right 55%; background-repeat: no-repeat; padding-right: 10px; display:inline; border-bottom:none;}
 .more-link a:hover, a.more-link:hover, .page-search .node-readmore a:hover {text-decoration:none; color:#000000; background-image: url("../images/ofw-more-link-arrows2.png"); border-bottom:none;}
@@ -85,6 +83,24 @@ td {vertical-align: top;}
 #header-search {}
 #header-search .search-form {margin:0; padding:0;}
 #header-search .form-item {margin:0;}
+.navbar input.btn-search {
+	background-color: transparent;
+    background-image: url("../images/searchbutton.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    border: medium none;
+    box-shadow: none;
+    color: transparent;
+    float: right;
+    height: 26px;
+    position: relative;
+    right: 10px;
+    text-shadow: none;
+    top: -33px;
+    width: 26px;
+}
+.navbar input.btn-search:hover {background-image: url("../images/searchbutton2.png");}
+input.search-query {padding-right:38px; width: 120px;}
 
 /* ----- Logo ------------------------ */
 #header #logo {display:table-cell; margin: 0 15px 0 0; vertical-align:middle;}
@@ -215,8 +231,8 @@ width: calc(100% - 12px);}
 
 /* ----- Positioning ----------------- */
 .spacer {margin-top: 30px;}
-.float-left {float:left !important; margin-right:15px; margin-bottom:15px;}
-.float-right {float:right !important; margin-left:15px; margin-bottom:15px;}
+.float-left {float:left !important; margin-right:15px !important; margin-bottom:15px;}
+.float-right {float:right !important; margin-left:15px !important; margin-bottom:15px;}
 .float-none {float:none !important;}
 .clear-none {clear:none !important;}
 .clear-left-margin {margin-left: 0 !important; padding-right:20px;}
