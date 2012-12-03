@@ -55,6 +55,7 @@ h2 a, h3 a {}
 h2 a:hover, h3 a:hover {text-decoration:none;}
 
 /* ----- Lists ----------------------- */
+ul.inline, ul.links.inline, ul.links.inline li {padding-left:0; margin-left:0;}
 
 /* ----- Tables ---------------------- */
 tr.even, tr.odd {background-color:transparent; border-bottom: 1px solid #DDDDDD;}
