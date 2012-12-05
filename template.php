@@ -1,4 +1,15 @@
 <?php
+function open_framework_preprocess_html(&$vars) {
+  // theme option variables
+  $vars['front_heading_classes'] = theme_get_setting('front_heading_classes'); 
+  $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes'); 
+  $vars['border_classes'] = theme_get_setting('border_classes'); 
+  $vars['corner_classes'] = theme_get_setting('corner_classes'); 
+  $vars['body_bg_type'] = theme_get_setting('body_bg_type'); 
+  $vars['body_bg_classes'] = theme_get_setting('body_bg_classes'); 
+  $vars['body_bg_path'] = theme_get_setting('body_bg_path'); 
+}
+
 function open_framework_preprocess_page(&$vars) {
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php

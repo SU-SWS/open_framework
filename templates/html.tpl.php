@@ -1,12 +1,3 @@
-<?php
-$front_heading_classes = theme_get_setting('front_heading_classes'); 
-$breadcrumb_classes = theme_get_setting('breadcrumb_classes'); 
-$border_classes = theme_get_setting('border_classes'); 
-$corner_classes = theme_get_setting('corner_classes'); 
-$body_bg_type = theme_get_setting('body_bg_type'); 
-$body_bg_classes = theme_get_setting('body_bg_classes'); 
-$body_bg_path = theme_get_setting('body_bg_path'); 
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="ie6 ie" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 ie" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"> <![endif]-->
