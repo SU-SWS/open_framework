@@ -198,6 +198,7 @@ input.search-query {padding-right:38px; width: 120px;}
 .views-row {clear:both; margin-bottom:1em;}
 .views-row.views-row-last {margin-bottom:0em;}
 .views-row h2 {margin-top:0px;}
+.field-collection-view {border-bottom:0px;}
 
 /* ----- Search Results -------------- */
 
