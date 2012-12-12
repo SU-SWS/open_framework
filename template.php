@@ -208,25 +208,6 @@ function open_framework_menu_local_tasks(&$variables) {
   return $output;
 }
 
-/* Search Form */
-function open_framework_search_form($form, &$form_state) {
-  // Get custom search form
-  $form = search_form($form, $form_state);
-  
-  // Cleanup
-  $form['#attributes']['class'][] = 'pull-right';
-  $form['basic']['keys']['#title'] = '';
-  $form['basic']['keys']['#attributes']['class'][] = 'input-medium search-query';
-  $form['basic']['keys']['#attributes']['placeholder'] = t('Search this site...');
-  $form['basic']['submit']['#attributes']['class'][] = 'btn btn-search';
-  unset($form['basic']['#type']);
-  unset($form['basic']['#attributes']);
-  $form += $form['basic'];
-  unset($form['basic']);
-
-  return $form;
-}
-
 /* Search Form Block */
 function open_framework_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {

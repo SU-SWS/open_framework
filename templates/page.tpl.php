@@ -10,11 +10,11 @@
   </div>
 </div>
 <!-- /#skipnav -->
-<?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['navigation']) || ($search)): ?>
+<?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['navigation']) || ($page['search_box'])): ?>
 <div id="header" class="clearfix">
   <div class="container">
     <div class="row">
-      <div class="<?php if (($page['navigation']) || ($search)): print 'span8'; else: print 'span12'; endif; ?>">
+      <div class="<?php if (($page['navigation']) || ($page['search_box'])): print 'span8'; else: print 'span12'; endif; ?>">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" role="presentation" /> </a></div>
         <!-- /#logo -->
@@ -66,9 +66,9 @@
   <div class="container">
     <div class="navbar">
       <div class="navbar-inner">
-        <?php if ($search): ?>
-        <div id="nav-search">
-          <?php if ($search): print render($search); endif; ?>
+        <?php if ($page['search_box']): ?>
+        <div id="nav-search">          
+          <?php print render($page['search_box']); ?>
         </div>
         <?php endif; ?>
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
