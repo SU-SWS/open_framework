@@ -212,7 +212,7 @@ function open_framework_menu_local_tasks(&$variables) {
 function open_framework_search_form($form, &$form_state) {
   // Get custom search form
   $form = search_form($form, $form_state);
-
+  
   // Cleanup
   $form['#attributes']['class'][] = 'pull-right';
   $form['basic']['keys']['#title'] = '';
@@ -225,4 +225,16 @@ function open_framework_search_form($form, &$form_state) {
   unset($form['basic']);
 
   return $form;
+}
+
+/* Search Form Block */
+function open_framework_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == 'search_block_form') {
+ 
+    unset($form['search_block_form']['#title']);
+    $form['search_block_form']['#title_display'] = 'invisible';
+    $form['search_block_form']['#attributes']['class'][] = 'input-medium search-query';
+	$form['search_block_form']['#attributes']['placeholder'] = t('Search this site...');
+    $form['actions']['submit']['#attributes']['class'][] = 'btn btn-search';
+  }
 }
