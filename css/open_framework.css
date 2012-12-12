@@ -67,6 +67,9 @@ td {vertical-align: top;}
 /* ----- Forms ----------------------- */
 .form-item label {display:block; font-weight:bold;}
 .views-exposed-form .views-exposed-widget .form-submit {margin-top:27px;} /* override for views exposed forms submit */
+.form-type-checkbox label {display:inline-block; margin-left:8px;}
+input[type="checkbox"] {margin:0;}
+input.form-submit {}
 
 /* ----- Other ----------------------- */
 
