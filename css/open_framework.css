@@ -138,14 +138,17 @@ input.search-query {padding-right:38px; width: 120px;}
 
 /* ----- Main Navigation ------------- */
 #main-menu {clear: both;}
-#main-menu ul.nav li.dropdown:hover ul.dropdown-menu {display: block;}
 #main-menu ul {margin:0px;}
-#main-menu ul li.leaf {list-style-image: none;}
-#main-menu ul li.expanded {list-style-image: none;}
-#main-menu ul li.collapsed {list-style-image: none;}
+#main-menu ul li {list-style: none; list-style-image: none; margin-left: 0px;}
+#main-menu ul li.leaf {list-style: none; list-style-image: none;}
+#main-menu ul li.expanded {list-style: none; list-style-image: none;}
+#main-menu ul li.collapsed {list-style: none; list-style-image: none;}
 
 /* ----- Secondary Navigation -------- */
-#secondary-menu ul {margin: 0; float: right;}
+#secondary-menu {margin-top: 20px;}
+#secondary-menu ul {margin: 0; text-align: right;}
+#secondary-menu ul li {display: inline-block; list-style: none; list-style-image: none;}
+#secondary-menu ul ul {text-align: left;}
 
 /* ----- Breadcrumbs ----------------- */
 
@@ -162,7 +165,6 @@ input.search-query {padding-right:38px; width: 120px;}
 #navigation .content ul {float: right; margin: 0; padding: 0;}
 #navigation .content ul li {display: inline-block;}
 #navigation .content ul ul {display: none;}
-
 
 /* SIDEBARS ******************************* */
 #sidebar-first {margin-bottom: 1.2em;}

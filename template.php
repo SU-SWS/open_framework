@@ -30,10 +30,27 @@ function open_framework_preprocess_page(&$vars) {
   // Add the rendered output to the $main_menu_expanded variables
   $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
   
-  // Search Toggle
-  $vars['search'] = FALSE;
-  if(theme_get_setting('toggle_search') && module_exists('search'))
-  $vars['search'] = drupal_get_form('open_framework_search_form');
+    // Primary nav
+  $vars['primary_nav'] = FALSE;
+  if ($vars['main_menu']) {
+    // Build links
+    $vars['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+    // Provide default theme wrapper function
+    $vars['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
+  }
+
+  // Secondary nav
+  $vars['secondary_nav'] = FALSE;
+  if ($vars['secondary_menu']) {
+    // Build links
+    $vars['secondary_nav'] = menu_tree(variable_get('menu_secondary_links_source', 'user-menu'));
+    // Provide default theme wrapper function
+    $vars['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
+  }
+
+  // Replace tabs with drop down version
+  $vars['tabs']['#primary'] = _bootstrap_local_tasks($vars['tabs']['#primary']);
+  
 }
 
 function open_framework_preprocess_block(&$vars) {
@@ -160,8 +177,8 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
 }
 
 /* Status Messages (Error, Status, Alert) */
-function open_framework_status_messages($variables) {
-  $display = $variables['display'];
+function open_framework_status_messages($vars) {
+  $display = $vars['display'];
   $output = '';
 
   $status_heading = array(
@@ -189,25 +206,6 @@ function open_framework_status_messages($variables) {
   return $output;
 }
 
-/* Duplicate of theme_menu_local_tasks() but adds "nav" and "nav-tabs" to tabs. */
-function open_framework_menu_local_tasks(&$variables) {
-  $output = '';
-
-  if (!empty($variables['primary'])) {
-    $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
-    $variables['primary']['#prefix'] .= '<ul class="tabs nav nav-tabs primary">';
-    $variables['primary']['#suffix'] = '</ul>';
-    $output .= drupal_render($variables['primary']);
-  }
-  if (!empty($variables['secondary'])) {
-    $variables['secondary']['#prefix'] = '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
-    $variables['secondary']['#prefix'] .= '<ul class="tabs nav nav-tabs secondary">';
-    $variables['secondary']['#suffix'] = '</ul>';
-    $output .= drupal_render($variables['secondary']);
-  }
-  return $output;
-}
-
 /* Search Form Block */
 function open_framework_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
@@ -218,4 +216,143 @@ function open_framework_form_alter(&$form, &$form_state, $form_id) {
 	$form['search_block_form']['#attributes']['placeholder'] = t('Search this site...');
     $form['actions']['submit']['#attributes']['class'][] = 'btn btn-search';
   }
+}
+
+/* Returns HTML for primary and secondary local tasks. */
+function open_framework_menu_local_tasks(&$vars) {
+  $output = '';
+
+  if ( !empty($vars['primary']) ) {
+    $vars['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
+    $vars['primary']['#prefix'] = '<ul class="nav nav-tabs">';
+    $vars['primary']['#suffix'] = '</ul>';
+    $output .= drupal_render($vars['primary']);
+  }
+
+  if ( !empty($vars['secondary']) ) {
+    $vars['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
+    $vars['secondary']['#prefix'] = '<ul class="nav nav-pills">';
+    $vars['secondary']['#suffix'] = '</ul>';
+    $output .= drupal_render($vars['secondary']);
+  }
+
+  return $output;
+}
+
+/* Returns HTML for primary and secondary local task. */
+function open_framework_menu_local_task($vars) {
+  $link = $vars['element']['#link'];
+  $link_text = $link['title'];
+  $classes = array();
+
+  if (!empty($vars['element']['#active'])) {
+    // Add text to indicate active tab for non-visual users.
+    $active = '<span class="element-invisible">' . t('(active tab)') . '</span>';
+
+    // If the link does not contain HTML already, check_plain() it now.
+    // After we set 'html'=TRUE the link will not be sanitized by l().
+    if (empty($link['localized_options']['html'])) {
+      $link['title'] = check_plain($link['title']);
+    }
+    $link['localized_options']['html'] = TRUE;
+    $link_text = t('!local-task-title!active', array('!local-task-title' => $link['title'], '!active' => $active));
+
+    $classes[] = 'active';
+  }
+
+  return '<li class="' . implode(' ', $classes) . '">' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
+}
+
+function open_framework_menu_tree(&$vars) {
+  return '<ul class="menu nav">' . $vars['tree'] . '</ul>';
+}
+
+function open_framework_menu_link(array $vars) {
+  $element = $vars['element'];
+  $sub_menu = '';
+  
+  if ($element['#below']) {
+    // Ad our own wrapper
+    unset($element['#below']['#theme_wrappers']);
+    $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
+    $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
+    $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+
+    // Check if this element is nested within another
+    if ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] > 1)) {
+      // Generate as dropdown submenu
+      $element['#attributes']['class'][] = 'dropdown-submenu';
+    }
+    else {
+      // Generate as standard dropdown
+      $element['#attributes']['class'][] = 'dropdown';
+      $element['#localized_options']['html'] = TRUE;
+      $element['#title'] .= '<span class="caret"></span>';
+    }
+
+    // Set dropdown trigger element to # to prevent inadvertant page loading with submenu click
+    $element['#localized_options']['attributes']['data-target'] = '#';
+  }
+  
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+
+/**
+* Get all primary tasks including subsets
+*/
+function _bootstrap_local_tasks($tabs = FALSE) {
+  if ($tabs == '') {
+    return $tabs;
+  }
+  
+  if (!$tabs) {
+    $tabs = menu_primary_local_tasks();
+  }
+  
+  foreach ($tabs as $key => $element) {
+    $result = db_select('menu_router', NULL, array('fetch' => PDO::FETCH_ASSOC))
+      ->fields('menu_router')
+      ->condition('tab_parent', $element['#link']['path'])
+      ->condition('context', MENU_CONTEXT_INLINE, '<>')
+      ->condition('type', array(MENU_DEFAULT_LOCAL_TASK, MENU_LOCAL_TASK), 'IN')
+      ->orderBy('weight')
+      ->orderBy('title')
+      ->execute();
+  
+    $router_item = menu_get_item($element['#link']['href']);
+    $map = $router_item['original_map'];
+  
+    $i = 0;
+    foreach ($result as $item) {
+      _menu_translate($item, $map, TRUE);
+  
+      //only add items that we have access to
+      if ($item['tab_parent'] && $item['access']) {
+        //set path to that of parent for the first item
+        if ($i === 0) {
+          $item['href'] = $element['#link']['href'];
+        }
+  
+        if (current_path() == $item['href']) {
+          $tabs[$key][] = array(
+          '#theme' => 'menu_local_task',
+          '#link' => $item,
+          '#active' => TRUE,
+          );
+        }
+        else {
+          $tabs[$key][] = array(
+          '#theme' => 'menu_local_task',
+          '#link' => $item,
+          );
+        }
+  
+        //only count items we have access to.
+        $i++;
+      }
+    }
+  }
+  
+  return $tabs;
 }
