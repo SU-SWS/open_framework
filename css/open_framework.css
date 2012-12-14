@@ -135,8 +135,9 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 
 /* ----- Main Navigation ------------- */
 #main-menu {clear: both;}
-#main-menu ul {margin:0px;}
-#main-menu ul li {list-style: none; list-style-image: none; margin-left: 0px;}
+#main-menu ul {margin: 0;}
+#main-menu ul li {list-style: none; list-style-image: none;}
+#main-menu ul.menu > li {padding: 0;}
 #main-menu ul li.leaf {list-style: none; list-style-image: none;}
 #main-menu ul li.expanded {list-style: none; list-style-image: none;}
 #main-menu ul li.collapsed {list-style: none; list-style-image: none;}

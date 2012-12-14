@@ -2,7 +2,11 @@
 
   Drupal.behaviors.open_framework = {
     attach: function (context, settings) {
-	
+		
+			// Bootstrap Dropdown Menu
+			$('#main-menu ul > li:has(.active)').addClass('active');		
+	        $('#main-menu ul > li > ul > li:has(.active)').removeClass('active');	
+			
 			// Update CSS classes based on window load
 			$(window).load(function() {
 				var width = $(window).width();
