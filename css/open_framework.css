@@ -144,9 +144,16 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 
 /* ----- Secondary Navigation -------- */
 #secondary-menu {margin-top: 20px;}
-#secondary-menu ul {margin: 0; text-align: right;}
-#secondary-menu ul li {display: inline-block; list-style: none; list-style-image: none;}
+#secondary-menu ul li, 
+#secondary-menu ul li.leaf, 
+#secondary-menu ul li.expanded, 
+#secondary-menu ul li.collapsed {list-style: none; list-style-image: none;}
+#secondary-menu ul {text-align: right;}
+#secondary-menu ul {margin: 0;}
+#secondary-menu ul li {margin: 0; padding: 0;}
 #secondary-menu ul ul {text-align: left;}
+#secondary-menu > ul > li {display: inline-block; margin: 0 0 5px 15px; padding: 0;}
+#secondary-menu > ul > li > a {background: none;}
 
 /* ----- Breadcrumbs ----------------- */
 
