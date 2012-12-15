@@ -304,7 +304,7 @@ function open_framework_menu_link(array $vars) {
       // Generate as standard dropdown
       $element['#attributes']['class'][] = 'dropdown';
       $element['#localized_options']['html'] = TRUE;
-      $element['#title'] .= '<span class="caret"></span>';
+      $element['#title'] .= ' <span class="caret"></span>';
     }
 
     // Set dropdown trigger element to # to prevent inadvertant page loading with submenu click
