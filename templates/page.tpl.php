@@ -56,7 +56,7 @@
         <?php if ($primary_nav || !empty($page['navigation'])): ?>
         <div class="nav-collapse">
           <nav role="navigation">
-            <?php if ($primary_nav): ?>
+            <?php if (($primary_nav) && empty($page['navigation'])): ?>
             <?php print render($primary_nav); ?> 
             <!-- /#primary-menu -->
             <?php endif; ?>

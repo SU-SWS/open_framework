@@ -142,6 +142,8 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 #main-menu ul.menu {margin: 0;}
 #main-menu ul.menu li {margin: 0; padding: 0;}
 
+nav h2 {display: none;}
+
 /* ----- Secondary Navigation -------- */
 #secondary-menu {margin-top: 20px;}
 #secondary-menu ul li, 
