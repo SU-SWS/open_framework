@@ -10,11 +10,11 @@
   </div>
 </div>
 <!-- /#skipnav -->
-<?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['navigation']) || ($search)): ?>
+<?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['search_box'])): ?>
 <div id="header" class="clearfix">
   <div class="container">
     <div class="row">
-      <div class="<?php if (($page['navigation']) || ($search)): print 'span8'; else: print 'span12'; endif; ?>">
+      <div class="<?php if (($secondary_nav) || ($page['search_box'])): print 'span8'; else: print 'span12'; endif; ?>">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" role="presentation" /> </a></div>
         <!-- /#logo -->
@@ -35,26 +35,9 @@
         <!-- /#header-content -->
         <?php endif; ?>
       </div>
-      <?php if (($secondary_menu) || ($page['navigation'])): ?>
-      <div id="navigation" class="span4">
-        <?php if ($secondary_menu): ?>
-        <div id="secondary-menu" class="navigation">
-          <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'id' => 'secondary-menu-links',
-            'class' => array('links', 'inline', 'clearfix'),
-          ),
-          'heading' => array(
-            'text' => t('Secondary menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
-        </div>
-        <!-- /#secondary-menu -->
-        <?php endif; ?>
-        <?php print render($page['navigation']); ?> </div>
+      <?php if ($secondary_nav): ?>
+      <div id="secondary-menu" class="span4"> <?php print render($secondary_nav); ?> </div>
+      <!-- /#secondary-menu -->
       <?php endif; ?>
     </div>
   </div>
@@ -66,13 +49,23 @@
   <div class="container">
     <div class="navbar">
       <div class="navbar-inner">
-        <?php if ($search): ?>
-        <div id="nav-search">
-          <?php if ($search): print render($search); endif; ?>
-        </div>
+        <?php if ($page['search_box']): ?>
+        <div id="nav-search"> <?php print render($page['search_box']); ?> </div>
         <?php endif; ?>
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-        <div class="nav-collapse"><?php print render($main_menu_expanded); ?></div>
+        <?php if ($primary_nav || !empty($page['navigation'])): ?>
+        <div class="nav-collapse">
+          <nav role="navigation">
+            <?php if (($primary_nav) && empty($page['navigation'])): ?>
+            <?php print render($primary_nav); ?> 
+            <!-- /#primary-menu -->
+            <?php endif; ?>
+            <?php if (!empty($page['navigation'])): ?>
+            <?php print render($page['navigation']); ?>
+            <?php endif; ?>
+          </nav>
+        </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
@@ -203,7 +196,7 @@
           <div id="content-bottom" class="row-fluid"> <?php print render($page['content_bottom']); ?> </div>
           <?php endif; ?>
         </div>
-        <!-- /#content-wrap -->
+        <!-- /#content-wrap --> 
       </div>
       <!-- /#content -->
       <?php if ($page['sidebar_second']): ?>

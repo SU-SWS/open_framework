@@ -2,19 +2,11 @@
 
   Drupal.behaviors.open_framework = {
     attach: function (context, settings) {
-
+		
 			// Bootstrap Dropdown Menu
-			$('#main-menu ul').addClass('nav');
-			$('#main-menu ul').removeClass('menu');
-			$('#main-menu ul ul').removeClass('nav');
-			$('#main-menu ul li.expanded').addClass('dropdown');
-			$('#main-menu ul li.expanded a').addClass('dropdown-toggle');
-			// $('#main-menu ul li.expanded a').attr('data-toggle', 'dropdown');
-			$('#main-menu ul li.expanded ul').addClass('dropdown-menu');
-			$('#main-menu ul.dropdown-menu li').removeClass('active');
-			$('#main-menu ul li').removeClass('expanded collapsed leaf');
-			$('#main-menu ul li:has(.active)').addClass('active');
-			$('#main-menu ul.nav > li > a.dropdown-toggle').append(' <b class="caret"></b>');
+			$('#main-menu ul > li:has(.active)').addClass('active');
+			$('#main-menu ul > li:has(ul .active)').removeClass('active');			
+	        $('#main-menu ul > li > ul > li:has(.active)').removeClass('active');	
 			
 			// Update CSS classes based on window load
 			$(window).load(function() {

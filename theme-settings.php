@@ -19,13 +19,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
 	  'show-title ' => t('Show heading on front page'),
     ),
   );
-  
-  $form['layout_container']['toggle_search'] = array(
-    '#type'          => 'checkbox', 
-    '#title'         => t('Display search box in header region'), 
-    '#default_value' => theme_get_setting('toggle_search'),
-  );
-  
+
   $form['layout_container']['breadcrumb_classes'] = array(
     '#type'          => 'radios',
     '#title'         => t('Breadcrumbs'),

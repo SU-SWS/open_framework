@@ -108,30 +108,16 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 #header-content {clear: both;}
 
 /* ----- Search Box ------------------ */
-#nav-search {margin: -60px -20px 0 0; float: right; padding: 0px;}
+#nav-search {margin: -65px -20px 0 0; float: right; padding: 0; height: 1px;}
 #nav-search .search-form {margin:0; padding:0;}
 #nav-search .form-item {margin:0;}
-#header-search {}
 #header-search .search-form {margin:0; padding:0;}
 #header-search .form-item {margin:0;}
-.navbar input.btn-search {
-	background-color: transparent;
-    background-image: url("../images/searchbutton.png");
-    background-position: left top;
-    background-repeat: no-repeat;
-    border: medium none;
-    box-shadow: none;
-    color: transparent;
-    float: right;
-    height: 26px;
-    position: relative;
-    right: 10px;
-    text-shadow: none;
-    top: -33px;
-    width: 26px;
-}
-.navbar input.btn-search:hover {background-image: url("../images/searchbutton2.png");}
-input.search-query {padding-right:38px; width: 120px;}
+
+#block-search-form {position: relative; margin: 0; padding: 0; display: inline-block;}
+#block-search-form input.btn-search {background-color: transparent; background-image: url("../images/searchbutton.png"); background-position: left top; background-repeat: no-repeat; border: medium none; box-shadow: none; color: transparent; height: 26px; position: absolute; top: 3px; right: 10px; text-shadow: none; width: 26px; outline: none;}
+#block-search-form input.btn-search:hover {background-image: url("../images/searchbutton2.png");}
+.navbar #block-search-form input.btn-search {top: -2px;}
 
 /* ----- Logo ------------------------ */
 #header #logo {display:table-cell; margin: 0 15px 0 0; vertical-align:middle;}
@@ -145,19 +131,31 @@ input.search-query {padding-right:38px; width: 120px;}
 #site-name a:hover {text-decoration: none; color:#000000;}
 #name-and-slogan {display: table-cell; vertical-align: middle; padding: 20px 0 20px 10px;}
 
-
 /* NAVIGATION ***************************** */
 
 /* ----- Main Navigation ------------- */
 #main-menu {clear: both;}
-#main-menu ul.nav li.dropdown:hover ul.dropdown-menu {display: block;}
-#main-menu ul {margin:0px;}
-#main-menu ul li.leaf {list-style-image: none;}
-#main-menu ul li.expanded {list-style-image: none;}
-#main-menu ul li.collapsed {list-style-image: none;}
+#main-menu ul li, 
+#main-menu ul li.leaf, 
+#main-menu ul li.expanded, 
+#main-menu ul li.collapsed {list-style: none; list-style-image: none;}
+#main-menu ul.menu {margin: 0;}
+#main-menu ul.menu li {margin: 0; padding: 0;}
+
+nav h2 {display: none;}
 
 /* ----- Secondary Navigation -------- */
-#secondary-menu ul {margin: 0; float: right;}
+#secondary-menu {margin-top: 20px;}
+#secondary-menu ul li, 
+#secondary-menu ul li.leaf, 
+#secondary-menu ul li.expanded, 
+#secondary-menu ul li.collapsed {list-style: none; list-style-image: none;}
+#secondary-menu ul {text-align: right;}
+#secondary-menu ul {margin: 0;}
+#secondary-menu ul li {margin: 0; padding: 0;}
+#secondary-menu ul ul {text-align: left;}
+#secondary-menu > ul > li {display: inline-block; margin: 0 0 5px 15px; padding: 0;}
+#secondary-menu > ul > li > a {background: none;}
 
 /* ----- Breadcrumbs ----------------- */
 
@@ -174,7 +172,6 @@ input.search-query {padding-right:38px; width: 120px;}
 #navigation .content ul {float: right; margin: 0; padding: 0;}
 #navigation .content ul li {display: inline-block;}
 #navigation .content ul ul {display: none;}
-
 
 /* SIDEBARS ******************************* */
 #sidebar-first {margin-bottom: 1.2em;}
