@@ -132,7 +132,8 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 #name-and-slogan {display: table-cell; vertical-align: middle; padding: 20px 0 20px 10px;}
 
 /* NAVIGATION ***************************** */
-.navbar li:hover .dropdown-menu {display: block; margin: 0;}
+.navbar li:hover > .dropdown-menu {display: block; margin: 0;}
+.navbar li:active > .dropdown-menu {display: block; margin: 0;}
 
 /* ----- Main Navigation ------------- */
 #main-menu {clear: both;}
