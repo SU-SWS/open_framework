@@ -132,8 +132,6 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 #name-and-slogan {display: table-cell; vertical-align: middle; padding: 20px 0 20px 10px;}
 
 /* NAVIGATION ***************************** */
-.navbar li:hover > .dropdown-menu {display: block; margin: 0;}
-.navbar li:active > .dropdown-menu {display: block; margin: 0;}
 
 /* ----- Main Navigation ------------- */
 #main-menu {clear: both;}
@@ -142,7 +140,7 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 #main-menu ul li.expanded, 
 #main-menu ul li.collapsed {list-style: none; list-style-image: none;}
 #main-menu ul.menu {margin: 0;}
-#main-menu ul.menu li {margin: 0; padding: 0 0 2px 0;}
+#main-menu ul.menu li {margin: 0; padding: 0;}
 
 nav h2 {display: none;}
 

@@ -8,6 +8,17 @@
 			$('nav ul > li:has(ul .active)').removeClass('active');			
 	        $('nav ul > li > ul > li:has(.active)').removeClass('active');	
 			
+			// Turn off Bootstrap dropdown data attributes in sidebars
+			$('#sidebar-first a').removeAttr('data-toggle');
+			$('#sidebar-first a').removeAttr('data-target');
+			$('#sidebar-first ul').removeClass('dropdown-menu');
+			$('#sidebar-first li').removeClass('dropdown-submenu');
+
+			$('#sidebar-second a').removeAttr('data-toggle');
+			$('#sidebar-second a').removeAttr('data-target');
+			$('#sidebar-second ul').removeClass('dropdown-menu');
+			$('#sidebar-second li').removeClass('dropdown-submenu');
+			
 			// Update CSS classes based on window load
 			$(window).load(function() {
 				var width = $(window).width();
