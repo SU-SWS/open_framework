@@ -290,7 +290,7 @@ function open_framework_menu_link(array $vars) {
     unset($element['#below']['#theme_wrappers']);
     $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
     $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
-    $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+    // $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
 
     // Check if this element is nested within another
     if ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] > 1)) {
