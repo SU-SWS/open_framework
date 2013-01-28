@@ -10,11 +10,15 @@
   </div>
 </div>
 <!-- /#skipnav -->
+<?php if ($secondary_nav): ?>
+<div id="secondary-menu" class="clearfix"> <?php print render($secondary_nav); ?> </div>
+<!-- /#secondary-menu -->
+<?php endif; ?>
 <?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['search_box'])): ?>
 <div id="header" class="clearfix">
   <div class="container">
     <div class="row">
-      <div class="<?php if (($secondary_nav) || ($page['search_box'])): print 'span8'; else: print 'span12'; endif; ?>">
+      <div class="<?php if ($page['search_box']): print 'span8'; else: print 'span12'; endif; ?>">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" role="presentation" /> </a></div>
         <!-- /#logo -->
@@ -35,10 +39,6 @@
         <!-- /#header-content -->
         <?php endif; ?>
       </div>
-      <?php if ($secondary_nav): ?>
-      <div id="secondary-menu" class="span4"> <?php print render($secondary_nav); ?> </div>
-      <!-- /#secondary-menu -->
-      <?php endif; ?>
     </div>
   </div>
 </div>

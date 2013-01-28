@@ -9,6 +9,12 @@
 	        $('nav ul > li > ul > li:has(.active)').removeClass('active');	
 			$('nav ul ul a').removeAttr('data-toggle','data-target');
 			
+			// Bootstrap dropdown menu in secondary menu
+			$('#secondary-menu ul > li:has(.active)').addClass('active');
+			$('#secondary-menu ul > li:has(ul .active)').removeClass('active');			
+	        $('#secondary-menu ul > li > ul > li:has(.active)').removeClass('active');	
+			$('#secondary-menu ul ul a').removeAttr('data-toggle','data-target');
+			
 			// Turn off Bootstrap dropdown data attributes in sidebars
 			$('#sidebar-first a').removeAttr('data-toggle','data-target');
 			$('#sidebar-first ul').removeClass('dropdown-menu','dropdown-submenu');

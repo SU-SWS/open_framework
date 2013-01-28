@@ -13,19 +13,15 @@ body.photobg {background-attachment: fixed !important; background-size: cover !i
 
 /* ----- Background Color ------------ */
 body.bodybg .sidebar .region {background-color: rgba(255,255,255,0.9); padding: 10px;}
-body.bodybg #secondary-menu .container {background-color: rgba(255,255,255,0.9); padding: 0 10px 10px 10px;}
 body.bodybg #content-wrapper {background: #fff; padding: 10px;}
 
 /* ----- Borders -------------------- */
 body.borders .sidebar .region {border: 1px solid #d4d4d4; padding: 10px;}
-body.borders #secondary-menu .container {border: 1px solid #d4d4d4; padding: 10px;}
 body.borders #content-wrapper {border: 1px solid #d4d4d4; padding: 10px;}
 
 /* ------ Rounded Corners ----------- */
 body.roundedcorners .sidebar .region {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
-body.roundedcorners #secondary-menu .container {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
 body.roundedcorners #content-wrapper {-moz-border-radius: 5px; border-radius: 5px; padding: 10px;}
-
 
 /* GLOBAL ********************************* */
 
@@ -145,16 +141,14 @@ background-image: linear-gradient(to bottom, #F5F5F5 0%, #E6E6E6 100%);
 nav h2 {display: none;}
 
 /* ----- Secondary Navigation -------- */
-#secondary-menu {margin-top: 20px;}
+#secondary-menu {display: block; background: #eee; padding: 10px; font-size: 12px;}
 #secondary-menu ul li, 
 #secondary-menu ul li.leaf, 
 #secondary-menu ul li.expanded, 
 #secondary-menu ul li.collapsed {list-style: none; list-style-image: none;}
-#secondary-menu ul {text-align: right;}
 #secondary-menu ul {margin: 0;}
-#secondary-menu ul li {margin: 0; padding: 0;}
-#secondary-menu ul ul {text-align: left;}
-#secondary-menu > ul > li {display: inline-block; margin: 0 0 5px 15px; padding: 0;}
+#secondary-menu ul li li {margin: 0; padding: 0;}
+#secondary-menu > ul > li {display: inline-block;}
 #secondary-menu > ul > li > a {background: none;}
 
 /* ----- Breadcrumbs ----------------- */
