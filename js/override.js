@@ -22,7 +22,17 @@
 			// Update CSS classes based on window load
 			$(window).load(function() {
 				var width = $(window).width();
-
+				
+				if (width < 751) {
+				$('nav li').removeClass('dropdown-submenu');
+				$('nav ul ul ul').removeClass('dropdown-menu');
+				}
+				
+				else {
+				$('nav li li.expanded').addClass('dropdown-submenu');
+				$('nav ul ul:has(ul)').addClass('dropdown-menu');
+				}
+				
 				if ((width >= 751) && (width < 963)) {
 				$('.two-sidebars #sidebar-first').removeClass('span3');
 				$('.two-sidebars #sidebar-first').addClass('span4');
@@ -66,6 +76,16 @@
 			$(window).resize(function() {
 				var width = $(window).width();
 
+				if (width < 751) {
+				$('nav li').removeClass('dropdown-submenu');
+				$('nav ul ul ul').removeClass('dropdown-menu');
+				}
+				
+				else {
+				$('nav li li.expanded').addClass('dropdown-submenu');
+				$('nav ul ul:has(ul)').addClass('dropdown-menu');
+				}
+				
 				if ((width >= 751) && (width < 963)) {
 				$('.two-sidebars #sidebar-first').removeClass('span3');
 				$('.two-sidebars #sidebar-first').addClass('span4');
