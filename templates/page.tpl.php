@@ -10,7 +10,7 @@
   </div>
 </div>
 <!-- /#skipnav -->
-<?php global $user; if (($user->uid) && ($secondary_nav)): ?>
+<?php if (($user->uid) && ($secondary_nav)): ?>
 <div id="secondary-menu" class="clearfix"> <?php print render($secondary_nav); ?> </div>
 <!-- /#secondary-menu -->
 <?php endif; ?>
