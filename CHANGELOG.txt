@@ -1,3 +1,9 @@
+Version 7.x-2.03
+------------------------------
+by hyperboy: Added default drop-down and nested menu behaviors to top navigation and sidebar menus
+by hyperboy: Added Font Awesome 3.0.2
+by hyperboy: Moved secondary menu links to new region at top of page as additional "help" links area.
+
 Version 7.x-2.02
 ------------------------------
 by meganem:  Added sub-theming kit
