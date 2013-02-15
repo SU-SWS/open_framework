@@ -436,6 +436,7 @@ width: calc(50% - 60px);}
 #content-col2 [class*="span"] {width: 100%; margin-left: 0;}
 .callout, .bracket, .topline {width: 50%}
 .row-fluid .float-right {float: none !important;}
+.row-fluid .node .content .float-right {float:right !important; max-width:50%;}
 
 #footer-content .block {float: left; margin-right: 4%; width: 48%;}
 #footer-content .block:nth-child(2n+1) {clear: both;}
