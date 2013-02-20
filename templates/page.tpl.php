@@ -44,14 +44,17 @@
 </div>
 <!-- /#header -->
 <?php endif; ?>
-<?php if ($main_menu): ?>
+<?php if (($main_menu) || ($page['search_box'])): ?>
 <div id="main-menu" class="clearfix">
   <div class="container">
     <div class="navbar">
+      <?php if ($main_menu): ?>
       <div class="navbar-inner">
+        <?php endif; ?>
         <?php if ($page['search_box']): ?>
         <div id="nav-search"> <?php print render($page['search_box']); ?> </div>
         <?php endif; ?>
+        <?php if ($main_menu): ?>
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
         <?php if ($primary_nav || !empty($page['navigation'])): ?>
         <div class="nav-collapse">
@@ -66,7 +69,10 @@
           </nav>
         </div>
         <?php endif; ?>
+        <?php endif; ?>
+        <?php if ($main_menu): ?>
       </div>
+      <?php endif; ?>
     </div>
   </div>
 </div>
