@@ -41,7 +41,7 @@ quote, code {margin: .5em 0;}
 .caption {color: #848484; font-size: 13px; font-style: italic; letter-spacing: 0.01em; margin-bottom: 2em; margin-top: 0em;}
 
 /* ----- Links ----------------------- */
-a:focus {outline:none; border:0;}
+a:focus {/* outline:none; border:0; */}
 a {text-decoration: none;}
 a:hover {text-decoration: none;}
 .more-link, a.more-link {text-align:left; clear:both; display: inline-block; margin-top: 0.5em;}
