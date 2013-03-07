@@ -13,13 +13,13 @@ function open_framework_preprocess_html(&$vars) {
 function open_framework_preprocess_page(&$vars) {
 	  
   // Update jquery version to 1.9.1 for non-administration pages
-  if (arg(0)!='admin') {
+  if (arg(0) != 'admin' && arg(1) != 'add' && arg(2) != 'edit' && arg(0) != 'panels' && arg(0) != 'ctools') {
     $scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js');
 	$scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.1.1.min.js');
     unset($scripts['core']['misc/jquery.js']);
-    $variables['scripts'] = drupal_get_js('header', $scripts);
+    $vars['scripts'] = drupal_get_js('header', $scripts);
   }
-	
+  	
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
@@ -209,8 +209,11 @@ function open_framework_status_messages($variables) {
   foreach (drupal_get_messages($display) as $type => $messages) {
     $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
     $output .= "<div class=\"alert alert-block$class\">\n";
+	
+	if (arg(0) != 'admin' && arg(1) != 'add' && arg(2) != 'edit' && arg(0) != 'panels' && arg(0) != 'ctools') {
     $output .= "  <a class=\"close\" data-dismiss=\"alert\" href=\"#\">x</a>\n";
-
+	}
+	
     if (!empty($status_heading[$type])) {
       $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
     }
