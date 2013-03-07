@@ -15,14 +15,11 @@ scripts[] = js/override.js
 regions[header] = Header
 regions[navigation] = Navigation
 regions[search_box] = Search Box
-regions[highlighted] = Highlighted
-regions[help] = Help
-regions[sidebar_first] = First sidebar
-regions[sidebar_second] = Second sidebar
-regions[footer] = Footer
-
 regions[main_top] = Main: Top
 regions[main_upper] = Main: Upper
+regions[sidebar_first] = First sidebar
+regions[highlighted] = Highlighted
+regions[help] = Help
 regions[content_top] = Content: Top
 regions[content_upper] = Content: Upper
 regions[content] = Content: Body
@@ -40,8 +37,10 @@ regions[content_col4-3] = Content: 4-column stacked (3)
 regions[content_col4-4] = Content: 4-column stacked (4)
 regions[content_lower] = Content: Lower
 regions[content_bottom] = Content: Bottom
+regions[sidebar_second] = Second sidebar
 regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
+regions[footer] = Footer
 
 ; Settings
 settings[front_heading_classes] = ''
