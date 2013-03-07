@@ -148,6 +148,7 @@ nav h2 {position: absolute; left: -10000px;}
 /* ----- Second Sidebar Menu Blocks -- */
 
 /* ----- Admin Menu ------------------ */
+#admin-menu li {line-height: normal;}
 
 /* ----- Pager Nav ------------------- */
 
