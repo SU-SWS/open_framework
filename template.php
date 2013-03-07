@@ -11,6 +11,15 @@ function open_framework_preprocess_html(&$vars) {
 }
 
 function open_framework_preprocess_page(&$vars) {
+	  
+  // Update jquery version to 1.9.1 for non-administration pages
+  if (arg(0)!='admin') {
+    $scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js');
+	$scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.1.1.min.js');
+    unset($scripts['core']['misc/jquery.js']);
+    $variables['scripts'] = drupal_get_js('header', $scripts);
+  }
+	
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
