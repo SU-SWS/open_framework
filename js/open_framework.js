@@ -1,9 +1,6 @@
 (function ($) {
-
   Drupal.behaviors.open_framework = {
     attach: function (context, settings) {
-
-
 			// Reset iPhone, iPad, and iPod zoom on orientation change to landscape
 			var mobile_timer = false;
 			if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i))) {
@@ -18,21 +15,24 @@
 					},1000);
 				});
 			}
-
 			// Header Drupal Search Box
 			$('#header [name=search_block_form]').val('Search this site...');
 			$('#header [name=search_block_form]').focus(function () {
 			$('#header [name=search_block_form]').val('');
 			});
-
 			// Hide border for image links
 			$('a:has(img)').css('border', 'none');
-
 		}
 	}
 }(jQuery));
 
-
+//Add legacy IE addEventListener support (http://msdn.microsoft.com/en-us/library/ms536343%28VS.85%29.aspx#1)
+if (!window.addEventListener) {
+    window.addEventListener = function (type, listener, useCapture) {
+        attachEvent('on' + type, function() { listener(event) });
+    }
+}
+//end legacy support addition
 
 // Hide Address Bar in Mobile View
 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
@@ -41,5 +41,3 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		window.scrollTo(0, 1);
 	}
 }
-
-
