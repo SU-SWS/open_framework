@@ -331,7 +331,7 @@ function open_framework_menu_link(array $vars) {
     }
   }
 
-  if (in_array($vars['element']['#theme'], $navigation_blocks)) {
+  if ((in_array($vars['element']['#theme'], $navigation_blocks)) || ($vars['element']['#theme'] == 'menu_link__main_menu')) {
     $element = $vars['element'];
     $sub_menu = '';
 
