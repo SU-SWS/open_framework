@@ -295,50 +295,84 @@ function open_framework_menu_tree(&$vars) {
   return '<ul class="menu nav">' . $vars['tree'] . '</ul>';
 }
 
+/*
+ * Implements hook_menu_link
+ * Apply bootstrap menu classes to all menu blocks in the 
+ * navigation region.
+ */
+
 function open_framework_menu_link(array $vars) {
-	// only apply bootstrap menu classes to main_menu (uses machine menu name)
-	if ($vars['element']['#theme'] == 'menu_link__main_menu') {
-	
-	  $element = $vars['element'];
-	  $sub_menu = '';
-	  
-	  if ($element['#below']) {
-		// Ad our own wrapper
-		unset($element['#below']['#theme_wrappers']);
-		$sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
-		$element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
-		$element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
-	
-		// Check if this element is nested within another
-		if ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] > 1)) {
-		  // Generate as dropdown submenu
-		  $element['#attributes']['class'][] = 'dropdown-submenu';
-		}
-		else {
-		  // Generate as standard dropdown
-		  $element['#attributes']['class'][] = 'dropdown';
-		  $element['#localized_options']['html'] = TRUE;
-		  $element['#title'] .= ' <span class="caret"></span>';
-		}
-	
-		// Set dropdown trigger element to # to prevent inadvertant page loading with submenu click
-		$element['#localized_options']['attributes']['data-target'] = '#';
-	  }
-	  
-	  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-	  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
-	  
-	} else {
-	  $element = $vars['element'];
-	  $sub_menu = '';
-	
-	  if ($element['#below']) {
-		$sub_menu = drupal_render($element['#below']);
-	  }
-	  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-	  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
-	}
+  // Avoid calculating this array more than once
+  $navigation_blocks = &drupal_static(__FUNCTION__);
+
+  if (!isset($navigation_blocks)) {
+    // get all blocks in the navigation region
+    $blocks = block_list('navigation');
+
+    // extract just their IDs (<module>_<delta>)
+    $ids = array_keys($blocks);
+
+    $navigation_blocks = array();
+
+    // create an array of theming function names based on the block
+    // IDs. This is so that we can then use these to compare with the
+    // theme function name that's passed with the individual links
+    foreach ($ids as $id) {
+    // we only recognize system, menu and menu_block blocks
+      $id = str_replace('system_',     '', $id);
+      $id = str_replace('menu_block_', '', $id);
+      $id = str_replace('menu_',       '', $id);
+
+      // use the same function used to create the name of theming function
+      $id = strtr($id, '-', '_');
+      $id = 'menu_link__' . $id;
+
+      $navigation_blocks[] = $id;
+    }
+  }
+
+  if (in_array($vars['element']['#theme'], $navigation_blocks)) {
+    $element = $vars['element'];
+    $sub_menu = '';
+
+    if ($element['#below']) {
+      // Add our own wrapper
+      unset($element['#below']['#theme_wrappers']);
+      $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
+      $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
+      $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+
+      // Check if this element is nested within another
+      if ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] > 1)) {
+      // Generate as dropdown submenu
+        $element['#attributes']['class'][] = 'dropdown-submenu';
+      }
+      else {
+        // Generate as standard dropdown
+        $element['#attributes']['class'][] = 'dropdown';
+        $element['#localized_options']['html'] = TRUE;
+        $element['#title'] .= ' <span class="caret"></span>';
+      }
+
+      // Set dropdown trigger element to # to prevent inadvertant page loading with submenu click
+      $element['#localized_options']['attributes']['data-target'] = '#';
+    }
+
+    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+
+  } else {
+    $element = $vars['element'];
+    $sub_menu = '';
+
+    if ($element['#below']) {
+      $sub_menu = drupal_render($element['#below']);
+    }
+    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  }
 }
+
 /**
 * Get all primary tasks including subsets
 */
