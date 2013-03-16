@@ -100,6 +100,7 @@ nav-search .form-item,
 #header-search .form-item {margin:0;}
 
 #block-search-form {position: relative; margin: 0; padding: 0; display: inline-block;}
+#block-search-form form {margin: 0;}
 #block-search-form input.btn-search {background-color: transparent; background-image: url("../images/searchbutton.png"); background-position: left top; background-repeat: no-repeat; border: medium none; box-shadow: none; color: transparent; height: 26px; position: absolute; top: 3px; right: 10px; text-shadow: none; width: 26px; outline: none;}
 #block-search-form input.btn-search:hover {background-image: url("../images/searchbutton-hover.png");}
 .navbar #block-search-form input.btn-search {top: -2px;}
@@ -325,6 +326,7 @@ div.vertical-tabs .summary {font-size: 12px;}
 /* ----- Responsive ------------------ */
 @media (min-width: 768px) {
 .navbar-inner {padding: 0 20px;}
+.region-navigation .block {float: left;}
 }
 
 /* Landscape phones and down */
