@@ -298,41 +298,17 @@ function open_framework_menu_tree(&$vars) {
 /*
  * Implements hook_menu_link
  * Apply bootstrap menu classes to all menu blocks in the 
- * navigation region.
+ * navigation region and the main-menu block by default.
+ * Note: if a menu is in the navigation and somewhere else as well,
+ *       both instances of the menu will have the classes applied,
+ *       not just the one in the navigation
  */
 
 function open_framework_menu_link(array $vars) {
-  // Avoid calculating this array more than once
-  $navigation_blocks = &drupal_static(__FUNCTION__);
 
-  if (!isset($navigation_blocks)) {
-    // get all blocks in the navigation region
-    $blocks = block_list('navigation');
+  $element = $vars['element'];
 
-    // extract just their IDs (<module>_<delta>)
-    $ids = array_keys($blocks);
-
-    $navigation_blocks = array();
-
-    // create an array of theming function names based on the block
-    // IDs. This is so that we can then use these to compare with the
-    // theme function name that's passed with the individual links
-    foreach ($ids as $id) {
-    // we only recognize system, menu and menu_block blocks
-      $id = str_replace('system_',     '', $id);
-      $id = str_replace('menu_block_', '', $id);
-      $id = str_replace('menu_',       '', $id);
-
-      // use the same function used to create the name of theming function
-      $id = strtr($id, '-', '_');
-      $id = 'menu_link__' . $id;
-
-      $navigation_blocks[] = $id;
-    }
-  }
-
-  if ((in_array($vars['element']['#theme'], $navigation_blocks)) || ($vars['element']['#theme'] == 'menu_link__main_menu')) {
-    $element = $vars['element'];
+  if (open_framework_is_in_nav_menu($element)) {
     $sub_menu = '';
 
     if ($element['#below']) {
@@ -482,4 +458,71 @@ function open_framework_item_list($variables) {
   }
  
   return $output;
+}
+
+/*
+ *
+ *  Find out if an element (a menu link) is a link displayed in the
+ *  navigation region for the user. We return true by default  if this is a 
+ *  menu link in the main-menu. Open Framework treats the main-menu
+ *  as being in the navigation by default
+ *
+ */
+
+function open_framework_is_in_nav_menu($element) {
+
+  // #theme holds one or more suggestions for theming function names for the link
+  // simplify things by casting into an array
+  $link_theming_functions = (array)$element['#theme'];
+
+  // by default, we always assume that the main menu is in the navigation section
+  // 'menu_link__main_menu' is the theming function name for the main-menu
+  if (in_array('menu_link__main_menu', $link_theming_functions)) {
+    return TRUE;
+  };
+
+  // Avoid calculating this more than once
+  $nav_theming_functions = &drupal_static(__FUNCTION__);
+
+  // if not set, calculate the names of all theming functions for the blocks
+  // in the navigation region
+  if (!isset($nav_theming_functions)) {
+    // get all blocks in the navigation region
+    $blocks = block_list('navigation');
+
+    // extract just their IDs (<module>_<delta>)
+    $ids = array_keys($blocks);
+
+    // translate the ids into function names for comparison purposes
+    $nav_theming_functions = array_map('open_framework_block_id_to_function_name', $ids);
+
+  }
+
+  $intersect = array_intersect($nav_theming_functions, $link_theming_functions);
+  if ((!empty($intersect))) {
+  $intersect = array_intersect($nav_theming_functions, $link_theming_functions);
+    return TRUE;
+  }
+  else {
+    return FALSE;
+  }
+}
+
+// Convert a block id to a theming function name
+
+function open_framework_block_id_to_function_name ($id) {
+  $id = str_replace('system_', '', $id);
+
+  // recognize menu module blocks, but leave menu_block created ones alone
+  // remove module portion (except for menu_block), keep delta
+  if (strpos($id, 'menu_block_') === false) {
+    $id = str_replace('menu_',       '', $id);
+  }
+
+  // massage the id to looks like a theming function name
+  // use the same function used to create the name of theming function
+  $id = strtr($id, '-', '_');
+  $name = 'menu_link__' . $id;
+
+  return $name;
 }
