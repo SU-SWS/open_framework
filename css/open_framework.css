@@ -354,8 +354,8 @@ div.vertical-tabs .summary {font-size: 12px;}
 .content-col3.row-fluid .span4,
 .content-row4 .span3,
 .content-col4.row-fluid .span3,
-.sidebar-first .row-fluid .block,
-.sidebar-second .row-fluid .block {display: block; float: left; width: 49%; margin-right: 0;}
+.sidebar-first .block,
+.sidebar-second .block {display: block; float: left; width: 49%; margin-right: 0;}
 
 .main-top .block[class*="span"]:nth-child(odd),
 .main-top .block[class*="span"].clear-row,
@@ -370,9 +370,11 @@ div.vertical-tabs .summary {font-size: 12px;}
 .content-upper .block[class*="span"]:nth-child(odd),
 .content-upper .block[class*="span"].clear-row,
 .content-lower .block[class*="span"]:nth-child(odd),
+.content-lower .block[class*="span"].clear-row,
 .content-bottom .block[class*="span"]:nth-child(odd),
-.content-bottom .block[class*="span"].clear-row
-.content-lower .block[class*="span"].clear-row {margin-right: 2%;}
+.content-bottom .block[class*="span"].clear-row,
+.sidebar-first .block:nth-child(odd), 
+.sidebar-second .block:nth-child(odd) {margin-right: 2%;}
 
 .main-top .block[class*="span"]:last-child,
 .main-upper .block[class*="span"]:last-child,
@@ -388,8 +390,8 @@ div.vertical-tabs .summary {font-size: 12px;}
 .content-col3.row-fluid [class*="span"]:nth-child(3n),
 .content-row4 [class*="span"]:nth-child(2n),
 .content-col4.row-fluid [class*="span"]:nth-child(2n),
-.sidebar-first .row-fluid .block:nth-child(2n),
-.sidebar-second .row-fluid .block:nth-child(2n) {margin-right: 0;}
+.sidebar-first .block:nth-child(2n),
+.sidebar-second .block:nth-child(2n) {margin-right: 0;}
 
 .main-top .block.span12.clear-row,
 .main-upper .block.span12.clear-row,
@@ -406,8 +408,8 @@ div.vertical-tabs .summary {font-size: 12px;}
 .content-col3.row-fluid [class*="span"]:nth-child(3n+1),
 .content-row4 [class*="span"]:nth-child(2n+1),
 .content-col4.row-fluid [class*="span"]:nth-child(2n+1),
-.sidebar-first .row-fluid .block:nth-child(2n+1),
-.sidebar-second .row-fluid .block:nth-child(2n+1) {clear: both; margin-left: 0;}
+.sidebar-first .block:nth-child(2n+1),
+.sidebar-second .block:nth-child(2n+1) {clear: both; margin-left: 0;}
 
 /* Fix for .well on blocks in first sidebar */
 .sidebar-first .block.well {width: 37%;
