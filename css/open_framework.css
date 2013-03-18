@@ -207,7 +207,7 @@ nav h2 {position: absolute; left: -10000px;}
 .pullquote, .pullquote-large, blockquote > p:first-child {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
 .pullquote {font-size: 14px; letter-spacing: 0.02em;}
 .pullquote-large {font-size:20px;}
-.credits {font-size: 12px; letter-spacing: 0.05em;}
+.credits {font-size: 12px; letter-spacing: 0.05em; margin-top: 0.5em;}
 
 
 /* POSTCARD LAYOUTS ********************** */
