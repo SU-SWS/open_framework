@@ -100,6 +100,7 @@ nav-search .form-item,
 #header-search .form-item {margin:0;}
 
 #block-search-form {position: relative; margin: 0; padding: 0; display: inline-block;}
+#block-search-form input.search-query {padding-right:38px; width: 130px;}
 #block-search-form input.btn-search {background: none repeat scroll 0 0 transparent; border: medium none; height: 26px; position: absolute; right: 10px; top: 1px; width: 26px;}
 #block-search-form input.btn-search:hover {opacity:0.6;}
 #block-search-form form {margin: 0;}
