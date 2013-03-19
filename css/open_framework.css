@@ -343,6 +343,9 @@ div.vertical-tabs .summary {font-size: 12px;}
 @media (min-width: 768px) {
 .navbar-inner {padding: 0 20px;}
 .region-navigation .block {float: left;}
+.content-row2 [class*="span"]:nth-child(2n+1),
+.content-row3 [class*="span"]:nth-child(3n+1),
+.content-row4 [class*="span"]:nth-child(4n+1) {margin-left: 0;}
 }
 
 /* Landscape phones and down */
@@ -400,6 +403,12 @@ div.vertical-tabs .summary {font-size: 12px;}
 .content-lower .block[class*="span"].clear-row,
 .content-bottom .block[class*="span"]:nth-child(odd),
 .content-bottom .block[class*="span"].clear-row,
+.content-row2 .span6:nth-child(odd),
+.content-col2.row-fluid .span6:nth-child(odd),
+.content-row3 .span4:nth-child(odd),
+.content-col3.row-fluid .span4:nth-child(odd),
+.content-row4 .span3:nth-child(odd),
+.content-col4.row-fluid .span3:nth-child(odd),
 .sidebar-first .block:nth-child(odd), 
 .sidebar-second .block:nth-child(odd) {margin-right: 2%;}
 
@@ -413,9 +422,9 @@ div.vertical-tabs .summary {font-size: 12px;}
 .content-lower .block[class*="span"]:last-child,
 .content-bottom .block[class*="span"]:last-child,
 .content-row2 [class*="span"]:nth-child(2n),
-.content-row3 [class*="span"]:nth-child(3n),
+.content-row3 [class*="span"]:nth-child(2n),
 .content-col2.row-fluid [class*="span"]:nth-child(2n),
-.content-col3.row-fluid [class*="span"]:nth-child(3n),
+.content-col3.row-fluid [class*="span"]:nth-child(2n),
 .content-row4 [class*="span"]:nth-child(2n),
 .content-col4.row-fluid [class*="span"]:nth-child(2n),
 .sidebar-first .block:nth-child(2n),
@@ -433,8 +442,8 @@ div.vertical-tabs .summary {font-size: 12px;}
 
 .content-row2 [class*="span"]:nth-child(2n+1),
 .content-col2.row-fluid [class*="span"]:nth-child(2n+1),
-.content-row3 [class*="span"]:nth-child(3n+1),
-.content-col3.row-fluid [class*="span"]:nth-child(3n+1),
+.content-row3 [class*="span"]:nth-child(2n+1),
+.content-col3.row-fluid [class*="span"]:nth-child(2n+1),
 .content-row4 [class*="span"]:nth-child(2n+1),
 .content-col4.row-fluid [class*="span"]:nth-child(2n+1),
 .sidebar-first .block:nth-child(2n+1),
