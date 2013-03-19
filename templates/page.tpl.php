@@ -50,27 +50,29 @@
     <div class="navbar">
       <?php if ($main_menu): ?>
       <div class="navbar-inner">
-        <?php endif; ?>
-        <?php if ($page['search_box']): ?>
-        <div id="nav-search" class="nav-search"> <?php print render($page['search_box']); ?> </div>
-        <?php endif; ?>
-        <?php if ($main_menu): ?>
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-        <?php if ($primary_nav || !empty($page['navigation'])): ?>
-        <div class="nav-collapse">
-          <nav role="navigation">
-            <?php if (($primary_nav) && empty($page['navigation'])): ?>
-            <?php print render($primary_nav); ?> 
-            <!-- /#primary-menu -->
-            <?php endif; ?>
-            <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-            <?php endif; ?>
-          </nav>
+        <div class="container">
+          <?php endif; ?>
+          <?php if ($page['search_box']): ?>
+          <div id="nav-search" class="nav-search"> <?php print render($page['search_box']); ?> </div>
+          <?php endif; ?>
+          <?php if ($main_menu): ?>
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+          <?php if ($primary_nav || !empty($page['navigation'])): ?>
+          <div class="nav-collapse collapse">
+            <nav role="navigation">
+              <?php if (($primary_nav) && empty($page['navigation'])): ?>
+              <?php print render($primary_nav); ?> 
+              <!-- /#primary-menu -->
+              <?php endif; ?>
+              <?php if (!empty($page['navigation'])): ?>
+              <?php print render($page['navigation']); ?>
+              <?php endif; ?>
+            </nav>
+          </div>
+          <?php endif; ?>
+          <?php endif; ?>
+          <?php if ($main_menu): ?>
         </div>
-        <?php endif; ?>
-        <?php endif; ?>
-        <?php if ($main_menu): ?>
       </div>
       <?php endif; ?>
     </div>
