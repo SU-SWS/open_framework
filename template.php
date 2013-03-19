@@ -12,10 +12,9 @@ function open_framework_preprocess_html(&$vars) {
 
 function open_framework_preprocess_page(&$vars) {
 	  
-  // Update jquery version to 1.9.1 for non-administration pages
-  if (arg(0) != 'admin' && arg(1) != 'add' && arg(2) != 'edit' && arg(0) != 'panels' && arg(0) != 'ctools') {
-    $scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js');
-	$scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.1.1.min.js');
+  // Update jquery version to 1.8.2 for non-administration pages
+  if (arg(0) != 'admin' && arg(0) != 'user' && arg(1) != 'add' && arg(2) != 'edit' && arg(0) != 'panels' && arg(0) != 'ctools') {
+    $scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-1.8.2.min.js');
     unset($scripts['core']['misc/jquery.js']);
     $vars['scripts'] = drupal_get_js('header', $scripts);
   }
