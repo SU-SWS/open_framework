@@ -66,7 +66,6 @@ td {vertical-align: top;}
 .form-type-checkbox label {display:inline-block; margin-left:8px;}
 input[type="checkbox"] {margin:0;}
 input.form-submit {height:2.5em; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; border:1px solid #d5d5d5;
-
 background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
 background-image:     -ms-linear-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
 background-image:    -moz-linear-gradient(top, #FFFFFF 0%, #E6E6E6 100%);
@@ -204,22 +203,37 @@ nav h2 {position: absolute; left: -10000px;}
 .callout {border:1px solid #eee; padding:15px; width:27.25%;}
 
 /* ----- Pullquote Text -------------- */
-.pullquote, .pullquote-large, blockquote > p:first-child {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
+.pullquote, 
+.pullquote-large, 
+blockquote > p:first-child {text-indent: -7px; line-height: 1.5em; padding-left:10px;}
 .pullquote {font-size: 14px; letter-spacing: 0.02em;}
 .pullquote-large {font-size:20px;}
 .credits {font-size: 12px; letter-spacing: 0.05em; margin-top: 0.5em;}
 
 
 /* POSTCARD LAYOUTS ********************** */
-.postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap {clear:both; margin-bottom:15px;}
-.postcard-left > div, .postcard-right > div {display:table-cell;}
-.postcard-left-wrap > div:first-child, .postcard-left > div:first-child {float:left;}
-.postcard-right-wrap > div:first-child, .postcard-right > div:first-child {float:right;}
-.postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img,
-.postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img {margin-bottom:15px;}
-.postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img {margin-right:15px;}
-.postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img {margin-left:15px;}
-.postcard-left h2, .postcard-left-wrap h2, .postcard-right h2, .postcard-right-wrap h2 {margin-top:0px;}
+.postcard-left, 
+.postcard-left-wrap, 
+.postcard-right, 
+.postcard-right-wrap {clear:both; margin-bottom:15px;}
+.postcard-left > div, 
+.postcard-right > div {display:table-cell;}
+.postcard-left-wrap > div:first-child, 
+.postcard-left > div:first-child {float:left;}
+.postcard-right-wrap > div:first-child, 
+.postcard-right > div:first-child {float:right;}
+.postcard-left > div:first-child img, 
+.postcard-left-wrap > div:first-child img,
+.postcard-right > div:first-child img, 
+.postcard-right-wrap > div:first-child img {margin-bottom:15px;}
+.postcard-left > div:first-child img, 
+.postcard-left-wrap > div:first-child img {margin-right:15px;}
+.postcard-right > div:first-child img, 
+.postcard-right-wrap > div:first-child img {margin-left:15px;}
+.postcard-left h2, 
+.postcard-left-wrap h2, 
+.postcard-right h2, 
+.postcard-right-wrap h2 {margin-top:0px;}
 
 /* IMAGES ******************************** */
 img, a img {border: none; outline: none;}
@@ -310,7 +324,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 /* ----- Views Slideshow ------------- */
 .views_slideshow_cycle_main {width: 100%; float: left; position: relative;}
-.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}/*?*/
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame {width: 100% !important; height: auto;}
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {width: 100% !important; height: auto;}
 .views_slideshow_cycle_main .field-content {max-width: 100%; width: 100%;}
 .views_slideshow_cycle_main .field-content img {max-width: 100%; width: 100%; height: auto; margin: 0; padding: 0;}
@@ -334,22 +348,12 @@ div.vertical-tabs .summary {font-size: 12px;}
 /* Landscape phones and down */
 @media (max-width: 480px) {
 .content-col2 [class*="span"] {width: 100%; margin-left: 0;}
-.header #logo {display: block; text-align:center; margin:0px;}
-.site-name, .site-slogan {text-align:center;}
+.header #logo {display: block; text-align: center; margin: 0px;}
+.site-name, .site-slogan {text-align: center;}
 }
 
 /* Landscape phones to Tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-.main-top .block,
-.main-upper .block,
-.main-lower .block,
-.main-bottom .block,
-.content-top .block,
-.content-upper .block,
-.content-body .block,
-.content-lower .block,
-.content-bottom .block {width: 100%;}
-
 .main-top .block[class*="span"],
 .main-upper .block[class*="span"],
 .main-lower .block[class*="span"],
@@ -367,6 +371,16 @@ div.vertical-tabs .summary {font-size: 12px;}
 .content-col4.row-fluid .span3,
 .sidebar-first .block,
 .sidebar-second .block {display: block; float: left; width: 49%; margin-right: 0;}
+
+.main-top .block,
+.main-upper .block,
+.main-lower .block,
+.main-bottom .block,
+.content-top .block,
+.content-upper .block,
+.content-body .block,
+.content-lower .block,
+.content-bottom .block {width: 100%;}
 
 .main-top .block[class*="span"]:nth-child(odd),
 .main-top .block[class*="span"].clear-row,
@@ -455,12 +469,16 @@ width: calc(50% - 60px);}
 .btn.btn-navbar {float: left; margin-bottom: 8px;}
 .navbar-inner {padding: 0px 5px;}
 .nav-search {margin-right: 0px;}
-.content .callout, .content .bracket, .content .topline {width: 40%}
+.content .callout, 
+.content .bracket, 
+.content .topline {width: 40%}
 }
 
 /* desktop and large desktop */
 @media (min-width: 980px) and (max-width: 1199px) {
-.two-sidebars .content .callout, .two-sidebars  .content .bracket, .two-sidebars  .content .topline {width: 40%}
+.two-sidebars .content .callout, 
+.two-sidebars  .content .bracket, 
+.two-sidebars  .content .topline {width: 40%}
 }
      
 /* Large desktop */
