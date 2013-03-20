@@ -59,6 +59,9 @@ function open_framework_preprocess_page(&$vars) {
   // Replace tabs with drop down version
   $vars['tabs']['#primary'] = _bootstrap_local_tasks($vars['tabs']['#primary']);
   
+  // Add variable for site title
+  $vars['my_site_title'] = variable_get('site_name');
+  
 }
 
 function open_framework_preprocess_block(&$vars) {

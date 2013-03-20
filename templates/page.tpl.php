@@ -21,8 +21,8 @@
       <div class="<?php if ($page['search_box']): print 'span8'; else: print 'span12'; endif; ?>">
         <?php if ($logo): ?>
         <div id="logo" class="site-logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" role="presentation" /> </a></div>
-        <!-- /#logo -->
         <?php endif; ?>
+        <!-- /#logo -->
         <?php if ($site_name || $site_slogan): ?>
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
@@ -32,8 +32,11 @@
           <div id="site-slogan" class="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div>
-        <!-- /#name-and-slogan -->
         <?php endif; ?>
+        <?php if (!($site_name || $site_slogan)): ?>
+           <div id="site" class="hide"><div id="name"><a href="<?php print $front_page; ?>"><?php print $my_site_title; ?></a></div></div>
+        <?php endif; ?>
+        <!-- /#name-and-slogan -->
         <?php if ($page['header']): ?>
         <div id="header-content" class="row-fluid header-content"><?php print render($page['header']); ?></div>
         <!-- /#header-content -->
