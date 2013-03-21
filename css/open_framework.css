@@ -407,7 +407,8 @@ nav h2{
 
 /* footer **************************** */
 .site-footer{
-	margin-top:50px;
+	margin-top:40px;
+	margin-bottom:10px;
 }
 
 .site-footer h2{
