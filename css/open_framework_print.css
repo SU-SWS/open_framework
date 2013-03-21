@@ -38,8 +38,7 @@ h2,  h3 {
 	page-break-after: avoid;
 }
 .logged-in #toolbar, .logged-in .tabs, .book_add_child, .book_printer, .comment-add,  
-#search-block-form,
-.comment-form {
+#search-block-form, .site-main-menu, .comment-form {
 	display:none;
 }
 }
