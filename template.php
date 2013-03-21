@@ -476,12 +476,6 @@ function open_framework_is_in_nav_menu($element) {
   // simplify things by casting into an array
   $link_theming_functions = (array)$element['#theme'];
 
-  // by default, we always assume that the main menu is in the navigation section
-  // 'menu_link__main_menu' is the theming function name for the main-menu
-  if (in_array('menu_link__main_menu', $link_theming_functions)) {
-    return TRUE;
-  };
-
   // Avoid calculating this more than once
   $nav_theming_functions = &drupal_static(__FUNCTION__);
 
@@ -512,6 +506,13 @@ function open_framework_is_in_nav_menu($element) {
     $nav_theming_functions = array_map('open_framework_block_id_to_function_name', $ids);
 
   }
+
+  // if there is nothing in the navigation section, the main menu is added automatically, so
+  // we watch for that.
+  // 'menu_link__main_menu' is the theming function name for the main-menu
+  if ((empty($nav_theming_functions)) && (in_array('menu_link__main_menu', $link_theming_functions))) {
+    return TRUE;
+  };
 
   // Find out if any of the theming functions for the blocks are the same
   // as the theming functions for the link.
