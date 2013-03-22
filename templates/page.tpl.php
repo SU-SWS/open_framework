@@ -86,7 +86,7 @@
 <div id="main" class="clearfix main">
   <div class="container">
     <?php if ($breadcrumb): ?>
-    <div id="breadcrumb" class="breadcrumb"><?php print $breadcrumb; ?></div>
+    <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     <?php if ($page['main_top']): ?>
     <div id="main-top" class="row-fluid main-top"> <?php print render($page['main_top']); ?> </div>
