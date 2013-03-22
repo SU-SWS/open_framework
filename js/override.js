@@ -18,16 +18,6 @@ Drupal.behaviors.open_framework_override = {
         .removeAttr('data-toggle')
         .removeAttr('data-target')
 
-    // Turn off Bootstrap dropdown data attributes in sidebars
-    $('#sidebar-first, #sidebar-second')
-      .find('a')
-        .removeAttr('data-toggle')
-        .removeAttr('data-target')
-      .end()
-      .find('ul')
-        .removeClass('dropdown-menu', 'dropdown-submenu')
-      .end();
-
     // Set up theme specific responsive behaviors
     function responsive_behaviors () {
       var width = $(window).width();

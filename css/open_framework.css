@@ -873,11 +873,15 @@ ul.primary{
 		float:left;
 		margin-bottom:8px;
 	}
+
+	nav ul li a {
+		display:block;
+	}
 	
 	.navbar-inner{
 		padding:5px 5px 0;
 	}
-	
+		
 	.content-col2 [class*="span"]{
 		margin-left:0;
 		width:100%;
