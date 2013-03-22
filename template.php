@@ -10,15 +10,27 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_path'] = theme_get_setting('body_bg_path'); 
 }
 
-function open_framework_preprocess_page(&$vars) {
-	  
-  // Update jquery version to 1.8.2 for non-administration pages
-  if (arg(0) != 'admin' && arg(0) != 'user' && arg(1) != 'add' && arg(2) != 'edit' && arg(0) != 'panels' && arg(0) != 'ctools') {
-    $scripts = drupal_add_js(drupal_get_path('theme', 'open_framework') . '/js/jquery-1.8.2.min.js');
-    unset($scripts['core']['misc/jquery.js']);
-    $vars['scripts'] = drupal_get_js('header', $scripts);
+function open_framework_js_alter(&$javascript) {
+  // Update jquery version for non-administration pages
+  if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
+    $jquery_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js';
+    $jquery_version = '1.9.1';
+    $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.1.1.min.js';
+    $migrate_version = '1.1.1';
+    $javascript['misc/jquery.js']['data'] = $jquery_file;
+    $javascript['misc/jquery.js']['version'] = $jquery_version;
+    $javascript['misc/jquery.js']['weight'] = 0;
+    $javascript['misc/jquery.js']['group'] = -101;
+    drupal_add_js($migrate_file);
+    if (isset($javascript["$migrate_file"])) {
+      $javascript["$migrate_file"]['version'] = $migrate_version;
+      $javascript["$migrate_file"]['weight'] = 1;
+      $javascript["$migrate_file"]['group'] = -101;
+    }
   }
-  	
+}
+
+function open_framework_preprocess_page(&$vars) { 
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
