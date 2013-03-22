@@ -96,7 +96,7 @@
     <?php endif; ?>
     <div id="main-content" class="row main-content">
       <?php if ($page['sidebar_first']): ?>
-      <div id="sidebar-first" class="sidebar span3 sidebar-first">
+      <div id="sidebar-first" class="sidebar span3 site-sidebar-first">
         <div class="row-fluid"><?php print render($page['sidebar_first']); ?></div>
       </div>
       <!-- /#sidebar-first -->
@@ -211,7 +211,7 @@
       </div>
       <!-- /#content -->
       <?php if ($page['sidebar_second']): ?>
-      <div id="sidebar-second" class="sidebar span3 sidebar-second">
+      <div id="sidebar-second" class="sidebar span3 site-sidebar-second">
         <div class="row-fluid"><?php print render($page['sidebar_second']); ?></div>
       </div>
       <!-- /#sidebar-second -->
