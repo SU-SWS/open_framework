@@ -224,7 +224,7 @@ function open_framework_status_messages($variables) {
     $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
     $output .= "<div class=\"alert alert-block$class\">\n";
 	
-	if (arg(0) != 'admin' && arg(0) != 'user' && arg(1) != 'add' && arg(2) != 'edit' && arg(0) != 'panels' && arg(0) != 'ctools') {
+    if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
     $output .= "  <a class=\"close\" data-dismiss=\"alert\" href=\"#\">x</a>\n";
 	}
 	
