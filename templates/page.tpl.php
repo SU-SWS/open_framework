@@ -15,7 +15,7 @@
 <!-- /#secondary-menu -->
 <?php endif; ?>
 <?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['search_box'])): ?>
-<div id="header" class="clearfix header">
+<div id="header" class="clearfix header" role="banner">
   <div class="container">
     <div class="row">
       <div class="<?php if ($page['search_box']): print 'span8'; else: print 'span12'; endif; ?>">
@@ -83,7 +83,7 @@
 </div>
 <!-- /#main-menu -->
 <?php endif; ?>
-<div id="main" class="clearfix main">
+<div id="main" class="clearfix main" role="main">
   <div class="container">
     <?php if ($breadcrumb): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
@@ -227,7 +227,7 @@
 </div>
 <!-- /#main, /#main-wrapper -->
 <?php if ($page['footer']): ?>
-<div id="footer" class="clearfix site-footer">
+<div id="footer" class="clearfix site-footer" role="contentinfo">
   <div class="container">
     <div id="footer-content" class="row-fluid footer-content"> <?php print render($page['footer']); ?> </div>
   </div>
