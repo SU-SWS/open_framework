@@ -354,17 +354,36 @@ nav h2{
 	margin:0;
 }
 
-.admin-shortcuts ul.menu li li{
-	margin:0;
-	padding:0;
-}
-
 .admin-shortcuts ul.menu li{
 	display:inline-block;
+	position: relative;
 }
+
+.admin-shortcuts ul.menu li li{
+	display:block;
+}
+
 
 .admin-shortcuts ul.menu li a{
 	background:none;
+}
+
+.admin-shortcuts ul.menu li ul{
+	display: none;
+}
+
+.admin-shortcuts ul.menu li:hover > ul{
+	display: block; 
+	background: #fff;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	position: absolute; 
+}
+
+.admin-shortcuts ul.menu li li:hover > ul{
+	position: absolute; 
+	top: 5px;
+	left: 190px;
 }
 
 /* ----- breadcrumbs ----------------- */
