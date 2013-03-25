@@ -363,7 +363,6 @@ nav h2{
 	display:block;
 }
 
-
 .admin-shortcuts ul.menu li a{
 	background:none;
 }
@@ -377,7 +376,8 @@ nav h2{
 	background: #fff;
 	border: 1px solid #D4D4D4;
 	border-radius: 5px;
-	position: absolute; 
+	position: absolute;
+	width: 200px;
 }
 
 .admin-shortcuts ul.menu li li:hover > ul{
