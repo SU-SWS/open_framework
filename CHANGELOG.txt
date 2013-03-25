@@ -1,3 +1,16 @@
+Version 7.x-2.04
+------------------------------
+by meganem: Updated general CSS
+by meganem: Updated search box styles
+by meganem: Added print stylesheet
+by hyperboy: Updated Bootstrap to version 2.3.1
+by hyperboy: Added Admin Shortcuts theme region
+by hyperboy: Updated core jQuery replacement behavior
+by hyperboy: Added ARIA roles
+by oresh: Page template and CSS cleanup
+by timplunkett: Fixed javascript errors
+by mistermarco: Applied dropdown classes to main-menu and menu blocks in the navigation region only
+
 Version 7.x-2.03
 ------------------------------
 by hyperboy: Added default drop-down and nested menu behaviors to top navigation and sidebar menus
