@@ -337,33 +337,33 @@ nav h2{
 	left:-10000px;
 }
 
-/* ----- secondary navigation -------- */
-.secondary-menu{
+/* ----- admin shortcuts / secondary menu -------- */
+.admin-shortcuts{
 	display:block;
 	padding:10px;
 	background:#eee;
 	font-size:12px;
 }
 
-.secondary-menu ul li, .secondary-menu ul li.leaf, .secondary-menu ul li.expanded, .secondary-menu ul li.collapsed{
+.admin-shortcuts ul.menu li, .admin-shortcuts ul.menu li.leaf, .admin-shortcuts ul.menu li.expanded, .admin-shortcuts ul.menu li.collapsed{
 	list-style:none;
 	list-style-image:none;
 }
 
-.secondary-menu ul{
+.admin-shortcuts ul.menu{
 	margin:0;
 }
 
-.secondary-menu ul li li{
+.admin-shortcuts ul.menu li li{
 	margin:0;
 	padding:0;
 }
 
-.secondary-menu > ul > li{
+.admin-shortcuts ul.menu li{
 	display:inline-block;
 }
 
-.secondary-menu > ul > li > a{
+.admin-shortcuts ul.menu li a{
 	background:none;
 }
 

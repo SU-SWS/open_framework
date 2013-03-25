@@ -10,10 +10,10 @@
   </div>
 </div>
 <!-- /#skipnav -->
-<?php if (($user->uid) && ($secondary_nav)): ?>
-<div id="secondary-menu" class="clearfix secondary-menu"> <?php print render($secondary_nav); ?> </div>
-<!-- /#secondary-menu -->
+<?php if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary_nav))): ?>
+<div id="admin-shortcuts" class="admin-shortcuts clearfix"> <?php print render($secondary_nav); ?> <?php print render($page['admin_shortcuts']); ?> </div>
 <?php endif; ?>
+<!-- /#admin-shortcuts -->
 <?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['search_box'])): ?>
 <div id="header" class="clearfix header" role="banner">
   <div class="container">
@@ -34,7 +34,9 @@
         </div>
         <?php endif; ?>
         <?php if (!($site_name || $site_slogan)): ?>
-           <div id="site" class="hide"><div id="name"><a href="<?php print $front_page; ?>"><?php print $my_site_title; ?></a></div></div>
+        <div id="site" class="hide">
+          <div id="name"><a href="<?php print $front_page; ?>"><?php print $my_site_title; ?></a></div>
+        </div>
         <?php endif; ?>
         <!-- /#name-and-slogan -->
         <?php if ($page['header']): ?>

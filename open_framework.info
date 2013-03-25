@@ -14,6 +14,7 @@ scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/open_framework.js
 scripts[] = js/override.js
 
+regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
 regions[header] = Header
 regions[navigation] = Navigation
 regions[search_box] = Search Box
