@@ -569,7 +569,7 @@ img, a img{
 }
 
 .main .border-none img{
-	border:0;
+	border:0 !important;
 }
 
 .main .border-bottom img{
