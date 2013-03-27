@@ -18,14 +18,41 @@ Drupal.behaviors.open_framework = {
           }, 1000);
         });
     }
+	
     // Header Drupal Search Box
     $('#header [name=search_block_form]')
       .val('Search this site...')
       .focus(function () {
         $(this).val('');
       });
+	  
     // Hide border for image links
     $('a:has(img)').css('border', 'none');
+	
+	// Equal Column Height
+	var width = $(window).width();			
+	if (width >= 751) {
+		  var currentTallest = 0;
+		  var currentRowStart = 0;
+		  var rowDivs = new Array();
+		  $('div.column').each(function(index) {
+		  if(currentRowStart != $(this).position().top) {
+		  // we just came to a new row. Set all the heights on the completed row
+		  for(currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) rowDivs[currentDiv].height(currentTallest);
+		  // set the variables for the new row
+		  rowDivs.length = 0; // empty the array
+		  currentRowStart = $(this).position().top;
+		  currentTallest = $(this).height();
+		  rowDivs.push($(this));
+		  } else {
+		  // another div on the current row. Add it to the list and check if it's taller
+		  rowDivs.push($(this));
+		  currentTallest = (currentTallest < $(this).height()) ? ($(this).height()) : (currentTallest);
+		  }
+		  // do the last row
+		  for(currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) rowDivs[currentDiv].height(currentTallest);
+		  });
+	}
   }
 }
 
