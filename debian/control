@@ -1,0 +1,13 @@
+Source: drupal7-thm-open-framework
+Section: web
+Priority: extra
+Maintainer: Jon C. Robertson <jonrober@stanford.edu>
+Build-Depends: debhelper (>> 5.0.0)
+Standards-Version: 3.9.1.0
+Homepage: 
+
+Package: drupal7-thm-open-framework
+Architecture: all
+Depends: ${misc:Depends}
+Description: open_framework theme for Drupal 7
+ Local open_framework theme for Drupal 7.
