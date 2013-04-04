@@ -1,3 +1,10 @@
+drupal7-thm-open-framework (2.04-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fixed not installing screenshot.png.
+
+ -- Jon C. Robertson <jonrober@stanford.edu>  Thu, 04 Apr 2013 13:31:45 -0700
+
 drupal7-thm-open-framework (2.04-beta-1) unstable; urgency=low
 
   * Initial release.

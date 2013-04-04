@@ -21,8 +21,8 @@ install:
 	dh_installdirs
 	dh_installdocs README.txt
 	cp -r bootstrap css fontawesome images js subtheme_kit templates \
-		logo.png open_framework.info template.php theme-settings.php \
-		$(BUILDDIR)
+		logo.png open_framework.info screenshot.png template.php \
+		theme-settings.php $(BUILDDIR)
 	find $(BUILDDIR) -type f |xargs chmod 0644
 
 binary-arch: ;
