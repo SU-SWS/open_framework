@@ -1,0 +1,6 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+#panels-dnd-main .region-first,
+#panels-dnd-main .region-second,
+#panels-dnd-main .region-third {float: left; width: 33%}
+#panels-dnd-main .region-second {margin-left: 0.5%; margin-right: 0.5%}
+#panels-dnd-main .region-bottom {clear: both}
