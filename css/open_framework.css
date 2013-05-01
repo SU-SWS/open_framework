@@ -612,7 +612,9 @@ img, a img{
 }
 
 #main .float-right{
-	float:right;
+    float: right;
+    margin-left: 15px;
+    margin-right: 0;
 }
 
 #main .float-none{
