@@ -11,6 +11,9 @@
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="<?php print base_path() . drupal_get_path('theme', 'open_framework') . '/font-awesome/css/font-awesome-ie7.min.css'; ?>">
+  <![endif]-->
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
