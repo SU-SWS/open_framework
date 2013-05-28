@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="container row-fluid clearfix">
-    <div class="region region-two-66-33-first span3">
+    <div class="region region-two-66-33-25-first span3">
       <div class="region-inner clearfix">
         <?php print $content['two_66_33_25_first']; ?>
       </div>
