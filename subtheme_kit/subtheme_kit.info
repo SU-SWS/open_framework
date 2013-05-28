@@ -46,3 +46,6 @@ regions[sidebar_second] = Second sidebar
 regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
 regions[footer] = Footer
+
+; Panel layouts ----------------------------------------------------
+plugins[panels][layouts] = plugins/layouts

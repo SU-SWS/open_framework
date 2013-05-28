@@ -1,0 +1,8 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+#panels-dnd-main .three-middle-stacked .region-first,
+#panels-dnd-main .three-middle-stacked .region-second,
+#panels-dnd-main .three-middle-stacked .region-third {float: left; width: 33%}
+#panels-dnd-main .region-second {margin-left: 0.5%; margin-right: 0.5%}
+#panels-dnd-main .three-middle-flow {clear: both}
+#panels-dnd-main .three-middle-flow .panel-pane{display: inline-block; width:32% !important; margin: 0 0.5%;}
+#panels-dnd-main .region-bottom {clear: both}
