@@ -60,6 +60,14 @@
 /* MEDIA QUERIES ************************* */
 /* ----- Responsive ------------------ */
 /* ----- Print ----------------------- */
+.three-middle-flow .span12 .panel-pane {
+  display: inline-block;
+  width: 32%;
+  margin: 0 0.5%;
+}
+.three-middle-flow .span12 .panel-separator {
+  display: none;
+}
 /* Type ************************** */
 /* GLOBAL ********************************* */
 /* ----- Body ------------------------ */
@@ -146,9 +154,8 @@
 /* QuickTabs ************************ */
 /* ----- Admin ----------------------- */
 /* ----- User Block ------------------ */
-/* THEME OPTIONS **************************
-This is where the majority of the CSS styling will be done
- ************************** */
+/* THEME OPTIONS ************************** */
+/* This is where the majority of the CSS styling will be done */
 /* HEADER ********************************* */
 /* ----- Header Region --------------- */
 /* ----- Search Box ------------------ */
