@@ -1,3 +1,5 @@
+@import "../base/_mixins";
+
 /* HELPER CLASSES ************************ */
 /* ----- Style ----------------------- */
 /* ----- Positioning ----------------- */
@@ -11,13 +13,31 @@
 /* MEDIA QUERIES ************************* */
 /* ----- Responsive ------------------ */
 /* ----- Print ----------------------- */
-.three-middle-flow .span12 {
-  .panel-pane {
-    display: inline-block;
-    width: 32%;
-    margin: 0 0.5%;
+
+@media (min-width: 481px) and (max-width: 767px) {
+   .three-middle-flow .span12 {
+    width: 100% !important;
+    .panel-pane {
+      .inline-block();
+      width: 49%;
+    }
+
+    .panel-separator {
+      display: none;
+    }
   }
-  .panel-separator {
-    display: none;
+}
+
+@media (min-width: 768px) {
+   .three-middle-flow .span12 {
+    .panel-pane {
+      .inline-block();
+      width: 31.914893617021278%;
+      *width: 31.861702127659576%;
+    }
+
+    .panel-separator {
+      display: none;
+    }
   }
 }

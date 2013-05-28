@@ -12,7 +12,7 @@
 ?>
 <div class="panel-display three-3x33 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['three_33_top']): ?>
-    <div class="container">
+    <div class="container row-fluid">
       <div class="region region-top region-conditional-stack span12">
         <div class="region-inner clearfix">
           <?php print $content['three_33_top']; ?>
@@ -22,18 +22,18 @@
   <?php endif; ?>
 
   <div class="three-middle-stacked">
-    <div class="container">
-      <div class="region region-first span3">
+    <div class="container row-fluid">
+      <div class="region region-first span4">
         <div class="region-inner clearfix">
           <?php print $content['three_33_first_stacked']; ?>
         </div>
       </div>
-      <div class="region region-second span3">
+      <div class="region region-second span4">
         <div class="region-inner clearfix">
           <?php print $content['three_33_second_stacked']; ?>
         </div>
       </div>
-      <div class="region region-third span3">
+      <div class="region region-third span4">
         <div class="region-inner clearfix">
           <?php print $content['three_33_third_stacked']; ?>
         </div>
@@ -52,7 +52,7 @@
   </div>
 
   <?php if ($content['three_33_bottom']): ?>
-    <div class="container">
+    <div class="container row-fluid">
       <div class="region region-bottom region-conditional-stack span12">
         <div class="region-inner clearfix">
           <?php print $content['three_33_bottom']; ?>
