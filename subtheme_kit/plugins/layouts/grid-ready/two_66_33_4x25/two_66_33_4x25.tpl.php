@@ -31,7 +31,29 @@
       </div>
     </div>
   </div>
-  <?php if ($content['two_66_33_bottom']): ?>
+  <div class="container row-fluid clearfix">
+    <div class="region region-two-66-33-first span3">
+      <div class="region-inner clearfix">
+        <?php print $content['two_66_33_25_first']; ?>
+      </div>
+    </div>
+    <div class="region region-two-66-33-25-second span3">
+      <div class="region-inner clearfix">
+        <?php print $content['two_66_33_25_second']; ?>
+      </div>
+    </div>
+    <div class="region region-two-66-33-25-third span3">
+      <div class="region-inner clearfix">
+        <?php print $content['two_66_33_25_third']; ?>
+      </div>
+    </div>
+    <div class="region region-two-66-33-25-fourth span3">
+      <div class="region-inner clearfix">
+        <?php print $content['two_66_33_25_fourth']; ?>
+      </div>
+    </div>
+  </div>
+    <?php if ($content['two_66_33_bottom']): ?>
     <div class="container row-fluid">
       <div class="region region-two-66-33-bottom region-conditional-stack span12">
         <div class="region-inner clearfix">
