@@ -11,8 +11,8 @@ $plugin = array(
     'two_66_33_first'  => t('Left'),
     'two_66_33_second' => t('Right'),
     'two_66_33_50'  => t('First Half'),
-    'two_66_33_25_first'  => t('First - 25%'),
-    'two_66_33_25_second'  => t('Second - 25%'),
+    'two_66_33_25_first'  => t('Second Half - First 25%'),
+    'two_66_33_25_second'  => t('Second Half - Second 25%'),
     'two_66_33_bottom' => t('Bottom (conditional)'),
   ),
 );
