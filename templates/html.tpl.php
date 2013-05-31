@@ -16,7 +16,7 @@
   <![endif]-->
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="<?php print base_path() . drupal_get_path('theme', 'open_framework') . '/js/html5shiv.js'; ?>"></script>
   <![endif]-->
 </head>
 
