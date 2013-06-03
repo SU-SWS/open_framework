@@ -1,0 +1,43 @@
+@import "../base/_mixins";
+
+/* HELPER CLASSES ************************ */
+/* ----- Style ----------------------- */
+/* ----- Positioning ----------------- */
+/* ----- Sizing ---------------------- */
+
+/* GENERAL OVERRIDES ********************* */
+/* ----- Bootstrap Overrides --------- */
+/* ----- Field Collection Overrides -- */
+/* ----- Field Label Overrides ------- */
+
+/* MEDIA QUERIES ************************* */
+/* ----- Responsive ------------------ */
+/* ----- Print ----------------------- */
+
+@media (min-width: 481px) and (max-width: 767px) {
+   .three-middle-flow .span12 {
+    width: 100% !important;
+    .panel-pane {
+      .inline-block();
+      width: 49%;
+    }
+
+    .panel-separator {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+   .three-middle-flow .span12 {
+    .panel-pane {
+      .inline-block();
+      width: 31.914893617021278%;
+      *width: 31.861702127659576%;
+    }
+
+    .panel-separator {
+      display: none;
+    }
+  }
+}
