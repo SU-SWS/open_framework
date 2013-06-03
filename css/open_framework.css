@@ -612,7 +612,9 @@ img, a img{
 }
 
 #main .float-right{
-	float:right;
+    float: right;
+    margin-left: 15px;
+    margin-right: 0;
 }
 
 #main .float-none{
@@ -808,6 +810,10 @@ ul.primary{
 	.region-navigation .block{
 		float:left;
 	}
+	
+	.region-navigation .block.pull-right {
+                float:right;
+        }
 	
 	.content-row2 [class*="span"]:nth-child(2n+1), .content-row3 [class*="span"]:nth-child(3n+1), .content-row4 [class*="span"]:nth-child(4n+1){
 		clear: both;

@@ -13,9 +13,10 @@ This Stanford custom Drupal theme is intended for Drupal versions 7 only; it wil
 
 1) Copy (don't move) the subtheme_kit folder from the Open Framework theme folder.
 2) Paste it in your themes directory.
-3) Rename the "subtheme_kit" folder to "your-theme-name" and rename the "subtheme_kit" .info file to "your-theme-name" as well.
-4) Edit the README.txt for your new theme (this file) and the theme info in the .info file.
-5) Once you have renamed everything, you can proceed to the installation instructions below.
+3) Rename the "subtheme_kit" folder to "your-theme-name".
+4) In your new "your-theme-name" folder, rename the subtheme_kit.info.txt file to "your-theme-name".info and remove the ".txt" extension.
+5) Edit the README.txt for your new theme (this file) and the theme info in the .info file.
+6) Once you have renamed everything, you can proceed to the installation instructions below.
 
 To start creating your subtheme, you can use the CSS template included (.css file), or add your own. Add Javascript to the scripts folder. Add your own site logo to replace the logo.png file (keep same name) and your own theme's screenshot (replace screenshot.png). Also you can add a favicon.ico file for your site if you wish.
 
