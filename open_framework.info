@@ -4,9 +4,9 @@ core = 7.x
 version = 2.04
 
 ; Stylesheets --------------------------------------------------------
-stylesheets[all][] = css/layout/bootstrap.min.css
-stylesheets[all][] = css/layout/bootstrap-responsive.min.css
-stylesheets[all][] = css/base/font-awesome.min.css
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-responsive.min.css
+stylesheets[all][] = css/font-awesome.min.css
 stylesheets[all][] = css/open_framework.css
 stylesheets[print][] = css/open_framework_print.css
 stylesheets[all][] = css/ie.css

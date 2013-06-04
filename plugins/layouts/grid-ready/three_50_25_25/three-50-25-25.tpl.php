@@ -12,32 +12,38 @@
 ?>
 <div class="panel-display three-50-25-25 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['three_50_25_25_top']): ?>
-    <div class="region region-top region-conditional-stack">
-      <div class="region-inner clearfix">
-        <?php print $content['three_50_25_25_top']; ?>
+    <div class="container row-fluid">
+      <div class="region region-top region-conditional-stack span12">
+        <div class="region-inner clearfix">
+          <?php print $content['three_50_25_25_top']; ?>
+        </div>
       </div>
     </div>
   <?php endif; ?>
 
-  <div class="region region-first">
-    <div class="region-inner clearfix">
-      <?php print $content['three_50_25_25_first']; ?>
+  <div class="container row-fluid">
+    <div class="region region-first span6">
+      <div class="region-inner clearfix">
+        <?php print $content['three_50_25_25_first']; ?>
+      </div>
     </div>
-  </div>
-  <div class="region region-second">
-    <div class="region-inner clearfix">
-      <?php print $content['three_50_25_25_second']; ?>
+    <div class="region region-second span3">
+      <div class="region-inner clearfix">
+        <?php print $content['three_50_25_25_second']; ?>
+      </div>
     </div>
-  </div>
-  <div class="region region-third">
-    <div class="region-inner clearfix">
-      <?php print $content['three_50_25_25_third']; ?>
+    <div class="region region-third span3">
+      <div class="region-inner clearfix">
+        <?php print $content['three_50_25_25_third']; ?>
+      </div>
     </div>
   </div>
   <?php if ($content['three_50_25_25_bottom']): ?>
-    <div class="region region-bottom region-conditional-stack">
-      <div class="region-inner clearfix">
-        <?php print $content['three_50_25_25_bottom']; ?>
+    <div class="container row-fluid">
+      <div class="region region-bottom region-conditional-stack span12">
+        <div class="region-inner clearfix">
+          <?php print $content['three_50_25_25_bottom']; ?>
+        </div>
       </div>
     </div>
   <?php endif; ?>
