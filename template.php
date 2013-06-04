@@ -15,8 +15,8 @@ function open_framework_js_alter(&$javascript) {
   if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
     $jquery_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js';
     $jquery_version = '1.9.1';
-    $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.1.1.min.js';
-    $migrate_version = '1.1.1';
+    $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.2.1.min.js';
+    $migrate_version = '1.2.1';
     $javascript['misc/jquery.js']['data'] = $jquery_file;
     $javascript['misc/jquery.js']['version'] = $jquery_version;
     $javascript['misc/jquery.js']['weight'] = 0;
