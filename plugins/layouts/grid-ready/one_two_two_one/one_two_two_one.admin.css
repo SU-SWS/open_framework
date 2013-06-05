@@ -1,0 +1,6 @@
+#panels-dnd-main .region {margin-bottom: 5px}
+#panels-dnd-main .region-one-two-two-one-first {float: left; width: 32.5%%}
+#panels-dnd-main .region-one-two-two-one-second {float: right; width: 66.5%}
+#panels-dnd-main .bottom-region-one-two-two-one-first {float: left; width: 49.75%}
+#panels-dnd-main .bottom-region-one-two-two-one-second {float: right; width: 49.75%}
+#panels-dnd-main .region-one-two-two-one-bottom {clear: both}
