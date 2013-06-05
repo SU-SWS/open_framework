@@ -11,10 +11,12 @@
 ?>
 <div class="panel-display one-6-1-2-1 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <?php if ($content['one_6_1_2_1_top']): ?>
-    <div class="container">
-      <div class="region region-one-6-1-2-1-top region-conditional-stack span12">
-        <div class="region-inner clearfix">
-          <?php print $content['one_6_1_2_1_top']; ?>
+    <div class="top-full-width">
+      <div class="container">
+        <div class="region region-one-6-1-2-1-top region-conditional-stack span12">
+          <div class="region-inner clearfix">
+            <?php print $content['one_6_1_2_1_top']; ?>
+          </div>
         </div>
       </div>
     </div>
@@ -41,9 +43,9 @@
           <?php print $content['one_6_1_2_1_fourth']; ?>
         </div>
       </div>
-      <div class="region region-one-6-1-2-1-fifth span2">
+      <div class="region region-one-6-1-2-1-five span2">
         <div class="region-inner clearfix">
-          <?php print $content['one_6_1_2_1_fifth']; ?>
+          <?php print $content['one_6_1_2_1_five']; ?>
         </div>
       </div>
       <div class="region region-one-6-1-2-1-six span2">
@@ -66,12 +68,12 @@
   <?php endif; ?>
     <div class="two-column-full-width">
       <div class="container">
-        <div class="region region-one-6-1-2-1-left span3">
+        <div class="region region-one-6-1-2-1-left span8">
           <div class="region-inner clearfix">
             <?php print $content['one_6_1_2_1_left']; ?>
-          </divright
+          </div>
         </div>
-        <div class="region region-one-6-1-2-1-right span9">
+        <div class="region region-one-6-1-2-1-right span4">
           <div class="region-inner clearfix">
             <?php print $content['one_6_1_2_1_right']; ?>
           </div>

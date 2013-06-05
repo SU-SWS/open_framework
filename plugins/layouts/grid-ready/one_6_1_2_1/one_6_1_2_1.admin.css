@@ -1,11 +1,11 @@
 #panels-dnd-main .region {margin-bottom: 5px}
-#panels-dnd-main .region-two-33-66-first {float: left; width: 16.33%}
-#panels-dnd-main .region-two-33-66-second {float: left; width: 16.33%; margin: 0 0.5%;}
-#panels-dnd-main .region-two-33-66-third {float: left; width: 16.33%}
-#panels-dnd-main .region-two-33-66-fourth {float: left; width: 16.33%; margin: 0 0.5%;}
-#panels-dnd-main .region-two-33-66-five {float: left; width: 16.33%}
-#panels-dnd-main .region-two-33-66-six {float: right; width: 16.33%}
-#panels-dnd-main .region-two-33-66-middle {clear: both}
-#panels-dnd-main .region-two-33-66-left {float: left; width: 66.5%}
-#panels-dnd-main .region-two-33-66-right {float: right; width: 33%}
-#panels-dnd-main .region-two-33-66-bottom {clear: both}
+#panels-dnd-main .region-one-6-1-2-1-first {float: left; width: 16.33%}
+#panels-dnd-main .region-one-6-1-2-1-second {float: left; width: 16.33%; margin: 0 0.25%;}
+#panels-dnd-main .region-one-6-1-2-1-third {float: left; width: 16.33%}
+#panels-dnd-main .region-one-6-1-2-1-fourth {float: left; width: 16.33%; margin: 0 0.25%;}
+#panels-dnd-main .region-one-6-1-2-1-five {float: left; width: 16.33%}
+#panels-dnd-main .region-one-6-1-2-1-six {float: right; width: 16.33%}
+#panels-dnd-main .region-one-6-1-2-1-middle {clear: both}
+#panels-dnd-main .region-one-6-1-2-1-left {float: left; width: 65.5%}
+#panels-dnd-main .region-one-6-1-2-1-right {float: right; width: 32%}
+#panels-dnd-main .region-one-6-1-2-1-bottom {clear: both}
