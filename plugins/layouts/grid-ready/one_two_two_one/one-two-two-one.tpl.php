@@ -24,12 +24,12 @@
   <?php endif; ?>
   <div class="top_two-fullwidth">
     <div class="container">
-      <div class="region region-one-two-two-one-first span6">
+      <div class="region region-one-two-two-one-first span3">
         <div class="region-inner clearfix">
           <?php print $content['top_two_two_one_first']; ?>
         </div>
       </div>
-      <div class="region region-one-two-two-one-second span6">
+      <div class="region region-one-two-two-one-second span9">
         <div class="region-inner clearfix">
           <?php print $content['top_two_two_one_second']; ?>
         </div>
@@ -38,12 +38,12 @@
   </div>
   <div class="bottom_two-fullwidth">
     <div class="container">
-      <div class="region region-one-two-two-one-first span6">
+      <div class="region bottom-region-one-two-two-one-first span9">
         <div class="region-inner clearfix">
           <?php print $content['bottom_two_two_one_first']; ?>
         </div>
       </div>
-      <div class="region region-one-two-two-one-second span6">
+      <div class="region bottom-region-one-two-two-one-second span3">
         <div class="region-inner clearfix">
           <?php print $content['bottom_two_two_one_second']; ?>
         </div>
