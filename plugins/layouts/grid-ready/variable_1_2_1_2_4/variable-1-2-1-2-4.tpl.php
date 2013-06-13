@@ -10,7 +10,7 @@
  */
 ?>
 <div class="panel-display var-1-2-1-2-4 clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
-  <?php if ($content['variable_1_2_1_2_4_top']): ?>
+  <?php if ($content['variable_1']): ?>
     <div class="top-full-width">
       <div class="container">
         <div class="region region-var-1-2-1-2-4-top region-conditional-stack span12">
@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-  <?php if ($content['variable_1_2_1_2_4_middle']): ?>
+  <?php if ($content['variable_1_2_1']): ?>
     <div class="middle-full-width">
       <div class="container">
         <div class="region region-var-1-2-1-2-4-middle region-conditional-stack span12">

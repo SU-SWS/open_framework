@@ -1,11 +1,10 @@
 #panels-dnd-main .region {margin-bottom: 5px}
-#panels-dnd-main .region-var-1-2-1-2-4-top {clear:both;}
+#panels-dnd-main .region-var-1-2-1-2-4-top {}
 #panels-dnd-main .region-var-1-2-1-2-4-left {float: left; width: 49.5%; }
 #panels-dnd-main .region-var-1-2-1-2-4-right {float: right; width: 49.5%;}
 #panels-dnd-main .region-var-1-2-1-2-4-middle {clear:both;}
 #panels-dnd-main .region-var-1-2-1-2-4-left-bottom {float: left; width: 49.5%;}
 #panels-dnd-main .region-var-1-2-1-2-4-right-bottom {float: right; width: 49.5%;}
 #panels-dnd-main .region-var-1-2-1-2-4-left-nar {float: left; width: 16.25%;}
-#panels-dnd-main .region-var-1-2-1-2-4-middle-nar {float: left; width: 16.25%;}
+#panels-dnd-main .region-var-1-2-1-2-4-middle-nar {float: left; width: 16.25%; margin:0 .5%;}
 #panels-dnd-main .region-var-1-2-1-2-4-right-nar {float: left; width: 16.25%;}
-#panels-dnd-main .region-var-1-2-1-2-4-right {clear: both; float: right; width: 49.5%;}
