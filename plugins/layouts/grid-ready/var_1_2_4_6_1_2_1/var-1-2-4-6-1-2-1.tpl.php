@@ -21,6 +21,7 @@
       </div>
     </div>
   <?php endif; ?>
+  <?php if (($content['var_1_2_first']) || ($content['var_1_2_second'])): ?>
    <div class="top-two-column-full-width">
     <div class="container clearfix">
       <div class="region region-var-1-2-4-6-first-top span6">
@@ -35,6 +36,8 @@
       </div>
     </div>
   </div>
+  <?php endif; ?>
+  <?php if (($content['var_1_2_4_first']) || ($content['var_1_2_4_second']) || ($content['var_1_2_4_third']) || ($content['var_1_2_4_fourth'])): ?>
     <div class="four-column-full-width">
       <div class="container">
         <div class="region region-var-1-2-4-6-first-nar span2">
@@ -59,6 +62,7 @@
         </div>
       </div>
     </div>
+  <?php endif; ?>
   <div class="six-column-full-width">
     <div class="container clearfix">
       <div class="region region-var-1-2-4-6-first span2">
