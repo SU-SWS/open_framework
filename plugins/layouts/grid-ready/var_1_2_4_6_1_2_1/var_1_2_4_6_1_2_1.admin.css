@@ -3,12 +3,12 @@
 #panels-dnd-main .region-var-1-2-4-6-first-top {float: left; width: 49.5%}
 #panels-dnd-main .region-var-1-2-4-6-second-top {float: right; width: 49.5%}
 
-#panels-dnd-main .region-var-1-2-4-6-first-nar {float: left; width: 16.25%;}
+#panels-dnd-main .region-var-1-2-4-6-first-nar {float: left; width: 16.25%; clear:both;}
 #panels-dnd-main .region-var-1-2-4-6-second-nar {float: left; width: 16.25%; margin:0 .5%;}
 #panels-dnd-main .region-var-1-2-4-6-third-nar {float: left; width: 16.25%;}
 #panels-dnd-main .region-var-1-2-4-6-fourth-nar {float: right; width: 49.25%;}
 
-#panels-dnd-main .region-var-1-2-4-6-first {float: left; width: 16.33%}
+#panels-dnd-main .region-var-1-2-4-6-first {float: left; width: 16.33%; clear:both;}
 #panels-dnd-main .region-var-1-2-4-6-second {float: left; width: 16.33%; margin: 0 0.25%;}
 #panels-dnd-main .region-var-1-2-4-6-third {float: left; width: 16.33%}
 #panels-dnd-main .region-var-1-2-4-6-fourth {float: left; width: 16.33%; margin: 0 0.25%;}
@@ -16,6 +16,6 @@
 #panels-dnd-main .region-var-1-2-4-6-sixth {float: right; width: 16.33%}
 #panels-dnd-main .region-var-1-2-4-6-middle {clear: both}
 
-#panels-dnd-main .region-var-1-2-4-6-left {float: left; width: 65.5%}
+#panels-dnd-main .region-var-1-2-4-6-left {float: left; width: 65.5%; clear:both;}
 #panels-dnd-main .region-var-1-2-4-6-right {float: right; width: 32%}
 #panels-dnd-main .region-var-1-2-4-6-bottom {clear: both}
