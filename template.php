@@ -20,17 +20,36 @@ function open_framework_preprocess_html(&$vars) {
 }
 
 /**
- * [open_framework_js_alter description]
- * @param  [type] $javascript [description]
- * @return [type]             [description]
+ * Implements hook_css_alter().
  */
-function open_framework_js_alter(&$javascript) {
+function open_framework_css_alter(&$css) {
+
   // Update jquery version for non-administration pages
   if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
-    $jquery_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js';
+
+    $path = drupal_get_path('theme', 'open_framework');
+
+    $min = '.min';
+    open_framework_jqueryui_local_css($css, $path, $min);
+
+  }
+
+}
+
+/**
+ * Implements hook_js_alter().
+ */
+function open_framework_js_alter(&$javascript) {
+
+  // Update jquery version for non-administration pages
+  if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
+
+    $path = drupal_get_path('theme', 'open_framework');
+    $jquery_file = $path . '/js/jquery-1.9.1.min.js';
     $jquery_version = '1.9.1';
-    $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.2.1.min.js';
+    $migrate_file = $path . '/js/jquery-migrate-1.2.1.min.js';
     $migrate_version = '1.2.1';
+
     $javascript['misc/jquery.js']['data'] = $jquery_file;
     $javascript['misc/jquery.js']['type'] = 'file';
     $javascript['misc/jquery.js']['scope'] = 'header';
@@ -42,12 +61,18 @@ function open_framework_js_alter(&$javascript) {
     $javascript['misc/jquery.js']['cache'] = TRUE;
     $javascript['misc/jquery.js']['defer'] = FALSE;
     drupal_add_js($migrate_file);
+
     if (isset($javascript["$migrate_file"])) {
       $javascript["$migrate_file"]['version'] = $migrate_version;
       $javascript["$migrate_file"]['group'] = -101;
-	  $javascript["$migrate_file"]['weight'] = 1;
+	    $javascript["$migrate_file"]['weight'] = 1;
     }
+
+    $min = '.min';
+    open_framework_jqueryui_local_js($javascript, $path, $min);
+
   }
+
 }
 
 /**
@@ -616,3 +641,75 @@ function open_framework_block_id_to_function_name ($id) {
 
   return $name;
 }
+
+/**
+ * Update jQuery UI CSS.
+ *
+ * Inspired from jQuery UI module.
+ *
+ * @param array $css
+ *   The css definition array as seen in hook_alter_css().
+ * @param string $path
+ *   Path to the theme.
+ * @param string $min
+ *   Suffix for minified versions of files. If not present, defaults to
+ *   unminified.
+ */
+function open_framework_jqueryui_local_css(&$css, $path, $min) {
+  // Replace all CSS files.
+  $names = drupal_map_assoc(array(
+    'ui.accordion', 'ui.autocomplete', 'ui.button', 'ui.datepicker',
+    'ui.dialog', 'ui.progressbar', 'ui.resizable', 'ui.selectable',
+    'ui.slider', 'ui.tabs',
+  ));
+  $names['ui'] = 'ui.core';
+  $csspath = $path . '/js/jquery-ui/themes/base/' . (($min == '.min') ? 'minified/' : '');
+  foreach ($names as $name => $file) {
+    if (isset($css["misc/ui/jquery.$file.css"])) {
+      $css["misc/ui/jquery.$file.css"]['data'] = $csspath . 'jquery.' . $file . $min . '.css';
+    }
+  }
+  // Make sure ui.theme is replaced as well.
+  $css['misc/ui/jquery.ui.theme.css']['data'] = $csspath . 'jquery.ui.theme' . $min . '.css';
+
+}
+
+/**
+ * Update jQuery UI javascript.
+ *
+ * Inspired from jQuery UI module.
+ *
+ * @param array $javascript
+ *   The $libraries array as seen in hook_library_alter()
+ * @param string $path
+ *   The path to the module where replacements can be found.
+ * @param string $min
+ *   The '.min' to include in the file name if we are requesting a minified version.
+ */
+function open_framework_jqueryui_local_js(&$javascript, $path, $min) {
+
+  // Replace jQuery UI's JavaScript, beginning by defining the mapping.
+  $names = drupal_map_assoc(array(
+    'ui.accordion', 'ui.autocomplete', 'ui.button', 'ui.datepicker',
+    'ui.dialog', 'ui.draggable', 'ui.droppable', 'ui.mouse', 'ui.position',
+    'ui.progressbar', 'ui.resizable', 'ui.selectable', 'ui.slider',
+    'ui.sortable', 'ui.tabs', 'ui.tooltip', 'ui.widget', 'ui.effects.blind', 'ui.effects.bounce',
+    'ui.effects-clip', 'ui.effects-drop', 'ui.effects-explode', 'ui.effects-fade',
+    'ui.effects-fold', 'ui.effects-highlight', 'ui.effects-pulsate', 'ui.effects-scale',
+    'ui.effects-shake', 'ui.effects-slide', 'ui.effects-transfer',
+  ));
+  $names['ui'] = 'ui.core';
+  $names['effects'] = 'effects.core';
+
+  // Construct the jQuery UI path and replace the JavaScript.
+  $jspath = $path . '/js/jquery-ui/ui/' . ($min == '.min' ? 'minified/' : '');
+  foreach ($names as $name => $file) {
+    $corefile = 'misc/ui/jquery.' . $file . '.min.js';
+    if (isset($javascript[$corefile])) {
+      $javascript[$corefile]['data'] = $jspath . 'jquery.' . $file . $min . '.js';
+      $javascript[$corefile]['version'] = '1.10.3';
+    }
+  }
+
+}
+
