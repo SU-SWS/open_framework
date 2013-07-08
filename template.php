@@ -670,7 +670,9 @@ function open_framework_jqueryui_local_css(&$css, $path, $min) {
     }
   }
   // Make sure ui.theme is replaced as well.
-  $css['misc/ui/jquery.ui.theme.css']['data'] = $csspath . 'jquery.ui.theme' . $min . '.css';
+  if (isset($css['misc/ui/jquery.ui.theme.css'])) {
+    $css['misc/ui/jquery.ui.theme.css']['data'] = $csspath . 'jquery.ui.theme' . $min . '.css';
+  }
 
 }
 
