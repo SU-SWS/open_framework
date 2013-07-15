@@ -741,6 +741,11 @@ select,textarea,input[type="text"],input[type="password"],input[type="datetime"]
 	margin:0;
 }
 
+/* ----- collapsable fieldset overrides -- */
+html.js fieldset.collapsed {
+	height: auto;
+} 
+
 /* ----- field label overrides ------- */
 .page-node .content-body .field{
 	margin-bottom:20px;
