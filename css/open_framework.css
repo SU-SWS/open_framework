@@ -386,9 +386,6 @@ nav h2{
 	left: 190px;
 }
 
-/* ----- breadcrumbs ----------------- */
-/* ----- first sidebar menu blocks --- */
-/* ----- second sidebar menu blocks -- */
 /* ----- admin menu ------------------ */
 #admin-menu li{
 	line-height:normal;
@@ -455,7 +452,6 @@ nav h2{
 	border-bottom:0;
 }
 
-/* ----- search results -------------- */
 /* containers ************************ */
 /* ----- blocks ---------------------- */
 .main .block{
@@ -598,7 +594,11 @@ img, a img{
 	border:1px solid #373737;
 }
 
-/* icons ***************************** */
+/* media ***************************** */
+iframe {
+	max-width:100%;
+}
+
 /* helper classes ******************** */
 /* ----- positioning ----------------- */
 .spacer{
@@ -799,7 +799,6 @@ ul.primary{
 	font-size:12px;
 }
 
-/* ----- user block ------------------ */
 /* media queries ********************* */
 /* ----- responsive ------------------ */
 @media (min-width: 768px) {
