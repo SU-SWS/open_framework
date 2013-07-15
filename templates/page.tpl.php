@@ -61,7 +61,7 @@
           <div id="nav-search" class="nav-search"> <?php print render($page['search_box']); ?> </div>
           <?php endif; ?>
           <?php if ($main_menu): ?>
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+          <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
           <?php if ($primary_nav || !empty($page['navigation'])): ?>
           <div class="nav-collapse collapse">
             <nav role="navigation">
