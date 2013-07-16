@@ -1,5 +1,5 @@
 name = Open Framework
-description = Base theme made with Twitter Bootstrap
+description = Responsive base theme built with Twitter Bootstrap. Learn more at the <a href="http://openframework.stanford.edu">Open Framework website</a>.
 core = 7.x
 version = 2.04
 
