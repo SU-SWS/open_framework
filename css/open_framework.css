@@ -18,7 +18,7 @@
 }
 
 /* ----- body background type -------- */
-body .photobg{
+body.photobg{
 	background-attachment:fixed;
 	background-size:cover;
 }
