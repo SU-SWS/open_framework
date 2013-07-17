@@ -7,7 +7,7 @@
 <head>
   <?php print $head; ?>
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
