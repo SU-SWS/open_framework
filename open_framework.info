@@ -46,6 +46,7 @@ regions[main_bottom] = Main: Bottom
 regions[footer] = Footer
 
 ; Settings
+settings[content_order_classes] = ''
 settings[front_heading_classes] = ''
 settings[breadcrumb_classes] = ''
 settings[body_bg_type] = ''

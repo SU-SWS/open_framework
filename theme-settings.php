@@ -1,5 +1,25 @@
 <?php
 function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
+  
+  // Responsive Behavior
+  $form['responsive_container'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Responsive'),
+    '#description' => t('Use these settings to adjust the responsive behavior.'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  
+  $form['responsive_container']['content_order_classes'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Content order in mobile'),
+    '#default_value' => theme_get_setting('content_order_classes'),
+    '#options'       => array(
+      '' => t('Show first sidebar content before main content - <strong><em>Default</em></strong>'),
+	  'content-first ' => t('Show main content before sidebar content'),
+    ),
+  );
+ 
  
   // Page Layout
   $form['layout_container'] = array(
@@ -9,7 +29,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
   );
-    
+      
   $form['layout_container']['front_heading_classes'] = array(
     '#type'          => 'radios',
     '#title'         => t('Page heading'),
