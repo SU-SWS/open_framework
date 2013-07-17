@@ -1,6 +1,6 @@
-<a href="#content" class="skipnav element-invisible element-focusable"><?php print t('Skip to content'); ?></a>
+<a href="#content" class="element-invisible element-focusable"><?php print t('Skip to content'); ?></a>
 <?php if ($main_menu): ?>
-<a href="#navigation" class="skipnav element-invisible element-focusable"><?php print t('Skip to navigation'); ?></a>
+<a href="#navigation" class="element-invisible element-focusable" data-target=".nav-collapse" data-toggle="collapse"><?php print t('Skip to navigation'); ?></a>
 <?php endif; ?>
 <!-- /#skipnav -->
 <?php if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary_nav))): ?>
