@@ -205,6 +205,19 @@ input.form-submit:hover{
 	background-image:linear-gradient(to bottom,#f5f5f5 0%,#e6e6e6 100%);
 }
 
+/* ----- Invisible and Focusable Elements (skipnav) ----------------------- */
+
+.element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.element-invisible.element-focusable:active,  .element-invisible.element-focusable:focus {
+	position: static !important;
+	clip: auto;
+}
+
 /* ----- other ----------------------- */
 hr{
 	clear:both;

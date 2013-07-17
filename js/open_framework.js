@@ -53,6 +53,11 @@ Drupal.behaviors.open_framework = {
 		  for(currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) rowDivs[currentDiv].height(currentTallest);
 		  });
 	}
+	
+	// Where .element-focusable is the class of the link doing the skipping.
+	$('.element-focusable').on('click', function() {
+		$($(this).attr('href')).attr('tabindex', '-1').focus();
+		});
   }
 }
 

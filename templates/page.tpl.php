@@ -1,14 +1,7 @@
-<div id="skipnav" class="element-invisible">
-  <div class="container">
-    <p>Skip to:</p>
-    <ul>
-      <li><a href="#content" class="element-invisible element-focusable"><?php print t('Skip to content'); ?></a></li>
-      <?php if ($main_menu): ?>
-      <li><a href="#main-menu" class="element-invisible element-focusable"><?php print t('Skip to navigation'); ?></a></li>
-      <?php endif; ?>
-    </ul>
-  </div>
-</div>
+<a href="#content" class="element-invisible element-focusable"><?php print t('Skip to content'); ?></a>
+<?php if ($main_menu): ?>
+<a href="#navigation" class="element-invisible element-focusable"><?php print t('Skip to navigation'); ?></a>
+<?php endif; ?>
 <!-- /#skipnav -->
 <?php if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary_nav))): ?>
 <div id="admin-shortcuts" class="admin-shortcuts clearfix"> <?php print render($secondary_nav); ?> <?php print render($page['admin_shortcuts']); ?> </div>
@@ -64,7 +57,7 @@
           <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
           <?php if ($primary_nav || !empty($page['navigation'])): ?>
           <div class="nav-collapse collapse">
-            <nav role="navigation">
+            <nav id="navigation" role="navigation">
               <?php if (($primary_nav) && empty($page['navigation'])): ?>
               <?php print render($primary_nav); ?> 
               <!-- /#primary-menu -->
