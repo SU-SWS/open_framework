@@ -11,27 +11,21 @@ function open_framework_preprocess_html(&$vars) {
 }
 
 function open_framework_js_alter(&$javascript) {
-  // Update jquery version for non-administration pages
-  if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
+  // Update jquery version for non-administration pages  
+  if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools'  && !(module_exists('jquery_update'))) {
     $jquery_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js';
     $jquery_version = '1.9.1';
     $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.2.1.min.js';
     $migrate_version = '1.2.1';
     $javascript['misc/jquery.js']['data'] = $jquery_file;
-    $javascript['misc/jquery.js']['type'] = 'file';
-    $javascript['misc/jquery.js']['scope'] = 'header';
-    $javascript['misc/jquery.js']['group'] = -101;
-    $javascript['misc/jquery.js']['every_page'] = TRUE;
-    $javascript['misc/jquery.js']['weight'] = 0;
     $javascript['misc/jquery.js']['version'] = $jquery_version;
-    $javascript['misc/jquery.js']['preprocess'] = TRUE;
-    $javascript['misc/jquery.js']['cache'] = TRUE;
-    $javascript['misc/jquery.js']['defer'] = FALSE;
+    $javascript['misc/jquery.js']['weight'] = 0;
+    $javascript['misc/jquery.js']['group'] = -101;
     drupal_add_js($migrate_file);
     if (isset($javascript["$migrate_file"])) {
       $javascript["$migrate_file"]['version'] = $migrate_version;
+      $javascript["$migrate_file"]['weight'] = 1;
       $javascript["$migrate_file"]['group'] = -101;
-	  $javascript["$migrate_file"]['weight'] = 1;
     }
   }
 }
