@@ -19,8 +19,8 @@
 
 /* ----- body background type -------- */
 body.photobg{
-	background-attachment:fixed;
-	background-size:cover;
+	background-attachment:fixed !important;
+	background-size:cover !important;
 }
 
 /* ----- background color ------------ */
