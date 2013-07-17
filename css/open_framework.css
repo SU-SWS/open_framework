@@ -216,6 +216,9 @@ input.form-submit:hover{
 .element-invisible.element-focusable:active,  .element-invisible.element-focusable:focus {
 	position: static !important;
 	clip: auto;
+    overflow: visible;
+    height: auto;
+	padding: 0 1em;
 }
 
 /* ----- other ----------------------- */

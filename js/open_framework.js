@@ -54,7 +54,7 @@ Drupal.behaviors.open_framework = {
 		  });
 	}
 	
-	// Where .element-focusable is the class of the link doing the skipping.
+	// Add keyboard focus to .element-focusable elements in webkit browsers.
 	$('.element-focusable').on('click', function() {
 		$($(this).attr('href')).attr('tabindex', '-1').focus();
 		});
