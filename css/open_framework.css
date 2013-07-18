@@ -189,6 +189,16 @@ input.form-submit:hover {
 	background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f5f5f5), color-stop(1, #e6e6e6));
 	background-image:linear-gradient(to bottom, #f5f5f5 0%, #e6e6e6 100%);
 }
+input.btn-search {
+	width:26px;
+	height:26px;
+	border:0 none;
+	background:none repeat scroll 0 0 transparent;
+}
+input.btn-search:hover {
+	opacity:.6;
+	filter: alpha(opacity=60);
+}
 /* ----- Invisible and Focusable Elements (skipnav) ----------------------- */
 .element-invisible {
 	position: absolute !important;
@@ -245,14 +255,10 @@ nav-search .form-item,
 	position:absolute;
 	top:1px;
 	right:10px;
-	width:26px;
-	height:26px;
-	border:0 none;
-	background:none repeat scroll 0 0 transparent;
 }
 #block-search-form input.btn-search:hover {
 	opacity:.6;
-	filter: alpha(opacity=’60′);
+	filter: alpha(opacity=60);
 }
 #block-search-form form {
 	margin:0;
