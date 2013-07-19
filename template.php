@@ -18,6 +18,8 @@ function open_framework_js_alter(&$javascript) {
     $jquery_version = '1.9.1';
     $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.2.1.min.js';
     $migrate_version = '1.2.1';
+	$form_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-form-3.31.0.min.js';
+    $form_version = '3.31.0'; 
     $javascript['misc/jquery.js']['data'] = $jquery_file;
     $javascript['misc/jquery.js']['version'] = $jquery_version;
     $javascript['misc/jquery.js']['weight'] = 0;
@@ -28,6 +30,12 @@ function open_framework_js_alter(&$javascript) {
       $javascript["$migrate_file"]['weight'] = 1;
       $javascript["$migrate_file"]['group'] = -101;
     }
+	if (isset($javascript['misc/jquery.form.js'])) {
+      $javascript['misc/jquery.form.js']['data'] = $form_file;
+      $javascript['misc/jquery.form.js']['version'] = $form_version;
+      $javascript['misc/jquery.form.js']['weight'] = 2;
+      $javascript['misc/jquery.form.js']['group'] = -101;
+    } 
   }
 }
 
