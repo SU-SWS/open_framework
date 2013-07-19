@@ -68,7 +68,10 @@ function open_framework_preprocess_page(&$vars) {
     // Provide default theme wrapper function
     $vars['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
   }
-
+  
+  // Checks if tabs are set
+  if (!isset($vars['tabs']['#primary'])) $vars['tabs']['#primary'] = FALSE;
+  
   // Replace tabs with drop down version
   $vars['tabs']['#primary'] = _bootstrap_local_tasks($vars['tabs']['#primary']);
   
