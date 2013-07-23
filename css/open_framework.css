@@ -566,6 +566,31 @@ a img {
 iframe {
 	max-width:100%;
 }
+/* ----- Video Player ------------- */
+.video-player {
+	height: 0;
+	margin-bottom: 1em;
+	overflow: hidden;
+	padding-bottom: 67.5%;
+	padding-top: 1.5625em;
+	position: relative;
+}
+.video-player.widescreen {
+	padding-bottom: 57.25%;
+}
+.video-player.vimeo {
+	padding-top: 0;
+}
+.video-player iframe,
+.video-player object,
+.video-player embed,
+.video-player video {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
 /* helper classes ******************** */
 /* ----- positioning ----------------- */
 .spacer {
