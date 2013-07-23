@@ -99,7 +99,9 @@
       <div id="content" class="mc-content <?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span6'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span9'; else: print 'span12'; endif; ?>">
         <div id="content-wrapper" class="content-wrapper">
           <div id="content-head" class="row-fluid content-head">
+            <?php if ($page['highlighted']): ?>
             <div id="highlighted" class="clearfix"><?php print render($page['highlighted']); ?></div>
+            <?php endif; ?>
             <?php print render($title_prefix); ?>
             <?php if ($title): ?>
             <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
