@@ -377,11 +377,6 @@ nav h2 {
 	position:absolute;
 	left:-10000px;
 }
-#navigation .content ul {
-	float:right;
-	margin:0;
-	padding:0;
-}
 #navigation .content ul li {
 	display:inline-block;
 }
