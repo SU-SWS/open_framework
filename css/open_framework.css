@@ -596,34 +596,34 @@ iframe {
 .spacer {
 	margin-top:30px;
 }
-#main .float-left,
-#main .float-right {
+.float-left,
+.float-right {
 	float:left;
 	margin-right:15px;
 	margin-bottom:15px;
 }
-#main .float-right {
+.float-right {
 	float: right;
 	margin-left: 15px;
 	margin-right: 0;
 }
-#main .float-none {
+.float-none {
 	float:none;
 }
-#main .clear-none {
+.clear-none {
 	clear:none;
 }
-#main .clear-left-margin {
+.clear-left-margin {
 	margin-left:0;
 	padding-right:20px;
 }
-#main .clear-right {
+.clear-right {
 	clear:right;
 }
-#main .clear-left {
+.clear-left {
 	clear:left;
 }
-#main .clear-both {
+.clear-both {
 	clear:both;
 }
 /* already defined by drupal */
