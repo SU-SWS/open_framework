@@ -1,17 +1,21 @@
 Version 7.x-2.05
 ------------------------------
 by agold2: Restored Bootstrap's pull-right class float:right behavior blocks in the navigation region
-by meganem: Updated CSS classes for float-right, iframe, collapsable fieldsets, and images
+by meganem: Updated CSS classes for float-right, collapsable fieldsets, and images
+by meganem: Added collapsed class to navbar
+by meganem: Made search box styles work outside of the search box region
+by meganem: Made float styles available in WYSIWYG preview
 by jbickar: Added accessibility improvements to search box
 by hyperboy: Added accessibility improvements to skip navigation links
 by hyperboy: Added theme option for displaying main content before sidebar content in mobile
+by hyperboy: Added equal-height column behavior via "column" class
+by hyperboy: Added responsive support for iframes and video players via the "video-player" class
 by hyperboy: Added logic to node.tpl.php to not output the node content if it is empty
 by codelica: Added jQuery Update module compatibility in core jQuery replacement behavior
 by hyperboy: Added Font Awesome IE 7 support
 by hyperboy: Updated Bootstrap to version 2.3.2
 by hyperboy: Updated to Font Awesome 3.2.1
 by hyperboy: Updated HTML5 Shiv to version 3.6.2
-by hyperboy: Added CSS class for video player
 
 Version 7.x-2.04
 ------------------------------
