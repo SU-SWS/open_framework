@@ -537,6 +537,9 @@ a img {
 }
 .main .border-simple-nowidth img,
 .main .border-simple img {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	margin-bottom:10px;
 	padding:6px;
 	background-color:#e2e2e2;
