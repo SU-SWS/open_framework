@@ -1,10 +1,9 @@
 name = Open Framework
 description = Responsive base theme built with Twitter Bootstrap. Learn more at the <a href="http://openframework.stanford.edu">Open Framework website</a>.
 core = 7.x
-version = 2.04
+version = 3.0
 
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
-stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
 stylesheets[all][] = fontawesome/css/font-awesome.min.css
 stylesheets[all][] = css/open_framework.css
 stylesheets[print][] = css/open_framework_print.css
