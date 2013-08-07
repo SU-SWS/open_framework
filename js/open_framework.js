@@ -35,6 +35,7 @@ Drupal.behaviors.open_framework = {
 		  var currentTallest = 0;
 		  var currentRowStart = 0;
 		  var rowDivs = new Array();
+		  $(window).bind("load", function() {
 		  $('div.column').each(function(index) {
 		  if(currentRowStart != $(this).position().top) {
 		  // we just came to a new row. Set all the heights on the completed row
@@ -51,6 +52,7 @@ Drupal.behaviors.open_framework = {
 		  }
 		  // do the last row
 		  for(currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) rowDivs[currentDiv].height(currentTallest);
+		  });
 		  });
 	}
 	
