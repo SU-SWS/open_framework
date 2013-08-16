@@ -16,10 +16,13 @@
 				});
 			}
 			// Header Drupal Search Box
-			$('#header [name=search_block_form]').val('Search this site...');
-			$('#header [name=search_block_form]').focus(function () {
-			$('#header [name=search_block_form]').val('');
-			});
+			var $header = $('#header [name=search_block_form]');
+    			if ($header.length) {
+      				$header.val('Search this site...')
+        			.focus(function () {
+          				$(this).val('');
+        			});
+    			}
 			// Hide border for image links
 			$('a:has(img)').css('border', 'none');
 		}
