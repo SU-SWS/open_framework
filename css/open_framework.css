@@ -817,6 +817,10 @@ ul.primary {
 .site-slogan {
 	text-align:center;
 }
+.float-left,
+.float-right {
+	float:none;
+}
 }
 
 /* landscape phones to tablet */
