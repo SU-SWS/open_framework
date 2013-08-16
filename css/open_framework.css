@@ -424,6 +424,9 @@ nav h2 {
 .main .block {
 	margin-bottom:30px;
 }
+.main .block.block-no-bottom-margin {
+	margin-bottom:0;
+}
 .main #block-system-main {
 	margin-bottom:0;
 }
@@ -731,7 +734,7 @@ html.js fieldset.collapsed {
 }
 /* ----- field label overrides ------- */
 .page-node .content-body .field {
-	margin-bottom:20px;
+	margin-bottom:1em;
 }
 .page-node .content-body .field-type-field-collection {
 	margin-bottom:0;
