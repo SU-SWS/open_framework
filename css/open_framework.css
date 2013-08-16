@@ -469,6 +469,7 @@ blockquote > p:first-child {
 }
 .credits {
 	margin-top:.5em;
+	margin-bottom: .5em;
 	letter-spacing:.05em;
 	font-size:12px;
 }
