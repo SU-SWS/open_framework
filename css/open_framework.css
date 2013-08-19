@@ -160,6 +160,12 @@ td {
 .views-exposed-form .views-exposed-widget .form-submit {
 	margin-top:27px;
 }
+.views-exposed-form .views-exposed-widget { 
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box; 
+	max-width: 100%;
+}
 input, select, .chzn-container {
     max-width: 100%;
 }
