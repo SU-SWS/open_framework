@@ -160,6 +160,9 @@ td {
 .views-exposed-form .views-exposed-widget .form-submit {
 	margin-top:27px;
 }
+input, select, .chzn-container {
+    max-width: 100%;
+}
 /* override for views exposed forms submit */
 .form-type-checkbox label {
 	display:inline-block;
