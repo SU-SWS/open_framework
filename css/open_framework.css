@@ -198,6 +198,7 @@ input.btn-search {
 input.btn-search:hover {
 	opacity:.6;
 	filter: alpha(opacity=60);
+	background:none repeat scroll 0 0 transparent;
 }
 /* ----- Invisible and Focusable Elements (skipnav) ----------------------- */
 .element-invisible {
