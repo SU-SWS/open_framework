@@ -80,7 +80,7 @@
 <?php endif; ?>
 <div id="main" class="clearfix main" role="main">
   <div class="container">
-    <?php if ($breadcrumb): ?>
+    <?php if (!($is_front) && ($breadcrumb)): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     <?php if ($page['main_top']): ?>
