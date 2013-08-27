@@ -1101,6 +1101,18 @@ nav ul li a {
 .content .topline {
 	width:40%;
 }
+.footer-content .block.span2, .footer-content .block.span3 {
+	float:left;
+	margin-left:0;
+	margin-right:4%;
+	width: 30.6%;
+}
+.footer-content .block.span2:nth-child(3n+1), .footer-content .block.span3:nth-child(3n+1) {
+	clear:both;
+}
+.footer-content .block.span2:nth-child(3n), .footer-content .block.span3:nth-child(3n) {
+	margin-right:0;
+}
 }
 
 /* desktop and large desktop */
