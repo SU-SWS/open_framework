@@ -48,7 +48,7 @@ regions[footer] = Footer
 ; Settings
 settings[content_order_classes] = ''
 settings[front_heading_classes] = ''
-settings[breadcrumb_classes] = ''
+settings[breadcrumb_display] = 'no'
 settings[body_bg_type] = ''
 settings[body_bg_classes] = ''
 settings[body_bg_path] = ''

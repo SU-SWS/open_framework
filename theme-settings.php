@@ -20,7 +20,6 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     ),
   );
  
- 
   // Page Layout
   $form['layout_container'] = array(
     '#type' => 'fieldset',
@@ -40,16 +39,16 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     ),
   );
 
-  $form['layout_container']['breadcrumb_classes'] = array(
+  $form['layout_container']['breadcrumb_display'] = array(
     '#type'          => 'radios',
     '#title'         => t('Breadcrumbs'),
-    '#default_value' => theme_get_setting('breadcrumb_classes'),
+    '#default_value' => theme_get_setting('breadcrumb_display'),
     '#options'       => array(
-      '' => t('Hide breadcrumbs - <strong><em>Default</em></strong>'),
-	  'show-breadcrumb ' => t('Show breadcrumbs'),
+      'no' => t('Hide breadcrumbs - <strong><em>Default</em></strong>'),
+	  'yes' => t('Show breadcrumbs'),
     ),
   );
-    
+      
   // Background Section
   $form['background_container'] = array(
     '#type' => 'fieldset',
