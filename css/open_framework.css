@@ -799,6 +799,9 @@ html.js fieldset.collapsed {
 	height: auto;
 }
 /* ----- field label overrides ------- */
+.field .field-label {
+	font-weight:600;
+}
 .page-node .content-body .field {
 	margin-bottom:1em;
 }
