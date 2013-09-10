@@ -1044,6 +1044,7 @@ nav ul li a {
 .row-fluid .node .content .float-right {
 	float:right!important;
 	max-width:50%;
+	margin-left: 15px;
 }
 .footer-content .block {
 	float:left;
