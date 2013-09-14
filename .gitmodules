@@ -1,0 +1,3 @@
+[submodule "vendor/ucla/WebBlocks"]
+	path = vendor/ucla/WebBlocks
+	url = https://github.com/ucla/WebBlocks
