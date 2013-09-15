@@ -5,10 +5,10 @@ rootdir = File.dirname(Pathname.new(__FILE__).realpath)
 WebBlocks.config[:build][:debug] = false
 
 # The directory into which WebBlocks is built
-WebBlocks.config[:build][:dir] = "#{rootdir}/build"
+WebBlocks.config[:build][:dir] = "#{rootdir}"
 
 # The directory where sources for the build are located
-WebBlocks.config[:src][:dir] = "#{rootdir}/src"
+WebBlocks.config[:src][:dir] = "#{rootdir}/blocks"
 
 # Location of WebBlocks core components (config.rb, definitions, core adapter)
 WebBlocks.config[:src][:core][:dir] = "#{rootdir}/vendor/ucla/WebBlocks/src/core"
@@ -21,6 +21,8 @@ WebBlocks.config[:src][:extension][:dir] = "#{rootdir}/vendor/ucla/WebBlocks/src
 
 WebBlocks.config[:src][:adapter] = false
 
-WebBlocks.config[:package][:bootstrap][:scripts] << 'modal'
-WebBlocks.config[:package][:bootstrap][:scripts] << 'tooltip'
-WebBlocks.config[:package][:bootstrap][:scripts] << 'popover'
+# Uncomment to enable Bootstrap (and add lines for each JS to include)
+# WebBlocks.config[:src][:adapter] = 'bootstrap'
+# WebBlocks.config[:package][:bootstrap][:scripts] << 'modal'
+# WebBlocks.config[:package][:bootstrap][:scripts] << 'tooltip'
+# WebBlocks.config[:package][:bootstrap][:scripts] << 'popover'
