@@ -12,7 +12,22 @@ The Open Framework theme is intended for Drupal version 7 only; it will not work
 
 -- INSTALLATION --
 
-Download and extract the theme package in your sites/all/themes directory. As an admin, go to Administration > Appearance to enable the theme.
+Download and extract the theme package in your sites/all/themes directory. 
+
+Build WebBlocks with the commands:
+
+$ bundle
+$ rake
+
+The first time called, these operations may take a long period of time; subsequent calls will be shorter.
+
+In order to compile WebBlocks as above, you must first install Git, Ruby, RubyGems, Node.js and NPM (see http://ucla.github.io/WebBlocks/doc/#Configuration/Environment for installation instructions).
+
+Any WebBlocks task may be invoked via this call-forward (see http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler for details), and additionally this example adds `setup` and `destroy` tasks to manage the Git submodule and WebBlocks's requisite Ruby gems and Node.js packages.
+
+Based on `Rakefile-config.rb`, sources are drawn from `src`, the compiler is invoked from under `vendor/ucla/WebBlocks` and the build is produced into `build`.
+
+As an admin, go to Administration > Appearance to enable the theme.
 
 -- TROUBLESHOOTING --
 
