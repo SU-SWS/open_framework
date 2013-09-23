@@ -12,8 +12,8 @@
 ?>
 <div class="panel-display one-column clearfix" <?php if (!empty($css_id)): print "id=\"$css_id\""; endif; ?>>
   <div class="container row-fluid">
-    <div id="content" class="region region-one-main span12">
-      <div id="content-wrapper" class="region-inner clearfix content-wrapper">
+    <div class="region region-one-main span12">
+      <div class="region-inner clearfix">
         <?php print $content['one_main']; ?>
       </div>
     </div>
