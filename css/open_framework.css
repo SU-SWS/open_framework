@@ -382,14 +382,14 @@ nav h2 {
 }
 /* ----- pager nav ------------------- */
 /* navigation -- this is used as an alternative to main menu without the default bootstrap menu styles */
-#navigation h2 {
+#main-navigation h2 {
 	position:absolute;
 	left:-10000px;
 }
-#navigation .content ul li {
+#main-navigation .content ul li {
 	display:inline-block;
 }
-#navigation .content ul ul {
+#main-navigation .content ul ul {
 	display:none;
 }
 /* sidebars ************************** */
