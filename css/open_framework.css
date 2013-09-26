@@ -676,7 +676,7 @@ iframe {
 	clear:none;
 }
 .clear-left-margin {
-	margin-left:0;
+	margin-left:0 !important;
 	padding-right:20px;
 }
 .clear-right {
