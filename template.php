@@ -3,7 +3,7 @@ function open_framework_preprocess_html(&$vars) {
   // theme option variables
   $vars['content_order_classes'] = theme_get_setting('content_order_classes'); 
   $vars['front_heading_classes'] = theme_get_setting('front_heading_classes'); 
-  $vars['breadcrumb_display'] = theme_get_setting('breadcrumb_display'); 
+  $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes'); 
   $vars['border_classes'] = theme_get_setting('border_classes'); 
   $vars['corner_classes'] = theme_get_setting('corner_classes'); 
   $vars['body_bg_type'] = theme_get_setting('body_bg_type'); 
@@ -543,8 +543,8 @@ function open_framework_block_id_to_function_name ($id) {
 function open_framework_breadcrumb(&$variables) {
   $output = '';
   $breadcrumb = $variables['breadcrumb'];
-  $show_breadcrumb = theme_get_setting('breadcrumb_display');
-  if ($show_breadcrumb == 'yes') {
+  $show_breadcrumb = theme_get_setting('breadcrumb_classes');
+  if ($show_breadcrumb == 'show-breadcrumb ') {
     if (!empty($breadcrumb)) {
       // Provide a navigational heading to give context for breadcrumb links to
       // screen-reader users. Make the heading invisible with .element-invisible.
