@@ -17,6 +17,12 @@ Drupal.behaviors.open_framework_override = {
       .find('ul a')
         .removeAttr('data-toggle')
         .removeAttr('data-target')
+		
+    // Bootstrap Menu Block behavior in sidebar
+	$('.sidebar .block-menu-block ul.menu.nav a').removeAttr('data-toggle');
+    $('.sidebar .block-menu-block ul.menu.nav a').removeAttr('data-target');
+	$('.sidebar .block-menu-block ul.menu.nav li').removeClass('dropdown-submenu');
+	$('.sidebar .block-menu-block ul.menu.nav ul').removeClass('dropdown-menu');
 
     // Set up theme specific responsive behaviors
     function responsive_behaviors () {
