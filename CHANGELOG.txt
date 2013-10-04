@@ -1,3 +1,7 @@
+Version 7.x-2.06
+------------------------------
+by hyperboy: Reverted to Bootstrap 2.3.1 to enable access to nested main menu list items on touch devices
+
 Version 7.x-2.05
 ------------------------------
 by agold2: Restored Bootstrap's pull-right class float:right behavior blocks in the navigation region
@@ -12,6 +16,8 @@ by hyperboy: Added equal-height column behavior via "column" class
 by hyperboy: Added responsive support for iframes and video players via the "video-player" class
 by hyperboy: Added logic to node.tpl.php to not output the node content if it is empty
 by codelica: Added jQuery Update module compatibility in core jQuery replacement behavior
+by hyperboy: Updated theme options breadcrumbs and photo background
+by ebollens: Fixed nav-search class typo in open_framework.css
 by hyperboy: Added Font Awesome IE 7 support
 by hyperboy: Updated Bootstrap to version 2.3.2
 by hyperboy: Updated to Font Awesome 3.2.1
