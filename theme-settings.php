@@ -45,7 +45,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('breadcrumb_classes'),
     '#options'       => array(
       '' => t('Hide breadcrumbs - <strong><em>Default</em></strong>'),
-	  'show-breadcrumb ' => t('Show breadcrumbs'),
+	  'show-breadcrumb' => t('Show breadcrumbs'),
     ),
   );
       
