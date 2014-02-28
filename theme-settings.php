@@ -68,16 +68,6 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
 	  'bodybg ' => t('Use my image (upload below):'),
     ),
   );
-  
-  $form['background_container']['body_bg_type'] = array(
-    '#type'          => 'radios',
-    '#title'         => t('Choose body background style'),
-    '#default_value' => theme_get_setting('body_bg_type'),
-    '#options'       => array(
-      '' => t('Wallpaper pattern - <strong><em>Default</em></strong>'),
-	  'photobg ' => t('Stretch to fill body'),
-    ),
-  );
    
   // Default path for image
   $body_bg_path = theme_get_setting('body_bg_path');
@@ -103,6 +93,17 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'file',
     '#title' => 'Upload body background image',
     '#description' => 'You can upload the following image file types: *.jpg, *.gif, or *.png',
+  );
+  
+  // Body Background Image Style
+  $form['background_container']['body_bg_type'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Choose body background style'),
+    '#default_value' => theme_get_setting('body_bg_type'),
+    '#options'       => array(
+      '' => t('Wallpaper pattern - <strong><em>Default</em></strong>'),
+	  'photobg ' => t('Stretch to fill body'),
+    ),
   );
   
   // Border Style
