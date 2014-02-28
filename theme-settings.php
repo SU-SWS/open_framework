@@ -52,30 +52,30 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
   // Background Section
   $form['background_container'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Background Images'),
-    '#description' => t('Use these settings to select different background images.'),
+    '#title' => t('Body background'),
+    '#description' => t('Use these settings to select a different body background image.'),
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
   );
   
   // Body Background Image
-  $form['background_container']['body_bg_type'] = array(
-    '#type'          => 'radios',
-    '#title'         => t('Body background image type'),
-    '#default_value' => theme_get_setting('body_bg_type'),
-    '#options'       => array(
-      '' => t('Wallpaper pattern - <strong><em>Default</em></strong>'),
-	  'photobg ' => t('Photo image'),
-    ),
-  );
-  
  $form['background_container']['body_bg_classes'] = array(
     '#type'          => 'radios',
-    '#title'         => t('Body background image'),
+    '#title'         => t('Enable body background image'),
     '#default_value' => theme_get_setting('body_bg_classes'),
     '#options'       => array(
       '' => t('None - <strong><em>Default</em></strong>'),
 	  'bodybg ' => t('Use my image (upload below):'),
+    ),
+  );
+  
+  $form['background_container']['body_bg_type'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Choose body background style'),
+    '#default_value' => theme_get_setting('body_bg_type'),
+    '#options'       => array(
+      '' => t('Wallpaper pattern - <strong><em>Default</em></strong>'),
+	  'photobg ' => t('Stretch to fill body'),
     ),
   );
    
@@ -88,7 +88,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
   // Helpful text showing the file name, disabled to avoid the user thinking it can be used for any purpose.
   $form['background_container']['body_bg_path'] = array(
     '#type' => 'hidden',
-    '#title' => 'Path to background image',
+    '#title' => 'Path to body background image',
     '#default_value' => $body_bg_path,
   );
   if (!empty($body_bg_path)) {
@@ -101,7 +101,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
   // Upload field
   $form['background_container']['body_bg_upload'] = array(
     '#type' => 'file',
-    '#title' => 'Upload background image',
+    '#title' => 'Upload body background image',
     '#description' => 'You can upload the following image file types: *.jpg, *.gif, or *.png',
   );
   
