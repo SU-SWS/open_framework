@@ -223,8 +223,8 @@ iframe { max-width:100%; }
 }
 /* ----- positioning ----------------- */
 .spacer { margin-top:30px; }
-.float-left, .float-right { float:left; margin-right:15px; margin-bottom:15px; }
-.float-right { float: right; margin-left: 15px; margin-right: 0; }
+.float-left { float: left; margin-right: 15px; margin-bottom: 15px; }
+.float-right { float: right; margin-left: 15px; margin-bottom: 15px; }
 .float-none { float:none; }
 .clear-none { clear:none; }
 .clear-left-margin { margin-left:0 !important; padding-right:20px; }
