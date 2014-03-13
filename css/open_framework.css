@@ -296,7 +296,6 @@ ul.primary { margin:1.5em 0 .2em; }
 .content-col2 [class*="span"] { margin-left:0; width:100%; }
 .header #logo { display:block; margin:0; text-align:center; }
 .site-name, .site-slogan { text-align:center; }
-.float-left, .float-right { float:none; }
 }
 
 /* landscape phones to tablet */
