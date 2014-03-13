@@ -319,8 +319,8 @@ nav ul li a { display:block; }
 .navbar-inner { padding:5px 5px 0; }
 .content-col2 [class*="span"] { margin-left:0; width:100%; }
 .callout, .bracket, .topline { width:50%; }
-.row-fluid .node .content .float-left {max-width: 50%; margin-right: 15px; }
-.row-fluid .node .content .float-right {max-width: 50%; margin-left: 15px; }
+.row-fluid .node .content .float-left {max-width: 50%; margin-right: 20px; }
+.row-fluid .node .content .float-right {max-width: 50%; margin-left: 20px; }
 .footer-content .block { float:left; margin-right:4%; width:48%; }
 .footer-content .block:nth-child(2n+1) { clear:both; }
 .footer-content .block:nth-child(2n) { margin-right:0; }
