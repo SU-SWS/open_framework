@@ -50,6 +50,7 @@ input.form-submit { height:2.5em; border:1px solid #d5d5d5; -webkit-border-radiu
 input.form-submit:hover { background-image:-webkit-linear-gradient(top, #f5f5f5 0%, #e6e6e6 100%); background-image:-ms-linear-gradient(top, #f5f5f5 0%, #e6e6e6 100%); background-image:-moz-linear-gradient(top, #f5f5f5 0%, #e6e6e6 100%); background-image:-o-linear-gradient(top, #f5f5f5 0%, #e6e6e6 100%); background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f5f5f5), color-stop(1, #e6e6e6)); background-image:linear-gradient(to bottom, #f5f5f5 0%, #e6e6e6 100%); }
 input.btn-search { width:26px; height:26px; border:0 none; background:none repeat scroll 0 0 transparent; }
 input.btn-search:hover { opacity:.6; filter: alpha(opacity=60); background:none repeat scroll 0 0 transparent; }
+input.placeholder, textarea.placeholder { color: #aaa; }
 /* ----- Invisible and Focusable Elements (skipnav) ----------------------- */
 .element-invisible { position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); }
 .element-invisible.element-focusable:active, .element-invisible.element-focusable:focus { position: static !important; clip: auto; overflow: visible; height: auto; padding: 0 1em; }

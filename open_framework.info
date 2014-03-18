@@ -12,6 +12,7 @@ stylesheets[all][] = css/ie.css
 
 scripts[] = bootstrap/js/bootstrap.min.js
 scripts[] = js/open_framework.js
+scripts[] = js/jquery.placeholder.min.js
 scripts[] = js/override.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)

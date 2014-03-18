@@ -60,6 +60,10 @@ Drupal.behaviors.open_framework = {
 	$('.element-focusable').on('click', function() {
 		$($(this).attr('href')).attr('tabindex', '-1').focus();
 		});
+		
+	// Add placeholder value support for older browsers
+    $('input, textarea').placeholder();
+
   }
 }
 
