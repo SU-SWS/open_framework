@@ -100,10 +100,6 @@ nav h2 { position:absolute; left:-10000px; }
 /* ----- admin menu ------------------ */
 #admin-menu li { line-height:normal; }
 /* ----- pager nav ------------------- */
-/* navigation -- this is used as an alternative to main menu without the default bootstrap menu styles */
-#main-navigation h2 { position:absolute; left:-10000px; }
-#main-navigation .content ul li { display:inline-block; }
-#main-navigation .content ul ul { display:none; }
 /* sidebars ************************** */
 .sidebar { margin-bottom:1.2em; }
 .sidebar .nav { margin-left:1.2em; }
