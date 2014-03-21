@@ -4,3 +4,6 @@
 .ie7 #block-search-form, .ie8 #block-search-form { bottom: 50px; }
 .ie7 #block-search-form .btn-search { margin-top: 10px; }
 .ie7 #block-search-form input, .ie8 #block-search-form input {max-width: none;}
+
+.ie7 .postcard-left div, .ie7 .postcard-right div {float: left; width: auto;}
+.ie7 .postcard-left:after, .ie7 .postcard-right:after {content: " "; visibility: hidden; display: block; height: 0; clear: both;}
