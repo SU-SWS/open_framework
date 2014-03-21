@@ -351,6 +351,8 @@ nav ul li a { display:block; }
 .no-sidebars .content-row3 .span4:nth-child(odd), .no-sidebars .content-col3.row-fluid .span4:nth-child(odd), .no-sidebars .content-row4 .span3:nth-child(odd), .no-sidebars .content-col4.row-fluid .span3:nth-child(odd) {margin-right: 2%;}
 .no-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n), .no-sidebars .content-row4 [class*="span"]:nth-child(2n), .no-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n) {margin-right: 0;}
 .no-sidebars .content-row2 [class*="span"]:nth-child(2n+1), .no-sidebars .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .no-sidebars .content-row3 [class*="span"]:nth-child(2n+1), .no-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .no-sidebars .content-row4 [class*="span"]:nth-child(2n+1), .no-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n+1) { clear:both; margin-left:0; }
+
+.sidebar-second .content-row2 [class*="span"]:nth-child(2n+1), .sidebar-second .content-row3 [class*="span"]:nth-child(3n+1), .sidebar-second .content-row4 [class*="span"]:nth-child(4n+1) { clear:both; margin-left:0; }
 }
 
 /* large desktop */
