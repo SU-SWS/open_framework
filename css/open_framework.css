@@ -337,10 +337,20 @@ nav ul li a { display:block; }
 .footer-content .block.span2:nth-child(3n+1), .footer-content .block.span3:nth-child(3n+1) { clear:both; }
 .footer-content .block.span2:nth-child(3n), .footer-content .block.span3:nth-child(3n) { margin-right:0; }
 
-.content-row3 .span4, .content-col3.row-fluid .span4, .content-row4 .span3, .content-col4.row-fluid .span3 { display:block; float:left; margin-left: 0; margin-right:0; width:49%; }
-.content-row3 .span4:nth-child(odd), .content-col3.row-fluid .span4:nth-child(odd), .content-row4 .span3:nth-child(odd), .content-col4.row-fluid .span3:nth-child(odd) {margin-right: 2%;}
-.content-col3.row-fluid [class*="span"]:nth-child(2n), .content-row4 [class*="span"]:nth-child(2n), .content-col4.row-fluid [class*="span"]:nth-child(2n) {margin-right: 0;}
-.content-row2 [class*="span"]:nth-child(2n+1), .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .content-row3 [class*="span"]:nth-child(2n+1), .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .content-row4 [class*="span"]:nth-child(2n+1), .content-col4.row-fluid [class*="span"]:nth-child(2n+1) { clear:both; margin-left:0; }
+.sidebar-first .content-row3 .span4, .sidebar-first .content-col3.row-fluid .span4, .sidebar-first .content-row4 .span3, .sidebar-first .content-col4.row-fluid .span3 { display:block; float:left; margin-left: 0; margin-right:0; width:49%; }
+.sidebar-first .content-row3 .span4:nth-child(odd), .sidebar-first .content-col3.row-fluid .span4:nth-child(odd), .sidebar-first .content-row4 .span3:nth-child(odd), .sidebar-first .content-col4.row-fluid .span3:nth-child(odd) {margin-right: 2%;}
+.sidebar-first .content-col3.row-fluid [class*="span"]:nth-child(2n), .sidebar-first .content-row4 [class*="span"]:nth-child(2n), .sidebar-first .content-col4.row-fluid [class*="span"]:nth-child(2n) {margin-right: 0;}
+.sidebar-first .content-row2 [class*="span"]:nth-child(2n+1), .sidebar-first .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .sidebar-first .content-row3 [class*="span"]:nth-child(2n+1), .sidebar-first .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .sidebar-first .content-row4 [class*="span"]:nth-child(2n+1), .sidebar-first .content-col4.row-fluid [class*="span"]:nth-child(2n+1) { clear:both; margin-left:0; }
+
+.two-sidebars .content-row3 .span4, .two-sidebars .content-col3.row-fluid .span4, .two-sidebars .content-row4 .span3, .two-sidebars .content-col4.row-fluid .span3 { display:block; float:left; margin-left: 0; margin-right:0; width:49%; }
+.two-sidebars .content-row3 .span4:nth-child(odd), .two-sidebars .content-col3.row-fluid .span4:nth-child(odd), .two-sidebars .content-row4 .span3:nth-child(odd), .two-sidebars .content-col4.row-fluid .span3:nth-child(odd) {margin-right: 2%;}
+.two-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n), .two-sidebars .content-row4 [class*="span"]:nth-child(2n), .two-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n) {margin-right: 0;}
+.two-sidebars .content-row2 [class*="span"]:nth-child(2n+1), .two-sidebars .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .two-sidebars .content-row3 [class*="span"]:nth-child(2n+1), .two-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .two-sidebars .content-row4 [class*="span"]:nth-child(2n+1), .two-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n+1) { clear:both; margin-left:0; }
+
+.no-sidebars .content-row3 .span4, .no-sidebars .content-col3.row-fluid .span4, .no-sidebars .content-row4 .span3, .no-sidebars .content-col4.row-fluid .span3 { display:block; float:left; margin-left: 0; margin-right:0; width:49%; }
+.no-sidebars .content-row3 .span4:nth-child(odd), .no-sidebars .content-col3.row-fluid .span4:nth-child(odd), .no-sidebars .content-row4 .span3:nth-child(odd), .no-sidebars .content-col4.row-fluid .span3:nth-child(odd) {margin-right: 2%;}
+.no-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n), .no-sidebars .content-row4 [class*="span"]:nth-child(2n), .no-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n) {margin-right: 0;}
+.no-sidebars .content-row2 [class*="span"]:nth-child(2n+1), .no-sidebars .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .no-sidebars .content-row3 [class*="span"]:nth-child(2n+1), .no-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .no-sidebars .content-row4 [class*="span"]:nth-child(2n+1), .no-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n+1) { clear:both; margin-left:0; }
 }
 
 /* large desktop */
