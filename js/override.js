@@ -31,11 +31,13 @@ Drupal.behaviors.open_framework_override = {
       if (width < 751) {
         $('nav li li.expanded').removeClass('dropdown-submenu');
         $('nav ul ul ul').removeClass('dropdown-menu');
+		$('div.next-row').addClass('clear-row');
       }
 
       else {
         $('nav li li.expanded').addClass('dropdown-submenu');
         $('nav ul ul ul').addClass('dropdown-menu');
+        $('div.next-row').removeClass('clear-row');
       }
 
       if ((width >= 751) && (width < 963)) {
