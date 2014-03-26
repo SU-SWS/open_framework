@@ -3,17 +3,20 @@ description = Base theme made with Twitter Bootstrap
 core = 7.x
 version = 2.04
 
-stylesheets[all][] = bootstrap/css/bootstrap.min.css
-stylesheets[all][] = bootstrap/css/bootstrap-responsive.min.css
-stylesheets[all][] = fontawesome/css/font-awesome.min.css
+; Stylesheets --------------------------------------------------------
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/bootstrap-responsive.min.css
+stylesheets[all][] = css/font-awesome.min.css
 stylesheets[all][] = css/open_framework.css
 stylesheets[print][] = css/open_framework_print.css
 stylesheets[all][] = css/ie.css
 
-scripts[] = bootstrap/js/bootstrap.min.js
+; Scripts ------------------------------------------------------------
+scripts[] = js/bootstrap.min.js
 scripts[] = js/open_framework.js
 scripts[] = js/override.js
 
+; Regions ------------------------------------------------------------
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
 regions[header] = Header
 regions[navigation] = Navigation
@@ -45,7 +48,7 @@ regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
 regions[footer] = Footer
 
-; Settings
+; Settings ----------------------------------------------------------
 settings[front_heading_classes] = ''
 settings[breadcrumb_classes] = ''
 settings[body_bg_type] = ''
@@ -55,3 +58,6 @@ settings[body_bg_preview] = ''
 settings[body_bg_upload] = ''
 settings[border_classes] = ''
 settings[corner_classes] = ''
+
+; Panel layouts ----------------------------------------------------
+plugins[panels][layouts] = plugins/layouts

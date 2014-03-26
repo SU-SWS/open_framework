@@ -1,36 +1,86 @@
 <?php
+/**
+ * @file
+ */
+
+/**
+ * [open_framework_preprocess_html description]
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ */
 function open_framework_preprocess_html(&$vars) {
   // theme option variables
-  $vars['front_heading_classes'] = theme_get_setting('front_heading_classes'); 
-  $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes'); 
-  $vars['border_classes'] = theme_get_setting('border_classes'); 
-  $vars['corner_classes'] = theme_get_setting('corner_classes'); 
-  $vars['body_bg_type'] = theme_get_setting('body_bg_type'); 
-  $vars['body_bg_classes'] = theme_get_setting('body_bg_classes'); 
-  $vars['body_bg_path'] = theme_get_setting('body_bg_path'); 
+  $vars['front_heading_classes'] = theme_get_setting('front_heading_classes');
+  $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes');
+  $vars['border_classes'] = theme_get_setting('border_classes');
+  $vars['corner_classes'] = theme_get_setting('corner_classes');
+  $vars['body_bg_type'] = theme_get_setting('body_bg_type');
+  $vars['body_bg_classes'] = theme_get_setting('body_bg_classes');
+  $vars['body_bg_path'] = theme_get_setting('body_bg_path');
 }
 
-function open_framework_js_alter(&$javascript) {
+/**
+ * Implements hook_css_alter().
+ */
+function open_framework_css_alter(&$css) {
+
   // Update jquery version for non-administration pages
   if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
-    $jquery_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js';
-    $jquery_version = '1.9.1';
-    $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.1.1.min.js';
-    $migrate_version = '1.1.1';
-    $javascript['misc/jquery.js']['data'] = $jquery_file;
-    $javascript['misc/jquery.js']['version'] = $jquery_version;
-    $javascript['misc/jquery.js']['weight'] = 0;
-    $javascript['misc/jquery.js']['group'] = -101;
-    drupal_add_js($migrate_file);
-    if (isset($javascript["$migrate_file"])) {
-      $javascript["$migrate_file"]['version'] = $migrate_version;
-      $javascript["$migrate_file"]['weight'] = 1;
-      $javascript["$migrate_file"]['group'] = -101;
-    }
+
+    $path = drupal_get_path('theme', 'open_framework');
+
+    $min = '.min';
+    open_framework_jqueryui_local_css($css, $path, $min);
+
   }
+
 }
 
-function open_framework_preprocess_page(&$vars) { 
+/**
+ * Implements hook_js_alter().
+ */
+function open_framework_js_alter(&$javascript) {
+
+  // Update jquery version for non-administration pages
+  if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
+
+    $path = drupal_get_path('theme', 'open_framework');
+    $jquery_file = $path . '/js/jquery-1.9.1.min.js';
+    $jquery_version = '1.9.1';
+    $migrate_file = $path . '/js/jquery-migrate-1.2.1.min.js';
+    $migrate_version = '1.2.1';
+
+    $javascript['misc/jquery.js']['data'] = $jquery_file;
+    $javascript['misc/jquery.js']['type'] = 'file';
+    $javascript['misc/jquery.js']['scope'] = 'header';
+    $javascript['misc/jquery.js']['group'] = -101;
+    $javascript['misc/jquery.js']['every_page'] = TRUE;
+    $javascript['misc/jquery.js']['weight'] = 0;
+    $javascript['misc/jquery.js']['version'] = $jquery_version;
+    $javascript['misc/jquery.js']['preprocess'] = TRUE;
+    $javascript['misc/jquery.js']['cache'] = TRUE;
+    $javascript['misc/jquery.js']['defer'] = FALSE;
+    drupal_add_js($migrate_file);
+
+    if (isset($javascript["$migrate_file"])) {
+      $javascript["$migrate_file"]['version'] = $migrate_version;
+      $javascript["$migrate_file"]['group'] = -101;
+	    $javascript["$migrate_file"]['weight'] = 1;
+    }
+
+    $min = '.min';
+    open_framework_jqueryui_local_js($javascript, $path, $min);
+
+  }
+
+}
+
+/**
+ * [open_framework_preprocess_page description]
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ */
+function open_framework_preprocess_page(&$vars) {
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
@@ -49,7 +99,7 @@ function open_framework_preprocess_page(&$vars) {
 
   // Add the rendered output to the $main_menu_expanded variables
   $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
-  
+
     // Primary nav
   $vars['primary_nav'] = FALSE;
   if ($vars['main_menu']) {
@@ -70,15 +120,19 @@ function open_framework_preprocess_page(&$vars) {
 
   // Replace tabs with drop down version
   $vars['tabs']['#primary'] = _bootstrap_local_tasks($vars['tabs']['#primary']);
-  
+
   // Add variable for site title
   $vars['my_site_title'] = variable_get('site_name');
-  
 }
 
+/**
+ * [open_framework_preprocess_block description]
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ */
 function open_framework_preprocess_block(&$vars) {
-  // Count number of blocks in a given theme region
-$vars['block_count'] = count(block_list($vars['block']->region));
+  // Count number of blocks in a given theme region.
+  $vars['block_count'] = count(block_list($vars['block']->region));
 }
 
 /**
@@ -102,7 +156,7 @@ function open_framework_region_has_block($region) {
 }
 
 /**
-* Determine the span for a blocka
+* Determine the span for a block
 *
 * @param $block_count
 * The number of blocks in the region
@@ -121,7 +175,7 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
   // @petechen (6.27.12) This method of applying a value to span assumes that there
   // is at least 1 block. If there are no blocks, you end up with a calculation
   // dividing by 0 generating a php error. Suggest the following change:
-  
+
   // default span if calculations fail
   // Use this default value instead as an "else" condition below:
   // $span = 12;
@@ -142,7 +196,7 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
   }
 
   // @petechen - surroung this condition with another if else to account for $block_count = 0
-  
+
   if ($block_count != 0) {
 
   // if the number of blocks divides evenly into the available width, that's our span width
@@ -194,8 +248,8 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
     $span = $exceptions[$available_width][$block_count][$block_id];
   }
   return $span;
-}
-// @petechen: so if $block_count = 0, use this as the default
+  }
+  // @petechen: so if $block_count = 0, use this as the default
   else $span = 12;
 }
 
@@ -223,11 +277,11 @@ function open_framework_status_messages($variables) {
   foreach (drupal_get_messages($display) as $type => $messages) {
     $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
     $output .= "<div class=\"alert alert-block$class\">\n";
-	
+
     if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
     $output .= "  <a class=\"close\" data-dismiss=\"alert\" href=\"#\">x</a>\n";
-	}
-	
+  }
+
     if (!empty($status_heading[$type])) {
       $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
     }
@@ -255,6 +309,13 @@ function search_preprocess_block(&$variables) {
   }
 }
 
+/**
+ * [open_framework_form_alter description]
+ * @param  [type] $form       [description]
+ * @param  [type] $form_state [description]
+ * @param  [type] $form_id    [description]
+ * @return [type]             [description]
+ */
 function open_framework_form_alter(&$form, &$form_state, $form_id) {
   if ($form_id == 'search_block_form') {
     $form['search_block_form']['#title_display'] = 'invisible';
@@ -311,19 +372,23 @@ function open_framework_menu_local_task($vars) {
   return '<li class="' . implode(' ', $classes) . '">' . l($link_text, $link['href'], $link['localized_options']) . "</li>\n";
 }
 
+/**
+ * [open_framework_menu_tree description]
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ */
 function open_framework_menu_tree(&$vars) {
   return '<ul class="menu nav">' . $vars['tree'] . '</ul>';
 }
 
 /*
  * Implements hook_menu_link
- * Apply bootstrap menu classes to all menu blocks in the 
+ * Apply bootstrap menu classes to all menu blocks in the
  * navigation region and the main-menu block by default.
  * Note: if a menu is in the navigation and somewhere else as well,
  *       both instances of the menu will have the classes applied,
  *       not just the one in the navigation
  */
-
 function open_framework_menu_link(array $vars) {
 
   $element = $vars['element'];
@@ -376,11 +441,11 @@ function _bootstrap_local_tasks($tabs = FALSE) {
   if ($tabs == '') {
     return $tabs;
   }
-  
+
   if (!$tabs) {
     $tabs = menu_primary_local_tasks();
   }
-  
+
   foreach ($tabs as $key => $element) {
     $result = db_select('menu_router', NULL, array('fetch' => PDO::FETCH_ASSOC))
       ->fields('menu_router')
@@ -390,21 +455,21 @@ function _bootstrap_local_tasks($tabs = FALSE) {
       ->orderBy('weight')
       ->orderBy('title')
       ->execute();
-  
+
     $router_item = menu_get_item($element['#link']['href']);
     $map = $router_item['original_map'];
-  
+
     $i = 0;
     foreach ($result as $item) {
       _menu_translate($item, $map, TRUE);
-  
+
       //only add items that we have access to
       if ($item['tab_parent'] && $item['access']) {
         //set path to that of parent for the first item
         if ($i === 0) {
           $item['href'] = $element['#link']['href'];
         }
-  
+
         if (current_path() == $item['href']) {
           $tabs[$key][] = array(
           '#theme' => 'menu_local_task',
@@ -418,16 +483,21 @@ function _bootstrap_local_tasks($tabs = FALSE) {
           '#link' => $item,
           );
         }
-  
+
         //only count items we have access to.
         $i++;
       }
     }
   }
-  
+
   return $tabs;
 }
 
+/**
+ * [open_framework_item_list description]
+ * @param  [type] $variables [description]
+ * @return [type]            [description]
+ */
 function open_framework_item_list($variables) {
   $items = $variables['items'];
   $title = $variables['title'];
@@ -476,13 +546,13 @@ function open_framework_item_list($variables) {
     }
     $output .= "</$type>";
   }
- 
+
   return $output;
 }
 
 /*
  *  Find out if an element (a menu link) is a link displayed in the
- *  navigation region for the user. We return true by default if this is a 
+ *  navigation region for the user. We return true by default if this is a
  *  menu link in the main-menu. Open Framework treats the main-menu
  *  as being in the navigation by default.
  *  We are using the theming functions to figure out the block IDs.
@@ -490,7 +560,6 @@ function open_framework_item_list($variables) {
  *  and those are baed on the block ID.
  *
  */
-
 function open_framework_is_in_nav_menu($element) {
 
   // #theme holds one or more suggestions for theming function names for the link
@@ -508,15 +577,15 @@ function open_framework_is_in_nav_menu($element) {
     // get all blocks in the navigation region
     $blocks = block_list('navigation');
 
-	// Blocks placed using the context module don't show up using Drupal's block_list
-	// If context is enabled, see if it has placed any blocks in the navigation area
-	// See: http://drupal.org/node/785350
+  // Blocks placed using the context module don't show up using Drupal's block_list
+  // If context is enabled, see if it has placed any blocks in the navigation area
+  // See: http://drupal.org/node/785350
     $context_blocks = array();
-	
-	if (module_exists('context')) {
-	  $reaction_block_plugin = context_get_plugin('reaction', 'block');
-	  $context_blocks = $reaction_block_plugin->block_list('navigation');
-	}
+
+  if (module_exists('context')) {
+    $reaction_block_plugin = context_get_plugin('reaction', 'block');
+    $context_blocks = $reaction_block_plugin->block_list('navigation');
+  }
 
     $blocks = array_merge($blocks, $context_blocks);
 
@@ -549,7 +618,6 @@ function open_framework_is_in_nav_menu($element) {
 /*
  *  Convert a block id to a theming function name
  */
-
 function open_framework_block_id_to_function_name ($id) {
   // if a system block, remove 'system_'
   $id = str_replace('system_', '', $id);
@@ -561,10 +629,10 @@ function open_framework_block_id_to_function_name ($id) {
   }
   else {
     // if a menu_block block, keep menu_block, but add an
-	// underscore. Not sure why this is different from other
-	// core modules
+  // underscore. Not sure why this is different from other
+  // core modules
     $id = str_replace('menu_block_', 'menu_block__', $id);
-  } 
+  }
 
   // massage the id to looks like a theming function name
   // use the same function used to create the name of theming function
@@ -573,3 +641,77 @@ function open_framework_block_id_to_function_name ($id) {
 
   return $name;
 }
+
+/**
+ * Update jQuery UI CSS.
+ *
+ * Inspired from jQuery UI module.
+ *
+ * @param array $css
+ *   The css definition array as seen in hook_alter_css().
+ * @param string $path
+ *   Path to the theme.
+ * @param string $min
+ *   Suffix for minified versions of files. If not present, defaults to
+ *   unminified.
+ */
+function open_framework_jqueryui_local_css(&$css, $path, $min) {
+  // Replace all CSS files.
+  $names = drupal_map_assoc(array(
+    'ui.accordion', 'ui.autocomplete', 'ui.button', 'ui.datepicker',
+    'ui.dialog', 'ui.progressbar', 'ui.resizable', 'ui.selectable',
+    'ui.slider', 'ui.tabs',
+  ));
+  $names['ui'] = 'ui.core';
+  $csspath = $path . '/js/jquery-ui/themes/base/' . (($min == '.min') ? 'minified/' : '');
+  foreach ($names as $name => $file) {
+    if (isset($css["misc/ui/jquery.$file.css"])) {
+      $css["misc/ui/jquery.$file.css"]['data'] = $csspath . 'jquery.' . $file . $min . '.css';
+    }
+  }
+  // Make sure ui.theme is replaced as well.
+  if (isset($css['misc/ui/jquery.ui.theme.css'])) {
+    $css['misc/ui/jquery.ui.theme.css']['data'] = $csspath . 'jquery.ui.theme' . $min . '.css';
+  }
+
+}
+
+/**
+ * Update jQuery UI javascript.
+ *
+ * Inspired from jQuery UI module.
+ *
+ * @param array $javascript
+ *   The $libraries array as seen in hook_library_alter()
+ * @param string $path
+ *   The path to the module where replacements can be found.
+ * @param string $min
+ *   The '.min' to include in the file name if we are requesting a minified version.
+ */
+function open_framework_jqueryui_local_js(&$javascript, $path, $min) {
+
+  // Replace jQuery UI's JavaScript, beginning by defining the mapping.
+  $names = drupal_map_assoc(array(
+    'ui.accordion', 'ui.autocomplete', 'ui.button', 'ui.datepicker',
+    'ui.dialog', 'ui.draggable', 'ui.droppable', 'ui.mouse', 'ui.position',
+    'ui.progressbar', 'ui.resizable', 'ui.selectable', 'ui.slider',
+    'ui.sortable', 'ui.tabs', 'ui.tooltip', 'ui.widget', 'ui.effects.blind', 'ui.effects.bounce',
+    'ui.effects-clip', 'ui.effects-drop', 'ui.effects-explode', 'ui.effects-fade',
+    'ui.effects-fold', 'ui.effects-highlight', 'ui.effects-pulsate', 'ui.effects-scale',
+    'ui.effects-shake', 'ui.effects-slide', 'ui.effects-transfer',
+  ));
+  $names['ui'] = 'ui.core';
+  $names['effects'] = 'effects.core';
+
+  // Construct the jQuery UI path and replace the JavaScript.
+  $jspath = $path . '/js/jquery-ui/ui/' . ($min == '.min' ? 'minified/' : '');
+  foreach ($names as $name => $file) {
+    $corefile = 'misc/ui/jquery.' . $file . '.min.js';
+    if (isset($javascript[$corefile])) {
+      $javascript[$corefile]['data'] = $jspath . 'jquery.' . $file . $min . '.js';
+      $javascript[$corefile]['version'] = '1.10.3';
+    }
+  }
+
+}
+
