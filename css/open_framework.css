@@ -130,7 +130,7 @@ nav h2 { position:absolute; left:-10000px; }
 .pullquote-large { font-size:20px; }
 .credits { margin-top:.5em; margin-bottom: .5em; letter-spacing:.05em; font-size:12px; }
 /* postcard layouts ****************** */
-.postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap { clear:both; margin-bottom:15px; overfloat: auto; }
+.postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap { clear:both; margin-bottom:15px; }
 .postcard-left > div, .postcard-right > div { display:table-cell; }
 .postcard-left-wrap > div:first-child, .postcard-left > div:first-child { float:left; }
 .postcard-right-wrap > div:first-child, .postcard-right > div:first-child { float:right; }
