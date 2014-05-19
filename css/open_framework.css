@@ -81,7 +81,7 @@ hr { clear:both; }
 #site-slogan { margin-top:.3em; font-size:24px; line-height:1.1em; }
 .site-name a, .site-name a:hover { color:#333; text-decoration:none; }
 .site-name a:hover { color:#000; }
-#name-and-slogan { display:table-cell; padding:20px 0 20px 10px; vertical-align:middle; }
+#name-and-slogan { display:table-cell; padding:20px 0 20px 10px; vertical-align:middle; width: 100%;}
 /* navigation ************************ */
 /* ----- main navigation ------------- */
 .site-main-menu { clear:both; }
