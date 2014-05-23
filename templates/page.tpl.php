@@ -7,7 +7,7 @@
 <div id="admin-shortcuts" class="admin-shortcuts clearfix"> <?php print render($secondary_nav); ?> <?php print render($page['admin_shortcuts']); ?> </div>
 <?php endif; ?>
 <!-- /#admin-shortcuts -->
-<?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['search_box'])): ?>
+<?php if ($logo || $site_name || $site_slogan || ($page['header']) || ($page['search_box']) || ($page['header_login'])): ?>
 <div id="header" class="clearfix header" role="banner">
   <div class="container">
     <div class="row">
