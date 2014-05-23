@@ -63,7 +63,6 @@ hr { clear:both; }
 .header { margin:25px 0 30px; }
 .header-section {display: table;}
 .header-content { clear:both; }
-.header-login {text-align: right;}
 /* ----- search box ------------------ */
 .nav-search { float:right; margin:-65px -20px 0 0; padding:0; min-height:1px; }
 .nav-search .search-form, #header-search .search-form { margin:0; padding:0; }
@@ -83,6 +82,7 @@ hr { clear:both; }
 .site-name a, .site-name a:hover { color:#333; text-decoration:none; }
 .site-name a:hover { color:#000; }
 #name-and-slogan { display:table-cell; padding:20px 0 20px 10px; vertical-align:middle; width: 100%;}
+.site-login {text-align: right;}
 /* navigation ************************ */
 /* ----- main navigation ------------- */
 .site-main-menu { clear:both; }
@@ -290,7 +290,7 @@ ul.primary { margin:1.5em 0 .2em; }
 .content-col2 [class*="span"] { margin-left:0; width:100%; }
 .header #logo { display:block; margin:0; text-align:center; }
 .header-section {display: block;}
-.site-name, .site-slogan { text-align:center; }
+.site-name, .site-slogan, .site-login { text-align:center; }
 #name-and-slogan {display: block;}
 }
 
