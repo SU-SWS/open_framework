@@ -11,7 +11,8 @@
 <div id="header" class="clearfix header" role="banner">
   <div class="container">
     <div class="row">
-      <div class="header-section <?php if ($page['search_box']): print 'span8'; else: print 'span12'; endif; ?>">
+
+      <div class="header-section <?php if (($page['search_box']) || ($page['global_header'])): print 'span8'; else: print 'span12'; endif; ?>">
         <?php if ($logo): ?>
         <div id="logo" class="site-logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> <img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" role="presentation" /> </a></div>
         <?php endif; ?>
@@ -34,9 +35,16 @@
         <!-- /#name-and-slogan -->
         <?php if ($page['header']): ?>
         <div id="header-content" class="row-fluid header-content"><?php print render($page['header']); ?></div>
-        <!-- /#header-content -->
         <?php endif; ?>
+        <!-- /#header-content -->
+
       </div>
+            <?php if ($page['header_login']): ?>
+      <div class="header-login" class="span4">
+        <?php print render($page['header_login']); ?>
+      </div>
+      <?php endif; ?>
+      <!-- /#header-login -->
     </div>
   </div>
 </div>

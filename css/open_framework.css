@@ -63,6 +63,7 @@ hr { clear:both; }
 .header { margin:25px 0 30px; }
 .header-section {display: table;}
 .header-content { clear:both; }
+.header-login {text-align: right;}
 /* ----- search box ------------------ */
 .nav-search { float:right; margin:-65px -20px 0 0; padding:0; min-height:1px; }
 .nav-search .search-form, #header-search .search-form { margin:0; padding:0; }
