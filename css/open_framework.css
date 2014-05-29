@@ -302,8 +302,9 @@ ul.primary { margin:1.5em 0 .2em; }
 .main-top .block[class*="span"]:last-child, .main-upper .block[class*="span"]:last-child, .main-body .block[class*="span"]:last-child, .main-lower .block[class*="span"]:last-child, .main-bottom .block[class*="span"]:last-child, .content-top .block[class*="span"]:last-child, .content-upper .block[class*="span"]:last-child, .content-lower .block[class*="span"]:last-child, .content-bottom .block[class*="span"]:last-child, .content-row2 [class*="span"]:nth-child(2n), .content-row3 [class*="span"]:nth-child(2n), .content-col2.row-fluid [class*="span"]:nth-child(2n), .content-col3.row-fluid [class*="span"]:nth-child(2n), .content-row4 [class*="span"]:nth-child(2n), .content-col4.row-fluid [class*="span"]:nth-child(2n), .site-sidebar-first .block:nth-child(2n), .site-sidebar-second .block:nth-child(2n) { margin-right:0; }
 .main-top .block.span12.clear-row, .main-upper .block.span12.clear-row, .main-lower .block.span12.clear-row, .main-bottom .block.span12.clear-row, .content-top .block.span12.clear-row, .content-upper .block.span12.clear-row, .content-body .block.span12.clear-row, .content-lower .block.span12.clear-row, .content-bottom .block.span12.clear-row { margin-right:0; width:100%; }
 .content-row2 [class*="span"]:nth-child(2n+1), .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .content-row3 [class*="span"]:nth-child(2n+1), .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .content-row4 [class*="span"]:nth-child(2n+1), .content-col4.row-fluid [class*="span"]:nth-child(2n+1), .site-sidebar-first .block:nth-child(2n+1), .site-sidebar-second .block:nth-child(2n+1) { clear:both; margin-left:0; }
-/* fix for .well on blocks in first sidebar */
-	.site-sidebar-first .block.well { width:37%; width:-moz-calc(50% - 60px); width:-webkit-calc(50% - 60px); width:-o-calc(50% - 60px); width:calc(50% - 60px); }
+/* fix for .well on blocks in first sidebar and second sidebar */
+	.site-sidebar-first .block.well, .site-sidebar-second .block.well { width:37%; width:-moz-calc(50% - 50px); width:-webkit-calc(50% - 50px); width:-o-calc(50% - 50px); width:calc(50% - 50px); }
+	.site-sidebar-first .block.well:nth-child(odd), .site-sidebar-second .block.well:nth-child(odd) {margin-right: 20px;}
 }
 
 /* landscape phone to portrait tablet */
