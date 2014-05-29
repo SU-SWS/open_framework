@@ -10,7 +10,7 @@ body.photobg { background-attachment:fixed !important; background-size:cover !im
 /* ----- borders -------------------- */
 .borders .sidebar .region, .borders .content-wrapper { padding:10px; border:1px solid #d4d4d4; }
 /* ------ rounded corners ----------- */
-.roundedcorners .sidebar .region, .roundedcorners .content-wrapper { padding:10px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; }
+.roundedcorners .sidebar .region, .roundedcorners .content-wrapper { -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; }
 /* global **************************** */
 /* ----- body ------------------------ */
 body { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
