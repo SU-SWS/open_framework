@@ -1,0 +1,33 @@
+/* Internet Explorer only */
+ .ie7 #header #logo, .ie8 #header #logo {
+    display: block;
+    float: left;
+    margin: 20px 20px 0 0;
+}
+.ie7 #name-and-slogan, .ie8 #name-and-slogan {
+    display: block;
+}
+.ie7 #block-search-form, .ie8 #block-search-form {
+    bottom: 50px;
+}
+.ie7 #block-search-form .btn-search {
+    margin-top: 10px;
+}
+.ie7 #block-search-form input, .ie8 #block-search-form input {
+    max-width: none;
+}
+.ie7 .postcard-left div {
+    float: left;
+    width: auto;
+}
+.ie7 .postcard-right div {
+    float: right;
+    width: auto;
+}
+.ie7 .postcard-left:after, .ie7 .postcard-right:after {
+    content:" ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}

@@ -1,0 +1,37 @@
+/* theme options ********************* */
+
+/* ----- front page title ------------ */
+.front .title {
+    display:none;
+}
+.front.show-title .title {
+    display:block;
+}
+/* ----- body background type -------- */
+ body.photobg {
+    background-attachment:fixed !important;
+    background-size:cover !important;
+}
+/* ----- background color ------------ */
+.bodybg .sidebar .region {
+    padding:10px;
+    background-color: #fff;
+    background-color:rgba(255, 255, 255, 0.9);
+}
+.bodybg .content-wrapper {
+    padding:10px;
+    background:#fff;
+}
+/* ----- borders -------------------- */
+.borders .sidebar .region, 
+.borders .content-wrapper {
+    padding:10px;
+    border:1px solid #d4d4d4;
+}
+/* ------ rounded corners ----------- */
+.roundedcorners .sidebar .region, 
+.roundedcorners .content-wrapper {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}

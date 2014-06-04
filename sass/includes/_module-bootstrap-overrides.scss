@@ -1,0 +1,69 @@
+/* ----- bootstrap overrides --------- */
+html.js input.form-autocomplete {
+    background-position:100% 8px;
+}
+html.js input.throbbing {
+    background-position:100% -12px;
+}
+@media (min-width: 980px) {
+    .site-sidebar-second .sidebar-content[class*="span"], 
+    .site-sidebar-second .sidebar-content {
+        float:none;
+        width:100%;
+    }
+}
+@media (min-width: 768px) {
+    .site-sidebar-first .sidebar-content[class*="span"], 
+    .site-sidebar-first .sidebar-content {
+        float:none;
+        width:100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .site-sidebar-second .sidebar-content[class*="span"] {
+        width:31.4917%;
+    }
+}
+.row-fluid[class*="span"] {
+    min-height:0;
+}
+[class*="span"].clear-row {
+    clear:both;
+}
+[class*="span"].next-row, 
+[class*="span"].clear-row {
+    margin-left:0;
+}
+.form-actions {
+    margin-top:0;
+    margin-bottom:0;
+    padding:0;
+    border-top:none;
+    background-color:transparent;
+}
+.navbar-inner {
+    min-height:0;
+}
+.dropdown-menu .active > a, 
+.dropdown-menu .active > a:hover {
+    color:#fff;
+}
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    margin-bottom:0;
+}
