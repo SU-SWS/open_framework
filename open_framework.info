@@ -6,7 +6,6 @@ version = 7.x-3.0-dev
 stylesheets[all][] = packages/bootstrap-2.3.1/css/bootstrap.min.css
 stylesheets[all][] = packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css
 stylesheets[all][] = packages/font-awesome-3.2.1/css/font-awesome.min.css
-stylesheets[all][] = packages/font-awesome-4.1.0/css/font-awesome.min.css
 stylesheets[all][] = css/open_framework.css
 stylesheets[print][] = css/open_framework_print.css
 
