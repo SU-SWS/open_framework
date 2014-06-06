@@ -12,7 +12,7 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <!--[if IE 7]>
-  <link rel="stylesheet" href="<?php print base_path() . drupal_get_path('theme', 'open_framework') . '/packages/font-awesome/css/font-awesome-ie7.min.css'; ?>">
+  <link rel="stylesheet" href="<?php print base_path() . drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-3.2.1/css/font-awesome-ie7.min.css'; ?>">
   <![endif]-->
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
