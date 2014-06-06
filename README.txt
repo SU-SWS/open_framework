@@ -1,5 +1,7 @@
 Open Framework Theme for Drupal 7.x
 
+Authors: Brian Young, Megan Erin Miller
+
 -- SUMMARY -- 
 
 Open Framework is a new Drupal theme that builds off of Twitter Bootstrap and provides a simple yet powerful way to create complex responsive layouts.  For more information, visit http://openframework.stanford.edu

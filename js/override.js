@@ -17,6 +17,12 @@ Drupal.behaviors.open_framework_override = {
       .find('ul a')
         .removeAttr('data-toggle')
         .removeAttr('data-target')
+		
+    // Bootstrap Menu Block behavior in sidebar
+	$('.sidebar .block-menu-block ul.menu.nav a').removeAttr('data-toggle');
+    $('.sidebar .block-menu-block ul.menu.nav a').removeAttr('data-target');
+	$('.sidebar .block-menu-block ul.menu.nav li').removeClass('dropdown-submenu');
+	$('.sidebar .block-menu-block ul.menu.nav ul').removeClass('dropdown-menu');
 
     // Set up theme specific responsive behaviors
     function responsive_behaviors () {
@@ -25,90 +31,92 @@ Drupal.behaviors.open_framework_override = {
       if (width < 751) {
         $('nav li li.expanded').removeClass('dropdown-submenu');
         $('nav ul ul ul').removeClass('dropdown-menu');
+		$('div.next-row').addClass('clear-row');
       }
 
       else {
         $('nav li li.expanded').addClass('dropdown-submenu');
         $('nav ul ul ul').addClass('dropdown-menu');
+        $('div.next-row').removeClass('clear-row');
       }
 
       if ((width >= 751) && (width < 963)) {
         $('.two-sidebars')
           .find('.site-sidebar-first')
-            .removeClass('col-lg-3')
-            .addClass('col-lg-4')
+            .removeClass('span3')
+            .addClass('span4')
           .end()
           .find('.site-sidebar-second')
-            .removeClass('col-lg-3')
-            .addClass('col-lg-12')
+            .removeClass('span3')
+            .addClass('span12')
           .end()
           .find('.mc-content')
-            .removeClass('col-lg-6')
-            .addClass('col-lg-8')
+            .removeClass('span6')
+            .addClass('span8')
           .end()
           .find('.region-sidebar-second .block')
-            .addClass('col-lg-4')
+            .addClass('span4')
           .end();
         $('.sidebar-first')
           .find('.site-sidebar-first')
-            .removeClass('col-lg-3')
-            .addClass('col-lg-4')
+            .removeClass('span3')
+            .addClass('span4')
           .end()
           .find('.mc-content')
-            .removeClass('col-lg-9')
-            .addClass('col-lg-8')
+            .removeClass('span9')
+            .addClass('span8')
           .end();
         $('.sidebar-second')
           .find('.site-sidebar-second')
-            .removeClass('col-lg-3')
-            .addClass('col-lg-12')
+            .removeClass('span3')
+            .addClass('span12')
           .end()
           .find('.mc-content')
-            .removeClass('col-lg-9')
-            .addClass('col-lg-12')
+            .removeClass('span9')
+            .addClass('span12')
           .end()
           .find('.region-sidebar-second .block')
-            .addClass('col-lg-4')
+            .addClass('span4')
           .end();
       }
 
       else {
         $('.two-sidebars')
           .find('.site-sidebar-first')
-            .removeClass('col-lg-4')
-            .addClass('col-lg-3')
+            .removeClass('span4')
+            .addClass('span3')
           .end()
           .find('.site-sidebar-second')
-            .removeClass('col-lg-12')
-            .addClass('col-lg-3')
+            .removeClass('span12')
+            .addClass('span3')
           .end()
           .find('.mc-content')
-            .removeClass('col-lg-8')
-            .addClass('col-lg-6')
+            .removeClass('span8')
+            .addClass('span6')
           .end()
           .find('.region-sidebar-second .block')
-            .removeClass('col-lg-4')
+            .removeClass('span4')
           .end();
         $('.sidebar-first')
           .find('.site-sidebar-first')
-            .removeClass('col-lg-4')
-            .addClass('col-lg-3')
+            .removeClass('span4')
+            .addClass('span3')
           .end()
           .find('.mc-content')
-            .removeClass('col-lg-8')
-            .addClass('col-lg-9')
+            .removeClass('span8')
+            .addClass('span9')
           .end();
         $('.sidebar-second')
           .find('.site-sidebar-second')
-            .removeClass('col-lg-12')
-            .addClass('col-lg-3')
+            .removeClass('span12')
+            .addClass('span3')
           .end()
           .find('.mc-content')
-            .removeClass('col-lg-12')
-            .addClass('col-lg-9')
+            .removeClass('span12')
+            .addClass('span9')
           .end()
           .find('.region-sidebar-second .block')
-            .removeClass('col-lg-4')
+            .removeClass('span4')
           .end();
       }
     }

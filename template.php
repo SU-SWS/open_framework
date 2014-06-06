@@ -1,6 +1,7 @@
 <?php
 function open_framework_preprocess_html(&$vars) {
   // theme option variables
+  $vars['content_order_classes'] = theme_get_setting('content_order_classes'); 
   $vars['front_heading_classes'] = theme_get_setting('front_heading_classes'); 
   $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes'); 
   $vars['border_classes'] = theme_get_setting('border_classes'); 
@@ -8,31 +9,35 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_type'] = theme_get_setting('body_bg_type'); 
   $vars['body_bg_classes'] = theme_get_setting('body_bg_classes'); 
   $vars['body_bg_path'] = theme_get_setting('body_bg_path'); 
+  $vars['bootstrap_version'] = theme_get_setting('bootstrap_version');
+  $vars['font_awesome_version'] = theme_get_setting('font_awesome_version'); 
 }
 
 function open_framework_js_alter(&$javascript) {
-  // Update jquery version for non-administration pages
-  if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
+  // Update jquery version for non-administration pages  
+  if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools'  && !(module_exists('jquery_update'))) {
     $jquery_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js';
     $jquery_version = '1.9.1';
     $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.2.1.min.js';
     $migrate_version = '1.2.1';
+	$form_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-form-3.31.0.min.js';
+    $form_version = '3.31.0'; 
     $javascript['misc/jquery.js']['data'] = $jquery_file;
-    $javascript['misc/jquery.js']['type'] = 'file';
-    $javascript['misc/jquery.js']['scope'] = 'header';
-    $javascript['misc/jquery.js']['group'] = -101;
-    $javascript['misc/jquery.js']['every_page'] = TRUE;
-    $javascript['misc/jquery.js']['weight'] = 0;
     $javascript['misc/jquery.js']['version'] = $jquery_version;
-    $javascript['misc/jquery.js']['preprocess'] = TRUE;
-    $javascript['misc/jquery.js']['cache'] = TRUE;
-    $javascript['misc/jquery.js']['defer'] = FALSE;
+    $javascript['misc/jquery.js']['weight'] = 0;
+    $javascript['misc/jquery.js']['group'] = -101;
     drupal_add_js($migrate_file);
     if (isset($javascript["$migrate_file"])) {
       $javascript["$migrate_file"]['version'] = $migrate_version;
+      $javascript["$migrate_file"]['weight'] = 1;
       $javascript["$migrate_file"]['group'] = -101;
-	  $javascript["$migrate_file"]['weight'] = 1;
     }
+	if (isset($javascript['misc/jquery.form.js'])) {
+      $javascript['misc/jquery.form.js']['data'] = $form_file;
+      $javascript['misc/jquery.form.js']['version'] = $form_version;
+      $javascript['misc/jquery.form.js']['weight'] = 2;
+      $javascript['misc/jquery.form.js']['group'] = -101;
+    } 
   }
 }
 
@@ -73,7 +78,10 @@ function open_framework_preprocess_page(&$vars) {
     // Provide default theme wrapper function
     $vars['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
   }
-
+  
+  // Checks if tabs are set
+  if (!isset($vars['tabs']['#primary'])) $vars['tabs']['#primary'] = FALSE;
+  
   // Replace tabs with drop down version
   $vars['tabs']['#primary'] = _bootstrap_local_tasks($vars['tabs']['#primary']);
   
@@ -267,7 +275,7 @@ function open_framework_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['class'][] = 'input-medium search-query';
     $form['search_block_form']['#attributes']['placeholder'] = t('Search this site...');
     $form['actions']['submit']['#attributes']['class'][] = 'btn-search';
-    $form['actions']['submit']['#attributes']['alt'] = t('Search button');
+    $form['actions']['submit']['#attributes']['alt'] = t('Search');
     unset($form['actions']['submit']['#value']);    
     $form['actions']['submit']['#type'] = 'image_button';
     $form['actions']['submit']['#src'] = drupal_get_path('theme', 'open_framework') . '/images/searchbutton.png';
@@ -436,58 +444,6 @@ function _bootstrap_local_tasks($tabs = FALSE) {
   return $tabs;
 }
 
-function open_framework_item_list($variables) {
-  $items = $variables['items'];
-  $title = $variables['title'];
-  $type = $variables['type'];
-  $attributes = $variables['attributes'];
-  $output = '';
-
-  if (isset($title)) {
-    $output .= '<h3>' . $title . '</h3>';
-  }
-
-  if (!empty($items)) {
-    $output .= "<$type" . drupal_attributes($attributes) . '>';
-    $num_items = count($items);
-    foreach ($items as $i => $item) {
-      $attributes = array();
-      $children = array();
-      $data = '';
-      if (is_array($item)) {
-        foreach ($item as $key => $value) {
-          if ($key == 'data') {
-            $data = $value;
-          }
-          elseif ($key == 'children') {
-            $children = $value;
-          }
-          else {
-            $attributes[$key] = $value;
-          }
-        }
-      }
-      else {
-        $data = $item;
-      }
-      if (count($children) > 0) {
-        // Render nested list.
-        $data .= theme_item_list(array('items' => $children, 'title' => NULL, 'type' => $type, 'attributes' => $attributes));
-      }
-      if ($i == 0) {
-        $attributes['class'][] = 'first';
-      }
-      if ($i == $num_items - 1) {
-        $attributes['class'][] = 'last';
-      }
-      $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
-    }
-    $output .= "</$type>";
-  }
- 
-  return $output;
-}
-
 /*
  *  Find out if an element (a menu link) is a link displayed in the
  *  navigation region for the user. We return true by default if this is a 
@@ -580,4 +536,26 @@ function open_framework_block_id_to_function_name ($id) {
   $name = 'menu_link__' . $id;
 
   return $name;
+}
+
+/*
+ *  Show or hide breadcrumb based on theme setting selection
+ */
+ 
+function open_framework_breadcrumb(&$variables) {
+  $output = '';
+  $breadcrumb = $variables['breadcrumb'];
+  $show_breadcrumb = theme_get_setting('breadcrumb_classes');
+  if ($show_breadcrumb == 'show-breadcrumb ') {
+    if (!empty($breadcrumb)) {
+      // Provide a navigational heading to give context for breadcrumb links to
+      // screen-reader users. Make the heading invisible with .element-invisible.
+      $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+
+      $output .= '<div class="breadcrumb">' . implode(' » ', $breadcrumb) . '</div>';
+    } else {
+      $output = '<div class="breadcrumb">' . t('Home') . '</div>';
+    }
+  }
+  return $output;
 }

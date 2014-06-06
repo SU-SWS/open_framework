@@ -29,30 +29,56 @@ Drupal.behaviors.open_framework = {
     // Hide border for image links
     $('a:has(img)').css('border', 'none');
 	
-	// Equal Column Height
-	var width = $(window).width();			
-	if (width >= 751) {
-		  var currentTallest = 0;
-		  var currentRowStart = 0;
-		  var rowDivs = new Array();
-		  $('div.column').each(function(index) {
-		  if(currentRowStart != $(this).position().top) {
-		  // we just came to a new row. Set all the heights on the completed row
-		  for(currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) rowDivs[currentDiv].height(currentTallest);
-		  // set the variables for the new row
-		  rowDivs.length = 0; // empty the array
-		  currentRowStart = $(this).position().top;
-		  currentTallest = $(this).height();
-		  rowDivs.push($(this));
-		  } else {
-		  // another div on the current row. Add it to the list and check if it's taller
-		  rowDivs.push($(this));
-		  currentTallest = (currentTallest < $(this).height()) ? ($(this).height()) : (currentTallest);
-		  }
-		  // do the last row
-		  for(currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) rowDivs[currentDiv].height(currentTallest);
-		  });
+	// Equal Column Height on load and resize
+	// Credit: http://codepen.io/micahgodbolt/pen/FgqLc
+	equalheight = function(container){
+
+	var currentTallest = 0,
+		 currentRowStart = 0,
+		 rowDivs = new Array(),
+		 $el,
+		 topPosition = 0;
+	 $(container).each(function() {
+	
+	   $el = $(this);
+	   $($el).height('auto')
+	   topPostion = $el.position().top;
+	
+	   if (currentRowStart != topPostion) {
+		 for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		   rowDivs[currentDiv].height(currentTallest);
+		 }
+		 rowDivs.length = 0; // empty the array
+		 currentRowStart = topPostion;
+		 currentTallest = $el.height();
+		 rowDivs.push($el);
+	   } else {
+		 rowDivs.push($el);
+		 currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+	  }
+	   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		 rowDivs[currentDiv].height(currentTallest);
+	   }
+	 });
 	}
+	
+	$(window).load(function() {
+	  equalheight('.column');
+	});
+	
+	$(window).resize(function(){
+	  equalheight('.column');
+	});
+
+		
+	// Add keyboard focus to .element-focusable elements in webkit browsers.
+	$('.element-focusable').on('click', function() {
+		$($(this).attr('href')).attr('tabindex', '-1').focus();
+		});
+		
+	// Add placeholder value support for older browsers
+    $('input, textarea').placeholder();
+
   }
 }
 

@@ -1,19 +1,22 @@
 name = Open Framework
 description = Responsive base theme built with Twitter Bootstrap. Learn more at the <a href="http://openframework.stanford.edu">Open Framework website</a>.
 core = 7.x
-version = 3.0
+version = 7.x-3.0-dev
 
-stylesheets[all][] = bootstrap/css/bootstrap.min.css
-stylesheets[all][] = fontawesome/css/font-awesome.min.css
+stylesheets[all][] = packages/bootstrap-2.3.1/css/bootstrap.min.css
+stylesheets[all][] = packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css
+stylesheets[all][] = packages/font-awesome-3.2.1/css/font-awesome.min.css
+stylesheets[all][] = packages/font-awesome-4.1.0/css/font-awesome.min.css
 stylesheets[all][] = css/open_framework.css
 stylesheets[print][] = css/open_framework_print.css
-stylesheets[all][] = css/ie.css
 
-scripts[] = bootstrap/js/bootstrap.min.js
+scripts[] = packages/bootstrap-2.3.1/js/bootstrap.min.js
 scripts[] = js/open_framework.js
+scripts[] = js/jquery.placeholder.min.js
 scripts[] = js/override.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
+regions[site_login] = Site: Login
 regions[header] = Header
 regions[navigation] = Navigation
 regions[search_box] = Search Box
@@ -45,6 +48,9 @@ regions[main_bottom] = Main: Bottom
 regions[footer] = Footer
 
 ; Settings
+settings[bootstrap_version] = 'bootstrap-2.3.1'
+settings[font_awesome_version] = 'font-awesome-3.2.1'
+settings[content_order_classes] = ''
 settings[front_heading_classes] = ''
 settings[breadcrumb_classes] = ''
 settings[body_bg_type] = ''

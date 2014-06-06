@@ -1,5 +1,53 @@
 <?php
 function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
+
+  // Packages
+  $form['packages_container'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Packages'),
+    '#description' => t('Select your framework and font packages.'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  
+  $form['packages_container']['bootstrap_version'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Bootstrap'),
+    '#default_value' => theme_get_setting('bootstrap_version'),
+    '#options'       => array(
+      'bootstrap-2.3.1' => t('<a href="http://getbootstrap.com/2.3.2/">Version 2.3.1</a> - <strong><em>Default</em></strong>'),
+      'bootstrap-3.1.1' => t('<a href="http://getbootstrap.com">Version 3.1.1</a>'),
+    ),
+  );
+
+  $form['packages_container']['font_awesome_version'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Font Awesome'),
+    '#default_value' => theme_get_setting('font_awesome_version'),
+    '#options'       => array(
+      'font-awesome-3.2.1' => t('<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/">Version 3.2.1</a> - <strong><em>Default</em></strong>'),
+      'font-awesome-4.1.0' => t('<a href="http://fortawesome.github.io/Font-Awesome/">Version 4.1.0</a>'),
+    ),
+  );
+
+  // Responsive Behavior
+  $form['responsive_container'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Responsive'),
+    '#description' => t('Use these settings to adjust the responsive behavior.'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+  );
+  
+  $form['responsive_container']['content_order_classes'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Content order in mobile'),
+    '#default_value' => theme_get_setting('content_order_classes'),
+    '#options'       => array(
+      '' => t('Show first sidebar content before main content - <strong><em>Default</em></strong>'),
+	    'content-first ' => t('Show main content before sidebar content'),
+    ),
+  );
  
   // Page Layout
   $form['layout_container'] = array(
@@ -9,14 +57,14 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
   );
-    
+      
   $form['layout_container']['front_heading_classes'] = array(
     '#type'          => 'radios',
     '#title'         => t('Page heading'),
     '#default_value' => theme_get_setting('front_heading_classes'),
     '#options'       => array(
       '' => t('Hide heading on front page - <strong><em>Default</em></strong>'),
-	  'show-title ' => t('Show heading on front page'),
+	    'show-title ' => t('Show heading on front page'),
     ),
   );
 
@@ -26,37 +74,27 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('breadcrumb_classes'),
     '#options'       => array(
       '' => t('Hide breadcrumbs - <strong><em>Default</em></strong>'),
-	  'show-breadcrumb ' => t('Show breadcrumbs'),
+	    'show-breadcrumb ' => t('Show breadcrumbs'),
     ),
   );
-    
+      
   // Background Section
   $form['background_container'] = array(
     '#type' => 'fieldset',
-    '#title' => t('Background Images'),
-    '#description' => t('Use these settings to select different background images.'),
+    '#title' => t('Body background'),
+    '#description' => t('Use these settings to select a different body background image.'),
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
   );
   
   // Body Background Image
-  $form['background_container']['body_bg_type'] = array(
-    '#type'          => 'radios',
-    '#title'         => t('Body background image type'),
-    '#default_value' => theme_get_setting('body_bg_type'),
-    '#options'       => array(
-      '' => t('Wallpaper pattern - <strong><em>Default</em></strong>'),
-	  'photobg ' => t('Photo image'),
-    ),
-  );
-  
  $form['background_container']['body_bg_classes'] = array(
     '#type'          => 'radios',
-    '#title'         => t('Body background image'),
+    '#title'         => t('Enable body background image'),
     '#default_value' => theme_get_setting('body_bg_classes'),
     '#options'       => array(
       '' => t('None - <strong><em>Default</em></strong>'),
-	  'bodybg ' => t('Use my image (upload below):'),
+	    'bodybg ' => t('Use my image (upload below):'),
     ),
   );
    
@@ -69,7 +107,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
   // Helpful text showing the file name, disabled to avoid the user thinking it can be used for any purpose.
   $form['background_container']['body_bg_path'] = array(
     '#type' => 'hidden',
-    '#title' => 'Path to background image',
+    '#title' => 'Path to body background image',
     '#default_value' => $body_bg_path,
   );
   if (!empty($body_bg_path)) {
@@ -82,8 +120,19 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
   // Upload field
   $form['background_container']['body_bg_upload'] = array(
     '#type' => 'file',
-    '#title' => 'Upload background image',
+    '#title' => 'Upload body background image',
     '#description' => 'You can upload the following image file types: *.jpg, *.gif, or *.png',
+  );
+  
+  // Body Background Image Style
+  $form['background_container']['body_bg_type'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Choose body background style'),
+    '#default_value' => theme_get_setting('body_bg_type'),
+    '#options'       => array(
+      '' => t('Wallpaper pattern - <strong><em>Default</em></strong>'),
+	    'photobg ' => t('Stretch to fill body'),
+    ),
   );
   
   // Border Style
@@ -100,7 +149,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'         => t('Border style for content section'),
     '#default_value' => theme_get_setting('border_classes'),
     '#options'       => array(
-	  '' => t('No borders - <strong><em>Default</em></strong>'),
+	    '' => t('No borders - <strong><em>Default</em></strong>'),
       'borders' => t('Show borders'),
     ),
   );
@@ -110,7 +159,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'         => t('Corner style'),
     '#default_value' => theme_get_setting('corner_classes'),
     '#options'       => array(
-	  '' => t('Straight corners - <strong><em>Default</em></strong>'),
+	    '' => t('Straight corners - <strong><em>Default</em></strong>'),
       'roundedcorners' => t('Rounded corners (not supported in Internet Explorer 8 or below)'),
     ),
   );

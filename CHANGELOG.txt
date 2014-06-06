@@ -1,3 +1,51 @@
+Version 7.x-2.1-beta1
+------------------------------
+by hyperboy: Removed nested container div in navbar region
+by hyperboy: Added IE 7 support for postcard layouts
+by hyperboy: Adjusted responsive ratios for 3-col-flow and 4-col-flow blocks at tablet breakpoint
+by hyperboy: Made equal column height class dynamic on window resize
+by hyperboy: Removed alternative main navigation style
+by meganem: Added overflow auto to postcards
+by meganem: Fixed focus visibility on form-submit buttons
+by meganem: Added line height and margins to field labels
+by hyperboy: Added IE support for placeholder values
+by hyperboy: Removed more-line hover, active, and focus link styles
+by hyperboy: Changed more-link to use CSS not image
+by hyperboy: Updated skip to content link to point to #main instead of #content
+by hyperboy: Updated mobile display of float-left and float-right classes
+by meganem: Adding views-row-lines class
+by hyperboy: Removed bootstrap transparent background print style
+by hyperboy: Updated body background theme option settings
+by hyperboy: Removed bottom margin in content-head div
+by meganem: Updated vendor prefixes on views grids, and adding responsive for grid-five
+by hyperboy: Updated "hamburger" menu link to use button tag.
+by jbickar: Added .visually-hidden class
+
+Version 7.x-2.06
+------------------------------
+by hyperboy: Reverted to Bootstrap 2.3.1 to enable access to nested main menu list items on touch devices
+
+Version 7.x-2.05
+------------------------------
+by agold2: Restored Bootstrap's pull-right class float:right behavior blocks in the navigation region
+by meganem: Updated CSS classes for float-right, collapsable fieldsets, and images
+by meganem: Added collapsed class to navbar
+by meganem: Made search box styles work outside of the search box region
+by meganem: Made float styles available in WYSIWYG preview
+by jbickar: Added accessibility improvements to search box
+by hyperboy: Added accessibility improvements to skip navigation links
+by hyperboy: Added theme option for displaying main content before sidebar content in mobile
+by hyperboy: Added equal-height column behavior via "column" class
+by hyperboy: Added responsive support for iframes and video players via the "video-player" class
+by hyperboy: Added logic to node.tpl.php to not output the node content if it is empty
+by codelica: Added jQuery Update module compatibility in core jQuery replacement behavior
+by hyperboy: Updated theme options breadcrumbs and photo background
+by ebollens: Fixed nav-search class typo in open_framework.css
+by hyperboy: Added Font Awesome IE 7 support
+by hyperboy: Updated Bootstrap to version 2.3.2
+by hyperboy: Updated to Font Awesome 3.2.1
+by hyperboy: Updated HTML5 Shiv to version 3.6.2
+
 Version 7.x-2.04
 ------------------------------
 by meganem: Updated general CSS
