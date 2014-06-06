@@ -9,8 +9,6 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_type'] = theme_get_setting('body_bg_type'); 
   $vars['body_bg_classes'] = theme_get_setting('body_bg_classes'); 
   $vars['body_bg_path'] = theme_get_setting('body_bg_path'); 
-  $vars['bootstrap_version'] = theme_get_setting('bootstrap_version');
-  $vars['font_awesome_version'] = theme_get_setting('font_awesome_version'); 
 }
 
 function open_framework_js_alter(&$javascript) {
@@ -42,6 +40,32 @@ function open_framework_js_alter(&$javascript) {
 }
 
 function open_framework_preprocess_page(&$vars) { 
+  // theme option variables
+  $bootstrap_version = theme_get_setting('bootstrap_version');
+  $font_awesome_version = theme_get_setting('font_awesome_version'); 
+
+  // Bootstrap
+  if ($bootstrap_version == 'bootstrap-2.3.1') {
+  drupal_add_css(path_to_theme() . '/packages/bootstrap-2.3.1/css/bootstrap.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  drupal_add_css(path_to_theme() . '/packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  drupal_add_js(path_to_theme() . '/packages/bootstrap-2.3.1/js/bootstrap.min.js');
+  }
+
+  if ($bootstrap_version == 'bootstrap-3.1.1') {
+  drupal_add_css(path_to_theme() . '/packages/bootstrap-3.1.1/css/bootstrap.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  drupal_add_css(path_to_theme() . '/packages/bootstrap-3.1.1/css/bootstrap-theme.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  drupal_add_js(path_to_theme() . '/packages/bootstrap-3.1.1/js/bootstrap.min.js');
+  }
+
+  // Font Awesome
+  if ($font_awesome_version == 'font-awesome-3.2.1') {
+  drupal_add_css(path_to_theme() . '/packages/font-awesome-3.2.1/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  }
+
+  if ($font_awesome_version == 'font-awesome-4.1.0') {
+  drupal_add_css(path_to_theme() . '/packages/font-awesome-4.1.0/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  }
+
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.

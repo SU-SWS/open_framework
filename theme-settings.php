@@ -15,8 +15,8 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'         => t('Bootstrap'),
     '#default_value' => theme_get_setting('bootstrap_version'),
     '#options'       => array(
-      'bootstrap-2.3.1' => t('<a href="http://getbootstrap.com/2.3.2/">Version 2.3.1</a> - <strong><em>Default</em></strong>'),
-      'bootstrap-3.1.1' => t('<a href="http://getbootstrap.com">Version 3.1.1</a>'),
+      'bootstrap-2.3.1' => t('Version 2.3.1 [<a href="http://getbootstrap.com/2.3.2/">documentation</a>] - <strong><em>Default</em></strong>'),
+      'bootstrap-3.1.1' => t('Version 3.1.1 [<a href="http://getbootstrap.com">documentation</a>]'),
     ),
   );
 
@@ -25,8 +25,8 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'         => t('Font Awesome'),
     '#default_value' => theme_get_setting('font_awesome_version'),
     '#options'       => array(
-      'font-awesome-3.2.1' => t('<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/">Version 3.2.1</a> - <strong><em>Default</em></strong>'),
-      'font-awesome-4.1.0' => t('<a href="http://fortawesome.github.io/Font-Awesome/">Version 4.1.0</a>'),
+      'font-awesome-3.2.1' => t('Version 3.2.1 [<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/" title="Bootstrap 3.2.1 official documentation">documentation</a>] - <strong><em>Default</em></strong>'),
+      'font-awesome-4.1.0' => t('Version 4.1.0 [<a href="http://fortawesome.github.io/Font-Awesome/" title="Bootstrap 4.1.0 official documentation">documentation</a>]'),
     ),
   );
 
