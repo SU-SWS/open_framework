@@ -95,12 +95,12 @@
     <?php endif; ?>
     <div id="main-content" class="row main-content">
       <?php if ($page['sidebar_first']): ?>
-      <div id="sidebar-first" class="sidebar span3 site-sidebar-first">
+      <div id="sidebar-first" class="sidebar span3 col-md-3 site-sidebar-first">
         <div class="row-fluid"><?php print render($page['sidebar_first']); ?></div>
       </div>
       <!-- /#sidebar-first -->
       <?php endif; ?>
-      <div id="content" class="mc-content <?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span6'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span9'; else: print 'span12'; endif; ?>">
+      <div id="content" class="mc-content <?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span6 col-md-6'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span9 col-md-9'; else: print 'span12'; endif; ?>">
         <div id="content-wrapper" class="content-wrapper">
           <div id="content-head" class="row-fluid content-head">
             <?php if ($page['highlighted']): ?>
@@ -141,13 +141,13 @@
           <?php if (($page['content_col2-1']) || ($page['content_col2-2'])): ?>
           <div id="content-col2" class="row-fluid content-col2">
             <?php if ($page['content_col2-1']): ?>
-            <div class="span6">
-              <div id="content-col2-1" class="span12 clearfix clear-row"> <?php print render($page['content_col2-1']); ?> </div>
+            <div class="span6 col-md-6">
+              <div id="content-col2-1" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col2-1']); ?> </div>
             </div>
             <?php endif; ?>
             <?php if ($page['content_col2-2']): ?>
-            <div class="span6">
-              <div id="content-col2-2" class="span12 clearfix clear-row"> <?php print render($page['content_col2-2']); ?> </div>
+            <div class="span6 col-md-6">
+              <div id="content-col2-2" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col2-2']); ?> </div>
             </div>
             <?php endif; ?>
           </div>
@@ -158,18 +158,18 @@
           <?php if (($page['content_col3-1']) || ($page['content_col3-2']) || ($page['content_col3-3'])): ?>
           <div id="content-col3" class="row-fluid content-col3">
             <?php if ($page['content_col3-1']): ?>
-            <div class="span4">
-              <div id="content-col3-1" class="span12 clearfix clear-row"> <?php print render($page['content_col3-1']); ?> </div>
+            <div class="span4 col-md-4">
+              <div id="content-col3-1" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col3-1']); ?> </div>
             </div>
             <?php endif; ?>
             <?php if ($page['content_col3-2']): ?>
-            <div class="span4">
-              <div id="content-col3-2" class="span12 clearfix clear-row"> <?php print render($page['content_col3-2']); ?> </div>
+            <div class="span4 col-md-4">
+              <div id="content-col3-2" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col3-2']); ?> </div>
             </div>
             <?php endif; ?>
             <?php if ($page['content_col3-3']): ?>
-            <div class="span4">
-              <div id="content-col3-3" class="span12 clearfix clear-row"> <?php print render($page['content_col3-3']); ?> </div>
+            <div class="span4 col-md-4">
+              <div id="content-col3-3" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col3-3']); ?> </div>
             </div>
             <?php endif; ?>
           </div>
@@ -180,23 +180,23 @@
           <?php if (($page['content_col4-1']) || ($page['content_col4-2']) || ($page['content_col4-3']) || ($page['content_col4-4'])): ?>
           <div id="content-col4" class="row-fluid content-col4">
             <?php if ($page['content_col4-1']): ?>
-            <div class="span3">
-              <div id="content-col4-1" class="span12 clearfix clear-row"> <?php print render($page['content_col4-1']); ?> </div>
+            <div class="span3 col-md-3">
+              <div id="content-col4-1" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col4-1']); ?> </div>
             </div>
             <?php endif; ?>
             <?php if ($page['content_col4-2']): ?>
-            <div class="span3">
-              <div id="content-col4-2" class="span12 clearfix clear-row"> <?php print render($page['content_col4-2']); ?> </div>
+            <div class="span3 col-md-3">
+              <div id="content-col4-2" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col4-2']); ?> </div>
             </div>
             <?php endif; ?>
             <?php if ($page['content_col4-3']): ?>
-            <div class="span3">
-              <div id="content-col4-3" class="span12 clearfix clear-row"> <?php print render($page['content_col4-3']); ?> </div>
+            <div class="span3 col-md-3">
+              <div id="content-col4-3" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col4-3']); ?> </div>
             </div>
             <?php endif; ?>
             <?php if ($page['content_col4-4']): ?>
-            <div class="span3">
-              <div id="content-col4-4" class="span12 clearfix clear-row"> <?php print render($page['content_col4-4']); ?> </div>
+            <div class="span3 col-md-3">
+              <div id="content-col4-4" class="span12 col-md-12 clearfix clear-row"> <?php print render($page['content_col4-4']); ?> </div>
             </div>
             <?php endif; ?>
           </div>
@@ -212,7 +212,7 @@
       </div>
       <!-- /#content -->
       <?php if ($page['sidebar_second']): ?>
-      <div id="sidebar-second" class="sidebar span3 site-sidebar-second">
+      <div id="sidebar-second" class="sidebar span3 col-md-3 site-sidebar-second">
         <div class="row-fluid"><?php print render($page['sidebar_second']); ?></div>
       </div>
       <!-- /#sidebar-second -->
