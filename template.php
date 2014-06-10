@@ -1,25 +1,25 @@
 <?php
 function open_framework_preprocess_html(&$vars) {
   // theme option variables
-  $vars['content_order_classes'] = theme_get_setting('content_order_classes'); 
-  $vars['front_heading_classes'] = theme_get_setting('front_heading_classes'); 
-  $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes'); 
-  $vars['border_classes'] = theme_get_setting('border_classes'); 
-  $vars['corner_classes'] = theme_get_setting('corner_classes'); 
-  $vars['body_bg_type'] = theme_get_setting('body_bg_type'); 
-  $vars['body_bg_classes'] = theme_get_setting('body_bg_classes'); 
-  $vars['body_bg_path'] = theme_get_setting('body_bg_path'); 
+  $vars['content_order_classes'] = theme_get_setting('content_order_classes');
+  $vars['front_heading_classes'] = theme_get_setting('front_heading_classes');
+  $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes');
+  $vars['border_classes'] = theme_get_setting('border_classes');
+  $vars['corner_classes'] = theme_get_setting('corner_classes');
+  $vars['body_bg_type'] = theme_get_setting('body_bg_type');
+  $vars['body_bg_classes'] = theme_get_setting('body_bg_classes');
+  $vars['body_bg_path'] = theme_get_setting('body_bg_path');
 }
 
 function open_framework_js_alter(&$javascript) {
-  // Update jquery version for non-administration pages  
+  // Update jquery version for non-administration pages
   if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools'  && !(module_exists('jquery_update'))) {
     $jquery_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-1.9.1.min.js';
     $jquery_version = '1.9.1';
     $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.2.1.min.js';
     $migrate_version = '1.2.1';
 	$form_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-form-3.31.0.min.js';
-    $form_version = '3.31.0'; 
+    $form_version = '3.31.0';
     $javascript['misc/jquery.js']['data'] = $jquery_file;
     $javascript['misc/jquery.js']['version'] = $jquery_version;
     $javascript['misc/jquery.js']['weight'] = 0;
@@ -35,11 +35,11 @@ function open_framework_js_alter(&$javascript) {
       $javascript['misc/jquery.form.js']['version'] = $form_version;
       $javascript['misc/jquery.form.js']['weight'] = 2;
       $javascript['misc/jquery.form.js']['group'] = -101;
-    } 
+    }
   }
 }
 
-function open_framework_preprocess_page(&$vars) { 
+function open_framework_preprocess_page(&$vars) {
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
@@ -58,7 +58,7 @@ function open_framework_preprocess_page(&$vars) {
 
   // Add the rendered output to the $main_menu_expanded variables
   $vars['main_menu_expanded'] = menu_tree_output($main_menu_tree);
-  
+
     // Primary nav
   $vars['primary_nav'] = FALSE;
   if ($vars['main_menu']) {
@@ -76,16 +76,16 @@ function open_framework_preprocess_page(&$vars) {
     // Provide default theme wrapper function
     $vars['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
   }
-  
+
   // Checks if tabs are set
   if (!isset($vars['tabs']['#primary'])) $vars['tabs']['#primary'] = FALSE;
-  
+
   // Replace tabs with drop down version
   $vars['tabs']['#primary'] = _bootstrap_local_tasks($vars['tabs']['#primary']);
-  
+
   // Add variable for site title
   $vars['my_site_title'] = variable_get('site_name');
-  
+
 }
 
 function open_framework_preprocess_block(&$vars) {
@@ -133,7 +133,7 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
   // @petechen (6.27.12) This method of applying a value to span assumes that there
   // is at least 1 block. If there are no blocks, you end up with a calculation
   // dividing by 0 generating a php error. Suggest the following change:
-  
+
   // default span if calculations fail
   // Use this default value instead as an "else" condition below:
   // $span = 12;
@@ -154,7 +154,7 @@ function open_framework_get_span($block_count, $block_id, $count_sidebars) {
   }
 
   // @petechen - surroung this condition with another if else to account for $block_count = 0
-  
+
   if ($block_count != 0) {
 
   // if the number of blocks divides evenly into the available width, that's our span width
@@ -235,11 +235,11 @@ function open_framework_status_messages($variables) {
   foreach (drupal_get_messages($display) as $type => $messages) {
     $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
     $output .= "<div class=\"alert alert-block$class\">\n";
-	
+
     if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
     $output .= "  <a class=\"close\" data-dismiss=\"alert\" href=\"#\">x</a>\n";
 	}
-	
+
     if (!empty($status_heading[$type])) {
       $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
     }
@@ -274,7 +274,7 @@ function open_framework_form_alter(&$form, &$form_state, $form_id) {
     $form['search_block_form']['#attributes']['placeholder'] = t('Search this site...');
     $form['actions']['submit']['#attributes']['class'][] = 'btn-search';
     $form['actions']['submit']['#attributes']['alt'] = t('Search');
-    unset($form['actions']['submit']['#value']);    
+    unset($form['actions']['submit']['#value']);
     $form['actions']['submit']['#type'] = 'image_button';
     $form['actions']['submit']['#src'] = drupal_get_path('theme', 'open_framework') . '/images/searchbutton.png';
   }
@@ -331,7 +331,7 @@ function open_framework_menu_tree(&$vars) {
 
 /*
  * Implements hook_menu_link
- * Apply bootstrap menu classes to all menu blocks in the 
+ * Apply bootstrap menu classes to all menu blocks in the
  * navigation region and the main-menu block by default.
  * Note: if a menu is in the navigation and somewhere else as well,
  *       both instances of the menu will have the classes applied,
@@ -390,11 +390,11 @@ function _bootstrap_local_tasks($tabs = FALSE) {
   if ($tabs == '') {
     return $tabs;
   }
-  
+
   if (!$tabs) {
     $tabs = menu_primary_local_tasks();
   }
-  
+
   foreach ($tabs as $key => $element) {
     $result = db_select('menu_router', NULL, array('fetch' => PDO::FETCH_ASSOC))
       ->fields('menu_router')
@@ -404,21 +404,21 @@ function _bootstrap_local_tasks($tabs = FALSE) {
       ->orderBy('weight')
       ->orderBy('title')
       ->execute();
-  
+
     $router_item = menu_get_item($element['#link']['href']);
     $map = $router_item['original_map'];
-  
+
     $i = 0;
     foreach ($result as $item) {
       _menu_translate($item, $map, TRUE);
-  
+
       //only add items that we have access to
       if ($item['tab_parent'] && $item['access']) {
         //set path to that of parent for the first item
         if ($i === 0) {
           $item['href'] = $element['#link']['href'];
         }
-  
+
         if (current_path() == $item['href']) {
           $tabs[$key][] = array(
           '#theme' => 'menu_local_task',
@@ -432,19 +432,19 @@ function _bootstrap_local_tasks($tabs = FALSE) {
           '#link' => $item,
           );
         }
-  
+
         //only count items we have access to.
         $i++;
       }
     }
   }
-  
+
   return $tabs;
 }
 
 /*
  *  Find out if an element (a menu link) is a link displayed in the
- *  navigation region for the user. We return true by default if this is a 
+ *  navigation region for the user. We return true by default if this is a
  *  menu link in the main-menu. Open Framework treats the main-menu
  *  as being in the navigation by default.
  *  We are using the theming functions to figure out the block IDs.
@@ -457,7 +457,7 @@ function open_framework_is_in_nav_menu($element) {
 
   // #theme holds one or more suggestions for theming function names for the link
   // simplify things by casting into an array
-  $link_theming_functions = (array)$element['#theme'];
+  $link_theming_functions = (isset($element['#theme'])) ? (array)$element['#theme'] : array();
 
   // Avoid calculating this more than once
   $nav_theming_functions = &drupal_static(__FUNCTION__);
@@ -474,7 +474,7 @@ function open_framework_is_in_nav_menu($element) {
 	// If context is enabled, see if it has placed any blocks in the navigation area
 	// See: http://drupal.org/node/785350
     $context_blocks = array();
-	
+
 	if (module_exists('context')) {
 	  $reaction_block_plugin = context_get_plugin('reaction', 'block');
 	  $context_blocks = $reaction_block_plugin->block_list('navigation');
@@ -526,7 +526,7 @@ function open_framework_block_id_to_function_name ($id) {
 	// underscore. Not sure why this is different from other
 	// core modules
     $id = str_replace('menu_block_', 'menu_block__', $id);
-  } 
+  }
 
   // massage the id to looks like a theming function name
   // use the same function used to create the name of theming function
@@ -539,7 +539,7 @@ function open_framework_block_id_to_function_name ($id) {
 /*
  *  Show or hide breadcrumb based on theme setting selection
  */
- 
+
 function open_framework_breadcrumb(&$variables) {
   $output = '';
   $breadcrumb = $variables['breadcrumb'];
