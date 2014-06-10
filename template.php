@@ -514,7 +514,7 @@ function open_framework_is_in_nav_menu($element) {
 
   // #theme holds one or more suggestions for theming function names for the link
   // simplify things by casting into an array
-  $link_theming_functions = (array)$element['#theme'];
+  $link_theming_functions = (isset($element['#theme'])) ? (array)$element['#theme'] : array();
 
   // Avoid calculating this more than once
   $nav_theming_functions = &drupal_static(__FUNCTION__);
