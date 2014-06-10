@@ -47,26 +47,53 @@ function open_framework_preprocess_page(&$vars) {
   // Bootstrap
   $bootstrap_version = theme_get_setting('bootstrap_version');
 
-  if ($bootstrap_version == 'bootstrap-2.3.1') {
+  if ($bootstrap_version == 'bootstrap-2') {
   drupal_add_css(path_to_theme() . '/packages/bootstrap-2.3.1/css/bootstrap.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
   drupal_add_css(path_to_theme() . '/packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
   drupal_add_js(path_to_theme() . '/packages/bootstrap-2.3.1/js/bootstrap.min.js');
+  drupal_add_js(path_to_theme() . '/js/bootstrap-2-override.js');
+  $vars['row_fluid'] = "row-fluid";
+  $vars['segment1'] = "span1";
+  $vars['segment2'] = "span2";
+  $vars['segment3'] = "span3";
+  $vars['segment4'] = "span4";
+  $vars['segment5'] = "span5";
+  $vars['segment6'] = "span6";
+  $vars['segment7'] = "span7";
+  $vars['segment8'] = "span8";
+  $vars['segment9'] = "span9";
+  $vars['segment10'] = "span10";
+  $vars['segment11'] = "span11";
+  $vars['segment12'] = "span12";
   }
 
-  if ($bootstrap_version == 'bootstrap-3.1.1') {
+  if ($bootstrap_version == 'bootstrap-3') {
   drupal_add_css(path_to_theme() . '/packages/bootstrap-3.1.1/css/bootstrap.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
   drupal_add_css(path_to_theme() . '/packages/bootstrap-3.1.1/css/bootstrap-theme.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
   drupal_add_js(path_to_theme() . '/packages/bootstrap-3.1.1/js/bootstrap.min.js');
+  $vars['row_fluid'] = "row";
+  $vars['segment1'] = "col-md-1";
+  $vars['segment2'] = "col-md-2";
+  $vars['segment3'] = "col-md-3";
+  $vars['segment4'] = "col-md-4";
+  $vars['segment5'] = "col-md-5";
+  $vars['segment6'] = "col-md-6";
+  $vars['segment7'] = "col-md-7";
+  $vars['segment8'] = "col-md-8";
+  $vars['segment9'] = "col-md-9";
+  $vars['segment10'] = "col-md-10";
+  $vars['segment11'] = "col-md-11";
+  $vars['segment12'] = "col-md-12";
   }
 
   // Font Awesome
   $font_awesome_version = theme_get_setting('font_awesome_version');
-  
-  if ($font_awesome_version == 'font-awesome-3.2.1') {
+
+  if ($font_awesome_version == 'font-awesome-3') {
   drupal_add_css(path_to_theme() . '/packages/font-awesome-3.2.1/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
   }
 
-  if ($font_awesome_version == 'font-awesome-4.1.0') {
+  if ($font_awesome_version == 'font-awesome-4') {
   drupal_add_css(path_to_theme() . '/packages/font-awesome-4.1.0/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
   }
 

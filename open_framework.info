@@ -8,7 +8,6 @@ stylesheets[print][] = css/open_framework_print.css
 
 scripts[] = js/open_framework.js
 scripts[] = js/jquery.placeholder.min.js
-scripts[] = js/override.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
 regions[site_login] = Site: Login
@@ -43,8 +42,8 @@ regions[main_bottom] = Main: Bottom
 regions[footer] = Footer
 
 ; Settings
-settings[bootstrap_version] = 'bootstrap-2.3.1'
-settings[font_awesome_version] = 'font-awesome-3.2.1'
+settings[bootstrap_version] = 'bootstrap-2'
+settings[font_awesome_version] = 'font-awesome-3'
 settings[content_order_classes] = ''
 settings[front_heading_classes] = ''
 settings[breadcrumb_classes] = ''
