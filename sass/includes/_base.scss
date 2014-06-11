@@ -58,7 +58,7 @@ hr { clear:both; }
 #block-search-form .search-query { padding-right:38px; width:130px; }
 #block-search-form .btn-search { position:absolute; top:1px; right:10px; }
 #block-search-form input.btn-search:hover { opacity:.6; filter: alpha(opacity=60); }
-#block-search-form form { margin:0; }
+#block-search-form form { float: right; margin:0; }
 /* ----- logo ------------------------ */
 .header .site-logo { display:table-cell; vertical-align:middle; }
 .header .site-logo img { max-height:100px; max-width: none;}

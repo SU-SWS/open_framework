@@ -53,18 +53,18 @@ function open_framework_preprocess_page(&$vars) {
   drupal_add_js(path_to_theme() . '/packages/bootstrap-2.3.1/js/bootstrap.min.js');
   drupal_add_js(path_to_theme() . '/js/bootstrap-2-override.js');
   $vars['row_fluid'] = "row-fluid";
-  $vars['segment1'] = "span1";
-  $vars['segment2'] = "span2";
-  $vars['segment3'] = "span3";
-  $vars['segment4'] = "span4";
-  $vars['segment5'] = "span5";
-  $vars['segment6'] = "span6";
-  $vars['segment7'] = "span7";
-  $vars['segment8'] = "span8";
-  $vars['segment9'] = "span9";
-  $vars['segment10'] = "span10";
-  $vars['segment11'] = "span11";
-  $vars['segment12'] = "span12";
+  $vars['part1'] = "span1";
+  $vars['part2'] = "span2";
+  $vars['part3'] = "span3";
+  $vars['part4'] = "span4";
+  $vars['part5'] = "span5";
+  $vars['part6'] = "span6";
+  $vars['part7'] = "span7";
+  $vars['part8'] = "span8";
+  $vars['part9'] = "span9";
+  $vars['part10'] = "span10";
+  $vars['part11'] = "span11";
+  $vars['part12'] = "span12";
   }
 
   if ($bootstrap_version == 'bootstrap-3') {
@@ -72,18 +72,18 @@ function open_framework_preprocess_page(&$vars) {
   drupal_add_css(path_to_theme() . '/packages/bootstrap-3.1.1/css/bootstrap-theme.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
   drupal_add_js(path_to_theme() . '/packages/bootstrap-3.1.1/js/bootstrap.min.js');
   $vars['row_fluid'] = "row";
-  $vars['segment1'] = "col-md-1";
-  $vars['segment2'] = "col-md-2";
-  $vars['segment3'] = "col-md-3";
-  $vars['segment4'] = "col-md-4";
-  $vars['segment5'] = "col-md-5";
-  $vars['segment6'] = "col-md-6";
-  $vars['segment7'] = "col-md-7";
-  $vars['segment8'] = "col-md-8";
-  $vars['segment9'] = "col-md-9";
-  $vars['segment10'] = "col-md-10";
-  $vars['segment11'] = "col-md-11";
-  $vars['segment12'] = "col-md-12";
+  $vars['part1'] = "col-md-1";
+  $vars['part2'] = "col-md-2";
+  $vars['part3'] = "col-md-3";
+  $vars['part4'] = "col-md-4";
+  $vars['part5'] = "col-md-5";
+  $vars['part6'] = "col-md-6";
+  $vars['part7'] = "col-md-7";
+  $vars['part8'] = "col-md-8";
+  $vars['part9'] = "col-md-9";
+  $vars['part10'] = "col-md-10";
+  $vars['part11'] = "col-md-11";
+  $vars['part12'] = "col-md-12";
   }
 
   // Font Awesome
@@ -147,7 +147,45 @@ function open_framework_preprocess_page(&$vars) {
 
 function open_framework_preprocess_block(&$vars) {
   // Count number of blocks in a given theme region
-$vars['block_count'] = count(block_list($vars['block']->region));
+  $vars['block_count'] = count(block_list($vars['block']->region));
+
+
+  // theme option variables
+  $vars['bootstrap_version'] = theme_get_setting('bootstrap_version');
+  $vars['font_awesome_version'] = theme_get_setting('font_awesome_version'); 
+
+  // Bootstrap
+  $bootstrap_version = theme_get_setting('bootstrap_version');
+
+  if ($bootstrap_version == 'bootstrap-2') {
+  $vars['part1'] = "span1";
+  $vars['part2'] = "span2";
+  $vars['part3'] = "span3";
+  $vars['part4'] = "span4";
+  $vars['part5'] = "span5";
+  $vars['part6'] = "span6";
+  $vars['part7'] = "span7";
+  $vars['part8'] = "span8";
+  $vars['part9'] = "span9";
+  $vars['part10'] = "span10";
+  $vars['part11'] = "span11";
+  $vars['part12'] = "span12";
+  }
+
+  if ($bootstrap_version == 'bootstrap-3') {
+  $vars['part1'] = "col-md-1";
+  $vars['part2'] = "col-md-2";
+  $vars['part3'] = "col-md-3";
+  $vars['part4'] = "col-md-4";
+  $vars['part5'] = "col-md-5";
+  $vars['part6'] = "col-md-6";
+  $vars['part7'] = "col-md-7";
+  $vars['part8'] = "col-md-8";
+  $vars['part9'] = "col-md-9";
+  $vars['part10'] = "col-md-10";
+  $vars['part11'] = "col-md-11";
+  $vars['part12'] = "col-md-12";
+  }
 }
 
 /**
