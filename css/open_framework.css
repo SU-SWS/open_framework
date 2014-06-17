@@ -1314,20 +1314,33 @@ body.photobg {
 
 /* ----- background color ------------ */
 /* line 16, ../sass/includes/_module-theme-options.scss */
-.bodybg .sidebar .region {
+.bootstrap-2.bodybg .sidebar .region {
   padding: 10px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
 /* line 21, ../sass/includes/_module-theme-options.scss */
-.bodybg .content-wrapper {
+.bootstrap-2.bodybg .content-wrapper {
   padding: 10px;
   background: #fff;
 }
 
+/* line 26, ../sass/includes/_module-theme-options.scss */
+.bootstrap-3.bodybg .sidebar .region {
+  margin: 0px 15px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 31, ../sass/includes/_module-theme-options.scss */
+.bootstrap-3.bodybg .content-wrapper {
+  padding: 15px;
+  background: #fff;
+}
+
 /* ----- borders -------------------- */
-/* line 27, ../sass/includes/_module-theme-options.scss */
+/* line 37, ../sass/includes/_module-theme-options.scss */
 .borders .sidebar .region,
 .borders .content-wrapper {
   padding: 10px;
@@ -1335,7 +1348,7 @@ body.photobg {
 }
 
 /* ------ rounded corners ----------- */
-/* line 33, ../sass/includes/_module-theme-options.scss */
+/* line 43, ../sass/includes/_module-theme-options.scss */
 .roundedcorners .sidebar .region,
 .roundedcorners .content-wrapper {
   -webkit-border-radius: 5px;
