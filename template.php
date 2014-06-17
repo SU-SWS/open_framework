@@ -9,6 +9,8 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_type'] = theme_get_setting('body_bg_type'); 
   $vars['body_bg_classes'] = theme_get_setting('body_bg_classes'); 
   $vars['body_bg_path'] = theme_get_setting('body_bg_path');
+  $vars['bootstrap_version'] = theme_get_setting('bootstrap_version');
+  $vars['font_awesome_version'] = theme_get_setting('font_awesome_version'); 
 }
 
 function open_framework_js_alter(&$javascript) {
@@ -651,4 +653,11 @@ function open_framework_breadcrumb(&$variables) {
     }
   }
   return $output;
+}
+
+/**
+* Theme wrapper function for the primary menu links
+*/
+function open_framework_menu_tree__primary(&$vars) {
+  return '<ul class="menu nav navbar-nav">' . $vars['tree'] . '</ul>';
 }

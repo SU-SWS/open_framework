@@ -51,6 +51,32 @@
 <?php if (($main_menu) || ($page['search_box'])): ?>
 <div id="main-menu" class="clearfix site-main-menu">
   <div class="container">
+    <?php if ($bootstrap_version == "bootstrap-3"): ?>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <?php if (($primary_nav) && empty($page['navigation'])): ?>
+          <?php print render($primary_nav); ?>
+          <!-- /#primary-menu -->
+        <?php endif; ?>
+        <?php if (!empty($page['navigation'])): ?>
+          <?php print render($page['navigation']); ?>
+        <?php endif; ?>
+        <?php if ($page['search_box']): ?>
+          <div id="nav-search" class="nav-search"> <?php print render($page['search_box']); ?> </div>
+        <?php endif; ?>
+      </div>
+    </nav>
+    <?php endif; ?>
+
+    <?php if ($bootstrap_version == "bootstrap-2"): ?>
     <div class="navbar">
       <?php if ($main_menu): ?>
       <div class="navbar-inner">
@@ -59,17 +85,20 @@
         <div id="nav-search" class="nav-search"> <?php print render($page['search_box']); ?> </div>
         <?php endif; ?>
         <?php if ($main_menu): ?>
-        <button class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <button class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse"> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button>
         <?php if ($primary_nav || !empty($page['navigation'])): ?>
         <div class="nav-collapse collapse">
           <nav id="main-nav" role="navigation">
             <?php if (($primary_nav) && empty($page['navigation'])): ?>
-            <?php print render($primary_nav); ?> 
+            <?php print render($primary_nav); ?>
             <!-- /#primary-menu -->
             <?php endif; ?>
             <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-            <?php endif; ?>
+            <?php print render($page['navigation']); ?><?php endif; ?>
           </nav>
         </div>
         <?php endif; ?>
@@ -78,6 +107,7 @@
       </div>
       <?php endif; ?>
     </div>
+    <?php endif; ?>
   </div>
 </div>
 <!-- /#main-menu -->
