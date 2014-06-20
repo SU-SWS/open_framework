@@ -8,6 +8,7 @@ stylesheets[all][] = css/style.css
 scripts[] = js/script.js
 
 regions[admin_shortcuts] = Admin Shortcuts (Authenticated Users Only)
+regions[site_login] = Site: Login
 regions[header] = Header
 regions[navigation] = Navigation
 regions[search_box] = Search Box
