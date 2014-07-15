@@ -41,7 +41,7 @@ Drupal.behaviors.open_framework_override = {
       }
 
       if ((width >= 751) && (width < 963)) {
-        $('.two-sidebars')
+        $('.sidebar-3col.two-sidebars')
           .find('.site-sidebar-first')
             .removeClass('span3')
             .addClass('span4')
@@ -57,7 +57,7 @@ Drupal.behaviors.open_framework_override = {
           .find('.region-sidebar-second .block')
             .addClass('span4')
           .end();
-        $('.sidebar-first')
+        $('.sidebar-3col.sidebar-first')
           .find('.site-sidebar-first')
             .removeClass('span3')
             .addClass('span4')
@@ -66,7 +66,7 @@ Drupal.behaviors.open_framework_override = {
             .removeClass('span9')
             .addClass('span8')
           .end();
-        $('.sidebar-second')
+        $('.sidebar-3col.sidebar-second')
           .find('.site-sidebar-second')
             .removeClass('span3')
             .addClass('span12')
@@ -81,7 +81,7 @@ Drupal.behaviors.open_framework_override = {
       }
 
       else {
-        $('.two-sidebars')
+        $('.sidebar-3col.two-sidebars')
           .find('.site-sidebar-first')
             .removeClass('span4')
             .addClass('span3')
@@ -97,7 +97,7 @@ Drupal.behaviors.open_framework_override = {
           .find('.region-sidebar-second .block')
             .removeClass('span4')
           .end();
-        $('.sidebar-first')
+        $('.sidebar-3col.sidebar-first')
           .find('.site-sidebar-first')
             .removeClass('span4')
             .addClass('span3')
@@ -106,7 +106,7 @@ Drupal.behaviors.open_framework_override = {
             .removeClass('span8')
             .addClass('span9')
           .end();
-        $('.sidebar-second')
+        $('.sidebar-3col.sidebar-second')
           .find('.site-sidebar-second')
             .removeClass('span12')
             .addClass('span3')

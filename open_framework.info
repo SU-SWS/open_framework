@@ -46,6 +46,7 @@ regions[footer] = Footer
 settings[bootstrap_version] = 'bootstrap-2'
 settings[font_awesome_version] = 'font-awesome-3'
 settings[content_order_classes] = ''
+settings[page_layout] = 'sidebar-3col'
 settings[front_heading_classes] = ''
 settings[breadcrumb_classes] = ''
 settings[body_bg_type] = ''

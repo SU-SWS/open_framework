@@ -11,6 +11,7 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_path'] = theme_get_setting('body_bg_path');
   $vars['bootstrap_version'] = theme_get_setting('bootstrap_version');
   $vars['font_awesome_version'] = theme_get_setting('font_awesome_version'); 
+  $vars['page_layout'] = theme_get_setting('page_layout'); 
 }
 
 function open_framework_js_alter(&$javascript) {
@@ -45,6 +46,7 @@ function open_framework_preprocess_page(&$vars) {
   // theme option variables
   $vars['bootstrap_version'] = theme_get_setting('bootstrap_version');
   $vars['font_awesome_version'] = theme_get_setting('font_awesome_version'); 
+  $vars['page_layout'] = theme_get_setting('page_layout'); 
 
   // Bootstrap
   $bootstrap_version = theme_get_setting('bootstrap_version');

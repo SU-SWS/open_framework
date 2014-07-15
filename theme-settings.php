@@ -57,6 +57,16 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsible' => TRUE,
     '#collapsed' => FALSE,
   );
+
+  $form['layout_container']['page_layout'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Page heading'),
+    '#default_value' => theme_get_setting('page_layout'),
+    '#options'       => array(
+      'sidebar-3col' => t('standard sidebar (column width of 3) - <strong><em>Default</em></strong>'),
+      'sidebar-4col' => t('wide sidebar (column width of 4)'),
+    ),
+  );
       
   $form['layout_container']['front_heading_classes'] = array(
     '#type'          => 'radios',

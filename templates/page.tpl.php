@@ -125,12 +125,12 @@
     <?php endif; ?>
     <div id="main-content" class="row main-content">
       <?php if ($page['sidebar_first']): ?>
-      <div id="sidebar-first" class="sidebar <?php print $part3; ?> site-sidebar-first">
+      <div id="sidebar-first" class="sidebar <?php if ($page_layout == "sidebar-4col"): print $part4; else: print $part3; endif; ?> site-sidebar-first">
         <div class="<?php print $row_fluid; ?>"><?php print render($page['sidebar_first']); ?></div>
       </div>
       <!-- /#sidebar-first -->
       <?php endif; ?>
-      <div id="content" class="mc-content <?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print $part6; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print $part9; else: print $part12; endif; ?>">
+      <div id="content" class="mc-content <?php if (($page_layout == "sidebar-4col") && (($page['sidebar_first']) && ($page['sidebar_second']))): print $part4; elseif (($page_layout == "sidebar-4col") && (($page['sidebar_first']) || ($page['sidebar_second']))): print $part8; elseif (($page['sidebar_first']) && ($page['sidebar_second'])): print $part6; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print $part9; else: print $part12; endif; ?>">
         <div id="content-wrapper" class="content-wrapper">
           <div id="content-head" class="<?php print $row_fluid; ?> content-head">
             <div class="<?php print $part12; ?> clearfix clear-row">
@@ -244,7 +244,7 @@
       </div>
       <!-- /#content -->
       <?php if ($page['sidebar_second']): ?>
-      <div id="sidebar-second" class="sidebar <?php print $part3; ?> site-sidebar-second">
+      <div id="sidebar-second" class="sidebar <?php if ($page_layout == "sidebar-4col"): print $part4; else: print $part3; endif; ?> site-sidebar-second">
         <div class="<?php print $row_fluid; ?>"><?php print render($page['sidebar_second']); ?></div>
       </div>
       <!-- /#sidebar-second -->
