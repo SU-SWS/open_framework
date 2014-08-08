@@ -3,7 +3,6 @@ description = Responsive base theme built with Twitter Bootstrap. Learn more at 
 core = 7.x
 version = 7.x-3.0-dev
 project = "open_framework"
-project status url = https://github.com/SU-SWS/open_framework
 
 stylesheets[all][] = css/open_framework.css
 stylesheets[print][] = css/open_framework_print.css
