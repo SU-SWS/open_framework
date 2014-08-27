@@ -1,3 +1,7 @@
+Version 7.x-2.1-beta4
+------------------------------
+by hyperboy: Reverted change to bottom margin in content-head div
+
 Version 7.x-2.1-beta3
 ------------------------------
 by hyperboy: Removed check for $body contents in node.tpl.php
