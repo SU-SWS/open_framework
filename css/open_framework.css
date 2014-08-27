@@ -67,7 +67,7 @@ a, a:hover {
 }
 
 /* line 16, ../sass/includes/_base.scss */
-.more-link a, a.more-link, .page-search .node-readmore a {
+.more-link, a.more-link, .page-search .node-readmore a {
   display: inline-block;
   clear: both;
   line-height: 1.4em;
@@ -503,7 +503,7 @@ nav h2 {
 /* ----- fat footer ------------------ */
 /* content *****************************/
 /* line 101, ../sass/includes/_base.scss */
-.main, .mc-content {
+.main, .content-head, .mc-content {
   margin-bottom: 1.2em;
 }
 
