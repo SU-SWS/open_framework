@@ -1,3 +1,7 @@
+Version 7.x-2.1-beta5
+------------------------------
+by meganem: Updated .more-link style
+
 Version 7.x-2.1-beta4
 ------------------------------
 by hyperboy: Reverted change to bottom margin in content-head div
