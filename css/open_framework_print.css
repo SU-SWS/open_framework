@@ -2,24 +2,50 @@
  * Overwrites for bootstrap print styles
  * Designed and built with all the love for trees.
  */
-@media print { /* line 6, ../sass/includes/_print.scss */
-  a[href]:after { content: none; }
-  /* line 9, ../sass/includes/_print.scss */
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  /* line 12, ../sass/includes/_print.scss */
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: none; }
-  /* line 15, ../sass/includes/_print.scss */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  /* line 19, ../sass/includes/_print.scss */
-  thead { display: table-header-group; }
-  /* line 22, ../sass/includes/_print.scss */
-  tr, img { page-break-inside: avoid; }
-  /* line 25, ../sass/includes/_print.scss */
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  /* line 31, ../sass/includes/_print.scss */
-  p, h2, h3 { orphans: 3; widows: 3; }
-  /* line 35, ../sass/includes/_print.scss */
-  h2, h3 { page-break-after: avoid; }
-  /* line 38, ../sass/includes/_print.scss */
-  .logged-in #toolbar, .logged-in .tabs, .book_add_child, .book_printer, .comment-add, #search-block-form, .site-main-menu, .comment-form { display: none; } }
+@media print {
+  a[href]:after {
+    content: none;
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: none;
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  .logged-in #toolbar, .logged-in .tabs, .book_add_child, .book_printer, .comment-add, #search-block-form, .site-main-menu, .comment-form {
+    display: none;
+  }
+}

@@ -1,17 +1,8 @@
-Version 7.x-2.1-beta5
+Version 7.x-2.1
 ------------------------------
 by meganem: Updated .more-link style
-
-Version 7.x-2.1-beta4
-------------------------------
 by hyperboy: Reverted change to bottom margin in content-head div
-
-Version 7.x-2.1-beta3
-------------------------------
 by hyperboy: Removed check for $body contents in node.tpl.php
-
-Version 7.x-2.1-beta2
-------------------------------
 by meganem: Updated more-link styles
 by meganem: Removed overflow:auto from postcards
 by meganem: Changed overflow display style for views-row-lines class
@@ -22,9 +13,6 @@ by hyperboy: Added fix for .well on blocks in first sidebar and second sidebar
 by hyperboy: Added SASS files
 by sherakama: Fixed undefined index issue
 by kzoltan: fixed missing region from the subtheme starter kit info file
-
-Version 7.x-2.1-beta1
-------------------------------
 by hyperboy: Removed nested container div in navbar region
 by hyperboy: Added IE 7 support for postcard layouts
 by hyperboy: Adjusted responsive ratios for 3-col-flow and 4-col-flow blocks at tablet breakpoint
