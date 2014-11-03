@@ -1,14 +1,14 @@
 <?php
 function open_framework_preprocess_html(&$vars) {
   // theme option variables
-  $vars['content_order_classes'] = theme_get_setting('content_order_classes');
-  $vars['front_heading_classes'] = theme_get_setting('front_heading_classes');
-  $vars['breadcrumb_classes'] = theme_get_setting('breadcrumb_classes');
-  $vars['border_classes'] = theme_get_setting('border_classes');
-  $vars['corner_classes'] = theme_get_setting('corner_classes');
-  $vars['body_bg_type'] = theme_get_setting('body_bg_type');
-  $vars['body_bg_classes'] = theme_get_setting('body_bg_classes');
-  $vars['body_bg_path'] = theme_get_setting('body_bg_path');
+  $vars['content_order_classes'] = !empty($vars['content_order_classes']) ? $vars['content_order_classes'] : theme_get_setting('content_order_classes');
+  $vars['front_heading_classes'] = !empty($vars['front_heading_classes']) ? $vars['front_heading_classes'] : theme_get_setting('front_heading_classes');
+  $vars['breadcrumb_classes'] =    !empty($vars['breadcrumb_classes']) ?    $vars['breadcrumb_classes'] :    theme_get_setting('breadcrumb_classes');
+  $vars['border_classes'] =        !empty($vars['border_classes']) ?        $vars['border_classes'] :        theme_get_setting('border_classes');
+  $vars['corner_classes'] =        !empty($vars['corner_classes']) ?        $vars['corner_classes'] :        theme_get_setting('corner_classes');
+  $vars['body_bg_type'] =          !empty($vars['body_bg_type']) ?          $vars['body_bg_type'] :          theme_get_setting('body_bg_type');
+  $vars['body_bg_classes'] =       !empty($vars['body_bg_classes']) ?       $vars['body_bg_classes'] :       theme_get_setting('body_bg_classes');
+  $vars['body_bg_path'] =          !empty($vars['body_bg_path']) ?          $vars['body_bg_path'] :          theme_get_setting('body_bg_path');
 }
 
 function open_framework_js_alter(&$javascript) {
