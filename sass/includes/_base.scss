@@ -3,15 +3,85 @@
 body { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
 /* ----- custom fonts ---------------- */
 /* ----- text ------------------------ */
+/*doc
+---
+title: Headings
+name: headings
+category: Main
+---
+```html_example
+<h1>Heading One</h1>
+<h2>Heading Two</h2>
+<h3>Heading Three</h3>
+<h4>Heading Four</h4>
+<h5>Heading Five</h5>
+<h6>Heading Six</h6>
+```
+*/
 h2, h3, h4, h5, h6 { line-height:1.3em; }
 p { margin:0 0 1em; }
 em { padding:0 3px 0 0; }
 strong { font-weight:600; }
 quote, code { margin:.5em 0; }
+
+/*doc
+---
+title: Summary
+name: summary
+category: Text
+---
+```html_example
+<p class="summary">This line will summarize what goes below.</p>
+```
+*/
 .summary { margin-bottom:15px; font-weight:300; font-size:22px; line-height:1.4em; }
+
+/*doc
+---
+title: Descriptor Text
+name: descriptor
+category: Text
+---
+```html_example
+<p class="descriptor">July 21, 2012</p>
+<div class="descriptor">
+    Location<br />
+    Free Admission
+</div>
+```
+*/
 .descriptor { margin-bottom:4px; text-transform:uppercase; letter-spacing:.04em; font-size:12px; line-height:1.5em; }
+
+/*doc
+---
+title: Caption
+name: caption
+category: Text
+---
+```html_example
+<p class="caption">This is a caption.</p>
+<div class="caption">
+    <p>This is another caption.</p>
+</div>
+```
+*/
 .caption { margin-top:0; margin-bottom:2em; color:#848484; letter-spacing:.01em; font-style:italic; font-size:13px; }
+
 /* ----- links ----------------------- */
+
+/*doc
+---
+title: More Link
+name: more-link
+category: Link
+---
+```html_example
+<p><a class="more-link" href="#">Read More</a></p>
+<div class="more-link">
+   <a href="#">More Information</a>
+</div>
+```
+*/
 a, a:hover { text-decoration:none; }
 .more-link, a.more-link, .page-search .node-readmore a { display:inline-block; clear:both; line-height: 1.4em; margin-top: 0.5em; margin-bottom: 0.5em; text-align:left; text-transform:uppercase; letter-spacing:.02em; font-weight:600; font-size:12px; }
 .more-link a:hover, a.more-link:hover, .page-search .node-readmore a:hover { color:#000; text-decoration:none; }
@@ -119,6 +189,85 @@ nav h2 { position:absolute; left:-10000px; }
 .pullquote-large { font-size:20px; }
 .credits { margin-top:.5em; margin-bottom: .5em; letter-spacing:.05em; font-size:12px; }
 /* postcard layouts ****************** */
+/*doc
+---
+title: Postcard Left
+name: postcard-left
+category: Postcard
+---
+```html_example
+<div class="postcard-left">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p><code>.postcard-left</code> floats two divs side-by-side, does not allow
+       wrapping. You can use this to do "image on the left, text on the right"
+       layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
+       other elements next to a block of text. We have built support for micro-layouts
+       into the Open Framework theme through this postcard implementation strategy.</p>
+   </div>
+</div>
+```
+*/
+
+/*doc
+---
+title: Postcard Left Wrap
+name: postcard-left-wrap
+category: Postcard
+---
+```html_example
+<div class="postcard-left-wrap">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p><code>.postcard-left-wrap</code> floats two divs side-by-side, and allows for
+       wrapping. You can use this to do "image on the left, text on the right"
+       layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
+       other elements next to a block of text. We have built support for micro-layouts
+       into the Open Framework theme through this postcard implementation strategy.</p>
+   </div>
+</div>
+```
+*/
+
+/*doc
+---
+title: Postcard Right
+name: postcard-right
+category: Postcard
+---
+```html_example
+<div class="postcard-right">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p><code>.postcard-right</code> floats two divs side-by-side, does not allow
+       wrapping. You can use this to do "image on the right, text on the left"
+       layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
+       other elements next to a block of text. We have built support for micro-layouts
+       into the Open Framework theme through this postcard implementation strategy.</p>
+   </div>
+</div>
+```
+*/
+
+/*doc
+---
+title: Postcard Right Wrap
+name: postcard-right-wrap
+category: Postcard
+---
+```html_example
+<div class="postcard-right-wrap">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p><code>.postcard-right-wrap</code> floats two divs side-by-side, and allows for
+       wrapping. You can use this to do "image on the right, text on the left"
+       layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
+       other elements next to a block of text. We have built support for micro-layouts
+       into the Open Framework theme through this postcard implementation strategy.</p>
+   </div>
+</div>
+```
+*/
 .postcard-left, .postcard-left-wrap, .postcard-right, .postcard-right-wrap { clear:both; margin-bottom:15px; }
 .postcard-left > div, .postcard-right > div { display:table-cell; }
 .postcard-left-wrap > div:first-child, .postcard-left > div:first-child { float:left; }
@@ -127,17 +276,91 @@ nav h2 { position:absolute; left:-10000px; }
 .postcard-left > div:first-child img, .postcard-left-wrap > div:first-child img { margin-right:15px; }
 .postcard-right > div:first-child img, .postcard-right-wrap > div:first-child img { margin-left:15px; }
 .postcard-left h2, .postcard-left-wrap h2, .postcard-right h2, .postcard-right-wrap h2 { margin-top:0; }
+
 /* images **************************** */
 img, a img { outline:none; border:none; }
+/*doc
+---
+title: Border Hairline
+name: border-hairline
+category: Image
+---
+```html_example
+<p class="border-hairline">
+<img alt="clouds" src="images/clouds.png">
+</p>
+```
+*/
 .main .border-hairline img { border:1px solid #d8d8d8; }
+.main .border-hairline a:hover img { border:1px solid #373737; }
+/*doc
+---
+title: Border Shadow
+name: border-shadow
+category: Image
+---
+```html_example
+<p class="border-shadow">
+<img alt="waterfall" src="images/waterfall.png">
+</p>
+```
+*/
 .main .border-shadow img { -webkit-box-shadow:0 4px 3px 0 rgba(0,0,0,0.08); -moz-box-shadow:0 4px 3px 0 rgba(0,0,0,0.08); box-shadow:0 4px 3px 0 rgba(0,0,0,0.08); }
+/*doc
+---
+title: Border Underline
+name: border-underline
+category: Image
+---
+```html_example
+<p class="border-underline">
+<img alt="waterfall" src="images/waterfall.png">
+</p>
+```
+*/
 .main .border-underline img { margin-bottom:5px; padding:0 0 2px; border-bottom:4px solid #e2e2e2; background-color:transparent; }
+/*doc
+---
+title: Border None
+name: border-none
+category: Image
+---
+```html_example
+<p class="border-none">
+<img alt="waterfall" src="images/clouds.png">
+</p>
+```
+*/
 .main .border-none img { border:0 !important; }
+/*doc
+---
+title: Border Bottom
+name: border-bottom
+category: Image
+---
+```html_example
+<p class="border-bottom">
+<img alt="clouds" src="images/clouds.png">
+</p>
+```
+*/
 .main .border-bottom img { border-bottom:1px solid #d3d3d3; }
 .main .border-simple-nowidth img, .main .border-simple img { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom:10px; padding:6px; background-color:#e2e2e2; }
+/*doc
+---
+title: Border Simple
+name: border-simple
+category: Image
+---
+```html_example
+<p class="border-simple">
+<img alt="waterfall" src="images/waterfall.png">
+</p>
+```
+*/
 .main .border-simple img { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .main .border-simple a:hover img { background-color:#bbb; }
-.main .border-hairline a:hover img { border:1px solid #373737; }
+
 /* media ***************************** */
 iframe { max-width:100%; }
 /* ----- Video Player ------------- */

@@ -1,0 +1,98 @@
+<% nameScope = @config['name_scope'] %>
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title><%= title %></title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+
+    <!-- Source CSS -->
+    <% if @config['css_include'].to_s.strip.length != 0 %>
+      <% @config['css_include'].each do |css| %>
+        <link rel="stylesheet" href="<%= css %>">
+      <% end %>
+    <% end %>
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      <% catWrappers = Array.new %>
+      <% @categories.each do |cat| %>
+        <% catWrapperName = cat[0].split(nameScope).first %>
+        <% if not catWrappers.include?(catWrapperName) %>
+          <% catWrappers.push(catWrapperName) %>
+        <% end %>
+      <% end %>
+
+      <nav class="cortana-nav">
+        <ul>
+          <% if file_name.include?('index.html') %>
+            <li><a class="active" href="index.html">Home</a></li>
+          <% else %>
+            <li><a href="index.html">Home</a></li>
+          <% end %>
+        </ul>
+        <% catWrappers.each do |wrapper| %>
+          <h3><%= wrapper %></h3>
+          <ul>
+          <% @categories.each do |cat| %>
+            <% if cat[0].include?(wrapper) %>
+              <% catName = cat[0].split(nameScope).last %>
+              <% if catName == title.split(nameScope).last %>
+                <li><a class="active" href="<%= cat[1] %>"><%= catName %></a></li>
+              <% else %>
+                <li><a href="<%= cat[1] %>"><%= catName %></a></li>
+              <% end %>
+            <% end %>
+          <% end %>
+          </ul>
+        <% end %>
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      <% if title.split(nameScope).last %>
+        <h1><%= title.split(nameScope).last %></h1>
+      <% elsif file_name.include?('index.html') %>
+        <h1>Styleguide home</h1>
+      <% end %>
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+            <% @blocks.each do |block| %>
+              <% if not block[:parent] %>
+                <li><a href="#<%= block[:name] %>"><%= block[:title] %></a></li>
+              <% end %>
+            <% end %>
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper clearfix">
+          <div class="cortana-content">
+
+
+

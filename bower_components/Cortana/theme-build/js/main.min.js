@@ -1,0 +1,1 @@
+!function(){var n=angular.module("cortana",["mgcrea.ngStrap","ui.bootstrap"]);n.controller("MainController",function(){})}(),function(n){n(window).load(function(){var o=new n.slidebars;n("#open-left").on("click",function(n){n.preventDefault(),o.toggle("left")})})}(jQuery_no_conflict);
