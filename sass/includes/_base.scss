@@ -1,3 +1,14 @@
+/*doc
+---
+title: Introduction
+name: introduction
+category: Index
+---
+<p class="lead">Visit the <a class="btn btn-info" href="http://openframework.stanford.edu">Open Framework Website</a> for documentation.</p>
+<p class="lead">Download the <a class="btn btn-info" href="https://github.com/SU-SWS/open_framework/tarball/master">.TAR</a> or <a class="btn btn-info" href="https://github.com/SU-SWS/open_framework/zipball/master">.ZIP</a> from GitHub.</p>
+<p class="lead"><a class="btn btn-info" href="https://github.com/SU-SWS/open_framework">View on GitHub</a></p>
+<p>Open Framework is maintained by <a href="https://github.com/SU-SWS">SU-SWS</a></p>
+*/
 /* global **************************** */
 /* ----- body ------------------------ */
 body { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
@@ -7,8 +18,9 @@ body { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
 ---
 title: Headings
 name: headings
-category: Main
+category: Typography
 ---
+<p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
 ```html_example
 <h1>Heading One</h1>
 <h2>Heading Two</h2>
@@ -28,7 +40,7 @@ quote, code { margin:.5em 0; }
 ---
 title: Summary
 name: summary
-category: Text
+category: Typography
 ---
 ```html_example
 <p class="summary">This line will summarize what goes below.</p>
@@ -40,7 +52,7 @@ category: Text
 ---
 title: Descriptor Text
 name: descriptor
-category: Text
+category: Typography
 ---
 ```html_example
 <p class="descriptor">July 21, 2012</p>
@@ -56,7 +68,7 @@ category: Text
 ---
 title: Caption
 name: caption
-category: Text
+category: Typography
 ---
 ```html_example
 <p class="caption">This is a caption.</p>
@@ -195,15 +207,22 @@ title: Postcard Left
 name: postcard-left
 category: Postcard
 ---
-```html_example
-<div class="postcard-left">
-   <div><img alt="waterfall" src="images/waterfall.png"></div>
-   <div>
-       <p><code>.postcard-left</code> floats two divs side-by-side, does not allow
+<p><code>.postcard-left</code> floats two divs side-by-side, does not allow
        wrapping. You can use this to do "image on the left, text on the right"
        layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
        other elements next to a block of text. We have built support for micro-layouts
        into the Open Framework theme through this postcard implementation strategy.</p>
+```html_example
+<div class="postcard-left">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p>Nulla tincidunt semper arcu quis condimentum. Nunc congue, risus vel finibus
+        rhoncus, nunc orci consequat lorem, ut blandit leo ipsum a sem. Morbi a neque 
+        eu nisl bibendum luctus blandit venenatis tortor. Etiam feugiat vulputate 
+        porta. Praesent congue elit vel urna congue, vel aliquam elit tempor. Donec 
+        felis nibh, tincidunt at est ut, finibus faucibus dui. Morbi sit amet bibendum 
+        lacus, sed commodo dui. Interdum et malesuada fames ac ante ipsum primis in 
+        faucibus. Praesent ut augue eleifend, maximus neque ut, interdum lorem.</p>
    </div>
 </div>
 ```
@@ -215,15 +234,22 @@ title: Postcard Left Wrap
 name: postcard-left-wrap
 category: Postcard
 ---
-```html_example
-<div class="postcard-left-wrap">
-   <div><img alt="waterfall" src="images/waterfall.png"></div>
-   <div>
-       <p><code>.postcard-left-wrap</code> floats two divs side-by-side, and allows for
+<p><code>.postcard-left-wrap</code> floats two divs side-by-side, and allows for
        wrapping. You can use this to do "image on the left, text on the right"
        layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
        other elements next to a block of text. We have built support for micro-layouts
        into the Open Framework theme through this postcard implementation strategy.</p>
+```html_example
+<div class="postcard-left-wrap">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p>Nulla tincidunt semper arcu quis condimentum. Nunc congue, risus vel finibus
+        rhoncus, nunc orci consequat lorem, ut blandit leo ipsum a sem. Morbi a neque 
+        eu nisl bibendum luctus blandit venenatis tortor. Etiam feugiat vulputate 
+        porta. Praesent congue elit vel urna congue, vel aliquam elit tempor. Donec 
+        felis nibh, tincidunt at est ut, finibus faucibus dui. Morbi sit amet bibendum 
+        lacus, sed commodo dui. Interdum et malesuada fames ac ante ipsum primis in 
+        faucibus. Praesent ut augue eleifend, maximus neque ut, interdum lorem.</p>
    </div>
 </div>
 ```
@@ -235,15 +261,22 @@ title: Postcard Right
 name: postcard-right
 category: Postcard
 ---
-```html_example
-<div class="postcard-right">
-   <div><img alt="waterfall" src="images/waterfall.png"></div>
-   <div>
-       <p><code>.postcard-right</code> floats two divs side-by-side, does not allow
+<p><code>.postcard-right</code> floats two divs side-by-side, does not allow
        wrapping. You can use this to do "image on the right, text on the left"
        layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
        other elements next to a block of text. We have built support for micro-layouts
        into the Open Framework theme through this postcard implementation strategy.</p>
+```html_example
+<div class="postcard-right">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p>Nulla tincidunt semper arcu quis condimentum. Nunc congue, risus vel finibus
+        rhoncus, nunc orci consequat lorem, ut blandit leo ipsum a sem. Morbi a neque 
+        eu nisl bibendum luctus blandit venenatis tortor. Etiam feugiat vulputate 
+        porta. Praesent congue elit vel urna congue, vel aliquam elit tempor. Donec 
+        felis nibh, tincidunt at est ut, finibus faucibus dui. Morbi sit amet bibendum 
+        lacus, sed commodo dui. Interdum et malesuada fames ac ante ipsum primis in 
+        faucibus. Praesent ut augue eleifend, maximus neque ut, interdum lorem.</p>
    </div>
 </div>
 ```
@@ -255,15 +288,22 @@ title: Postcard Right Wrap
 name: postcard-right-wrap
 category: Postcard
 ---
-```html_example
-<div class="postcard-right-wrap">
-   <div><img alt="waterfall" src="images/waterfall.png"></div>
-   <div>
-       <p><code>.postcard-right-wrap</code> floats two divs side-by-side, and allows for
+<p><code>.postcard-right-wrap</code> floats two divs side-by-side, and allows for
        wrapping. You can use this to do "image on the right, text on the left"
        layouts. Postcard layouts are micro-layouts where you want thumbnail images, or
        other elements next to a block of text. We have built support for micro-layouts
        into the Open Framework theme through this postcard implementation strategy.</p>
+```html_example
+<div class="postcard-right-wrap">
+   <div><img alt="waterfall" src="images/waterfall.png"></div>
+   <div>
+       <p>Nulla tincidunt semper arcu quis condimentum. Nunc congue, risus vel finibus
+        rhoncus, nunc orci consequat lorem, ut blandit leo ipsum a sem. Morbi a neque 
+        eu nisl bibendum luctus blandit venenatis tortor. Etiam feugiat vulputate 
+        porta. Praesent congue elit vel urna congue, vel aliquam elit tempor. Donec 
+        felis nibh, tincidunt at est ut, finibus faucibus dui. Morbi sit amet bibendum 
+        lacus, sed commodo dui. Interdum et malesuada fames ac ante ipsum primis in 
+        faucibus. Praesent ut augue eleifend, maximus neque ut, interdum lorem.</p>
    </div>
 </div>
 ```
