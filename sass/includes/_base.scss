@@ -45,6 +45,8 @@ input.placeholder, textarea.placeholder { color: #aaa; }
 .element-invisible.element-focusable:active, .element-invisible.element-focusable:focus { position: static !important; clip: auto; overflow: visible; height: auto; padding: 0 1em; }
 /* ----- other ----------------------- */
 hr { clear:both; }
+.border-none {border: none !important;}
+.box-shadow-none {box-shadow: none !important;}
 /* header ******************************/
 /* ----- header region --------------- */
 .header { margin:25px 0 30px; }

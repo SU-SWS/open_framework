@@ -213,6 +213,14 @@ hr {
   clear: both;
 }
 
+.border-none {
+  border: none !important;
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
 /* header ******************************/
 /* ----- header region --------------- */
 .header {
