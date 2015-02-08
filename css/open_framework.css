@@ -927,7 +927,7 @@ ul.primary {
   .footer-content .block {
     float: left;
     margin-right: 4%;
-    width: 48%;
+    width: 100%;
   }
 
   .footer-content .block:nth-child(2n+1) {
