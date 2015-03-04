@@ -9,6 +9,7 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_type'] =          !empty($vars['body_bg_type']) ?          $vars['body_bg_type'] :          theme_get_setting('body_bg_type');
   $vars['body_bg_classes'] =       !empty($vars['body_bg_classes']) ?       $vars['body_bg_classes'] :       theme_get_setting('body_bg_classes');
   $vars['body_bg_path'] =          !empty($vars['body_bg_path']) ?          $vars['body_bg_path'] :          theme_get_setting('body_bg_path');
+  $vars['font_awesome_version'] =  !empty($vars['font_awesome_version']) ?  $vars['font_awesome_version'] :  theme_get_setting('font_awesome_version');
 
   // Variables
   $content_order_classes = $vars['content_order_classes'];
@@ -67,6 +68,17 @@ function open_framework_js_alter(&$javascript) {
 }
 
 function open_framework_preprocess_page(&$vars) {
+  // Font Awesome
+  $font_awesome_version = theme_get_setting('font_awesome_version');
+
+  if ($font_awesome_version == 'font-awesome-3') {
+  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-3.2.1/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  }
+
+  if ($font_awesome_version == 'font-awesome-4') {
+  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-4.3.0/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  }
+
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
