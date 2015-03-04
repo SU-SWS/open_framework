@@ -5,9 +5,9 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
   $form['packages_container'] = array(
     '#type' => 'fieldset',
     '#title' => t('Packages'),
-    '#description' => t('Select your font package.'),
+    '#description' => t('Select font package.'),
     '#collapsible' => TRUE,
-    '#collapsed' => FALSE,
+    '#collapsed' => TRUE,
   );
 
   $form['packages_container']['font_awesome_version'] = array(
@@ -15,7 +15,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title'         => t('Font Awesome'),
     '#default_value' => theme_get_setting('font_awesome_version'),
     '#options'       => array(
-      'font-awesome-3' => t('Version 3.2.1 [<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/" title="Font Awesome 3.2.1 official documentation">documentation</a>] - <strong><em>Default</em></strong>'),
+      'font-awesome-3' => t('Version 3.2.1 [<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/" title="Font Awesome 3.2.1 official documentation">documentation</a>]'),
       'font-awesome-4' => t('Version 4.3.0 [<a href="http://fortawesome.github.io/Font-Awesome/" title="Font Awesome 4.3.0 official documentation">documentation</a>]'),
     ),
   );
@@ -26,7 +26,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Responsive'),
     '#description' => t('Use these settings to adjust the responsive behavior.'),
     '#collapsible' => TRUE,
-    '#collapsed' => FALSE,
+    '#collapsed' => TRUE,
   );
   
   $form['responsive_container']['content_order_classes'] = array(
@@ -45,7 +45,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Layout'),
     '#description' => t('Use these settings to adjust the page layout.'),
     '#collapsible' => TRUE,
-    '#collapsed' => FALSE,
+    '#collapsed' => TRUE,
   );
       
   $form['layout_container']['front_heading_classes'] = array(
@@ -74,7 +74,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Body background'),
     '#description' => t('Use these settings to select a different body background image.'),
     '#collapsible' => TRUE,
-    '#collapsed' => FALSE,
+    '#collapsed' => TRUE,
   );
   
   // Body Background Image
@@ -131,7 +131,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Borders'),
     '#description' => t('Use these settings to change the border style.'),
     '#collapsible' => TRUE,
-    '#collapsed' => FALSE,
+    '#collapsed' => TRUE,
   );
     
   $form['border_container']['border_classes'] = array(
