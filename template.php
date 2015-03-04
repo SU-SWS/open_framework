@@ -9,6 +9,21 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_type'] =          !empty($vars['body_bg_type']) ?          $vars['body_bg_type'] :          theme_get_setting('body_bg_type');
   $vars['body_bg_classes'] =       !empty($vars['body_bg_classes']) ?       $vars['body_bg_classes'] :       theme_get_setting('body_bg_classes');
   $vars['body_bg_path'] =          !empty($vars['body_bg_path']) ?          $vars['body_bg_path'] :          theme_get_setting('body_bg_path');
+
+  // Variables
+  $body_bg_type =    $vars['body_bg_type'];
+  $body_bg_classes = $vars['body_bg_classes'];
+  $body_bg_path =    $vars['body_bg_path'];
+
+  // Default path for body background image
+  if (file_uri_scheme($body_bg_path) == 'public') {
+    $body_bg_path = file_create_url($body_bg_path);
+  }
+
+  // If body background image is enabled, add following style to body
+  if (!empty($body_bg_classes)) {
+    drupal_add_css('body {background: url('. $body_bg_path .') repeat top left;}', array('group' => CSS_THEME, 'type' => 'inline', 'media' => 'screen', 'preprocess' => FALSE, 'weight' => '9999',));
+  }
 }
 
 function open_framework_js_alter(&$javascript) {
