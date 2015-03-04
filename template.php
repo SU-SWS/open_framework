@@ -11,9 +11,14 @@ function open_framework_preprocess_html(&$vars) {
   $vars['body_bg_path'] =          !empty($vars['body_bg_path']) ?          $vars['body_bg_path'] :          theme_get_setting('body_bg_path');
 
   // Variables
-  $body_bg_type =    $vars['body_bg_type'];
-  $body_bg_classes = $vars['body_bg_classes'];
-  $body_bg_path =    $vars['body_bg_path'];
+  $content_order_classes = $vars['content_order_classes'];
+  $front_heading_classes = $vars['front_heading_classes'];
+  $breadcrumb_classes =    $vars['breadcrumb_classes'];
+  $border_classes =        $vars['border_classes'];
+  $corner_classes =        $vars['corner_classes'];
+  $body_bg_type =          $vars['body_bg_type'];
+  $body_bg_classes =       $vars['body_bg_classes'];
+  $body_bg_path =          $vars['body_bg_path'];
 
   // Default path for body background image
   if (file_uri_scheme($body_bg_path) == 'public') {
@@ -24,6 +29,13 @@ function open_framework_preprocess_html(&$vars) {
   if (!empty($body_bg_classes)) {
     drupal_add_css('body {background: url('. $body_bg_path .') repeat top left;}', array('group' => CSS_THEME, 'type' => 'inline', 'media' => 'screen', 'preprocess' => FALSE, 'weight' => '9999',));
   }
+
+  // Add body class based on style selected
+  $vars['classes_array'][] = $vars['content_order_classes'];
+  $vars['classes_array'][] = $vars['front_heading_classes'];
+  $vars['classes_array'][] = $vars['breadcrumb_classes'];
+  $vars['classes_array'][] = $vars['border_classes'];
+  $vars['classes_array'][] = $vars['corner_classes'];
 }
 
 function open_framework_js_alter(&$javascript) {
