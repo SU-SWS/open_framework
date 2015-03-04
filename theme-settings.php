@@ -1,25 +1,6 @@
 <?php
 function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
 
-  // Packages
-  $form['packages_container'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Packages'),
-    '#description' => t('Select font package.'),
-    '#collapsible' => TRUE,
-    '#collapsed' => TRUE,
-  );
-
-  $form['packages_container']['font_awesome_version'] = array(
-    '#type'          => 'radios',
-    '#title'         => t('Font Awesome'),
-    '#default_value' => theme_get_setting('font_awesome_version'),
-    '#options'       => array(
-      'font-awesome-3' => t('Version 3.2.1 [<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/" title="Font Awesome 3.2.1 official documentation">documentation</a>]'),
-      'font-awesome-4' => t('Version 4.3.0 [<a href="http://fortawesome.github.io/Font-Awesome/" title="Font Awesome 4.3.0 official documentation">documentation</a>]'),
-    ),
-  );
-
   // Responsive Behavior
   $form['responsive_container'] = array(
     '#type' => 'fieldset',
@@ -151,6 +132,25 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#options'       => array(
 	  '' => t('Straight corners - <strong><em>Default</em></strong>'),
       'roundedcorners' => t('Rounded corners (not supported in Internet Explorer 8 or below)'),
+    ),
+  );
+
+  // Packages
+  $form['packages_container'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Packages'),
+    '#description' => t('Select font package.'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+  );
+
+  $form['packages_container']['font_awesome_version'] = array(
+    '#type'          => 'radios',
+    '#title'         => t('Font Awesome'),
+    '#default_value' => theme_get_setting('font_awesome_version'),
+    '#options'       => array(
+      'font-awesome-3' => t('Version 3.2.1 [<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/" title="Font Awesome 3.2.1 official documentation">documentation</a>]'),
+      'font-awesome-4' => t('Version 4.3.0 [<a href="http://fortawesome.github.io/Font-Awesome/" title="Font Awesome 4.3.0 official documentation">documentation</a>]'),
     ),
   );
   
