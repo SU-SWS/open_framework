@@ -12,7 +12,7 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <!--[if IE 7]>
-  <?php if ($font_awesome_version == 'font-awesome-3') {print '<link rel="stylesheet" href="' . base_path() . drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-3.2.1/css/font-awesome-ie7.min.css';} ?>
+  <?php if ($font_awesome_version == 'font-awesome-3') {print '<link rel="stylesheet" href="' . base_path() . drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-3.2.1/css/font-awesome-ie7.min.css' . '">';} ?>
   <![endif]-->
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
