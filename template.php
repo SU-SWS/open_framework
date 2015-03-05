@@ -68,15 +68,20 @@ function open_framework_js_alter(&$javascript) {
 }
 
 function open_framework_preprocess_page(&$vars) {
-  // Font Awesome
+  // Bootstrap 2.3.1
+  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 10, 'preprocess' => TRUE));
+  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 15, 'preprocess' => TRUE));
+  drupal_add_js(drupal_get_path('theme', 'open_framework') . '/packages/bootstrap-2.3.1/js/bootstrap.min.js', array('group' => JS_DEFAULT, 'weight' => 10, 'preprocess' => TRUE));
+
+  // Font Awesome version selection
   $font_awesome_version = theme_get_setting('font_awesome_version');
 
   if ($font_awesome_version == 'font-awesome-3') {
-  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-3.2.1/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-3.2.1/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 20, 'preprocess' => TRUE));
   }
 
   if ($font_awesome_version == 'font-awesome-4') {
-  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-4.3.0/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 500, 'preprocess' => TRUE));
+  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-4.3.0/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 20, 'preprocess' => TRUE));
   }
 
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:

@@ -4,12 +4,9 @@ core = 7.x
 version = 7.x-2.2-dev
 project = "open_framework"
 
-stylesheets[all][] = packages/bootstrap-2.3.1/css/bootstrap.min.css
-stylesheets[all][] = packages/bootstrap-2.3.1/css/bootstrap-responsive.min.css
 stylesheets[all][] = css/open_framework.css
 stylesheets[print][] = css/open_framework_print.css
 
-scripts[] = packages/bootstrap-2.3.1/js/bootstrap.min.js
 scripts[] = js/open_framework.js
 scripts[] = js/jquery.placeholder.min.js
 scripts[] = js/override.js
