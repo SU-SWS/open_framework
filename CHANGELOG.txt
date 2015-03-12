@@ -1,102 +1,108 @@
+Version 7.x-2.2
+------------------------------
+hyperboy: Fixed empty button element in "hamburger" menu
+hyperboy: Moved body related theme options styles from html.tpl.php to template.php
+hyperboy: Added theme option to select Font Awesome 4.3.0 or 3.2.1
+
 Version 7.x-2.1
 ------------------------------
-by meganem: Updated .more-link style
-by hyperboy: Reverted change to bottom margin in content-head div
-by hyperboy: Removed check for $body contents in node.tpl.php
-by meganem: Updated more-link styles
-by meganem: Removed overflow:auto from postcards
-by meganem: Changed overflow display style for views-row-lines class
-by hyperboy: Updated header section display
-by hyperboy: Added site login block region
-by hyperboy: Removed padding in rounded corner theme option
-by hyperboy: Added fix for .well on blocks in first sidebar and second sidebar
-by hyperboy: Added SASS files
-by sherakama: Fixed undefined index issue
-by kzoltan: fixed missing region from the subtheme starter kit info file
-by hyperboy: Removed nested container div in navbar region
-by hyperboy: Added IE 7 support for postcard layouts
-by hyperboy: Adjusted responsive ratios for 3-col-flow and 4-col-flow blocks at tablet breakpoint
-by hyperboy: Made equal column height class dynamic on window resize
-by hyperboy: Removed alternative main navigation style
-by meganem: Added overflow auto to postcards
-by meganem: Fixed focus visibility on form-submit buttons
-by meganem: Added line height and margins to field labels
-by hyperboy: Added IE support for placeholder values
-by hyperboy: Removed more-line hover, active, and focus link styles
-by hyperboy: Changed more-link to use CSS not image
-by hyperboy: Updated skip to content link to point to #main instead of #content
-by hyperboy: Updated mobile display of float-left and float-right classes
-by meganem: Adding views-row-lines class
-by hyperboy: Removed bootstrap transparent background print style
-by hyperboy: Updated body background theme option settings
-by hyperboy: Removed bottom margin in content-head div
-by meganem: Updated vendor prefixes on views grids, and adding responsive for grid-five
-by hyperboy: Updated "hamburger" menu link to use button tag.
-by jbickar: Added .visually-hidden class
+meganem: Updated .more-link style
+hyperboy: Reverted change to bottom margin in content-head div
+hyperboy: Removed check for $body contents in node.tpl.php
+meganem: Updated more-link styles
+meganem: Removed overflow:auto from postcards
+meganem: Changed overflow display style for views-row-lines class
+hyperboy: Updated header section display
+hyperboy: Added site login block region
+hyperboy: Removed padding in rounded corner theme option
+hyperboy: Added fix for .well on blocks in first sidebar and second sidebar
+hyperboy: Added SASS files
+sherakama: Fixed undefined index issue
+kzoltan: fixed missing region from the subtheme starter kit info file
+hyperboy: Removed nested container div in navbar region
+hyperboy: Added IE 7 support for postcard layouts
+hyperboy: Adjusted responsive ratios for 3-col-flow and 4-col-flow blocks at tablet breakpoint
+hyperboy: Made equal column height class dynamic on window resize
+hyperboy: Removed alternative main navigation style
+meganem: Added overflow auto to postcards
+meganem: Fixed focus visibility on form-submit buttons
+meganem: Added line height and margins to field labels
+hyperboy: Added IE support for placeholder values
+hyperboy: Removed more-line hover, active, and focus link styles
+hyperboy: Changed more-link to use CSS not image
+hyperboy: Updated skip to content link to point to #main instead of #content
+hyperboy: Updated mobile display of float-left and float-right classes
+meganem: Adding views-row-lines class
+hyperboy: Removed bootstrap transparent background print style
+hyperboy: Updated body background theme option settings
+hyperboy: Removed bottom margin in content-head div
+meganem: Updated vendor prefixes on views grids, and adding responsive for grid-five
+hyperboy: Updated "hamburger" menu link to use button tag.
+jbickar: Added .visually-hidden class
 
 Version 7.x-2.06
 ------------------------------
-by hyperboy: Reverted to Bootstrap 2.3.1 to enable access to nested main menu list items on touch devices
+hyperboy: Reverted to Bootstrap 2.3.1 to enable access to nested main menu list items on touch devices
 
 Version 7.x-2.05
 ------------------------------
-by agold2: Restored Bootstrap's pull-right class float:right behavior blocks in the navigation region
-by meganem: Updated CSS classes for float-right, collapsable fieldsets, and images
-by meganem: Added collapsed class to navbar
-by meganem: Made search box styles work outside of the search box region
-by meganem: Made float styles available in WYSIWYG preview
-by jbickar: Added accessibility improvements to search box
-by hyperboy: Added accessibility improvements to skip navigation links
-by hyperboy: Added theme option for displaying main content before sidebar content in mobile
-by hyperboy: Added equal-height column behavior via "column" class
-by hyperboy: Added responsive support for iframes and video players via the "video-player" class
-by hyperboy: Added logic to node.tpl.php to not output the node content if it is empty
-by codelica: Added jQuery Update module compatibility in core jQuery replacement behavior
-by hyperboy: Updated theme options breadcrumbs and photo background
-by ebollens: Fixed nav-search class typo in open_framework.css
-by hyperboy: Added Font Awesome IE 7 support
-by hyperboy: Updated Bootstrap to version 2.3.2
-by hyperboy: Updated to Font Awesome 3.2.1
-by hyperboy: Updated HTML5 Shiv to version 3.6.2
+agold2: Restored Bootstrap's pull-right class float:right behavior blocks in the navigation region
+meganem: Updated CSS classes for float-right, collapsable fieldsets, and images
+meganem: Added collapsed class to navbar
+meganem: Made search box styles work outside of the search box region
+meganem: Made float styles available in WYSIWYG preview
+jbickar: Added accessibility improvements to search box
+hyperboy: Added accessibility improvements to skip navigation links
+hyperboy: Added theme option for displaying main content before sidebar content in mobile
+hyperboy: Added equal-height column behavior via "column" class
+hyperboy: Added responsive support for iframes and video players via the "video-player" class
+hyperboy: Added logic to node.tpl.php to not output the node content if it is empty
+codelica: Added jQuery Update module compatibility in core jQuery replacement behavior
+hyperboy: Updated theme options breadcrumbs and photo background
+ebollens: Fixed nav-search class typo in open_framework.css
+hyperboy: Added Font Awesome IE 7 support
+hyperboy: Updated Bootstrap to version 2.3.2
+hyperboy: Updated to Font Awesome 3.2.1
+hyperboy: Updated HTML5 Shiv to version 3.6.2
 
 Version 7.x-2.04
 ------------------------------
-by meganem: Updated general CSS
-by meganem: Updated search box styles
-by meganem: Added print stylesheet
-by hyperboy: Updated Bootstrap to version 2.3.1
-by hyperboy: Added Admin Shortcuts theme region
-by hyperboy: Updated core jQuery replacement behavior
-by hyperboy: Added ARIA roles
-by oresh: Page template and CSS cleanup
-by timplunkett: Fixed javascript errors
-by mistermarco: Applied dropdown classes to main-menu and menu blocks in the navigation region only
+meganem: Updated general CSS
+meganem: Updated search box styles
+meganem: Added print stylesheet
+hyperboy: Updated Bootstrap to version 2.3.1
+hyperboy: Added Admin Shortcuts theme region
+hyperboy: Updated core jQuery replacement behavior
+hyperboy: Added ARIA roles
+oresh: Page template and CSS cleanup
+timplunkett: Fixed javascript errors
+mistermarco: Applied dropdown classes to main-menu and menu blocks in the navigation region only
 
 Version 7.x-2.03
 ------------------------------
-by hyperboy: Added default drop-down and nested menu behaviors to top navigation and sidebar menus
-by hyperboy: Added Font Awesome 3.0.2
-by hyperboy: Moved secondary menu links to new region at top of page as additional "help" links area.
+hyperboy: Added default drop-down and nested menu behaviors to top navigation and sidebar menus
+hyperboy: Added Font Awesome 3.0.2
+hyperboy: Moved secondary menu links to new region at top of page as additional "help" links area.
 
 Version 7.x-2.02
 ------------------------------
-by meganem:  Added sub-theming kit
-by hyperboy: Updated all block regions from row to fluid row
-by meganem:  Updated Drupal search form with bootstrap classes
-by meganem:  Added new screenshot
-by hyperboy: Used template.php instead of jQuery to generate the Bootstrap classes for main menu
-by hyperboy: Updated Bootstrap to version 2.2.2
-by hyperboy: Added Bootstrap behavior and styles to alert messages
-by hyperboy: Changed search box to use Drupal search form block and search box region
-by meganem:  Added a bunch of CSS style fixes
+meganem:  Added sub-theming kit
+hyperboy: Updated all block regions from row to fluid row
+meganem:  Updated Drupal search form with bootstrap classes
+meganem:  Added new screenshot
+hyperboy: Used template.php instead of jQuery to generate the Bootstrap classes for main menu
+hyperboy: Updated Bootstrap to version 2.2.2
+hyperboy: Added Bootstrap behavior and styles to alert messages
+hyperboy: Changed search box to use Drupal search form block and search box region
+meganem:  Added a bunch of CSS style fixes
 
 Version 7.x-2.01
 ------------------------------
-by hyperboy: Added theme status messages
-by hyperboy: Updated Twitter Bootstrap to version 2.2.1
-by meganem:  Updated margins for views and content elements
-by hyperboy: Added CSS layout classes
+hyperboy: Added theme status messages
+hyperboy: Updated Twitter Bootstrap to version 2.2.1
+meganem:  Updated margins for views and content elements
+hyperboy: Added CSS layout classes
 
 Version 7.x-2.0
 ------------------------------
-by hyperboy: Initial Release
+hyperboy: Initial Release
