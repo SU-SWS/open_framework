@@ -1,3 +1,7 @@
+Version 7.x-2.3
+------------------------------
+hyperboy: Added missing body classes for body background image theme option
+
 Version 7.x-2.2
 ------------------------------
 hyperboy: Fixed empty button element in "hamburger" menu
