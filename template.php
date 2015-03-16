@@ -32,6 +32,8 @@ function open_framework_preprocess_html(&$vars) {
   }
 
   // Add body class based on style selected
+  $vars['classes_array'][] = $vars['body_bg_type'];
+  $vars['classes_array'][] = $vars['body_bg_classes'];
   $vars['classes_array'][] = $vars['content_order_classes'];
   $vars['classes_array'][] = $vars['front_heading_classes'];
   $vars['classes_array'][] = $vars['breadcrumb_classes'];
