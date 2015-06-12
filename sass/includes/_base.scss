@@ -250,10 +250,6 @@ ul.primary { margin:1.5em 0 .2em; }
 .content-bottom .block.span12.clear-row 
 { margin-right:0; width:100%; }
 
-[class*="span"].clear-row {
-    clear:none;
-}
-
 .content-row2 [class*="span"]:nth-child(2n+1), .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .content-row3 [class*="span"]:nth-child(2n+1), .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .content-row4 [class*="span"]:nth-child(2n+1), .content-col4.row-fluid [class*="span"]:nth-child(2n+1), .site-sidebar-first .block:nth-child(2n+1), .site-sidebar-second .block:nth-child(2n+1) { clear:both; margin-left:0; }
 /* fix for .well on blocks in first sidebar and second sidebar */
     .site-sidebar-first .block.well, .site-sidebar-second .block.well { width:37%; width:-moz-calc(50% - 50px); width:-webkit-calc(50% - 50px); width:-o-calc(50% - 50px); width:calc(50% - 50px); }
