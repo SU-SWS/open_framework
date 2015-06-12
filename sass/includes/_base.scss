@@ -209,9 +209,51 @@ ul.primary { margin:1.5em 0 .2em; }
 @media (min-width: 481px) and (max-width: 767px) {
 .main-top .block[class*="span"], .main-upper .block[class*="span"], .main-lower .block[class*="span"], .main-bottom .block[class*="span"], .content-top .block[class*="span"], .content-upper .block[class*="span"], .content-body .block[class*="span"], .content-lower .block[class*="span"], .content-bottom .block[class*="span"], .content-row2 .span6, .content-col2.row-fluid .span6, .content-row3 .span4, .content-col3.row-fluid .span4, .content-row4 .span3, .content-col4.row-fluid .span3, .site-sidebar-first .block, .site-sidebar-second .block { display:block; float:left; margin-right:0; width:49%; }
 .main-top .block, .main-upper .block, .main-lower .block, .main-bottom .block, .content-top .block, .content-upper .block, .content-body .block, .content-lower .block, .content-bottom .block { width:100%; }
-.main-top .block[class*="span"]:nth-child(odd), .main-top .block[class*="span"].clear-row, .main-upper .block[class*="span"]:nth-child(odd), .main-upper .block[class*="span"].clear-row, .main-body .block[class*="span"]:nth-child(odd), .main-body .block[class*="span"].clear-row, .main-lower .block[class*="span"]:nth-child(odd), .main-lower .block[class*="span"].clear-row, .main-bottom .block[class*="span"]:nth-child(odd), .main-bottom .block[class*="span"].clear-row, .content-top .block[class*="span"]:nth-child(odd), .content-top .block[class*="span"].clear-row, .content-upper .block[class*="span"]:nth-child(odd), .content-upper .block[class*="span"].clear-row, .content-lower .block[class*="span"]:nth-child(odd), .content-lower .block[class*="span"].clear-row, .content-bottom .block[class*="span"]:nth-child(odd), .content-bottom .block[class*="span"].clear-row, .content-row2 .span6:nth-child(odd), .content-col2.row-fluid .span6:nth-child(odd), .content-row3 .span4:nth-child(odd), .content-col3.row-fluid .span4:nth-child(odd), .content-row4 .span3:nth-child(odd), .content-col4.row-fluid .span3:nth-child(odd), .site-sidebar-first .block:nth-child(odd), .site-sidebar-second .block:nth-child(odd) { margin-right:2%; }
+
+.main-top .block[class*="span"]:nth-child(odd), 
+.main-top .block[class*="span"]:nth-child(odd).clear-row, 
+.main-upper .block[class*="span"]:nth-child(odd), 
+.main-upper .block[class*="span"]:nth-child(odd).clear-row, 
+.main-body .block[class*="span"]:nth-child(odd), 
+.main-body .block[class*="span"]:nth-child(odd).clear-row, 
+.main-lower .block[class*="span"]:nth-child(odd), 
+.main-lower .block[class*="span"]:nth-child(odd).clear-row, 
+.main-bottom .block[class*="span"]:nth-child(odd), 
+.main-bottom .block[class*="span"]:nth-child(odd).clear-row, 
+.content-top .block[class*="span"]:nth-child(odd), 
+.content-top .block[class*="span"]:nth-child(odd).clear-row, 
+.content-upper .block[class*="span"]:nth-child(odd), 
+.content-upper .block[class*="span"]:nth-child(odd).clear-row, 
+.content-lower .block[class*="span"]:nth-child(odd), 
+.content-lower .block[class*="span"]:nth-child(odd).clear-row, 
+.content-bottom .block[class*="span"]:nth-child(odd), 
+.content-bottom .block[class*="span"]:nth-child(odd).clear-row, 
+.content-row2 .span6:nth-child(odd), 
+.content-col2.row-fluid .span6:nth-child(odd), 
+.content-row3 .span4:nth-child(odd), 
+.content-col3.row-fluid .span4:nth-child(odd), 
+.content-row4 .span3:nth-child(odd), 
+.content-col4.row-fluid .span3:nth-child(odd), 
+.site-sidebar-first .block:nth-child(odd), 
+.site-sidebar-second .block:nth-child(odd) 
+{ margin-right:2%; }
 .main-top .block[class*="span"]:last-child, .main-upper .block[class*="span"]:last-child, .main-body .block[class*="span"]:last-child, .main-lower .block[class*="span"]:last-child, .main-bottom .block[class*="span"]:last-child, .content-top .block[class*="span"]:last-child, .content-upper .block[class*="span"]:last-child, .content-lower .block[class*="span"]:last-child, .content-bottom .block[class*="span"]:last-child, .content-row2 [class*="span"]:nth-child(2n), .content-row3 [class*="span"]:nth-child(2n), .content-col2.row-fluid [class*="span"]:nth-child(2n), .content-col3.row-fluid [class*="span"]:nth-child(2n), .content-row4 [class*="span"]:nth-child(2n), .content-col4.row-fluid [class*="span"]:nth-child(2n), .site-sidebar-first .block:nth-child(2n), .site-sidebar-second .block:nth-child(2n) { margin-right:0; }
-.main-top .block.span12.clear-row, .main-upper .block.span12.clear-row, .main-lower .block.span12.clear-row, .main-bottom .block.span12.clear-row, .content-top .block.span12.clear-row, .content-upper .block.span12.clear-row, .content-body .block.span12.clear-row, .content-lower .block.span12.clear-row, .content-bottom .block.span12.clear-row { margin-right:0; width:100%; }
+
+.main-top .block.span12.clear-row, 
+.main-upper .block.span12.clear-row, 
+.main-lower .block.span12.clear-row, 
+.main-bottom .block.span12.clear-row, 
+.content-top .block.span12.clear-row, 
+.content-upper .block.span12.clear-row, 
+.content-body .block.span12.clear-row, 
+.content-lower .block.span12.clear-row, 
+.content-bottom .block.span12.clear-row 
+{ margin-right:0; width:100%; }
+
+[class*="span"].clear-row {
+    clear:none;
+}
+
 .content-row2 [class*="span"]:nth-child(2n+1), .content-col2.row-fluid [class*="span"]:nth-child(2n+1), .content-row3 [class*="span"]:nth-child(2n+1), .content-col3.row-fluid [class*="span"]:nth-child(2n+1), .content-row4 [class*="span"]:nth-child(2n+1), .content-col4.row-fluid [class*="span"]:nth-child(2n+1), .site-sidebar-first .block:nth-child(2n+1), .site-sidebar-second .block:nth-child(2n+1) { clear:both; margin-left:0; }
 /* fix for .well on blocks in first sidebar and second sidebar */
     .site-sidebar-first .block.well, .site-sidebar-second .block.well { width:37%; width:-moz-calc(50% - 50px); width:-webkit-calc(50% - 50px); width:-o-calc(50% - 50px); width:calc(50% - 50px); }
