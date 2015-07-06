@@ -1,5 +1,6 @@
-Version 7.x-2.4-dev
+Version 7.x-2.4
 ------------------------------
+meganem: Fixed clear-row for table breakpoint
 
 Version 7.x-2.3
 ------------------------------

@@ -3,42 +3,35 @@
  * Designed and built with all the love for trees.
  */
 @media print {
-  /* line 7, ../sass/includes/_print.scss */
   a[href]:after {
     content: none;
   }
 
-  /* line 10, ../sass/includes/_print.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 15, ../sass/includes/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: none;
   }
 
-  /* line 19, ../sass/includes/_print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 23, ../sass/includes/_print.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 27, ../sass/includes/_print.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 30, ../sass/includes/_print.scss */
   img {
     max-width: 100% !important;
   }
@@ -47,7 +40,6 @@
     margin: 0.5cm;
 }
 
-  /* line 38, ../sass/includes/_print.scss */
   p,
   h2,
   h3 {
@@ -55,13 +47,11 @@
     widows: 3;
   }
 
-  /* line 43, ../sass/includes/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 
-  /* line 53, ../sass/includes/_print.scss */
   .logged-in #toolbar,
   .logged-in .tabs,
   .book_add_child,
