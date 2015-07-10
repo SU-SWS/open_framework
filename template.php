@@ -523,7 +523,12 @@ function open_framework_is_in_nav_menu($element) {
 
 	if (module_exists('context')) {
 	  $reaction_block_plugin = context_get_plugin('reaction', 'block');
-	  $context_blocks = $reaction_block_plugin->block_list('navigation');
+	  if ($reaction_block_plugin) {
+  	    $context_blocks = $reaction_block_plugin->block_list('navigation');
+	  }
+	  else {
+	    watchdog("open_framework", "Could not load block context reaction plugin", array(), WATCHDOG_WARNING);
+	  }
 	}
 
     $blocks = array_merge($blocks, $context_blocks);
