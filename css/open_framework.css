@@ -1343,6 +1343,18 @@ body.photobg {
 }
 
 /* ----- Responsive Views Grids ------ */
+
+.views-grid-three .views-row {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 1.7%;
+  margin-bottom: 20px;
+  width: 31.3%;
+  vertical-align: top;
+}
+
 .views-grid-four .views-row {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1440,6 +1452,10 @@ body.photobg {
 }
 
 @media (max-width: 1199px) {
+  .views-grid-three .views-row {
+    width: 31.1%;
+  }
+
   .views-grid-four .views-row {
     width: 22.8%;
     margin-right: 2.3%;
