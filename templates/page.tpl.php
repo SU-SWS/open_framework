@@ -83,28 +83,30 @@
 <!-- /#main-menu -->
 <?php endif; ?>
 
-<div id="main" class="clearfix main" role="main">
+<div id="fullwidth" class="clearfix fullwidth">
   <?php if ($page['fullwidth_1']): ?>
-    <div id="fullwidth-1" class="row-fluid fullwidth fullwidth-1">
+    <div id="fullwidth-1" class="row-fluid fullwidth-1">
       <div class="container"> <?php print render($page['fullwidth_1']); ?> </div>
     </div>
   <?php endif; ?>
   <?php if ($page['fullwidth_2']): ?>
-    <div id="fullwidth-2" class="row-fluid fullwidth fullwidth-2">
+    <div id="fullwidth-2" class="row-fluid fullwidth-2">
       <div class="container"> <?php print render($page['fullwidth_2']); ?> </div>
     </div>
   <?php endif; ?>
   <?php if ($page['fullwidth_3']): ?>
-    <div id="fullwidth-3" class="row-fluid fullwidth fullwidth-3">
+    <div id="fullwidth-3" class="row-fluid fullwidth-3">
       <div class="container"> <?php print render($page['fullwidth_3']); ?> </div>
     </div>
   <?php endif; ?>
   <?php if ($page['fullwidth_4']): ?>
-    <div id="fullwidth-4" class="row-fluid fullwidth fullwidth-4">
+    <div id="fullwidth-4" class="row-fluid fullwidth-4">
       <div class="container"> <?php print render($page['fullwidth_4']); ?> </div>
     </div>
   <?php endif; ?>
+</div>
 
+<div id="main" class="clearfix main" role="main">
   <div class="container">
     <?php if (!($is_front) && ($breadcrumb)): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
