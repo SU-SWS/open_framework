@@ -1,6 +1,6 @@
 /* global **************************** */
 /* ----- body ------------------------ */
-/* line 4, ../sass/includes/_base.scss */
+/* line 4, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -8,7 +8,7 @@ body {
 
 /* ----- custom fonts ---------------- */
 /* ----- text ------------------------ */
-/* line 15, ../sass/includes/_base.scss */
+/* line 15, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 h2,
 h3,
 h4,
@@ -17,28 +17,28 @@ h6 {
   line-height: 1.3em;
 }
 
-/* line 19, ../sass/includes/_base.scss */
+/* line 19, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 p {
   margin: 0 0 1em;
 }
 
-/* line 23, ../sass/includes/_base.scss */
+/* line 23, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 em {
   padding: 0 3px 0 0;
 }
 
-/* line 27, ../sass/includes/_base.scss */
+/* line 27, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 32, ../sass/includes/_base.scss */
+/* line 32, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 quote,
 code {
   margin: .5em 0;
 }
 
-/* line 36, ../sass/includes/_base.scss */
+/* line 36, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .summary {
   margin-bottom: 15px;
   font-weight: 300;
@@ -46,7 +46,7 @@ code {
   line-height: 1.4em;
 }
 
-/* line 43, ../sass/includes/_base.scss */
+/* line 43, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .descriptor {
   margin-bottom: 4px;
   text-transform: uppercase;
@@ -55,7 +55,7 @@ code {
   line-height: 1.5em;
 }
 
-/* line 51, ../sass/includes/_base.scss */
+/* line 51, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .caption {
   margin-top: 0;
   margin-bottom: 2em;
@@ -66,13 +66,13 @@ code {
 }
 
 /* ----- links ----------------------- */
-/* line 62, ../sass/includes/_base.scss */
+/* line 62, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 a,
 a:hover {
   text-decoration: none;
 }
 
-/* line 68, ../sass/includes/_base.scss */
+/* line 68, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .more-link,
 a.more-link,
 .page-search .node-readmore a {
@@ -88,7 +88,7 @@ a.more-link,
   font-size: 12px;
 }
 
-/* line 83, ../sass/includes/_base.scss */
+/* line 83, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .more-link a:hover,
 a.more-link:hover,
 .page-search .node-readmore a:hover {
@@ -96,21 +96,21 @@ a.more-link:hover,
   text-decoration: none;
 }
 
-/* line 90, ../sass/includes/_base.scss */
+/* line 90, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .more-link a:after,
 a.more-link:after,
 .page-search .node-readmore a:after {
   content: " »";
 }
 
-/* line 95, ../sass/includes/_base.scss */
+/* line 95, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 h2 a:hover,
 h3 a:hover {
   text-decoration: none;
 }
 
 /* ----- lists ----------------------- */
-/* line 102, ../sass/includes/_base.scss */
+/* line 102, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 ul.inline,
 ul.links.inline,
 ul.links.inline li {
@@ -119,54 +119,54 @@ ul.links.inline li {
 }
 
 /* ----- tables ---------------------- */
-/* line 109, ../sass/includes/_base.scss */
+/* line 109, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 tr.even,
 tr.odd {
   border-bottom: 1px solid #ddd;
   background-color: transparent;
 }
 
-/* line 115, ../sass/includes/_base.scss */
+/* line 115, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 th,
 td {
   padding: .5em;
   border: 1px solid #ddd;
 }
 
-/* line 121, ../sass/includes/_base.scss */
+/* line 121, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 th,
 td.active {
   background-color: #f5f5f5;
 }
 
-/* line 125, ../sass/includes/_base.scss */
+/* line 125, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 th {
   vertical-align: bottom;
 }
 
-/* line 129, ../sass/includes/_base.scss */
+/* line 129, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 td {
   vertical-align: top;
 }
 
 /* ----- forms ----------------------- */
-/* line 134, ../sass/includes/_base.scss */
+/* line 134, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .form-item label {
   display: block;
   font-weight: 700;
 }
 
-/* line 139, ../sass/includes/_base.scss */
+/* line 139, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 27px;
 }
 
-/* line 143, ../sass/includes/_base.scss */
+/* line 143, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .sidebar .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 0.5em;
 }
 
-/* line 147, ../sass/includes/_base.scss */
+/* line 147, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views-exposed-form .views-exposed-widget {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -174,7 +174,7 @@ td {
   max-width: 100%;
 }
 
-/* line 156, ../sass/includes/_base.scss */
+/* line 156, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input,
 select,
 .chzn-container {
@@ -182,18 +182,18 @@ select,
 }
 
 /* override for views exposed forms submit */
-/* line 161, ../sass/includes/_base.scss */
+/* line 161, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .form-type-checkbox label {
   display: inline-block;
   margin-left: 8px;
 }
 
-/* line 166, ../sass/includes/_base.scss */
+/* line 166, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input[type="checkbox"] {
   margin: 0;
 }
 
-/* line 170, ../sass/includes/_base.scss */
+/* line 170, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input.form-submit {
   height: 2.5em;
   border: 1px solid #d5d5d5;
@@ -210,7 +210,7 @@ input.form-submit {
   background-image: linear-gradient(to bottom, #ffffff 0%, #e6e6e6 100%);
 }
 
-/* line 183, ../sass/includes/_base.scss */
+/* line 183, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input.form-submit:hover,
 input.form-submit:focus {
   background-image: -webkit-linear-gradient(top, whitesmoke 0%, #e6e6e6 100%);
@@ -221,12 +221,12 @@ input.form-submit:focus {
   background-image: linear-gradient(to bottom, #f5f5f5 0%, #e6e6e6 100%);
 }
 
-/* line 192, ../sass/includes/_base.scss */
+/* line 192, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input.form-submit:focus {
   border: 1px dotted #333;
 }
 
-/* line 196, ../sass/includes/_base.scss */
+/* line 196, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input.btn-search {
   width: 26px;
   height: 26px;
@@ -234,21 +234,21 @@ input.btn-search {
   background: none repeat scroll 0 0 transparent;
 }
 
-/* line 203, ../sass/includes/_base.scss */
+/* line 203, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input.btn-search:hover {
   opacity: .6;
   filter: alpha(opacity=60);
   background: none repeat scroll 0 0 transparent;
 }
 
-/* line 210, ../sass/includes/_base.scss */
+/* line 210, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 input.placeholder,
 textarea.placeholder {
   color: #aaa;
 }
 
 /* ----- Invisible and Focusable Elements (skipnav) ----------------------- */
-/* line 215, ../sass/includes/_base.scss */
+/* line 215, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .element-invisible {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -256,7 +256,7 @@ textarea.placeholder {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 224, ../sass/includes/_base.scss */
+/* line 224, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .element-invisible.element-focusable:active,
 .element-invisible.element-focusable:focus {
   position: static !important;
@@ -267,40 +267,40 @@ textarea.placeholder {
 }
 
 /* ----- other ----------------------- */
-/* line 233, ../sass/includes/_base.scss */
+/* line 233, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 hr {
   clear: both;
 }
 
-/* line 237, ../sass/includes/_base.scss */
+/* line 237, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .border-none {
   border: none !important;
 }
 
-/* line 241, ../sass/includes/_base.scss */
+/* line 241, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .box-shadow-none {
   box-shadow: none !important;
 }
 
 /* header ******************************/
 /* ----- header region --------------- */
-/* line 247, ../sass/includes/_base.scss */
+/* line 247, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .header {
   margin: 25px 0 30px;
 }
 
-/* line 251, ../sass/includes/_base.scss */
+/* line 251, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .header-section {
   display: table;
 }
 
-/* line 255, ../sass/includes/_base.scss */
+/* line 255, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .header-content {
   clear: both;
 }
 
 /* ----- search box ------------------ */
-/* line 260, ../sass/includes/_base.scss */
+/* line 260, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .nav-search {
   float: right;
   margin: -65px -20px 0 0;
@@ -308,20 +308,20 @@ hr {
   min-height: 1px;
 }
 
-/* line 268, ../sass/includes/_base.scss */
+/* line 268, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .nav-search .search-form,
 #header-search .search-form {
   margin: 0;
   padding: 0;
 }
 
-/* line 274, ../sass/includes/_base.scss */
+/* line 274, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .nav-search .form-item,
 #header-search .form-item {
   margin: 0;
 }
 
-/* line 278, ../sass/includes/_base.scss */
+/* line 278, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #block-search-form {
   position: relative;
   display: inline-block;
@@ -329,45 +329,45 @@ hr {
   padding: 0;
 }
 
-/* line 285, ../sass/includes/_base.scss */
+/* line 285, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #block-search-form .search-query {
   padding-right: 38px;
   width: 130px;
 }
 
-/* line 290, ../sass/includes/_base.scss */
+/* line 290, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #block-search-form .btn-search {
   position: absolute;
   top: 1px;
   right: 10px;
 }
 
-/* line 296, ../sass/includes/_base.scss */
+/* line 296, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #block-search-form input.btn-search:hover {
   opacity: .6;
   filter: alpha(opacity=60);
 }
 
-/* line 301, ../sass/includes/_base.scss */
+/* line 301, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #block-search-form form {
   margin: 0;
 }
 
 /* ----- logo ------------------------ */
-/* line 306, ../sass/includes/_base.scss */
+/* line 306, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .header .site-logo {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 311, ../sass/includes/_base.scss */
+/* line 311, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .header .site-logo img {
   max-height: 100px;
   max-width: none;
 }
 
 /* ----- site title and slogan ------- */
-/* line 318, ../sass/includes/_base.scss */
+/* line 318, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-name,
 #site-slogan {
   color: inherit;
@@ -376,32 +376,32 @@ hr {
   text-rendering: optimizelegibility;
 }
 
-/* line 325, ../sass/includes/_base.scss */
+/* line 325, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-name {
   font-weight: 700;
   font-size: 44px;
 }
 
-/* line 330, ../sass/includes/_base.scss */
+/* line 330, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #site-slogan {
   margin-top: .3em;
   font-size: 24px;
   line-height: 1.1em;
 }
 
-/* line 337, ../sass/includes/_base.scss */
+/* line 337, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-name a,
 .site-name a:hover {
   color: #333;
   text-decoration: none;
 }
 
-/* line 342, ../sass/includes/_base.scss */
+/* line 342, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-name a:hover {
   color: #000;
 }
 
-/* line 346, ../sass/includes/_base.scss */
+/* line 346, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #name-and-slogan {
   display: table-cell;
   padding: 20px 0 20px 10px;
@@ -409,19 +409,19 @@ hr {
   width: 100%;
 }
 
-/* line 353, ../sass/includes/_base.scss */
+/* line 353, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-login {
   text-align: right;
 }
 
 /* navigation ************************ */
 /* ----- main navigation ------------- */
-/* line 359, ../sass/includes/_base.scss */
+/* line 359, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-main-menu {
   clear: both;
 }
 
-/* line 366, ../sass/includes/_base.scss */
+/* line 366, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-main-menu ul li,
 .site-main-menu ul li.leaf,
 .site-main-menu ul li.expanded,
@@ -430,25 +430,25 @@ hr {
   list-style-image: none;
 }
 
-/* line 371, ../sass/includes/_base.scss */
+/* line 371, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-main-menu ul.menu {
   margin: 0;
 }
 
-/* line 375, ../sass/includes/_base.scss */
+/* line 375, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-main-menu ul.menu li {
   margin: 0;
   padding: 0;
 }
 
-/* line 380, ../sass/includes/_base.scss */
+/* line 380, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 nav h2 {
   position: absolute;
   left: -10000px;
 }
 
 /* ----- admin shortcuts / secondary menu -------- */
-/* line 386, ../sass/includes/_base.scss */
+/* line 386, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts {
   display: block;
   padding: 10px;
@@ -456,7 +456,7 @@ nav h2 {
   font-size: 12px;
 }
 
-/* line 396, ../sass/includes/_base.scss */
+/* line 396, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu li,
 .admin-shortcuts ul.menu li.leaf,
 .admin-shortcuts ul.menu li.expanded,
@@ -465,33 +465,33 @@ nav h2 {
   list-style-image: none;
 }
 
-/* line 401, ../sass/includes/_base.scss */
+/* line 401, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu {
   margin: 0;
 }
 
-/* line 405, ../sass/includes/_base.scss */
+/* line 405, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu li {
   display: inline-block;
   position: relative;
 }
 
-/* line 410, ../sass/includes/_base.scss */
+/* line 410, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu li li {
   display: block;
 }
 
-/* line 414, ../sass/includes/_base.scss */
+/* line 414, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu li a {
   background: none;
 }
 
-/* line 418, ../sass/includes/_base.scss */
+/* line 418, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu li ul {
   display: none;
 }
 
-/* line 422, ../sass/includes/_base.scss */
+/* line 422, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu li:hover > ul {
   display: block;
   background: #fff;
@@ -505,7 +505,7 @@ nav h2 {
   width: 200px;
 }
 
-/* line 431, ../sass/includes/_base.scss */
+/* line 431, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .admin-shortcuts ul.menu li li:hover > ul {
   position: absolute;
   top: 5px;
@@ -513,14 +513,14 @@ nav h2 {
 }
 
 /* ----- admin menu ------------------ */
-/* line 438, ../sass/includes/_base.scss */
+/* line 438, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #admin-menu li {
   line-height: normal;
 }
 
 /* ----- pager nav ------------------- */
 /* full-width regions **************** */
-/* line 443, ../sass/includes/_base.scss */
+/* line 443, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .fullwidth .container {
   width: 100%;
   margin-left: 0;
@@ -528,24 +528,24 @@ nav h2 {
 }
 
 /* sidebars ************************** */
-/* line 451, ../sass/includes/_base.scss */
+/* line 451, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .sidebar {
   margin-bottom: 1.2em;
 }
 
-/* line 455, ../sass/includes/_base.scss */
+/* line 455, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .sidebar .nav {
   margin-left: 1.2em;
 }
 
 /* footer **************************** */
-/* line 460, ../sass/includes/_base.scss */
+/* line 460, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-footer {
   margin-top: 40px;
   margin-bottom: 10px;
 }
 
-/* line 465, ../sass/includes/_base.scss */
+/* line 465, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .site-footer h2 {
   font-size: 20px;
   line-height: 1.5em;
@@ -553,26 +553,26 @@ nav h2 {
 
 /* ----- fat footer ------------------ */
 /* content *****************************/
-/* line 474, ../sass/includes/_base.scss */
+/* line 474, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main,
 .content-head,
 .mc-content {
   margin-bottom: 1.2em;
 }
 
-/* line 478, ../sass/includes/_base.scss */
+/* line 478, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .node .submitted {
   margin-bottom: 1em;
 }
 
 /* views ***************************** */
-/* line 483, ../sass/includes/_base.scss */
+/* line 483, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views-row {
   clear: both;
   margin-bottom: 1em;
 }
 
-/* line 490, ../sass/includes/_base.scss */
+/* line 490, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views-row.views-row-last,
 .views-row h2,
 .field-collection-view {
@@ -581,23 +581,23 @@ nav h2 {
 
 /* containers ************************ */
 /* ----- blocks ---------------------- */
-/* line 496, ../sass/includes/_base.scss */
+/* line 496, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .block {
   margin-bottom: 30px;
 }
 
-/* line 500, ../sass/includes/_base.scss */
+/* line 500, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .block.block-no-bottom-margin {
   margin-bottom: 0;
 }
 
-/* line 504, ../sass/includes/_base.scss */
+/* line 504, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main #block-system-main {
   margin-bottom: 0;
 }
 
 /* ----- callouts and blockquotes ---- */
-/* line 511, ../sass/includes/_base.scss */
+/* line 511, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .callout,
 .bracket,
 .topline {
@@ -608,18 +608,18 @@ nav h2 {
   border-left: 0 none;
 }
 
-/* line 520, ../sass/includes/_base.scss */
+/* line 520, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .topline,
 .bracket {
   border-top: 1px solid #eee;
 }
 
-/* line 524, ../sass/includes/_base.scss */
+/* line 524, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .bracket {
   border-bottom: 1px solid #eee;
 }
 
-/* line 528, ../sass/includes/_base.scss */
+/* line 528, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .callout {
   padding: 15px;
   width: 27.25%;
@@ -627,7 +627,7 @@ nav h2 {
 }
 
 /* ----- pullquote text -------------- */
-/* line 537, ../sass/includes/_base.scss */
+/* line 537, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .pullquote,
 .pullquote-large,
 blockquote > p:first-child {
@@ -636,18 +636,18 @@ blockquote > p:first-child {
   line-height: 1.5em;
 }
 
-/* line 543, ../sass/includes/_base.scss */
+/* line 543, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .pullquote {
   letter-spacing: .02em;
   font-size: 14px;
 }
 
-/* line 548, ../sass/includes/_base.scss */
+/* line 548, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .pullquote-large {
   font-size: 20px;
 }
 
-/* line 552, ../sass/includes/_base.scss */
+/* line 552, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .credits {
   margin-top: .5em;
   margin-bottom: .5em;
@@ -656,7 +656,7 @@ blockquote > p:first-child {
 }
 
 /* postcard layouts ****************** */
-/* line 563, ../sass/includes/_base.scss */
+/* line 563, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-left,
 .postcard-left-wrap,
 .postcard-right,
@@ -665,25 +665,25 @@ blockquote > p:first-child {
   margin-bottom: 15px;
 }
 
-/* line 569, ../sass/includes/_base.scss */
+/* line 569, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-left > div,
 .postcard-right > div {
   display: table-cell;
 }
 
-/* line 574, ../sass/includes/_base.scss */
+/* line 574, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-left-wrap > div:first-child,
 .postcard-left > div:first-child {
   float: left;
 }
 
-/* line 579, ../sass/includes/_base.scss */
+/* line 579, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-right-wrap > div:first-child,
 .postcard-right > div:first-child {
   float: right;
 }
 
-/* line 586, ../sass/includes/_base.scss */
+/* line 586, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-left > div:first-child img,
 .postcard-left-wrap > div:first-child img,
 .postcard-right > div:first-child img,
@@ -691,19 +691,19 @@ blockquote > p:first-child {
   margin-bottom: 15px;
 }
 
-/* line 591, ../sass/includes/_base.scss */
+/* line 591, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-left > div:first-child img,
 .postcard-left-wrap > div:first-child img {
   margin-right: 15px;
 }
 
-/* line 596, ../sass/includes/_base.scss */
+/* line 596, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-right > div:first-child img,
 .postcard-right-wrap > div:first-child img {
   margin-left: 15px;
 }
 
-/* line 603, ../sass/includes/_base.scss */
+/* line 603, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .postcard-left h2,
 .postcard-left-wrap h2,
 .postcard-right h2,
@@ -712,26 +712,26 @@ blockquote > p:first-child {
 }
 
 /* images **************************** */
-/* line 609, ../sass/includes/_base.scss */
+/* line 609, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 img,
 a img {
   outline: none;
   border: none;
 }
 
-/* line 614, ../sass/includes/_base.scss */
+/* line 614, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-hairline img {
   border: 1px solid #d8d8d8;
 }
 
-/* line 618, ../sass/includes/_base.scss */
+/* line 618, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-shadow img {
   -webkit-box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* line 624, ../sass/includes/_base.scss */
+/* line 624, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-underline img {
   margin-bottom: 5px;
   padding: 0 0 2px;
@@ -739,17 +739,17 @@ a img {
   background-color: transparent;
 }
 
-/* line 631, ../sass/includes/_base.scss */
+/* line 631, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-none img {
   border: 0 !important;
 }
 
-/* line 635, ../sass/includes/_base.scss */
+/* line 635, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-bottom img {
   border-bottom: 1px solid #d3d3d3;
 }
 
-/* line 640, ../sass/includes/_base.scss */
+/* line 640, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-simple-nowidth img,
 .main .border-simple img {
   -webkit-box-sizing: border-box;
@@ -760,31 +760,31 @@ a img {
   background-color: #e2e2e2;
 }
 
-/* line 649, ../sass/includes/_base.scss */
+/* line 649, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-simple img {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 655, ../sass/includes/_base.scss */
+/* line 655, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-simple a:hover img {
   background-color: #bbb;
 }
 
-/* line 659, ../sass/includes/_base.scss */
+/* line 659, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .main .border-hairline a:hover img {
   border: 1px solid #373737;
 }
 
 /* media ***************************** */
-/* line 664, ../sass/includes/_base.scss */
+/* line 664, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 iframe {
   max-width: 100%;
 }
 
 /* ----- Video Player ------------- */
-/* line 669, ../sass/includes/_base.scss */
+/* line 669, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .video-player {
   height: 0;
   margin-bottom: 1em;
@@ -794,17 +794,17 @@ iframe {
   position: relative;
 }
 
-/* line 678, ../sass/includes/_base.scss */
+/* line 678, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .video-player.widescreen {
   padding-bottom: 57.25%;
 }
 
-/* line 682, ../sass/includes/_base.scss */
+/* line 682, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .video-player.vimeo {
   padding-top: 0;
 }
 
-/* line 689, ../sass/includes/_base.scss */
+/* line 689, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .video-player iframe,
 .video-player object,
 .video-player embed,
@@ -818,7 +818,7 @@ iframe {
 
 /* helper classes ******************** */
 /* ----- Views Row Lines ------------- */
-/* line 699, ../sass/includes/_base.scss */
+/* line 699, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views-row-lines .views-row {
   border-bottom: 1px solid #F0F0F0;
   margin-bottom: 1em;
@@ -826,64 +826,64 @@ iframe {
   overflow: auto;
 }
 
-/* line 706, ../sass/includes/_base.scss */
+/* line 706, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views-row-lines .views-row-1 {
   border-top: 1px solid #F0F0F0;
   padding-top: 1em;
 }
 
 /* ----- positioning ----------------- */
-/* line 712, ../sass/includes/_base.scss */
+/* line 712, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .spacer {
   margin-top: 30px;
 }
 
-/* line 716, ../sass/includes/_base.scss */
+/* line 716, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .float-left {
   float: left;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
-/* line 722, ../sass/includes/_base.scss */
+/* line 722, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .float-right {
   float: right;
   margin-left: 15px;
   margin-bottom: 15px;
 }
 
-/* line 728, ../sass/includes/_base.scss */
+/* line 728, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .float-none {
   float: none;
 }
 
-/* line 732, ../sass/includes/_base.scss */
+/* line 732, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .clear-none {
   clear: none;
 }
 
-/* line 736, ../sass/includes/_base.scss */
+/* line 736, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .clear-left-margin {
   margin-left: 0 !important;
   padding-right: 20px;
 }
 
-/* line 741, ../sass/includes/_base.scss */
+/* line 741, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .clear-right {
   clear: right;
 }
 
-/* line 745, ../sass/includes/_base.scss */
+/* line 745, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .clear-left {
   clear: left;
 }
 
-/* line 749, ../sass/includes/_base.scss */
+/* line 749, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .clear-both {
   clear: both;
 }
 
-/* line 753, ../sass/includes/_base.scss */
+/* line 753, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -898,74 +898,74 @@ iframe {
 
 /* already defined by drupal */
 /* ----- sizing ---------------------- */
-/* line 767, ../sass/includes/_base.scss */
+/* line 767, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .span-full {
   width: 100%;
 }
 
 /* general overrides ***************** */
 /* ----- block alert overrides -- */
-/* line 773, ../sass/includes/_base.scss */
+/* line 773, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .block.alert {
   margin-right: -2px;
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 779, ../sass/includes/_base.scss */
+/* line 779, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .block.alert > * {
   padding-right: 10px;
   padding-left: 10px;
 }
 
 /* ----- field collection overrides -- */
-/* line 785, ../sass/includes/_base.scss */
+/* line 785, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .field-collection-container {
   margin-bottom: 0;
   border-bottom: 0;
 }
 
-/* line 790, ../sass/includes/_base.scss */
+/* line 790, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .field-collection-view {
   margin: 0;
   padding: 0;
 }
 
-/* line 795, ../sass/includes/_base.scss */
+/* line 795, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .field-collection-container .field-items .field-item {
   margin: 0;
 }
 
 /* ----- collapsable fieldset overrides -- */
-/* line 800, ../sass/includes/_base.scss */
+/* line 800, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 html.js fieldset.collapsed {
   height: auto;
 }
 
-/* line 804, ../sass/includes/_base.scss */
+/* line 804, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 legend {
   margin-bottom: 1em;
   line-height: 1.5em;
 }
 
 /* ----- field label overrides ------- */
-/* line 810, ../sass/includes/_base.scss */
+/* line 810, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .field .field-label {
   font-weight: 600;
 }
 
-/* line 814, ../sass/includes/_base.scss */
+/* line 814, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .page-node .content-body .field {
   margin-bottom: 1em;
 }
 
-/* line 818, ../sass/includes/_base.scss */
+/* line 818, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .page-node .content-body .field-type-field-collection {
   margin-bottom: 0;
 }
 
 /* ----- admin menu overrides -- */
-/* line 823, ../sass/includes/_base.scss */
+/* line 823, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 #admin-menu {
   margin-right: 0;
   margin-left: 0;
@@ -975,32 +975,32 @@ legend {
 
 /* features overrides ******* */
 /* ----- views slideshow ------------- */
-/* line 832, ../sass/includes/_base.scss */
+/* line 832, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views_slideshow_cycle_main {
   position: relative;
   float: left;
   width: 100%;
 }
 
-/* line 838, ../sass/includes/_base.scss */
+/* line 838, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
   width: 100%!important;
   height: auto;
 }
 
-/* line 843, ../sass/includes/_base.scss */
+/* line 843, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
   width: 100%!important;
   height: auto;
 }
 
-/* line 848, ../sass/includes/_base.scss */
+/* line 848, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views_slideshow_cycle_main .field-content {
   max-width: 100%;
   width: 100%;
 }
 
-/* line 853, ../sass/includes/_base.scss */
+/* line 853, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .views_slideshow_cycle_main .field-content img {
   margin: 0;
   padding: 0;
@@ -1011,12 +1011,12 @@ legend {
 
 /* administration ******************** */
 /* ----- admin ----------------------- */
-/* line 863, ../sass/includes/_base.scss */
+/* line 863, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 ul.primary {
   margin: 1.5em 0 .2em;
 }
 
-/* line 867, ../sass/includes/_base.scss */
+/* line 867, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
 .vertical-tabs .summary {
   font-size: 12px;
 }
@@ -1025,39 +1025,39 @@ ul.primary {
 /* ----- responsive ------------------ */
 /* landscape phones and down */
 @media (max-width: 480px) {
-  /* line 875, ../sass/includes/_base.scss */
+  /* line 875, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-col2 [class*="span"] {
     margin-left: 0;
     width: 100%;
   }
 
-  /* line 879, ../sass/includes/_base.scss */
+  /* line 879, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .header #logo {
     display: block;
     margin: 0;
     text-align: center;
   }
 
-  /* line 884, ../sass/includes/_base.scss */
+  /* line 884, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .header-section {
     display: block;
   }
 
-  /* line 889, ../sass/includes/_base.scss */
+  /* line 889, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .site-name,
   .site-slogan,
   .site-login {
     text-align: center;
   }
 
-  /* line 892, ../sass/includes/_base.scss */
+  /* line 892, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   #name-and-slogan {
     display: block;
   }
 }
 /* landscape phones to tablet */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 915, ../sass/includes/_base.scss */
+  /* line 915, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .main-top .block[class*="span"],
   .main-upper .block[class*="span"],
   .main-lower .block[class*="span"],
@@ -1081,7 +1081,7 @@ ul.primary {
     width: 49%;
   }
 
-  /* line 929, ../sass/includes/_base.scss */
+  /* line 929, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .main-top .block,
   .main-upper .block,
   .main-lower .block,
@@ -1094,7 +1094,7 @@ ul.primary {
     width: 100%;
   }
 
-  /* line 957, ../sass/includes/_base.scss */
+  /* line 957, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .main-top .block[class*="span"]:nth-child(odd),
   .main-top .block[class*="span"]:nth-child(odd).clear-row,
   .main-upper .block[class*="span"]:nth-child(odd),
@@ -1124,7 +1124,7 @@ ul.primary {
     margin-right: 2%;
   }
 
-  /* line 976, ../sass/includes/_base.scss */
+  /* line 976, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .main-top .block[class*="span"]:last-child,
   .main-upper .block[class*="span"]:last-child,
   .main-body .block[class*="span"]:last-child,
@@ -1145,7 +1145,7 @@ ul.primary {
     margin-right: 0;
   }
 
-  /* line 987, ../sass/includes/_base.scss */
+  /* line 987, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .main-top .block.span12.clear-row,
   .main-upper .block.span12.clear-row,
   .main-lower .block.span12.clear-row,
@@ -1159,7 +1159,7 @@ ul.primary {
     width: 100%;
   }
 
-  /* line 998, ../sass/includes/_base.scss */
+  /* line 998, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-row2 [class*="span"]:nth-child(2n+1),
   .content-col2.row-fluid [class*="span"]:nth-child(2n+1),
   .content-row3 [class*="span"]:nth-child(2n+1),
@@ -1173,7 +1173,7 @@ ul.primary {
   }
 
   /* fix for .well on blocks in first sidebar and second sidebar */
-  /* line 1005, ../sass/includes/_base.scss */
+  /* line 1005, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .site-sidebar-first .block.well,
   .site-sidebar-second .block.well {
     width: 37%;
@@ -1183,7 +1183,7 @@ ul.primary {
     width: calc(50% - 50px);
   }
 
-  /* line 1013, ../sass/includes/_base.scss */
+  /* line 1013, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .site-sidebar-first .block.well:nth-child(odd),
   .site-sidebar-second .block.well:nth-child(odd) {
     margin-right: 20px;
@@ -1191,14 +1191,14 @@ ul.primary {
 }
 /* landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  /* line 1020, ../sass/includes/_base.scss */
+  /* line 1020, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .nav-search {
     float: right;
     margin: 0;
     padding: 3px 0;
   }
 
-  /* line 1025, ../sass/includes/_base.scss */
+  /* line 1025, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   #header-search {
     position: absolute;
     right: 30px;
@@ -1206,65 +1206,65 @@ ul.primary {
     width: auto;
   }
 
-  /* line 1031, ../sass/includes/_base.scss */
+  /* line 1031, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .btn.btn-navbar {
     float: left;
     margin-bottom: 8px;
   }
 
-  /* line 1035, ../sass/includes/_base.scss */
+  /* line 1035, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   nav ul li a {
     display: block;
   }
 
-  /* line 1038, ../sass/includes/_base.scss */
+  /* line 1038, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .navbar-inner {
     padding: 5px 5px 0;
   }
 
-  /* line 1041, ../sass/includes/_base.scss */
+  /* line 1041, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-col2 [class*="span"] {
     margin-left: 0;
     width: 100%;
   }
 
-  /* line 1047, ../sass/includes/_base.scss */
+  /* line 1047, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .callout,
   .bracket,
   .topline {
     width: 50%;
   }
 
-  /* line 1050, ../sass/includes/_base.scss */
+  /* line 1050, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .row-fluid .node .content .float-left {
     max-width: 50%;
     margin-right: 20px;
   }
 
-  /* line 1054, ../sass/includes/_base.scss */
+  /* line 1054, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .row-fluid .node .content .float-right {
     max-width: 50%;
     margin-left: 20px;
   }
 
-  /* line 1058, ../sass/includes/_base.scss */
+  /* line 1058, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .footer-content .block {
     float: left;
     margin-right: 4%;
     width: 48%;
   }
 
-  /* line 1063, ../sass/includes/_base.scss */
+  /* line 1063, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .footer-content .block:nth-child(2n+1) {
     clear: both;
   }
 
-  /* line 1066, ../sass/includes/_base.scss */
+  /* line 1066, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .footer-content .block:nth-child(2n) {
     margin-right: 0;
   }
 
-  /* line 1069, ../sass/includes/_base.scss */
+  /* line 1069, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-first .main-content {
     display: -webkit-box;
     display: -moz-box;
@@ -1277,7 +1277,7 @@ ul.primary {
     flex-direction: column;
   }
 
-  /* line 1080, ../sass/includes/_base.scss */
+  /* line 1080, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-first .mc-content {
     -webkit-box-ordinal-group: 1;
     -moz-box-ordinal-group: 1;
@@ -1286,7 +1286,7 @@ ul.primary {
     order: 1;
   }
 
-  /* line 1087, ../sass/includes/_base.scss */
+  /* line 1087, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-first .site-sidebar-first {
     -webkit-box-ordinal-group: 2;
     -moz-box-ordinal-group: 2;
@@ -1295,7 +1295,7 @@ ul.primary {
     order: 2;
   }
 
-  /* line 1094, ../sass/includes/_base.scss */
+  /* line 1094, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-first .site-sidebar-second {
     -webkit-box-ordinal-group: 3;
     -moz-box-ordinal-group: 3;
@@ -1305,68 +1305,69 @@ ul.primary {
   }
 }
 @media (min-width: 768px) {
-  /* line 1104, ../sass/includes/_base.scss */
+  /* line 1104, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .navbar-inner {
     padding: 0 20px;
   }
 
-  /* line 1107, ../sass/includes/_base.scss */
+  /* line 1107, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .region-navigation .block {
     float: left;
   }
 
-  /* line 1110, ../sass/includes/_base.scss */
+  /* line 1110, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .region-navigation .block.pull-right {
     float: right;
   }
 }
 /* portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 1117, ../sass/includes/_base.scss */
+  /* line 1117, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .btn.btn-navbar {
     float: left;
     margin-bottom: 8px;
   }
 
-  /* line 1121, ../sass/includes/_base.scss */
+  /* line 1121, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .navbar-inner {
     padding: 0 5px;
   }
 
-  /* line 1124, ../sass/includes/_base.scss */
+  /* line 1124, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .nav-search {
     margin-right: 0;
   }
 
-  /* line 1129, ../sass/includes/_base.scss */
+  /* line 1129, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content .callout,
   .content .bracket,
   .content .topline {
     width: 40%;
   }
 
-  /* line 1133, ../sass/includes/_base.scss */
+  /* line 1134, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .footer-content .block.span2,
-  .footer-content .block.span3 {
+  .footer-content .block.span3,
+  .footer-content .block.span4 {
     float: left;
     margin-left: 0;
     margin-right: 4%;
     width: 30.6%;
   }
 
-  /* line 1140, ../sass/includes/_base.scss */
+  /* line 1141, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .footer-content .block.span2:nth-child(3n+1),
   .footer-content .block.span3:nth-child(3n+1) {
     clear: both;
   }
 
-  /* line 1144, ../sass/includes/_base.scss */
+  /* line 1145, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .footer-content .block.span2:nth-child(3n),
   .footer-content .block.span3:nth-child(3n) {
     margin-right: 0;
   }
 
-  /* line 1150, ../sass/includes/_base.scss */
+  /* line 1151, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .sidebar-first .content-row3 .span4,
   .sidebar-first .content-col3.row-fluid .span4,
   .sidebar-first .content-row4 .span3,
@@ -1378,7 +1379,7 @@ ul.primary {
     width: 49%;
   }
 
-  /* line 1160, ../sass/includes/_base.scss */
+  /* line 1161, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .sidebar-first .content-row3 .span4:nth-child(odd),
   .sidebar-first .content-col3.row-fluid .span4:nth-child(odd),
   .sidebar-first .content-row4 .span3:nth-child(odd),
@@ -1386,14 +1387,14 @@ ul.primary {
     margin-right: 2%;
   }
 
-  /* line 1165, ../sass/includes/_base.scss */
+  /* line 1166, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .sidebar-first .content-col3.row-fluid [class*="span"]:nth-child(2n),
   .sidebar-first .content-row4 [class*="span"]:nth-child(2n),
   .sidebar-first .content-col4.row-fluid [class*="span"]:nth-child(2n) {
     margin-right: 0;
   }
 
-  /* line 1173, ../sass/includes/_base.scss */
+  /* line 1174, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .sidebar-first .content-row2 [class*="span"]:nth-child(2n+1),
   .sidebar-first .content-col2.row-fluid [class*="span"]:nth-child(2n+1),
   .sidebar-first .content-row3 [class*="span"]:nth-child(2n+1),
@@ -1404,7 +1405,7 @@ ul.primary {
     margin-left: 0;
   }
 
-  /* line 1180, ../sass/includes/_base.scss */
+  /* line 1181, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .two-sidebars .content-row3 .span4,
   .two-sidebars .content-col3.row-fluid .span4,
   .two-sidebars .content-row4 .span3,
@@ -1416,7 +1417,7 @@ ul.primary {
     width: 49%;
   }
 
-  /* line 1190, ../sass/includes/_base.scss */
+  /* line 1191, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .two-sidebars .content-row3 .span4:nth-child(odd),
   .two-sidebars .content-col3.row-fluid .span4:nth-child(odd),
   .two-sidebars .content-row4 .span3:nth-child(odd),
@@ -1424,14 +1425,14 @@ ul.primary {
     margin-right: 2%;
   }
 
-  /* line 1195, ../sass/includes/_base.scss */
+  /* line 1196, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .two-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n),
   .two-sidebars .content-row4 [class*="span"]:nth-child(2n),
   .two-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n) {
     margin-right: 0;
   }
 
-  /* line 1203, ../sass/includes/_base.scss */
+  /* line 1204, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .two-sidebars .content-row2 [class*="span"]:nth-child(2n+1),
   .two-sidebars .content-col2.row-fluid [class*="span"]:nth-child(2n+1),
   .two-sidebars .content-row3 [class*="span"]:nth-child(2n+1),
@@ -1442,7 +1443,7 @@ ul.primary {
     margin-left: 0;
   }
 
-  /* line 1210, ../sass/includes/_base.scss */
+  /* line 1211, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .no-sidebars .content-row3 .span4,
   .no-sidebars .content-col3.row-fluid .span4,
   .no-sidebars .content-row4 .span3,
@@ -1454,7 +1455,7 @@ ul.primary {
     width: 49%;
   }
 
-  /* line 1220, ../sass/includes/_base.scss */
+  /* line 1221, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .no-sidebars .content-row3 .span4:nth-child(odd),
   .no-sidebars .content-col3.row-fluid .span4:nth-child(odd),
   .no-sidebars .content-row4 .span3:nth-child(odd),
@@ -1462,14 +1463,14 @@ ul.primary {
     margin-right: 2%;
   }
 
-  /* line 1225, ../sass/includes/_base.scss */
+  /* line 1226, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .no-sidebars .content-col3.row-fluid [class*="span"]:nth-child(2n),
   .no-sidebars .content-row4 [class*="span"]:nth-child(2n),
   .no-sidebars .content-col4.row-fluid [class*="span"]:nth-child(2n) {
     margin-right: 0;
   }
 
-  /* line 1233, ../sass/includes/_base.scss */
+  /* line 1234, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .no-sidebars .content-row2 [class*="span"]:nth-child(2n+1),
   .no-sidebars .content-col2.row-fluid [class*="span"]:nth-child(2n+1),
   .no-sidebars .content-row3 [class*="span"]:nth-child(2n+1),
@@ -1480,7 +1481,7 @@ ul.primary {
     margin-left: 0;
   }
 
-  /* line 1239, ../sass/includes/_base.scss */
+  /* line 1240, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .sidebar-second .content-row2 [class*="span"]:nth-child(2n+1),
   .sidebar-second .content-row3 [class*="span"]:nth-child(3n+1),
   .sidebar-second .content-row4 [class*="span"]:nth-child(4n+1) {
@@ -1490,7 +1491,7 @@ ul.primary {
 }
 /* large desktop */
 @media (min-width: 980px) {
-  /* line 1249, ../sass/includes/_base.scss */
+  /* line 1250, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .content-row2 [class*="span"]:nth-child(2n+1),
   .content-row3 [class*="span"]:nth-child(3n+1),
   .content-row4 [class*="span"]:nth-child(4n+1) {
@@ -1500,7 +1501,7 @@ ul.primary {
 }
 /* desktop */
 @media (min-width: 980px) and (max-width: 1199px) {
-  /* line 1259, ../sass/includes/_base.scss */
+  /* line 1260, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_base.scss */
   .two-sidebars .content .callout,
   .two-sidebars .content .bracket,
   .two-sidebars .content .topline {
@@ -1509,39 +1510,39 @@ ul.primary {
 }
 /* theme options ********************* */
 /* ----- front page title ------------ */
-/* line 4, ../sass/includes/_module-theme-options.scss */
+/* line 4, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-theme-options.scss */
 .front .title {
   display: none;
 }
 
-/* line 8, ../sass/includes/_module-theme-options.scss */
+/* line 8, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-theme-options.scss */
 .front.show-title .title {
   display: block;
 }
 
 /* ----- body background type -------- */
-/* line 13, ../sass/includes/_module-theme-options.scss */
+/* line 13, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-theme-options.scss */
 body.photobg {
   background-attachment: fixed !important;
   background-size: cover !important;
 }
 
 /* ----- background color ------------ */
-/* line 19, ../sass/includes/_module-theme-options.scss */
+/* line 19, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-theme-options.scss */
 .bodybg .sidebar .region {
   padding: 10px;
   background-color: #fff;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 25, ../sass/includes/_module-theme-options.scss */
+/* line 25, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-theme-options.scss */
 .bodybg .content-wrapper {
   padding: 10px;
   background: #fff;
 }
 
 /* ----- borders -------------------- */
-/* line 32, ../sass/includes/_module-theme-options.scss */
+/* line 32, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-theme-options.scss */
 .borders .sidebar .region,
 .borders .content-wrapper {
   padding: 10px;
@@ -1549,7 +1550,7 @@ body.photobg {
 }
 
 /* ------ rounded corners ----------- */
-/* line 39, ../sass/includes/_module-theme-options.scss */
+/* line 39, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-theme-options.scss */
 .roundedcorners .sidebar .region,
 .roundedcorners .content-wrapper {
   -webkit-border-radius: 5px;
@@ -1558,7 +1559,7 @@ body.photobg {
 }
 
 /* ----- Responsive Views Grids ------ */
-/* line 3, ../sass/includes/_module-views-grid.scss */
+/* line 3, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-four .views-row {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1570,7 +1571,7 @@ body.photobg {
   vertical-align: top;
 }
 
-/* line 20, ../sass/includes/_module-views-grid.scss */
+/* line 20, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-four .views-row.views-row-4,
 .views-grid-four .views-row.views-row-8,
 .views-grid-four .views-row.views-row-12,
@@ -1581,7 +1582,7 @@ body.photobg {
   margin-right: 0px;
 }
 
-/* line 26, ../sass/includes/_module-views-grid.scss */
+/* line 26, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-four.views-grid-header-footer .view-header,
 .views-grid-four.views-grid-header-footer .view-content,
 .views-grid-four.views-grid-header-footer .view-footer {
@@ -1589,24 +1590,24 @@ body.photobg {
   vertical-align: top;
 }
 
-/* line 31, ../sass/includes/_module-views-grid.scss */
+/* line 31, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-four.views-grid-header-footer .view-header {
   width: 23%;
   margin-right: 1%;
 }
 
-/* line 36, ../sass/includes/_module-views-grid.scss */
+/* line 36, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-four.views-grid-header-footer .view-content {
   width: 60%;
   margin-right: 1%;
 }
 
-/* line 41, ../sass/includes/_module-views-grid.scss */
+/* line 41, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-four.views-grid-header-footer .view-footer {
   width: 13%;
 }
 
-/* line 45, ../sass/includes/_module-views-grid.scss */
+/* line 45, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-five .views-row {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1617,7 +1618,7 @@ body.photobg {
   margin-right: 2.4%;
 }
 
-/* line 59, ../sass/includes/_module-views-grid.scss */
+/* line 59, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-five .views-row.views-row-5,
 .views-grid-five .views-row.views-row-10,
 .views-grid-five .views-row.views-row-15,
@@ -1626,7 +1627,7 @@ body.photobg {
   margin-right: 0px;
 }
 
-/* line 63, ../sass/includes/_module-views-grid.scss */
+/* line 63, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-six .views-row {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1637,7 +1638,7 @@ body.photobg {
   margin-right: 2.4%;
 }
 
-/* line 78, ../sass/includes/_module-views-grid.scss */
+/* line 78, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-six .views-row.views-row-6,
 .views-grid-six .views-row.views-row-12,
 .views-grid-six .views-row.views-row-18,
@@ -1647,7 +1648,7 @@ body.photobg {
   margin-right: 0px;
 }
 
-/* line 82, ../sass/includes/_module-views-grid.scss */
+/* line 82, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-seven .views-row {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1658,7 +1659,7 @@ body.photobg {
   margin-right: 2.4%;
 }
 
-/* line 95, ../sass/includes/_module-views-grid.scss */
+/* line 95, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
 .views-grid-seven .views-row.views-row-7,
 .views-grid-seven .views-row.views-row-14,
 .views-grid-seven .views-row.views-row-21,
@@ -1667,19 +1668,19 @@ body.photobg {
 }
 
 @media (max-width: 1199px) {
-  /* line 100, ../sass/includes/_module-views-grid.scss */
+  /* line 100, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-four .views-row {
     width: 22.8%;
     margin-right: 2.3%;
   }
 
-  /* line 104, ../sass/includes/_module-views-grid.scss */
+  /* line 104, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-seven .views-row {
     width: 17.6%;
     margin-right: 2.4%;
   }
 
-  /* line 112, ../sass/includes/_module-views-grid.scss */
+  /* line 112, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-seven .views-row.views-row-5,
   .views-grid-seven .views-row.views-row-10,
   .views-grid-seven .views-row.views-row-15,
@@ -1689,23 +1690,23 @@ body.photobg {
   }
 }
 @media (max-width: 979px) {
-  /* line 118, ../sass/includes/_module-views-grid.scss */
+  /* line 118, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-four .views-row {
     width: 48.3%;
   }
 
-  /* line 121, ../sass/includes/_module-views-grid.scss */
+  /* line 121, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-four .views-row-even {
     margin-right: 0px;
   }
 
-  /* line 124, ../sass/includes/_module-views-grid.scss */
+  /* line 124, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-five .views-row {
     width: 31%;
   }
 }
 @media (max-width: 979px) and (min-width: 768px) {
-  /* line 135, ../sass/includes/_module-views-grid.scss */
+  /* line 135, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-five .views-row.views-row-3,
   .views-grid-five .views-row.views-row-6,
   .views-grid-five .views-row.views-row-9,
@@ -1716,28 +1717,28 @@ body.photobg {
   }
 }
 @media (max-width: 767px) {
-  /* line 141, ../sass/includes/_module-views-grid.scss */
+  /* line 141, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-five .views-row {
     width: 48%;
   }
 
-  /* line 144, ../sass/includes/_module-views-grid.scss */
+  /* line 144, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-five .views-row-even {
     margin-right: 0px;
   }
 
-  /* line 147, ../sass/includes/_module-views-grid.scss */
+  /* line 147, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row {
     width: 22.6%;
   }
 
-  /* line 151, ../sass/includes/_module-views-grid.scss */
+  /* line 151, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row-even,
   .views-grid-six .views-row-odd {
     margin-right: 2.4%;
   }
 
-  /* line 160, ../sass/includes/_module-views-grid.scss */
+  /* line 160, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row.views-row-4,
   .views-grid-six .views-row.views-row-8,
   .views-grid-six .views-row.views-row-12,
@@ -1748,7 +1749,7 @@ body.photobg {
     margin-right: 0px;
   }
 
-  /* line 165, ../sass/includes/_module-views-grid.scss */
+  /* line 165, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-four.views-grid-header-footer .view-header,
   .views-grid-four.views-grid-header-footer .view-content,
   .views-grid-four.views-grid-header-footer .view-footer {
@@ -1758,13 +1759,13 @@ body.photobg {
   }
 }
 @media (max-width: 680px) {
-  /* line 173, ../sass/includes/_module-views-grid.scss */
+  /* line 173, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-seven .views-row {
     width: 29%;
     margin-right: 2.4%;
   }
 
-  /* line 184, ../sass/includes/_module-views-grid.scss */
+  /* line 184, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-seven .views-row.views-row-3,
   .views-grid-seven .views-row.views-row-6,
   .views-grid-seven .views-row.views-row-9,
@@ -1777,24 +1778,24 @@ body.photobg {
   }
 }
 @media (max-width: 520px) {
-  /* line 190, ../sass/includes/_module-views-grid.scss */
+  /* line 190, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-four .views-row {
     width: 100%;
     margin-right: 0;
   }
 }
 @media (max-width: 480px) {
-  /* line 197, ../sass/includes/_module-views-grid.scss */
+  /* line 197, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row {
     width: 31.1%;
   }
 
-  /* line 200, ../sass/includes/_module-views-grid.scss */
+  /* line 200, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row-even {
     margin-right: 2.4%;
   }
 
-  /* line 214, ../sass/includes/_module-views-grid.scss */
+  /* line 214, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row.views-row-3,
   .views-grid-six .views-row.views-row-6,
   .views-grid-six .views-row.views-row-9,
@@ -1810,35 +1811,35 @@ body.photobg {
     margin-right: 0px;
   }
 
-  /* line 217, ../sass/includes/_module-views-grid.scss */
+  /* line 217, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-seven .views-row {
     width: 45%;
     margin-right: 2.4%;
   }
 
-  /* line 221, ../sass/includes/_module-views-grid.scss */
+  /* line 221, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-seven .views-row.views-row-even {
     margin-right: 0;
   }
 }
 @media (max-width: 380px) {
-  /* line 227, ../sass/includes/_module-views-grid.scss */
+  /* line 227, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row {
     width: 48%;
   }
 
-  /* line 230, ../sass/includes/_module-views-grid.scss */
+  /* line 230, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row-even {
     margin-right: 0;
   }
 
-  /* line 233, ../sass/includes/_module-views-grid.scss */
+  /* line 233, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-six .views-row-odd {
     margin-right: 2.4%;
   }
 }
 @media (max-width: 350px) {
-  /* line 239, ../sass/includes/_module-views-grid.scss */
+  /* line 239, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-five .views-row {
     display: block;
     width: 100%;
@@ -1846,25 +1847,25 @@ body.photobg {
   }
 }
 @media (max-width: 320px) {
-  /* line 247, ../sass/includes/_module-views-grid.scss */
+  /* line 247, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-views-grid.scss */
   .views-grid-seven .views-row {
     width: 100%;
     margin-right: 0;
   }
 }
 /* ----- bootstrap overrides --------- */
-/* line 3, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 3, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 html.js input.form-autocomplete {
   background-position: 100% 8px;
 }
 
-/* line 7, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 7, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 html.js input.throbbing {
   background-position: 100% -12px;
 }
 
 @media (min-width: 980px) {
-  /* line 13, ../sass/includes/_module-bootstrap-overrides.scss */
+  /* line 13, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
   .site-sidebar-second .sidebar-content[class*="span"],
   .site-sidebar-second .sidebar-content {
     float: none;
@@ -1872,7 +1873,7 @@ html.js input.throbbing {
   }
 }
 @media (min-width: 768px) {
-  /* line 21, ../sass/includes/_module-bootstrap-overrides.scss */
+  /* line 21, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
   .site-sidebar-first .sidebar-content[class*="span"],
   .site-sidebar-first .sidebar-content {
     float: none;
@@ -1880,34 +1881,34 @@ html.js input.throbbing {
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 28, ../sass/includes/_module-bootstrap-overrides.scss */
+  /* line 28, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
   .site-sidebar-second .sidebar-content[class*="span"] {
     width: 31.4917%;
   }
 }
-/* line 33, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 33, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 .row-fluid[class*="span"] {
   min-height: 0;
 }
 
-/* line 37, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 37, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 [class*="span"].clear-row {
   clear: both;
 }
 
-/* line 42, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 42, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 [class*="span"].next-row,
 [class*="span"].clear-row {
   margin-left: 0;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 47, ../sass/includes/_module-bootstrap-overrides.scss */
+  /* line 47, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
   [class*="span"].clear-row {
     clear: none;
   }
 }
-/* line 52, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 52, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 .form-actions {
   margin-top: 0;
   margin-bottom: 0;
@@ -1916,18 +1917,18 @@ html.js input.throbbing {
   background-color: transparent;
 }
 
-/* line 60, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 60, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 .navbar-inner {
   min-height: 0;
 }
 
-/* line 65, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 65, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #fff;
 }
 
-/* line 85, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 85, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-bootstrap-overrides.scss */
 select,
 textarea,
 input[type="text"],
@@ -1949,7 +1950,7 @@ input[type="color"],
 }
 
 /* Internet Explorer only */
-/* line 4, ../sass/includes/_module-ie.scss */
+/* line 4, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 #header #logo,
 .ie8 #header #logo {
   display: block;
@@ -1957,42 +1958,42 @@ input[type="color"],
   margin: 20px 20px 0 0;
 }
 
-/* line 11, ../sass/includes/_module-ie.scss */
+/* line 11, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 #name-and-slogan,
 .ie8 #name-and-slogan {
   display: block;
 }
 
-/* line 16, ../sass/includes/_module-ie.scss */
+/* line 16, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 #block-search-form,
 .ie8 #block-search-form {
   bottom: 50px;
 }
 
-/* line 20, ../sass/includes/_module-ie.scss */
+/* line 20, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 #block-search-form .btn-search {
   margin-top: 10px;
 }
 
-/* line 25, ../sass/includes/_module-ie.scss */
+/* line 25, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 #block-search-form input,
 .ie8 #block-search-form input {
   max-width: none;
 }
 
-/* line 29, ../sass/includes/_module-ie.scss */
+/* line 29, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 .postcard-left div {
   float: left;
   width: auto;
 }
 
-/* line 34, ../sass/includes/_module-ie.scss */
+/* line 34, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 .postcard-right div {
   float: right;
   width: auto;
 }
 
-/* line 40, ../sass/includes/_module-ie.scss */
+/* line 40, /Applications/MAMP/htdocs/d7/themes/open_framework/sass/includes/_module-ie.scss */
 .ie7 .postcard-left:after,
 .ie7 .postcard-right:after {
   content: " ";
