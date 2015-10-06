@@ -17,7 +17,7 @@ regions[site_login] = Site: Login
 regions[header] = Header
 regions[navigation] = Navigation
 regions[search_box] = Search Box
-regions[fullwidth] = Full Width
+regions[fullwidth_top] = Full Width Top
 regions[main_top] = Main: Top
 regions[main_upper] = Main: Upper
 regions[sidebar_first] = First sidebar
@@ -43,6 +43,7 @@ regions[content_bottom] = Content: Bottom
 regions[sidebar_second] = Second sidebar
 regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
+regions[fullwidth_bottom] = Full Width Bottom
 regions[footer] = Footer
 
 ; Settings
