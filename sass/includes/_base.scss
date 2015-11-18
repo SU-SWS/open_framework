@@ -1094,6 +1094,17 @@ ul.primary {
     .site-sidebar-second .block:nth-child(2n) {
         margin-right: 0;
     }
+    .main-top .block[class*="span"].clear-row,
+    .main-upper .block[class*="span"].clear-row,
+    .main-lower .block[class*="span"].clear-row,
+    .main-bottom .block[class*="span"].clear-row,
+    .content-top .block[class*="span"].clear-row,
+    .content-upper .block[class*="span"].clear-row,
+    .content-body .block[class*="span"].clear-row,
+    .content-lower .block[class*="span"].clear-row,
+    .content-bottom .block[class*="span"].clear-row {
+        margin-right: 2%;
+    }
     .main-top .block.span12.clear-row,
     .main-upper .block.span12.clear-row,
     .main-lower .block.span12.clear-row,
