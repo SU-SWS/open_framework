@@ -43,6 +43,12 @@ html.js input.throbbing {
     margin-left: 0;
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+    [class*="span"].clear-row {
+        clear: none;
+    }
+}
+
 .form-actions {
     margin-top: 0;
     margin-bottom: 0;
