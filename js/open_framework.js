@@ -29,46 +29,61 @@ Drupal.behaviors.open_framework = {
     // Hide border for image links
     $('a:has(img)').css('border', 'none');
 	
-	// Equal Column Height on load and resize
-	// Credit: http://codepen.io/micahgodbolt/pen/FgqLc
-	equalheight = function(container){
+    // Apply the Equal Column Height function below by container
+    // instead of page-wide
+    equalHeightByContainer = function(className){
+      containerIDs = new Array();
+      $(className).each(function() {
+        $el = $(this);
+        parentID = $el.offsetParent().attr('id');
+        if ($.inArray(parentID, containerIDs) === -1) {
+          containerIDs.push(parentID);
+        }
+      });
 
-	var currentTallest = 0,
-		 currentRowStart = 0,
-		 rowDivs = new Array(),
-		 $el,
-		 topPosition = 0;
-	 $(container).each(function() {
-	
-	   $el = $(this);
-	   $($el).height('auto')
-	   topPostion = $el.position().top;
-	
-	   if (currentRowStart != topPostion) {
-		 for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-		   rowDivs[currentDiv].height(currentTallest);
-		 }
-		 rowDivs.length = 0; // empty the array
-		 currentRowStart = topPostion;
-		 currentTallest = $el.height();
-		 rowDivs.push($el);
-	   } else {
-		 rowDivs.push($el);
-		 currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-	  }
-	   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-		 rowDivs[currentDiv].height(currentTallest);
-	   }
-	 });
-	}
-	
-	$(window).load(function() {
-	  equalheight('.column');
-	});
-	
-	$(window).resize(function(){
-	  equalheight('.column');
-	});
+      $.each(containerIDs, function() {
+        equalHeight('#' + this + ' ' + className);
+      });
+    }
+
+    // Equal Column Height on load and resize
+    // Credit: http://codepen.io/micahgodbolt/pen/FgqLc
+    equalHeight = function(container){
+      var currentTallest = 0,
+          currentRowStart = 0,
+          rowDivs = new Array(),
+          $el,
+          topPosition = 0;
+      $(container).each(function() {
+        $el = $(this);
+        $($el).height('auto')
+        topPosition = $el.position().top;
+
+        if (currentRowStart != topPosition) {
+          for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+            rowDivs[currentDiv].height(currentTallest);
+          }
+          rowDivs.length = 0; // empty the array
+          currentRowStart = topPosition;
+          currentTallest = $el.height();
+          rowDivs.push($el);
+        } else {
+          rowDivs.push($el);
+          currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+        }
+        for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+          rowDivs[currentDiv].height(currentTallest);
+        }
+      });
+    }
+
+    $(window).load(function() {
+      equalHeightByContainer('.column');
+    });
+
+    $(window).resize(function(){
+      equalHeightByContainer('.column');
+    });
 
 		
 	// Add keyboard focus to .element-focusable elements in webkit browsers.
