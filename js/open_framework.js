@@ -33,13 +33,22 @@ Drupal.behaviors.open_framework = {
     // instead of page-wide
     equalHeightByContainer = function(className){
       containerIDs = new Array();
+      uncontainedExist = false;
+
       $(className).each(function() {
         $el = $(this);
-        parentID = $el.offsetParent().attr('id');
-        if ($.inArray(parentID, containerIDs) === -1) {
-          containerIDs.push(parentID);
+        if (typeof parentID !== 'undefined') {
+          if ($.inArray(parentID, containerIDs) === -1) {
+            containerIDs.push(parentID);
+          }
+        } else {
+          uncontainedExist = true;
         }
       });
+
+      if (uncontainedExist) {
+        equalHeight(className);
+      }
 
       $.each(containerIDs, function() {
         equalHeight('#' + this + ' ' + className);
@@ -48,13 +57,13 @@ Drupal.behaviors.open_framework = {
 
     // Equal Column Height on load and resize
     // Credit: http://codepen.io/micahgodbolt/pen/FgqLc
-    equalHeight = function(container){
+    equalHeight = function(classname){
       var currentTallest = 0,
           currentRowStart = 0,
           rowDivs = new Array(),
           $el,
           topPosition = 0;
-      $(container).each(function() {
+      $(classname).each(function() {
         $el = $(this);
         $($el).height('auto')
         topPosition = $el.position().top;
