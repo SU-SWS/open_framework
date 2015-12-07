@@ -37,6 +37,7 @@ Drupal.behaviors.open_framework = {
 
       $(className).each(function() {
         $el = $(this);
+        parentID = $el.offsetParent().attr('id');
         if (typeof parentID !== 'undefined') {
           if ($.inArray(parentID, containerIDs) === -1) {
             containerIDs.push(parentID);
