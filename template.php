@@ -279,7 +279,7 @@ function open_framework_status_messages($variables) {
   );
 
   foreach (drupal_get_messages($display) as $type => $messages) {
-    $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
+    $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : " " . drupal_clean_css_identifier($type);
     $output .= "<div class=\"alert alert-block$class\">\n";
 
     if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
