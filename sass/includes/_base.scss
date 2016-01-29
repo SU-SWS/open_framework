@@ -632,6 +632,13 @@ blockquote > p:first-child {
 .postcard-right-wrap {
     clear: both;
     margin-bottom: 15px;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+    }
 }
 
 .postcard-left > div,
@@ -642,43 +649,20 @@ blockquote > p:first-child {
 .postcard-left-wrap > div:first-child,
 .postcard-left > div:first-child {
     float: left;
+    img {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 .postcard-right-wrap > div:first-child,
 .postcard-right > div:first-child {
     float: right;
-}
-
-.postcard-left > div:first-child img,
-.postcard-left-wrap > div:first-child img,
-.postcard-right > div:first-child img,
-.postcard-right-wrap > div:first-child img {
-    margin-bottom: 15px;
-}
-
-.postcard-left > div:first-child img,
-.postcard-left-wrap > div:first-child img {
-    margin-right: 15px;
-}
-
-.postcard-right > div:first-child img,
-.postcard-right-wrap > div:first-child img {
-    margin-left: 15px;
-}
-
-.postcard-left,
-.postcard-left-wrap,
-.postcard-right,
-.postcard-right-wrap {
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-top: 0;
+    img {
+        margin-left: 15px;
+        margin-bottom: 15px;
     }
 }
-
 
 /* images **************************** */
 
