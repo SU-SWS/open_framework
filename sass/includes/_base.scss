@@ -261,6 +261,12 @@ hr {
     box-shadow: none !important;
 }
 
+.non-well {
+    min-height: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 
 /* header ******************************/
 
@@ -660,11 +666,17 @@ blockquote > p:first-child {
     margin-left: 15px;
 }
 
-.postcard-left h2,
-.postcard-left-wrap h2,
-.postcard-right h2,
-.postcard-right-wrap h2 {
-    margin-top: 0;
+.postcard-left,
+.postcard-left-wrap,
+.postcard-right,
+.postcard-right-wrap {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+    }
 }
 
 
