@@ -26,9 +26,30 @@
 
             // Set up theme specific responsive behaviors
             function responsive_behaviors() {
-                var width = document.documentElement.clientWidth;
+                var viewportwidth;
+                var viewportheight;
 
-                if (width < 768) {
+                // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+                if (typeof window.innerWidth != 'undefined') {
+                    viewportwidth = window.innerWidth,
+                    viewportheight = window.innerHeight
+                }
+
+                // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+                else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth !=
+                    'undefined' && document.documentElement.clientWidth != 0) {
+                    viewportwidth = document.documentElement.clientWidth,
+                    viewportheight = document.documentElement.clientHeight
+                }
+
+                // older versions of IE
+                else {
+                    viewportwidth = document.getElementsByTagName('body')[0].clientWidth,
+                    viewportheight = document.getElementsByTagName('body')[0].clientHeight
+                }
+
+                if (viewportwidth < 768) {
                     $('nav li li.expanded').removeClass('dropdown-submenu');
                     $('nav ul ul ul').removeClass('dropdown-menu');
                     $('div.next-row').addClass('clear-row');
@@ -38,7 +59,7 @@
                     $('div.next-row').removeClass('clear-row');
                 }
 
-                if ((width >= 768) && (width < 980)) {
+                if ((viewportwidth >= 768) && (viewportwidth < 980)) {
                     $('.two-sidebars')
                         .find('.site-sidebar-first')
                         .removeClass('span3')
