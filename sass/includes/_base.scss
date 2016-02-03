@@ -261,10 +261,12 @@ hr {
     box-shadow: none !important;
 }
 
-.non-well {
-    min-height: 20px;
+.well.well-invisible {
     padding: 20px;
-    margin-bottom: 20px;
+    border: none;
+    background: transparent;
+    border-radius: 0px;
+    box-shadow: none;
 }
 
 
@@ -663,6 +665,7 @@ blockquote > p:first-child {
         margin-bottom: 15px;
     }
 }
+
 
 /* images **************************** */
 
