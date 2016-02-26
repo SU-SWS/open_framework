@@ -4,6 +4,13 @@
  */
 
 @media print {
+    @page {
+        size: 330mm 427mm;
+        margin: 14mm;
+    }
+    .container {
+        width: 1200px;
+    }
     a[href]:after {
         content: none;
     }
