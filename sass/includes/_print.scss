@@ -11,6 +11,9 @@
     .container {
         width: 1200px;
     }
+    .column {
+        height: auto !important;
+    }
     a[href]:after {
         content: none;
     }
