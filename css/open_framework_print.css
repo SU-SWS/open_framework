@@ -3,61 +3,71 @@
  * Designed and built with all the love for trees.
  */
 @media print {
-  /* line 7, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
-  .container {
-    width: 1170px;
+  @page {
+    min-width: 1200px;
+    size: letter;
+    margin: 0.5cm;
+}
+
+  /* line 12, ../sass/includes/_print.scss */
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
   }
 
-  /* line 10, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 17, ../sass/includes/_print.scss */
+  .container {
+    width: auto;
+    min-width: 1170px;
+  }
+
+  /* line 21, ../sass/includes/_print.scss */
   .column {
     height: auto !important;
   }
 
-  /* line 13, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 24, ../sass/includes/_print.scss */
   a[href]:after {
     content: none;
   }
 
-  /* line 16, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 27, ../sass/includes/_print.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 21, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 32, ../sass/includes/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: none;
   }
 
-  /* line 25, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 36, ../sass/includes/_print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 29, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 40, ../sass/includes/_print.scss */
   thead {
     display: table-header-group;
   }
 
-  /* line 33, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 44, ../sass/includes/_print.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 36, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 47, ../sass/includes/_print.scss */
   img {
     max-width: 100% !important;
   }
 
-  @page {
-    margin: 0.5cm;
-}
-
-  /* line 44, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 52, ../sass/includes/_print.scss */
   p,
   h2,
   h3 {
@@ -65,13 +75,13 @@
     widows: 3;
   }
 
-  /* line 49, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 57, ../sass/includes/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;
   }
 
-  /* line 59, C:/Users/hyperboy/Sites/devdesktop/d7-styleguide/sites/all/themes/open_framework/sass/includes/_print.scss */
+  /* line 67, ../sass/includes/_print.scss */
   .logged-in #toolbar,
   .logged-in .tabs,
   .book_add_child,
