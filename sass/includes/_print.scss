@@ -5,18 +5,11 @@
 
 @media print {
     @page {
-        min-width: 1200px;
-        size: letter;
-        margin: 0.5cm;
-    }
-    body {
-        margin: 0;
-        padding: 0;
-        min-width: 1200px;
+        size: 340mm 440mm;
+        margin: 1cm;
     }
     .container {
-        width: auto;
-        min-width: 1170px;
+        width: 1170px;
     }
     .column {
         height: auto !important;
