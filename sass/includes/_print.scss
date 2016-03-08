@@ -5,8 +5,7 @@
 
 @media print {
     @page {
-        size: 340mm 440mm;
-        margin: 1cm;
+        size: letter;
     }
     .container {
         width: 1170px;
