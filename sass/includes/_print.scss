@@ -4,6 +4,15 @@
  */
 
 @media print {
+    @page {
+        size: letter;
+    }
+    .container {
+        width: 1170px;
+    }
+    .column {
+        height: auto !important;
+    }
     a[href]:after {
         content: none;
     }
@@ -29,9 +38,6 @@
     }
     img {
         max-width: 100% !important;
-    }
-    @page {
-        margin: 0.5cm;
     }
     p,
     h2,
