@@ -1615,12 +1615,7 @@ body.photobg {
   vertical-align: top;
 }
 
-/* line 14, ../sass/includes/_module-views-grid.scss */
-.views-grid-four .views-row:nth-child(4n+4) {
-  margin-right: 0;
-}
-
-/* line 20, ../sass/includes/_module-views-grid.scss */
+/* line 16, ../sass/includes/_module-views-grid.scss */
 .views-grid-four.views-grid-header-footer .view-header,
 .views-grid-four.views-grid-header-footer .view-content,
 .views-grid-four.views-grid-header-footer .view-footer {
@@ -1628,10 +1623,15 @@ body.photobg {
   vertical-align: top;
 }
 
-/* line 25, ../sass/includes/_module-views-grid.scss */
+/* line 21, ../sass/includes/_module-views-grid.scss */
 .views-grid-four.views-grid-header-footer .view-header {
   width: 23%;
   margin-right: 1%;
+}
+
+/* line 26, ../sass/includes/_module-views-grid.scss */
+.views-grid-four .grouping .views-row:nth-of-type(4n) {
+  margin-right: 0;
 }
 
 /* line 30, ../sass/includes/_module-views-grid.scss */
