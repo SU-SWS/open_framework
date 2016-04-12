@@ -1,3 +1,12 @@
+Version 7.x-2.5+14-beta1
+------------------------------
+hyperboy:	Matched print viewport to desktop screen viewport
+hyperboy:	Update print style for column class
+hyperboy:	Removed @page dimensions to allow for landscape printing
+hyperboy:	Added responsive print styles
+cjwest:	Added grouping div and H2
+josephgknox:	updated targeting of views-grid-* classes to be more succinct and endless
+
 Version 7.x-2.4
 ------------------------------
 meganem: Fixed clear-row for table breakpoint
