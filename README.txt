@@ -1,7 +1,5 @@
 Open Framework Theme for Drupal 7.x
 
-Version: 7.x-2.5+14-beta1
-
 Authors: Brian Young, Megan Erin Miller
 
 -- SUMMARY -- 
