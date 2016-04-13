@@ -150,7 +150,7 @@ function open_framework_form_system_theme_settings_alter(&$form, &$form_state) {
     '#default_value' => theme_get_setting('font_awesome_version'),
     '#options'       => array(
       'font-awesome-3' => t('Version 3.2.1 [<a href="http://fortawesome.github.io/Font-Awesome/3.2.1/" title="Font Awesome 3.2.1 official documentation">documentation</a>]'),
-      'font-awesome-4' => t('Version 4.5.0 [<a href="http://fortawesome.github.io/Font-Awesome/" title="Font Awesome 4.5.0 official documentation">documentation</a>]'),
+      'font-awesome-4' => t('Version 4.6.1 [<a href="http://fortawesome.github.io/Font-Awesome/" title="Font Awesome 4.6.1 official documentation">documentation</a>]'),
     ),
   );
 
