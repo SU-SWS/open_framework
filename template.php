@@ -519,7 +519,7 @@ function open_framework_is_in_nav_menu($element) {
     // Blocks placed using the context module don't show up using Drupal's block_list
     // If context is enabled, see if it has placed any blocks in the navigation area
     // See: http://drupal.org/node/785350
-    $context_blocks = array();
+    $context_blocks = array('navigation' => array());
 
     // Not using block_list here in order to avoid a static cache issue.
     if (module_exists('context')) {
