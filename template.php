@@ -516,47 +516,46 @@ function open_framework_is_in_nav_menu($element) {
     // get all blocks in the navigation region
     $blocks = block_list('navigation');
 
-  // Blocks placed using the context module don't show up using Drupal's block_list
-  // If context is enabled, see if it has placed any blocks in the navigation area
-  // See: http://drupal.org/node/785350
-  $context_blocks = array();
-
-  if (module_exists('context')) {
-    $region = "navigation";
-    $reaction_block_plugin = context_get_plugin('reaction', 'block');
-    $contexts = context_active_contexts();
-    $info = $reaction_block_plugin->get_blocks($region);
+    // Blocks placed using the context module don't show up using Drupal's block_list
+    // If context is enabled, see if it has placed any blocks in the navigation area
+    // See: http://drupal.org/node/785350
     $context_blocks = array();
-    foreach ($contexts as $context) {
-      $options = $reaction_block_plugin->fetch_from_context($context);
-      if (!empty($options['blocks'])) {
-        foreach ($options['blocks'] as $context_block) {
-          $bid = "{$context_block['module']}-{$context_block['delta']}";
-          if (isset($info[$bid])) {
-            $block = (object) array_merge((array) $info[$bid], $context_block);
-            $block->context = $context->name;
-            $block->title = isset($info[$block->bid]->title) ? $info[$block->bid]->title : NULL;
-            $block->cache = isset($info[$block->bid]->cache) ? $info[$block->bid]->cache : DRUPAL_NO_CACHE;
-            $context_blocks[$block->region][$block->bid] = $block;
+
+    // Not using block_list here in order to avoid a static cache issue.
+    if (module_exists('context')) {
+      $region = "navigation";
+      $contexts = context_active_contexts();
+      $reaction_block_plugin = context_get_plugin('reaction', 'block');
+      foreach ($contexts as $context) {
+        $info = $reaction_block_plugin->get_blocks($region, $context);
+        $options = $reaction_block_plugin->fetch_from_context($context);
+        if (!empty($options['blocks'])) {
+          foreach ($options['blocks'] as $context_block) {
+            $bid = "{$context_block['module']}_{$context_block['delta']}";
+            if (isset($info[$bid])) {
+              $block = (object) array_merge((array) $info[$bid], $context_block);
+              $block->context = $context->name;
+              $block->title = isset($info[$block->bid]->title) ? $info[$block->bid]->title : NULL;
+              $block->cache = isset($info[$block->bid]->cache) ? $info[$block->bid]->cache : DRUPAL_NO_CACHE;
+              $context_blocks[$block->region][$block->bid] = $block;
+            }
           }
         }
       }
     }
+
+    $blocks = array_merge($blocks, $context_blocks['navigation']);
+
+    // Extract just their IDs (<module>_<delta>).
+    $ids = array_keys($blocks);
+
+    // Translate the ids into function names for comparison purposes.
+    $nav_theming_functions = array_map('open_framework_block_id_to_function_name', $ids);
   }
 
-  $blocks = array_merge($blocks, $context_blocks);
-
-  // extract just their IDs (<module>_<delta>)
-  $ids = array_keys($blocks);
-
-  // translate the ids into function names for comparison purposes
-  $nav_theming_functions = array_map('open_framework_block_id_to_function_name', $ids);
-
-  }
-
-  // if there is nothing in the navigation section, the main menu is added automatically, so
+  // If there is nothing in the navigation section, the main menu is added automatically, so
   // we watch for that.
-  // 'menu_link__main_menu' is the theming function name for the main-menu
+  // 'menu_link__main_menu' is the theming function name for the main-menu.
   if ((empty($nav_theming_functions)) && (in_array('menu_link__main_menu', $link_theming_functions))) {
     return TRUE;
   };
@@ -577,16 +576,16 @@ function open_framework_is_in_nav_menu($element) {
  */
 
 function open_framework_block_id_to_function_name ($id) {
-  // if a system block, remove 'system_'
+  // If a system block, remove 'system_'.
   $id = str_replace('system_', '', $id);
 
-  // recognize menu and block_menu module blocks
+  // Recognize menu and block_menu module blocks.
   if (strpos($id, 'menu_block_') === false) {
-    // if a menu block but not a menu_block block, remove menu_
-    $id = str_replace('menu_',       '', $id);
+    // If a menu block but not a menu_block block, remove menu_
+    $id = str_replace('menu_', '', $id);
   }
   else {
-    // if a menu_block block, keep menu_block, but add an
+  // if a menu_block block, keep menu_block, but add an
   // underscore. Not sure why this is different from other
   // core modules
     $id = str_replace('menu_block_', 'menu_block__', $id);
