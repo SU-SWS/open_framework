@@ -48,7 +48,7 @@ function open_framework_js_alter(&$javascript) {
     $jquery_version = '1.9.1';
     $migrate_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-migrate-1.2.1.min.js';
     $migrate_version = '1.2.1';
-	$form_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-form-3.31.0.min.js';
+  $form_file = drupal_get_path('theme', 'open_framework') . '/js/jquery-form-3.31.0.min.js';
     $form_version = '3.31.0';
     $javascript['misc/jquery.js']['data'] = $jquery_file;
     $javascript['misc/jquery.js']['version'] = $jquery_version;
@@ -60,7 +60,7 @@ function open_framework_js_alter(&$javascript) {
       $javascript["$migrate_file"]['weight'] = 1;
       $javascript["$migrate_file"]['group'] = -101;
     }
-	if (isset($javascript['misc/jquery.form.js'])) {
+  if (isset($javascript['misc/jquery.form.js'])) {
       $javascript['misc/jquery.form.js']['data'] = $form_file;
       $javascript['misc/jquery.form.js']['version'] = $form_version;
       $javascript['misc/jquery.form.js']['weight'] = 2;
@@ -284,7 +284,7 @@ function open_framework_status_messages($variables) {
 
     if (arg(0) != 'admin' && arg(0) != 'panels' && arg(0) != 'ctools') {
     $output .= "  <a class=\"close\" data-dismiss=\"alert\" href=\"#\">x</a>\n";
-	}
+  }
 
     if (!empty($status_heading[$type])) {
       $output .= '<h2 class="element-invisible">' . $status_heading[$type] . "</h2>\n";
@@ -516,28 +516,41 @@ function open_framework_is_in_nav_menu($element) {
     // get all blocks in the navigation region
     $blocks = block_list('navigation');
 
-	// Blocks placed using the context module don't show up using Drupal's block_list
-	// If context is enabled, see if it has placed any blocks in the navigation area
-	// See: http://drupal.org/node/785350
+  // Blocks placed using the context module don't show up using Drupal's block_list
+  // If context is enabled, see if it has placed any blocks in the navigation area
+  // See: http://drupal.org/node/785350
+  $context_blocks = array();
+
+  if (module_exists('context')) {
+    $region = "navigation";
+    $reaction_block_plugin = context_get_plugin('reaction', 'block');
+    $contexts = context_active_contexts();
+    $info = $reaction_block_plugin->get_blocks($region);
     $context_blocks = array();
+    foreach ($contexts as $context) {
+      $options = $reaction_block_plugin->fetch_from_context($context);
+      if (!empty($options['blocks'])) {
+        foreach ($options['blocks'] as $context_block) {
+          $bid = "{$context_block['module']}-{$context_block['delta']}";
+          if (isset($info[$bid])) {
+            $block = (object) array_merge((array) $info[$bid], $context_block);
+            $block->context = $context->name;
+            $block->title = isset($info[$block->bid]->title) ? $info[$block->bid]->title : NULL;
+            $block->cache = isset($info[$block->bid]->cache) ? $info[$block->bid]->cache : DRUPAL_NO_CACHE;
+            $context_blocks[$block->region][$block->bid] = $block;
+          }
+        }
+      }
+    }
+  }
 
-	if (module_exists('context')) {
-	  $reaction_block_plugin = context_get_plugin('reaction', 'block');
-	  if ($reaction_block_plugin) {
-  	    $context_blocks = $reaction_block_plugin->block_list('navigation');
-	  }
-	  else {
-	    watchdog("open_framework", "Could not load block context reaction plugin", array(), WATCHDOG_WARNING);
-	  }
-	}
+  $blocks = array_merge($blocks, $context_blocks);
 
-    $blocks = array_merge($blocks, $context_blocks);
+  // extract just their IDs (<module>_<delta>)
+  $ids = array_keys($blocks);
 
-    // extract just their IDs (<module>_<delta>)
-    $ids = array_keys($blocks);
-
-    // translate the ids into function names for comparison purposes
-    $nav_theming_functions = array_map('open_framework_block_id_to_function_name', $ids);
+  // translate the ids into function names for comparison purposes
+  $nav_theming_functions = array_map('open_framework_block_id_to_function_name', $ids);
 
   }
 
@@ -574,8 +587,8 @@ function open_framework_block_id_to_function_name ($id) {
   }
   else {
     // if a menu_block block, keep menu_block, but add an
-	// underscore. Not sure why this is different from other
-	// core modules
+  // underscore. Not sure why this is different from other
+  // core modules
     $id = str_replace('menu_block_', 'menu_block__', $id);
   }
 
