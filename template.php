@@ -522,9 +522,10 @@ function open_framework_is_in_nav_menu($element) {
   $context_blocks = array();
 
   if (module_exists('context')) {
+    $region = "navigation";
     $reaction_block_plugin = context_get_plugin('reaction', 'block');
     $contexts = context_active_contexts();
-    $info = $reaction_block_plugin->get_blocks();
+    $info = $reaction_block_plugin->get_blocks($region);
     $context_blocks = array();
     foreach ($contexts as $context) {
       $options = $reaction_block_plugin->fetch_from_context($context);
