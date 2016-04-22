@@ -542,7 +542,7 @@ function open_framework_is_in_nav_menu($element) {
 
     // Ensure all contexts have been evaluated.
     module_invoke_all('context_page_condition');
-    
+
     // Context could also be placing the blocks. Lets check it.
     $reaction_block_plugin = context_get_plugin('reaction', 'block');
     $contexts = context_active_contexts();
@@ -577,6 +577,12 @@ function open_framework_is_in_nav_menu($element) {
     if (isset($static_menu_cache[$bid]) && $static_menu_cache[$bid] === TRUE) {
       return TRUE;
     }
+  }
+
+  // If at this part and still no block found check to see if it is the main
+  // menu from the theme settings
+  if ($menu_name == "main-menu") {
+    return TRUE;
   }
 
   // This is not part of the main navigation region. Cache this too.
