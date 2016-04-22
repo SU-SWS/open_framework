@@ -568,13 +568,13 @@ function open_framework_is_in_nav_menu($element) {
   }
 
   // For the context condition.
-  if ($static_menu_cache[$menu_name]) {
+  if (isset($static_menu_cache[$menu_name]) && $static_menu_cache[$menu_name] === TRUE) {
     return TRUE;
   }
 
   // For context condition and menu_block.
   if (!empty($bid)) {
-    if ($static_menu_cache[$bid]) {
+    if (isset($static_menu_cache[$bid]) && $static_menu_cache[$bid] === TRUE) {
       return TRUE;
     }
   }
