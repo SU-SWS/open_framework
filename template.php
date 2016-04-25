@@ -521,7 +521,7 @@ function open_framework_is_in_nav_menu($element) {
   }
 
   // For menu blocks.
-  if (!empty($bid) && $static_menu_cache[$bid]) {
+  if (!empty($bid) && isset($static_menu_cache[$bid])) {
     return $static_menu_cache[$bid];
   }
 
