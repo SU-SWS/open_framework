@@ -1269,11 +1269,13 @@ ul.primary {
         width: 30.6%;
     }
     .footer-content .block.span2:nth-child(3n+1),
-    .footer-content .block.span3:nth-child(3n+1) {
+    .footer-content .block.span3:nth-child(3n+1),
+    .footer-content .block.span4:nth-child(3n+1) {
         clear: both;
     }
     .footer-content .block.span2:nth-child(3n),
-    .footer-content .block.span3:nth-child(3n) {
+    .footer-content .block.span3:nth-child(3n),
+    .footer-content .block.span4:nth-child(3n) {
         margin-right: 0;
     }
     .sidebar-first .content-row3 .span4,
