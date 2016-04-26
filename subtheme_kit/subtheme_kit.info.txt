@@ -12,6 +12,7 @@ regions[site_login] = Site: Login
 regions[header] = Header
 regions[navigation] = Navigation
 regions[search_box] = Search Box
+regions[fullwidth_top] = Full Width Top
 regions[main_top] = Main: Top
 regions[main_upper] = Main: Upper
 regions[sidebar_first] = First sidebar
@@ -37,4 +38,18 @@ regions[content_bottom] = Content: Bottom
 regions[sidebar_second] = Second sidebar
 regions[main_lower] = Main: Lower
 regions[main_bottom] = Main: Bottom
+regions[fullwidth_bottom] = Full Width Bottom
 regions[footer] = Footer
+
+; Settings
+settings[font_awesome_version] = 'font-awesome-3'
+settings[content_order_classes] = ''
+settings[front_heading_classes] = ''
+settings[breadcrumb_classes] = ''
+settings[body_bg_type] = ''
+settings[body_bg_classes] = ''
+settings[body_bg_path] = ''
+settings[body_bg_preview] = ''
+settings[body_bg_upload] = ''
+settings[border_classes] = ''
+settings[corner_classes] = ''
