@@ -2925,29 +2925,36 @@ html.js input.throbbing {
     width: 31.4917%;
   }
 }
-/* line 33, ../sass/includes/_module-bootstrap-overrides.scss */
+@media (max-width: 767px) {
+  /* line 35, ../sass/includes/_module-bootstrap-overrides.scss */
+  [class*="span"].pull-right,
+  .row-fluid [class*="span"].pull-right {
+    float: none;
+  }
+}
+/* line 40, ../sass/includes/_module-bootstrap-overrides.scss */
 .row-fluid[class*="span"] {
   min-height: 0;
 }
 
-/* line 37, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 44, ../sass/includes/_module-bootstrap-overrides.scss */
 [class*="span"].clear-row {
   clear: both;
 }
 
-/* line 42, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 49, ../sass/includes/_module-bootstrap-overrides.scss */
 [class*="span"].next-row,
 [class*="span"].clear-row {
   margin-left: 0;
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-  /* line 47, ../sass/includes/_module-bootstrap-overrides.scss */
+  /* line 54, ../sass/includes/_module-bootstrap-overrides.scss */
   [class*="span"].clear-row {
     clear: none;
   }
 }
-/* line 52, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 59, ../sass/includes/_module-bootstrap-overrides.scss */
 .form-actions {
   margin-top: 0;
   margin-bottom: 0;
@@ -2956,18 +2963,18 @@ html.js input.throbbing {
   background-color: transparent;
 }
 
-/* line 60, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 67, ../sass/includes/_module-bootstrap-overrides.scss */
 .navbar-inner {
   min-height: 0;
 }
 
-/* line 65, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 72, ../sass/includes/_module-bootstrap-overrides.scss */
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #fff;
 }
 
-/* line 85, ../sass/includes/_module-bootstrap-overrides.scss */
+/* line 92, ../sass/includes/_module-bootstrap-overrides.scss */
 select,
 textarea,
 input[type="text"],

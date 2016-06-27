@@ -30,6 +30,13 @@ html.js input.throbbing {
     }
 }
 
+@media (max-width: 767px) {
+    [class*="span"].pull-right,
+    .row-fluid [class*="span"].pull-right {
+        float: none;
+    }
+}
+
 .row-fluid[class*="span"] {
     min-height: 0;
 }
