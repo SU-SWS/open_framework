@@ -258,6 +258,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .field-collection-container .field-items .field-item { margin:0; }
 /* ----- collapsable fieldset overrides -- */
 html.js fieldset.collapsed { height: auto; }
+legend { font-size: 16px; margin-bottom: 1em; line-height: 1.6em; }
+
 /* ----- field label overrides ------- */
 .field .field-label { font-weight:600; }
 .page-node .content-body .field { margin-bottom:1em; }
