@@ -477,6 +477,24 @@ nav h2 {
     left: 190px;
 }
 
+.sidebar .block-menu-block ul.menu.nav li ul {
+    margin-left: 0;
+}
+
+.sidebar .block-menu-block .menu-block-wrapper > .menu.nav > li li a {
+    display: block;
+    padding: 0.25em 0;
+}
+
+.sidebar ul.menu.nav li {
+    margin: 0;
+}
+
+.sidebar ul.menu.nav li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+}
+
 
 /* ----- admin menu ------------------ */
 
