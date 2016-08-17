@@ -1,8 +1,5 @@
 Version 7.x-2.5
 ------------------------------
-
-Version 7.x-2.5+14-beta1
-------------------------------
 hyperboy:	Matched print viewport to desktop screen viewport
 hyperboy:	Update print style for column class
 hyperboy:	Removed @page dimensions to allow for landscape printing
