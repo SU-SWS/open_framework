@@ -1,0 +1,26 @@
+engines:
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  phpcodesniffer:
+    enabled: true
+  phpmd:
+    enabled: true
+  scss-lint:
+    enabled: true
+ratings:
+  paths:
+  - "**.inc"
+  - "**.module"
+  - "**.profile"
+  - "**.php"
+  - "**.install"
+##exclude these files/paths
+exclude_paths:
+- "**.features.**"
+- "**.views_default.inc"
+- "**.field_group.inc"
+- "**.ds.inc"
+- "**.bean.inc"
+- "**.context.inc"
