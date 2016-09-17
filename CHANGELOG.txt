@@ -1,3 +1,11 @@
+Open Framework x.x-x.x xxxx-xx-xx
+-------------------------------------------
+
+Version 7.x-2.5+4-dev
+-----------------------------
+hyperboy: Added box sizing: border-box to body
+kmakitan: Create .codeclimate.yml
+
 Version 7.x-2.5
 ------------------------------
 hyperboy:	Matched print viewport to desktop screen viewport
