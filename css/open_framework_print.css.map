@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA;;;GAGG;AAEH,YAAa;EACT,KAEC;IADG,IAAI,EAAE,MAAM;;EAEhB,UAAW;IACP,KAAK,EAAE,MAAM;;;EAEjB,OAAQ;IACJ,MAAM,EAAE,eAAe;;;EAE3B,aAAc;IACV,OAAO,EAAE,IAAI;;;EAEjB,iBAAkB;IACd,OAAO,EAAE,oBAAmB;;;EAEhC;;oBAEmB;IACf,OAAO,EAAE,IAAI;;;EAEjB;YACW;IACP,MAAM,EAAE,cAAc;IACtB,iBAAiB,EAAE,KAAK;;;EAE5B,KAAM;IACF,OAAO,EAAE,kBAAkB;;;EAE/B;KACI;IACA,iBAAiB,EAAE,KAAK;;;EAE5B,GAAI;IACA,SAAS,EAAE,eAAe;;;EAE9B;;IAEG;IACC,OAAO,EAAE,CAAC;IACV,MAAM,EAAE,CAAC;;;EAEb;IACG;IACC,gBAAgB,EAAE,KAAK;;;EAE3B;;;;;;;eAOc;IACV,OAAO,EAAE,IAAI",
+"sources": ["file:///C:/Users/hyperboy/Sites/devdesktop/d7-ofw/sites/all/themes/open_framework/sass/includes/_print.scss"],
+"names": [],
+"file": "open_framework_print.css"
+}
