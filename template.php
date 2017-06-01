@@ -83,7 +83,7 @@ function open_framework_preprocess_page(&$vars) {
   }
 
   if ($font_awesome_version == 'font-awesome-4') {
-  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-4.6.1/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 20, 'preprocess' => TRUE));
+  drupal_add_css(drupal_get_path('theme', 'open_framework') . '/packages/font-awesome-4.7.0/css/font-awesome.min.css', array('group' => CSS_DEFAULT, 'media' => 'all', 'weight' => 20, 'preprocess' => TRUE));
   }
 
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:

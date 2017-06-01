@@ -1,6 +1,9 @@
 Open Framework x.x-x.x xxxx-xx-xx
 -------------------------------------------
 
+Version 7.x-2.5+10-dev
+-----------------------------
+hyperboy: updated to Font Awesome 4.7.0
 
 Version 7.x-2.5+9-dev
 -----------------------------
