@@ -269,12 +269,18 @@
   margin-bottom: 20px;
   width: 31.1%;
   vertical-align: top;
-  @media (max-width: 979px) {
-    width: 46.5%;
+  @media (max-width: 1200px) {
+    width: 48.1%;
   }
   @media (max-width: 580px) {
     width: 100%;
     margin-right: 0;
+  }
+
+  &:nth-child(2n) {
+    @media (max-width: 1200px) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -447,7 +453,7 @@
 .views-grid-three .views-row.views-row-96,
 .views-grid-three .views-row.views-row-99 {
   margin-right: 0;
-  @media (max-width: 979px) {
+  @media (max-width: 1200px) {
     margin-right: 3%;
   }
   @media (max-width: 580px) {
