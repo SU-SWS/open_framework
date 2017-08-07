@@ -1632,6 +1632,14 @@ body.photobg {
   vertical-align: top;
 }
 
+@media (max-width: 1200px) {
+  /* line 3, ../sass/includes/_module-views-grid.scss */
+  .views-grid-two .views-row {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
 /* line 261, ../sass/includes/_module-views-grid.scss */
 .views-grid-two .views-row.views-row-10,
 .views-grid-two .views-row.views-row-100,
