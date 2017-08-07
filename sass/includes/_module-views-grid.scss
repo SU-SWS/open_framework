@@ -7,6 +7,10 @@
   margin-bottom: 20px;
   width: 48%;
   vertical-align: top;
+  @media (max-width: 767px) {
+    margin-right: 0;
+    width: 100%;
+  }
 }
 
 .views-grid-two .views-row.views-row-10,
