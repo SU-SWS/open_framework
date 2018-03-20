@@ -9,7 +9,7 @@ Open Framework is a new Drupal theme that builds off of Twitter Bootstrap and pr
 
 -- REQUIREMENTS --
 
-The Open Framework theme is intended for Drupal version 7 only; it will not work with Drupal 6 or below
+The Open Framework theme is intended for Drupal version 7 only; it will not work with Drupal 6 or below.
 
 -- INSTALLATION --
 
