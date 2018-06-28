@@ -1,17 +1,11 @@
 Open Framework x.x-x.x xxxx-xx-xx
 -------------------------------------------
 
-Version 7.x-2.5+10-dev
+Version 7.x-2.6
 -----------------------------
 hyperboy: updated to Font Awesome 4.7.0
-
-Version 7.x-2.5+9-dev
------------------------------
 josephgknox: added support for views-grids
 hyperboy: removed Sass location comments
-
-Version 7.x-2.5+4-dev
------------------------------
 hyperboy: Added box sizing: border-box to body
 kmakitan: Create .codeclimate.yml
 
