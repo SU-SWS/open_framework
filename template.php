@@ -585,8 +585,8 @@ function open_framework_is_in_nav_menu($element) {
     return TRUE;
   }
 
-  // This is not part of the main navigation region. Cache this too.
-  $static_menu_cache[$menu_name] = FALSE;
+  // This is not part of the main navigation region. But dont cache the result
+  // since another block with the same menu could follow this one.
   return FALSE;
 }
 
