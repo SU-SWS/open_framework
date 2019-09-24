@@ -1,5 +1,8 @@
 Open Framework x.x-x.x xxxx-xx-xx
 -------------------------------------------
+Version 7.x-2.7
+-----------------------------
+pookmish: Fixed bug when checking if 2 menu blocks are in the navigation
 
 Version 7.x-2.6
 -----------------------------
