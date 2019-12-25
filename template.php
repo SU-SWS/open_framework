@@ -598,7 +598,7 @@ function open_framework_breadcrumb(&$variables) {
   $output = '';
   $breadcrumb = $variables['breadcrumb'];
   $show_breadcrumb = theme_get_setting('breadcrumb_classes');
-  if ($show_breadcrumb == 'show-breadcrumb ') {
+  if ($show_breadcrumb == 'show-breadcrumb') {
     if (!empty($breadcrumb)) {
       // Provide a navigational heading to give context for breadcrumb links to
       // screen-reader users. Make the heading invisible with .element-invisible.
