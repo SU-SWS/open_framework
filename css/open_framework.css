@@ -1312,7 +1312,7 @@ ul.primary {
   .footer-content .block {
     float: left;
     margin-right: 4%;
-    width: 48%;
+    width: 100%;
   }
 
   /* line 1206, ../sass/includes/_base.scss */
